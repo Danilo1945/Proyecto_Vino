@@ -1,0 +1,27 @@
+2018-04-14 23:35:03 Error: [Cake\Database\Exception] Impossible to generate condition with empty list of values for field (request_id) in C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Expression\Comparison.php on line 228
+Request URL: /
+Referer URL: http://localhost:81/Master_ElUltimoInca/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Expression\Comparison.php(160): Cake\Database\Expression\Comparison->_stringExpression(Object(Cake\Database\ValueBinder))
+#1 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Expression\QueryExpression.php(546): Cake\Database\Expression\Comparison->sql(Object(Cake\Database\ValueBinder))
+#2 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\QueryCompiler.php(134): Cake\Database\Expression\QueryExpression->sql(Object(Cake\Database\ValueBinder))
+#3 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Query.php(312): Cake\Database\QueryCompiler->Cake\Database\{closure}(Object(Cake\Database\Expression\QueryExpression), 'where')
+#4 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\QueryCompiler.php(100): Cake\Database\Query->traverse(Object(Closure), Array)
+#5 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Driver.php(361): Cake\Database\QueryCompiler->compile(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#6 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Connection.php(301): Cake\Database\Driver->compileQuery(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#7 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Query.php(283): Cake\Database\Connection->compileQuery(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#8 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Query.php(1020): Cake\Database\Query->sql(NULL)
+#9 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): Cake\ORM\Query->sql()
+#10 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#11 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Connection.php(313): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#12 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#13 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(102): Cake\Database\Query->execute()
+#14 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\ToolbarService.php(183): DebugKit\Model\Table\RequestsTable->gc()
+#15 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\Master_ElUltimoInca\Proyecto_Vino\ElUltimoInca\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
