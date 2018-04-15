@@ -1,7 +1,7 @@
 # CakePHP 3
 
 /vendor/*
-/tmp/*
+/ElUltimoInca/tmp/*
 /config/app.php
 
 /tmp/cache/models/*
