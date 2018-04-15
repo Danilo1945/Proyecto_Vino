@@ -3,6 +3,7 @@
 /vendor/*
 /ElUltimoInca/tmp/*
 /config/app.php
+/tmo/*
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
