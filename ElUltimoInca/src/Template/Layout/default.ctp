@@ -53,5 +53,43 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </div>
     <footer>
     </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <nav class="nav-extended #00b8d4 cyan accent-4">   <!-- fuente del color http://materializecss.com/color.html-->
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">El Ultimo Inca</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Iniciar Sesion</a></li>
+        <li><a href="badges.html">Registrarse</a></li>
+        <li><a href="collapsible.html">Colaboraciones</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Inicio</a></li>
+        <li class="tab"><a class="active" href="#test2">Contactos</a></li>
+       <!-- <li class="tab disabled"><a href="#test3">Pedidos</a></li>-->
+          <li class="tab"><a class="active" href="#test2">Pedidos</a></li>
+        <li class="tab"><a href="#test4">Acerca de..</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+    
+    
+    
 </body>
 </html>

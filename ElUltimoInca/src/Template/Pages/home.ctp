@@ -61,19 +61,136 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
      <?= $this->Html->css ('materialize.min.css') ?>
     <?= $this->Html->script('jquery-3.2.1.min.js')?>
       <?= $this->Html->script('materialize.min.js')?>
+
+     <?= $this->Html->script('main.js')?>
     
-    
-    
-    
+    <?= $this->Html->script('tran.js')?>
     
     
     
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
 </head>
-<body>
+
+ 
+    
+    
+    
+    <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
+    
+     <nav class="nav-extended #00b8d4 cyan accent-4">   <!-- fuente del color http://materializecss.com/color.html-->
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo" >El Ultimo Inca </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Iniciar Sesion</a></li>
+        <li><a href="badges.html">Registrarse</a></li>
+        <li><a href="collapsible.html">Colaboraciones</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Inicio</a></li>
+        <li class="tab"><a class="active" href="#test2">Contactos</a></li>
+       <!-- <li class="tab disabled"><a href="#test3">Pedidos</a></li>-->
+          <li class="tab"><a class="active" href="#test2">Pedidos</a></li>
+        <li class="tab"><a href="#test4">Acerca de..</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+        
+    
+     <button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default" id="su">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button> 
+    
+    
+<a class="waves-effect waves-light btn">button</a>
+<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+        
+    
+     <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
      
-      
-      
+    
+    
+    
+    
+    
+    
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        
+        <div class="input-field col s6">
+          <input id="num1" type="text" class="validate">
+          <label for="last_name">Numero 1</label>
+        </div>
+          
+      </div>
+        
+        
+        <div class="row">
+         <div class="input-field col s6">
+          <input id="num2" type="text" class="validate">
+          <label for="last_name">numero 2</label>
+        </div>
+        </div>
+        
+       
+       
+        <input type="submit" class="waves-effect waves-light btn" value="Sumar" name="as" id="asd" />
+    
+    </form>
+  </div>
+    
+    
+    
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>  
+    
+    
+    
+    
+    
+    
+           
       
       
 <a class="waves-effect waves-light btn">button</a>
@@ -178,7 +295,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <i class="material-icons">add</i>
   </a>
 
-  <!-- Scaled out -->
+   Scaled out 
   <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition scale-out">
     <i class="material-icons">add</i>
   </a>
@@ -236,5 +353,5 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       </div>
     </div>
   </div>
-    </body>
-</html>
+
+
