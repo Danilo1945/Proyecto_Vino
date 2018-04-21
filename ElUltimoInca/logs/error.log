@@ -2359,3 +2359,22 @@ Stack Trace:
 
 >>>>>>> 4658e125571a349b0d8ee8a1cfeb3aa4b35c2326
 >>>>>>> d0f3b145ca95878e69c8002ce7a81c1984a6119d
+2018-04-21 18:12:41 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in [C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\src\View\AppView.php, line 28]
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-04-21 18:12:42 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\src\View\AppView.php on line 28
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
