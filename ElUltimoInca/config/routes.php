@@ -65,7 +65,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      *
      * Any route class can be used with this method, such as:
      * - DashedRoute
-     * - InflectedRoute
+     * - 
      * - Route
      * - Or your own route class
      *
@@ -80,3 +80,5 @@ Router::scope('/', function (RouteBuilder $routes) {
  * how to customize the loading of plugin routes.
  */
 Plugin::routes();
+
+Router::connect('/menu/index',['controller'=>'Menu','action'=>'index']);
