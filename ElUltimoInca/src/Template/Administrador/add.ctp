@@ -10,6 +10,7 @@
         <li><?= $this->Html->link(__('List Administrador'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
+
 <div class="administrador form large-9 medium-8 columns content">
     <?= $this->Form->create($administrador) ?>
     <fieldset>

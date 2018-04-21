@@ -13,5 +13,8 @@ namespace UltimoInca\Controller;
  * @author Danilo
  */
 class Menu extends AppController {
-    
+    public function menu()
+    {
+        echo 'hyola';
+    }
 }
