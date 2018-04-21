@@ -1915,6 +1915,9 @@ Stack Trace:
 
 
 2018-04-21 14:59:13 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 174
+Request URL: /
+Referer URL: http://localhost/Proyecto_Vino/
+Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
 #2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(76): Cake\Database\Statement\StatementDecorator->execute(NULL)
