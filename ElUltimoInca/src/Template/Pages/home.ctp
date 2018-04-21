@@ -32,73 +32,192 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <!DOCTYPE html>
 <html>
 <head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= $cakeDescription ?>
-    </title>
+       
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-
-
-
-  <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta('icon') ?>
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('home.css') ?>
     
     
-    
-     <?= $this->Html->css ('materialize.min.css') ?>
-    <?= $this->Html->script('jquery-3.2.1.min.js')?>
-      <?= $this->Html->script('materialize.min.js')?>
-
-     <?= $this->Html->script('main.js')?>
-    
-    <?= $this->Html->script('tran.js')?>
-    
-    
-    
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+ <?= $this->Html->script('jquery-3.3.1.min')?>
+    <?= $this->Html->css ('materialize.min.css') ?>
+    <?= $this->Html->script('materialize.min.js')?>
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
+    
+    
+    <?= $this->Html->charset() ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?= $cakeDescription ?>
+    </title>
+    <!--        jquery-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <script >
+          
+  $(document).ready(function(){
+    
+    $(".button-collapse").sideNav();
+  });
+      </script>
+   
+    
 </head>
 
- 
     
     
     
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
+     
     
-     <nav class="nav-extended #00b8d4 cyan accent-4">   <!-- fuente del color http://materializecss.com/color.html-->
+      <nav class="nav-extended">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo" >El Ultimo Inca </a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">El Ultimo Inca</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Iniciar Sesion</a></li>
-        <li><a href="badges.html">Registrarse</a></li>
-        <li><a href="collapsible.html">Colaboraciones</a></li>
+       
+           <!-- LO QUE APARECE EN LA S PC-->
+          
+          <li><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Acerca de</a></li>
+        <li><a href="collapsible.html">Iniciar Sesion</a></li>
+      </ul>
+      
+       <!-- LO QUE APARECE EN LOS MOVILES-->
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">INICIO</a></li>
+        <li><a href="badges.html">ACERCA DE..</a></li>
+        <li><a href="collapsible.html">LOG IN</a></li>
       </ul>
     </div>
+          
+          <!--  LO QUE APARECE EL MENU GENERAL-->
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">Contactos</a></li>
-       <!-- <li class="tab disabled"><a href="#test3">Pedidos</a></li>-->
-          <li class="tab"><a class="active" href="#test2">Pedidos</a></li>
-        <li class="tab"><a href="#test4">Acerca de..</a></li>
+        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
+        <li class="tab disabled"><a href="#test3">PEDIDOS</a></li>
+        <li class="tab"><a href="#test4">ACERCA DE..</a></li>
       </ul>
     </div>
   </nav>
-
-
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
     
      <button type="button" class="btn">Basic</button>
@@ -155,28 +274,28 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
    <div class="slider">
     <ul class="slides">
       <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img src="https://lorempixel.com/580/250/nature/1">  random image 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img src="https://lorempixel.com/580/250/nature/2">  random image 
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="https://lorempixel.com/580/250/nature/3">  random image 
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img src="https://lorempixel.com/580/250/nature/4">  random image 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -353,5 +472,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       </div>
     </div>
   </div>m
+
+
+
 
 

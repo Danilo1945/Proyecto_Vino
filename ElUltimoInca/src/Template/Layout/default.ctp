@@ -32,26 +32,69 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    
+    <!--PARA IMPLEMENTAR MATERIAL -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+ <?= $this->Html->script('jquery-3.3.1.min')?>
+   
+    <?= $this->Html->script('materialize.min.js')?>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
+    
+    
+    
+    
+    
+    
 </head>
 <body>
+     
+    
     <nav class="top-bar expanded" data-topbar role="navigation">
+        
+        
+        
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
+                <!--LINEA QUE CAMBIA EL NOMBRE DE LA TABLA QUE APARECE-->
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+                
+                
+                
+                
             </li>
         </ul>
+        
+        
+        
+        
+        
+        
+        
+        <!--PARA EL MENU QUE APARECE EN LA PARTE DERECHA-->
         <div class="top-bar-section">
             <ul class="right">
                 <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>
+            
         </div>
+        
+        
+        
+        
+        
+        
     </nav>
+    
+    
+    <!--PARA TODO EL CONTENIDO CONECTA ENTRE LAS--> 
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        
     </footer>
     
     
@@ -63,30 +106,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     
     
     
-    
-    
-    
-    
-    <nav class="nav-extended #00b8d4 cyan accent-4">   <!-- fuente del color http://materializecss.com/color.html-->
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">El Ultimo Inca</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Iniciar Sesion</a></li>
-        <li><a href="badges.html">Registrarse</a></li>
-        <li><a href="collapsible.html">Colaboraciones</a></li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">Contactos</a></li>
-       <!-- <li class="tab disabled"><a href="#test3">Pedidos</a></li>-->
-          <li class="tab"><a class="active" href="#test2">Pedidos</a></li>
-        <li class="tab"><a href="#test4">Acerca de..</a></li>
-      </ul>
-    </div>
-  </nav>
     
     
     
