@@ -28,6 +28,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
+    
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -35,13 +36,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     
     <!--PARA IMPLEMENTAR MATERIAL -->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
- <?= $this->Html->script('jquery-3.3.1.min')?>
+     <?= $this->Html->script('jquery-3.3.1.min')?>
    
     <?= $this->Html->script('materialize.min.js')?>
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
     
     
+
     
     
     
@@ -56,7 +57,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <!--LINEA QUE CAMBIA EL NOMBRE DE LA TABLA QUE APARECE-->
+                <!--LINEA QUE CAMBIA EL NOMBRE DE LA TABLA QUE APARECE en la pri-->
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
                 
                 
