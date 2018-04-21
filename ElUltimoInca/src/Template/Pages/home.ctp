@@ -82,7 +82,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
   $(document).ready(function(){
     
     $(".button-collapse").sideNav();
+     $('.carousel.carousel-slider').carousel({fullWidth: true});
   });
+  
       </script>
    
     
@@ -94,9 +96,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
      
     
-      <nav class="nav-extended">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">El Ultimo Inca</a>
+      <nav class="nav-extended #880e4f pink darken-3">
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center">El Ultimo Inca</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
        
@@ -104,14 +106,14 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
           
           <li><a href="sass.html">Inicio</a></li>
         <li><a href="badges.html">Acerca de</a></li>
-        <li><a href="collapsible.html">Iniciar Sesion</a></li>
+        <li><a href="menu">Iniciar Sesion</a></li>
       </ul>
       
        <!-- LO QUE APARECE EN LOS MOVILES-->
       <ul class="side-nav" id="mobile-demo">
         <li><a href="sass.html">INICIO</a></li>
         <li><a href="badges.html">ACERCA DE..</a></li>
-        <li><a href="collapsible.html">LOG IN</a></li>
+        <li><a href="ElUltimoInca/menu">LOG IN</a></li>
       </ul>
     </div>
           
@@ -120,15 +122,45 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#test1">Inicio</a></li>
         <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
-        <li class="tab disabled"><a href="#test3">PEDIDOS</a></li>
+        <li class="tab "><a href="#test3">PEDIDOS</a></li>
         <li class="tab"><a href="#test4">ACERCA DE..</a></li>
       </ul>
     </div>
   </nav>
- 
+<!--    
+    BANER
+  <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+      
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>First Panel</h2>
+      
+     
+      
+      <p class="white-text">A</p>
+    </div>
+      
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">S</p>
+    </div>
+      
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">D</p>
+    </div>
+      
+    <div class="carousel-item  white-text" href="#four!" >
+      <h2>Fourth Panel</h2>
+      <p class="white-text">F</p>
+    </div>
+      
+      
+  </div>
     
-    
-    
+   -->
     
     
     
