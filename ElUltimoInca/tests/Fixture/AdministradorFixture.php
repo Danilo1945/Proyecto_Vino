@@ -24,11 +24,12 @@ class AdministradorFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_adm' => ['type' => 'integer', 'length' => 5, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'usuario_adm' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'contrasenia_adm' => ['type' => 'string', 'length' => 100, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'Id_adm' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'user' => ['type' => 'string', 'length' => 10, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'password' => ['type' => 'string', 'length' => 10, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'Rol' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_adm'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['Id_adm'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -44,9 +45,10 @@ class AdministradorFixture extends TestFixture
      */
     public $records = [
         [
-            'id_adm' => 1,
-            'usuario_adm' => 'Lorem ipsum dolor ',
-            'contrasenia_adm' => 'Lorem ipsum dolor sit amet'
+            'Id_adm' => 1,
+            'user' => 'Lorem ip',
+            'password' => 'Lorem ip',
+            'Rol' => 'Lorem ipsum dolor '
         ],
     ];
 }

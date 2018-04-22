@@ -25,15 +25,6 @@ use BootstrapUI\View\UIViewTrait;
  */
 class AppView extends View
 {
-<<<<<<< HEAD
-    //use UIViewTrait;
-=======
-<<<<<<< HEAD
-  ///  use UIViewTrait;
-=======
-   // use UIViewTrait;
->>>>>>> 4658e125571a349b0d8ee8a1cfeb3aa4b35c2326
->>>>>>> 4e10f5fd77e6d877e6b791bcdf52e4dafed62e36
 
     /**
      * Initialization hook method.
