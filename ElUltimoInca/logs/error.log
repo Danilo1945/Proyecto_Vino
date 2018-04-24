@@ -2447,3 +2447,234 @@ Stack Trace:
 >>>>>>> 4658e125571a349b0d8ee8a1cfeb3aa4b35c2326
 >>>>>>> d0f3b145ca95878e69c8002ce7a81c1984a6119d
 >>>>>>> 34a1f2b43def40ca3af34d3fca3c131df381c015
+2018-04-21 17:56:57 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\Xamp1\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\View\\AppVie...')
+#2 [internal function]: spl_autoload_call('App\\View\\AppVie...')
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\View\\AppVie...')
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\View\\AppView', 'App')
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewBuilder.php(604): Cake\Core\App::className('App', 'View', 'View')
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(120): Cake\View\ViewBuilder->build(Array, Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Event\EventManager))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(622): Cake\Controller\Controller->createView()
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(325): Cake\Controller\Controller->render('parseError')
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(200): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-04-21 17:57:40 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\Xamp1\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\View\\AppVie...')
+#2 [internal function]: spl_autoload_call('App\\View\\AppVie...')
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\View\\AppVie...')
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\View\\AppView', 'App')
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewBuilder.php(604): Cake\Core\App::className('App', 'View', 'View')
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(120): Cake\View\ViewBuilder->build(Array, Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Event\EventManager))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(622): Cake\Controller\Controller->createView()
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(325): Cake\Controller\Controller->render('parseError')
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(200): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-04-21 18:29:28 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\Xamp1\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\View\\AppVie...')
+#2 [internal function]: spl_autoload_call('App\\View\\AppVie...')
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\View\\AppVie...')
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\View\\AppView', 'App')
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewBuilder.php(604): Cake\Core\App::className('App', 'View', 'View')
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(120): Cake\View\ViewBuilder->build(Array, Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Event\EventManager))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(622): Cake\Controller\Controller->createView()
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(325): Cake\Controller\Controller->render('parseError')
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(200): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-04-21 18:29:45 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\Xamp1\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\View\\AppVie...')
+#2 [internal function]: spl_autoload_call('App\\View\\AppVie...')
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\View\\AppVie...')
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\View\\AppView', 'App')
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewBuilder.php(604): Cake\Core\App::className('App', 'View', 'View')
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(120): Cake\View\ViewBuilder->build(Array, Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Event\EventManager))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(622): Cake\Controller\Controller->createView()
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(325): Cake\Controller\Controller->render('parseError')
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(200): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-04-21 18:29:56 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /
+Referer URL: http://localhost:8080/Proyecto_Vino/
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\Xamp1\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\View\\AppVie...')
+#2 [internal function]: spl_autoload_call('App\\View\\AppVie...')
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\View\\AppVie...')
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\View\\AppView', 'App')
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewBuilder.php(604): Cake\Core\App::className('App', 'View', 'View')
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(120): Cake\View\ViewBuilder->build(Array, Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Event\EventManager))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(622): Cake\Controller\Controller->createView()
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(325): Cake\Controller\Controller->render('parseError')
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(200): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-04-21 19:02:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Cliente\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cliente\\view.ctp',
+)
+Request URL: /cliente/view/1
+Referer URL: http://localhost:8080/Proyecto_Vino/ElUltimoInca/Cliente
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\View.php(768): Cake\View\View->_getViewFileName('Cliente\\view')
+#1 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-04-21 19:03:32 Error: [Cake\View\Exception\MissingTemplateException] Template file "Cliente\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cliente\\view.ctp',
+)
+Request URL: /cliente/view/1
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\View.php(768): Cake\View\View->_getViewFileName('Cliente\\view')
+#1 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-04-21 19:03:41 Error: [Cake\View\Exception\MissingTemplateException] Template file "Cliente\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cliente\\view.ctp',
+)
+Request URL: /cliente/view/1
+Referer URL: http://localhost:8080/Proyecto_Vino/ElUltimoInca/Cliente
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\View.php(768): Cake\View\View->_getViewFileName('Cliente\\view')
+#1 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-04-21 19:08:47 Error: [Cake\View\Exception\MissingTemplateException] Template file "Cliente\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cliente\\edit.ctp',
+)
+Request URL: /cliente/edit/1
+Referer URL: http://localhost:8080/Proyecto_Vino/ElUltimoInca/Cliente
+Stack Trace:
+#0 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\View\View.php(768): Cake\View\View->_getViewFileName('Cliente\\edit')
+#1 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#4 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\Xamp1\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#17 {main}
+
+
