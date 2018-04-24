@@ -6,14 +6,14 @@ use Cake\ORM\Entity;
 /**
  * CompraMatPri Entity
  *
- * @property int $id_cmp
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_mat
  * @property float $precio_u_mat
  * @property float $precio_tot_mat
  * @property string $observaciones_mat
- * @property string $id_pro
- * @property string $id_tra
- * @property string $id_mat_prim
+ * @property int $id_pro
+ * @property int $id_tra
+ * @property int $id_mat_prim
  */
 class CompraMatPri extends Entity
 {

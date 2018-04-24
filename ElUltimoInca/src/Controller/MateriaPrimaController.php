@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * MateriaPrima Controller
@@ -13,6 +14,11 @@ use App\Controller\AppController;
 class MateriaPrimaController extends AppController
 {
 
+    public function beforeRender(Event $event)
+    {
+        parent::beforeRender($event);
+//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+    }
     /**
      * Index method
      *
@@ -20,6 +26,9 @@ class MateriaPrimaController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['UnidadMedida']
+        ];
         $materiaPrima = $this->paginate($this->MateriaPrima);
 
         $this->set(compact('materiaPrima'));
@@ -35,7 +44,7 @@ class MateriaPrimaController extends AppController
     public function view($id = null)
     {
         $materiaPrima = $this->MateriaPrima->get($id, [
-            'contain' => []
+            'contain' => ['UnidadMedida']
         ]);
 
         $this->set('materiaPrima', $materiaPrima);
@@ -58,7 +67,8 @@ class MateriaPrimaController extends AppController
             }
             $this->Flash->error(__('The materia prima could not be saved. Please, try again.'));
         }
-        $this->set(compact('materiaPrima'));
+        $unidadMedida = $this->MateriaPrima->UnidadMedida->find('list', ['limit' => 200]);
+        $this->set(compact('materiaPrima', 'unidadMedida'));
     }
 
     /**
@@ -82,7 +92,8 @@ class MateriaPrimaController extends AppController
             }
             $this->Flash->error(__('The materia prima could not be saved. Please, try again.'));
         }
-        $this->set(compact('materiaPrima'));
+        $unidadMedida = $this->MateriaPrima->UnidadMedida->find('list', ['limit' => 200]);
+        $this->set(compact('materiaPrima', 'unidadMedida'));
     }
 
     /**

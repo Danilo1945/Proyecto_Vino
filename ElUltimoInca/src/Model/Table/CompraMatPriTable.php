@@ -31,8 +31,8 @@ class CompraMatPriTable extends Table
         parent::initialize($config);
 
         $this->setTable('compra_mat_pri');
-        $this->setDisplayField('id_cmp');
-        $this->setPrimaryKey('id_cmp');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class CompraMatPriTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_cmp')
-            ->allowEmpty('id_cmp', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha_mat')
@@ -65,18 +65,15 @@ class CompraMatPriTable extends Table
             ->allowEmpty('observaciones_mat');
 
         $validator
-            ->scalar('id_pro')
-            ->maxLength('id_pro', 30)
+            ->integer('id_pro')
             ->allowEmpty('id_pro');
 
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
+            ->integer('id_tra')
             ->allowEmpty('id_tra');
 
         $validator
-            ->scalar('id_mat_prim')
-            ->maxLength('id_mat_prim', 15)
+            ->integer('id_mat_prim')
             ->allowEmpty('id_mat_prim');
 
         return $validator;

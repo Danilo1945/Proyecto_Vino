@@ -31,8 +31,8 @@ class ProductoTerminadoTable extends Table
         parent::initialize($config);
 
         $this->setTable('producto_terminado');
-        $this->setDisplayField('id_pro_ter');
-        $this->setPrimaryKey('id_pro_ter');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class ProductoTerminadoTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_pro_ter')
-            ->allowEmpty('id_pro_ter', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha')
@@ -103,13 +103,11 @@ class ProductoTerminadoTable extends Table
             ->allowEmpty('observaciones');
 
         $validator
-            ->scalar('id_mat_prim')
-            ->maxLength('id_mat_prim', 15)
+            ->integer('id_mat_prim')
             ->allowEmpty('id_mat_prim');
 
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
+            ->integer('id_tra')
             ->allowEmpty('id_tra');
 
         return $validator;

@@ -31,8 +31,8 @@ class ClienteTable extends Table
         parent::initialize($config);
 
         $this->setTable('cliente');
-        $this->setDisplayField('Idcliente');
-        $this->setPrimaryKey('Idcliente');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,9 +44,13 @@ class ClienteTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('Idcliente')
-            ->maxLength('Idcliente', 10)
-            ->allowEmpty('Idcliente', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('Cedula')
+            ->maxLength('Cedula', 11)
+            ->allowEmpty('Cedula');
 
         $validator
             ->scalar('Nombres')

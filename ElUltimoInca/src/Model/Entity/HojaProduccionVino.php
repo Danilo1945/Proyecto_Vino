@@ -6,16 +6,16 @@ use Cake\ORM\Entity;
 /**
  * HojaProduccionVino Entity
  *
- * @property int $id_hoja_pro
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_pro
- * @property string $id_inv
+ * @property int $id_inv
  * @property float $cant_fruta_klg
  * @property float $cant_agua_lts
  * @property float $cant_azucar_klg
  * @property float $cant_levadura_grms
  * @property float $numero_procesos
  * @property string $observacion_pro
- * @property string $id_tra
+ * @property int $id_tra
  */
 class HojaProduccionVino extends Entity
 {

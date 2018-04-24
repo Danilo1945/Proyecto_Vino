@@ -24,11 +24,11 @@ class VentaFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_ven' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'fecha_ven' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        'id_tra' => ['type' => 'string', 'length' => 15, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'Idcliente' => ['type' => 'string', 'length' => 10, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'id_pro_ter' => ['type' => 'integer', 'length' => 20, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'id_tra' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'Idcliente' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'id_pro_ter' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'precio_uni' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         'precio_total' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         'estado_cuenta' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -40,9 +40,10 @@ class VentaFixture extends TestFixture
             'id_pro_ter' => ['type' => 'index', 'columns' => ['id_pro_ter'], 'length' => []],
         ],
         '_constraints' => [
-            'venta_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_tra'], 'references' => ['trabajador', 'id_tra'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
-            'venta_ibfk_2' => ['type' => 'foreign', 'columns' => ['Idcliente'], 'references' => ['cliente', 'Idcliente'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
-            'venta_ibfk_3' => ['type' => 'foreign', 'columns' => ['id_pro_ter'], 'references' => ['producto_terminado', 'id_pro_ter'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'venta_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_tra'], 'references' => ['trabajador', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'venta_ibfk_2' => ['type' => 'foreign', 'columns' => ['Idcliente'], 'references' => ['cliente', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'venta_ibfk_3' => ['type' => 'foreign', 'columns' => ['id_pro_ter'], 'references' => ['producto_terminado', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -58,10 +59,10 @@ class VentaFixture extends TestFixture
      */
     public $records = [
         [
-            'id_ven' => 1,
-            'fecha_ven' => '2018-04-22',
-            'id_tra' => 'Lorem ipsum d',
-            'Idcliente' => 'Lorem ip',
+            'id' => 1,
+            'fecha_ven' => '2018-04-24',
+            'id_tra' => 1,
+            'Idcliente' => 1,
             'id_pro_ter' => 1,
             'precio_uni' => 1,
             'precio_total' => 1,

@@ -25,6 +25,7 @@ class ItemFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Iditem' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'Idventa' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'Idproducto_terminado' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
@@ -43,6 +44,13 @@ class ItemFixture extends TestFixture
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id_item'], 'length' => []],
 >>>>>>> aad36dacdf3881aeabdc527932b7437689d7e567
+=======
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'nom_item' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'detalle_item' => ['type' => 'string', 'length' => 200, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        '_constraints' => [
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+>>>>>>> 89fc6887533a1b710dc7716e8079275ba874dfba
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -59,11 +67,15 @@ class ItemFixture extends TestFixture
     public $records = [
         [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'Iditem' => 1,
             'Idventa' => 1,
             'Idproducto_terminado' => 1
 =======
             'id_item' => 1,
+=======
+            'id' => 1,
+>>>>>>> 89fc6887533a1b710dc7716e8079275ba874dfba
             'nom_item' => 'Lorem ipsum dolor sit amet',
             'detalle_item' => 'Lorem ipsum dolor sit amet'
 >>>>>>> aad36dacdf3881aeabdc527932b7437689d7e567

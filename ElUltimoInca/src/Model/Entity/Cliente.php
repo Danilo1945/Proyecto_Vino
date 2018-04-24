@@ -6,7 +6,8 @@ use Cake\ORM\Entity;
 /**
  * Cliente Entity
  *
- * @property string $Idcliente
+ * @property int $id
+ * @property string $Cedula
  * @property string $Nombres
  * @property string $Apellidos
  * @property string $Telefono
@@ -28,6 +29,7 @@ class Cliente extends Entity
      * @var array
      */
     protected $_accessible = [
+        'Cedula' => true,
         'Nombres' => true,
         'Apellidos' => true,
         'Telefono' => true,

@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Empresa Entity
  *
- * @property int $id_emp
+ * @property int $id
  * @property string $nombre
  * @property string $direccion
  * @property string $email

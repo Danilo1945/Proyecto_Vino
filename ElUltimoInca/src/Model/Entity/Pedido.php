@@ -6,11 +6,11 @@ use Cake\ORM\Entity;
 /**
  * Pedido Entity
  *
- * @property int $Idpedido
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $Fecha
  * @property int $Cantidad
  * @property string $unidad_medida
- * @property string $Idcliente
+ * @property int $Idcliente
  * @property int $id_pro_ter
  */
 class Pedido extends Entity

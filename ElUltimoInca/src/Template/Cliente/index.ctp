@@ -4,56 +4,73 @@
  * @var \App\Model\Entity\Cliente[]|\Cake\Collection\CollectionInterface $cliente
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Cliente'), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="cliente index large-9 medium-8 columns content">
-    <h3><?= __('Cliente') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('Idcliente') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Apellidos') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Telefono') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Direccion') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('password') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($cliente as $cliente): ?>
-            <tr>
-                <td><?= h($cliente->Idcliente) ?></td>
-                <td><?= h($cliente->Nombres) ?></td>
-                <td><?= h($cliente->Apellidos) ?></td>
-                <td><?= h($cliente->Telefono) ?></td>
-                <td><?= h($cliente->Direccion) ?></td>
-                <td><?= h($cliente->Email) ?></td>
-                <td><?= h($cliente->user) ?></td>
-                <td><?= h($cliente->password) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $cliente->Idcliente]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cliente->Idcliente]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cliente->Idcliente], ['confirm' => __('Are you sure you want to delete # {0}?', $cliente->Idcliente)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+<div class="hide">
+    
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('New Cliente'), ['action' => 'add']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <span class="card-title green-text"><?= __('Cliente') ?></span>
+                <table class="responsive-table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Cedula') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Apellidos') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Telefono') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Direccion') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Email') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('user') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('password') ?></th>
+                            <th><?= __('Actions') ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($cliente as $cliente): ?>
+                        <tr>
+                            <td><?= $this->Number->format($cliente->id) ?></td>
+                            <td><?= h($cliente->Cedula) ?></td>
+                            <td><?= h($cliente->Nombres) ?></td>
+                            <td><?= h($cliente->Apellidos) ?></td>
+                            <td><?= h($cliente->Telefono) ?></td>
+                            <td><?= h($cliente->Direccion) ?></td>
+                            <td><?= h($cliente->Email) ?></td>
+                            <td><?= h($cliente->user) ?></td>
+                            <td><?= h($cliente->password) ?></td>
+                            <td>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $cliente->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $cliente->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $cliente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cliente->id), 'escape' => false]) ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="center">
+            <ul class="pagination">
+                <?= $this->Paginator->first('<i class="material-icons">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
+                <?= $this->Paginator->prev('<i class="material-icons">chevron_left</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
+                <?= $this->Paginator->numbers() ?>
+                <?= $this->Paginator->next('<i class="material-icons">chevron_right</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
+                <?= $this->Paginator->last('<i class="material-icons">last_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
+            </ul>
+        </div>
+
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
     </div>
 </div>

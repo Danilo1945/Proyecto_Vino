@@ -31,6 +31,8 @@ class VentaTable extends Table
         parent::initialize($config);
 
         $this->setTable('venta');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -42,21 +44,19 @@ class VentaTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_ven')
-            ->allowEmpty('id_ven');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha_ven')
             ->allowEmpty('fecha_ven');
 
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
+            ->integer('id_tra')
             ->allowEmpty('id_tra');
 
         $validator
-            ->scalar('Idcliente')
-            ->maxLength('Idcliente', 10)
+            ->integer('Idcliente')
             ->allowEmpty('Idcliente');
 
         $validator

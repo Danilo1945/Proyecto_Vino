@@ -4,27 +4,41 @@
  * @var \App\Model\Entity\Item $item
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $item->id_item],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $item->id_item)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Item'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="item form large-9 medium-8 columns content">
-    <?= $this->Form->create($item) ?>
-    <fieldset>
-        <legend><?= __('Edit Item') ?></legend>
-        <?php
-            echo $this->Form->control('nom_item');
-            echo $this->Form->control('detalle_item');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Form->postLink(
+                            __('Delete'),
+                            ['action' => 'delete', $item->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $item->id)]
+                            )
+                            ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Item'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($item) ?>
+                <span class="card-title green-text"><?= __('Edit Item') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('nom_item') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('detalle_item') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

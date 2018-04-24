@@ -24,17 +24,17 @@ class InventarioEmpresaFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_inv' => ['type' => 'string', 'length' => 20, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'nombre_art_inv' => ['type' => 'string', 'length' => 40, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'descripcion_inv' => ['type' => 'string', 'length' => 200, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'color_inv' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'id_item' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'id_item' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_indexes' => [
             'id_item' => ['type' => 'index', 'columns' => ['id_item'], 'length' => []],
         ],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_inv'], 'length' => []],
-            'inventario_empresa_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_item'], 'references' => ['item', 'id_item'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'inventario_empresa_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_item'], 'references' => ['item', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -50,7 +50,7 @@ class InventarioEmpresaFixture extends TestFixture
      */
     public $records = [
         [
-            'id_inv' => '15614693-0db3-40e9-b951-9dfd609c2928',
+            'id' => 1,
             'nombre_art_inv' => 'Lorem ipsum dolor sit amet',
             'descripcion_inv' => 'Lorem ipsum dolor sit amet',
             'color_inv' => 'Lorem ipsum dolor ',

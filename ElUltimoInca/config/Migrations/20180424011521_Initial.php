@@ -6,12 +6,36 @@ class Initial extends AbstractMigration
     public function up()
     {
 
-        $this->table('administrador', ['id' => false, 'primary_key' => ['Id_adm']])
-            ->addColumn('Id_adm', 'integer', [
-                'autoIncrement' => true,
+        $this->table('administrador')
+            ->addColumn('Cedula', 'string', [
+                'default' => null,
+                'limit' => 11,
+                'null' => true,
+            ])
+            ->addColumn('Nombres', 'string', [
                 'default' => null,
                 'limit' => 30,
-                'null' => false,
+                'null' => true,
+            ])
+            ->addColumn('Apellidos', 'string', [
+                'default' => null,
+                'limit' => 30,
+                'null' => true,
+            ])
+            ->addColumn('Telefono', 'string', [
+                'default' => null,
+                'limit' => 12,
+                'null' => true,
+            ])
+            ->addColumn('Direccion', 'string', [
+                'default' => null,
+                'limit' => 100,
+                'null' => true,
+            ])
+            ->addColumn('Email', 'string', [
+                'default' => null,
+                'limit' => 50,
+                'null' => true,
             ])
             ->addColumn('user', 'string', [
                 'default' => null,
@@ -30,13 +54,7 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('area_produccion', ['id' => false, 'primary_key' => ['id_area_pro']])
-            ->addColumn('id_area_pro', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 10,
-                'null' => false,
-            ])
+        $this->table('area_produccion')
             ->addColumn('fecha_elaboracion', 'date', [
                 'default' => null,
                 'limit' => null,
@@ -74,17 +92,17 @@ class Initial extends AbstractMigration
             ])
             ->addColumn('id_uni_medi', 'integer', [
                 'default' => null,
-                'limit' => 10,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('id_tra', 'string', [
+            ->addColumn('id_tra', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('id_inv', 'string', [
+            ->addColumn('id_inv', 'integer', [
                 'default' => null,
-                'limit' => 20,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -104,11 +122,11 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('cliente', ['id' => false, 'primary_key' => ['Idcliente']])
-            ->addColumn('Idcliente', 'string', [
+        $this->table('cliente')
+            ->addColumn('Cedula', 'string', [
                 'default' => null,
-                'limit' => 10,
-                'null' => false,
+                'limit' => 11,
+                'null' => true,
             ])
             ->addColumn('Nombres', 'string', [
                 'default' => null,
@@ -147,13 +165,7 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('compra_mat_pri', ['id' => false, 'primary_key' => ['id_cmp']])
-            ->addColumn('id_cmp', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 10,
-                'null' => false,
-            ])
+        $this->table('compra_mat_pri')
             ->addColumn('fecha_mat', 'date', [
                 'default' => null,
                 'limit' => null,
@@ -174,19 +186,19 @@ class Initial extends AbstractMigration
                 'limit' => 100,
                 'null' => true,
             ])
-            ->addColumn('id_pro', 'string', [
+            ->addColumn('id_pro', 'integer', [
                 'default' => null,
-                'limit' => 30,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('id_tra', 'string', [
+            ->addColumn('id_tra', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('id_mat_prim', 'string', [
+            ->addColumn('id_mat_prim', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -206,13 +218,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('empresa', ['id' => false, 'primary_key' => ['id_emp']])
-            ->addColumn('id_emp', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 10,
-                'null' => false,
-            ])
+        $this->table('empresa')
             ->addColumn('nombre', 'string', [
                 'default' => null,
                 'limit' => 70,
@@ -230,21 +236,15 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('hoja_produccion_vino', ['id' => false, 'primary_key' => ['id_hoja_pro']])
-            ->addColumn('id_hoja_pro', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 20,
-                'null' => false,
-            ])
+        $this->table('hoja_produccion_vino')
             ->addColumn('fecha_pro', 'date', [
                 'default' => null,
                 'limit' => null,
                 'null' => true,
             ])
-            ->addColumn('id_inv', 'string', [
+            ->addColumn('id_inv', 'integer', [
                 'default' => null,
-                'limit' => 20,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addColumn('cant_fruta_klg', 'float', [
@@ -277,9 +277,9 @@ class Initial extends AbstractMigration
                 'limit' => 200,
                 'null' => true,
             ])
-            ->addColumn('id_tra', 'string', [
+            ->addColumn('id_tra', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -294,12 +294,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('inventario_empresa', ['id' => false, 'primary_key' => ['id_inv']])
-            ->addColumn('id_inv', 'string', [
-                'default' => null,
-                'limit' => 20,
-                'null' => false,
-            ])
+        $this->table('inventario_empresa')
             ->addColumn('nombre_art_inv', 'string', [
                 'default' => null,
                 'limit' => 40,
@@ -317,7 +312,7 @@ class Initial extends AbstractMigration
             ])
             ->addColumn('id_item', 'integer', [
                 'default' => null,
-                'limit' => 30,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -327,13 +322,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('item', ['id' => false, 'primary_key' => ['id_item']])
-            ->addColumn('id_item', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 30,
-                'null' => false,
-            ])
+        $this->table('item')
             ->addColumn('nom_item', 'string', [
                 'default' => null,
                 'limit' => 50,
@@ -346,12 +335,7 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('materia_prima', ['id' => false, 'primary_key' => ['id_mat_prim']])
-            ->addColumn('id_mat_prim', 'string', [
-                'default' => null,
-                'limit' => 15,
-                'null' => false,
-            ])
+        $this->table('materia_prima')
             ->addColumn('nombre_mat_pri', 'string', [
                 'default' => null,
                 'limit' => 50,
@@ -362,25 +346,19 @@ class Initial extends AbstractMigration
                 'limit' => 100,
                 'null' => true,
             ])
-            ->addColumn('id_uni_medi', 'integer', [
+            ->addColumn('unm_id', 'integer', [
                 'default' => null,
-                'limit' => 10,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
                 [
-                    'id_uni_medi',
+                    'unm_id',
                 ]
             )
             ->create();
 
-        $this->table('pedido', ['id' => false, 'primary_key' => ['Idpedido']])
-            ->addColumn('Idpedido', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 10,
-                'null' => false,
-            ])
+        $this->table('pedido')
             ->addColumn('Fecha', 'date', [
                 'default' => null,
                 'limit' => null,
@@ -396,14 +374,14 @@ class Initial extends AbstractMigration
                 'limit' => 20,
                 'null' => true,
             ])
-            ->addColumn('Idcliente', 'string', [
+            ->addColumn('Idcliente', 'integer', [
                 'default' => null,
-                'limit' => 10,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addColumn('id_pro_ter', 'integer', [
                 'default' => null,
-                'limit' => 20,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -418,13 +396,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('producto_terminado', ['id' => false, 'primary_key' => ['id_pro_ter']])
-            ->addColumn('id_pro_ter', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 20,
-                'null' => false,
-            ])
+        $this->table('producto_terminado')
             ->addColumn('fecha', 'date', [
                 'default' => null,
                 'limit' => null,
@@ -490,14 +462,14 @@ class Initial extends AbstractMigration
                 'limit' => 200,
                 'null' => true,
             ])
-            ->addColumn('id_mat_prim', 'string', [
+            ->addColumn('id_mat_prim', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('id_tra', 'string', [
+            ->addColumn('id_tra', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addIndex(
@@ -512,11 +484,11 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('proveedor', ['id' => false, 'primary_key' => ['id_pro']])
-            ->addColumn('id_pro', 'string', [
+        $this->table('proveedor')
+            ->addColumn('cedula', 'string', [
                 'default' => null,
-                'limit' => 30,
-                'null' => false,
+                'limit' => 11,
+                'null' => true,
             ])
             ->addColumn('nombres_pro', 'string', [
                 'default' => null,
@@ -550,13 +522,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('salidas', ['id' => false, 'primary_key' => ['id_sal']])
-            ->addColumn('id_sal', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 20,
-                'null' => false,
-            ])
+        $this->table('salidas')
             ->addColumn('fecha_sal', 'date', [
                 'default' => null,
                 'limit' => null,
@@ -599,11 +565,11 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('socio', ['id' => false, 'primary_key' => ['id_so']])
-            ->addColumn('id_so', 'string', [
+        $this->table('socio')
+            ->addColumn('cedula', 'string', [
                 'default' => null,
-                'limit' => 10,
-                'null' => false,
+                'limit' => 11,
+                'null' => true,
             ])
             ->addColumn('Nombres', 'string', [
                 'default' => null,
@@ -632,11 +598,11 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('trabajador', ['id' => false, 'primary_key' => ['id_tra']])
-            ->addColumn('id_tra', 'string', [
+        $this->table('trabajador')
+            ->addColumn('cedula', 'string', [
                 'default' => null,
-                'limit' => 15,
-                'null' => false,
+                'limit' => 11,
+                'null' => true,
             ])
             ->addColumn('Nombres_tra', 'string', [
                 'default' => null,
@@ -665,13 +631,7 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('unidad_medida', ['id' => false, 'primary_key' => ['id_uni_medi']])
-            ->addColumn('id_uni_medi', 'integer', [
-                'autoIncrement' => true,
-                'default' => null,
-                'limit' => 10,
-                'null' => false,
-            ])
+        $this->table('unidad_medida')
             ->addColumn('nombre_umed', 'string', [
                 'default' => null,
                 'limit' => 30,
@@ -684,30 +644,25 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('venta', ['id' => false, 'primary_key' => ['']])
-            ->addColumn('id_ven', 'integer', [
-                'default' => null,
-                'limit' => 30,
-                'null' => true,
-            ])
+        $this->table('venta')
             ->addColumn('fecha_ven', 'date', [
                 'default' => null,
                 'limit' => null,
                 'null' => true,
             ])
-            ->addColumn('id_tra', 'string', [
+            ->addColumn('id_tra', 'integer', [
                 'default' => null,
-                'limit' => 15,
+                'limit' => 11,
                 'null' => true,
             ])
-            ->addColumn('Idcliente', 'string', [
+            ->addColumn('Idcliente', 'integer', [
                 'default' => null,
-                'limit' => 10,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addColumn('id_pro_ter', 'integer', [
                 'default' => null,
-                'limit' => 20,
+                'limit' => 11,
                 'null' => true,
             ])
             ->addColumn('precio_uni', 'float', [
@@ -756,7 +711,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_inv',
                 'inventario_empresa',
-                'id_inv',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -765,7 +720,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_tra',
                 'trabajador',
-                'id_tra',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -774,7 +729,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_uni_medi',
                 'unidad_medida',
-                'id_uni_medi',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -786,7 +741,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_mat_prim',
                 'materia_prima',
-                'id_mat_prim',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -795,7 +750,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_pro',
                 'proveedor',
-                'id_pro',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -804,7 +759,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_tra',
                 'trabajador',
-                'id_tra',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -816,7 +771,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_inv',
                 'inventario_empresa',
-                'id_inv',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -825,7 +780,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_tra',
                 'trabajador',
-                'id_tra',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -837,7 +792,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_item',
                 'item',
-                'id_item',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -847,9 +802,9 @@ class Initial extends AbstractMigration
 
         $this->table('materia_prima')
             ->addForeignKey(
-                'id_uni_medi',
+                'unm_id',
                 'unidad_medida',
-                'id_uni_medi',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -861,7 +816,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'Idcliente',
                 'cliente',
-                'Idcliente',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -870,7 +825,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_pro_ter',
                 'producto_terminado',
-                'id_pro_ter',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -882,7 +837,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_mat_prim',
                 'materia_prima',
-                'id_mat_prim',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -891,7 +846,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_tra',
                 'trabajador',
-                'id_tra',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -903,7 +858,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_emp',
                 'empresa',
-                'id_emp',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -915,7 +870,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'Idcliente',
                 'cliente',
-                'Idcliente',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -924,7 +879,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_pro_ter',
                 'producto_terminado',
-                'id_pro_ter',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -933,7 +888,7 @@ class Initial extends AbstractMigration
             ->addForeignKey(
                 'id_tra',
                 'trabajador',
-                'id_tra',
+                'id',
                 [
                     'update' => 'RESTRICT',
                     'delete' => 'CASCADE'
@@ -981,7 +936,7 @@ class Initial extends AbstractMigration
 
         $this->table('materia_prima')
             ->dropForeignKey(
-                'id_uni_medi'
+                'unm_id'
             );
 
         $this->table('pedido')

@@ -31,8 +31,8 @@ class SocioTable extends Table
         parent::initialize($config);
 
         $this->setTable('socio');
-        $this->setDisplayField('id_so');
-        $this->setPrimaryKey('id_so');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,9 +44,13 @@ class SocioTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('id_so')
-            ->maxLength('id_so', 10)
-            ->allowEmpty('id_so', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('cedula')
+            ->maxLength('cedula', 11)
+            ->allowEmpty('cedula');
 
         $validator
             ->scalar('Nombres')

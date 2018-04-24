@@ -6,10 +6,10 @@ use Cake\ORM\Entity;
 /**
  * Ventum Entity
  *
- * @property int $id_ven
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_ven
- * @property string $id_tra
- * @property string $Idcliente
+ * @property int $id_tra
+ * @property int $Idcliente
  * @property int $id_pro_ter
  * @property float $precio_uni
  * @property float $precio_total
@@ -30,7 +30,6 @@ class Ventum extends Entity
      * @var array
      */
     protected $_accessible = [
-        'id_ven' => true,
         'fecha_ven' => true,
         'id_tra' => true,
         'Idcliente' => true,

@@ -1,84 +1,130 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\ProductoTerminado $productoTerminado
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\ProductoTerminado $productoTerminado
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Producto Terminado'), ['action' => 'edit', $productoTerminado->id_pro_ter]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Producto Terminado'), ['action' => 'delete', $productoTerminado->id_pro_ter], ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id_pro_ter)]) ?> </li>
-        <li><?= $this->Html->link(__('List Producto Terminado'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Producto Terminado'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="productoTerminado view large-9 medium-8 columns content">
-    <h3><?= h($productoTerminado->id_pro_ter) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Lote Pro Ter') ?></th>
-            <td><?= h($productoTerminado->lote_pro_ter) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Cantidad Pro Ter') ?></th>
-            <td><?= h($productoTerminado->cantidad_pro_ter) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Observaciones') ?></th>
-            <td><?= h($productoTerminado->observaciones) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Mat Prim') ?></th>
-            <td><?= h($productoTerminado->id_mat_prim) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Tra') ?></th>
-            <td><?= h($productoTerminado->id_tra) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Pro Ter') ?></th>
-            <td><?= $this->Number->format($productoTerminado->id_pro_ter) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Pasteurizacion') ?></th>
-            <td><?= $this->Number->format($productoTerminado->pasteurizacion) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Valor Cantidad Pro') ?></th>
-            <td><?= $this->Number->format($productoTerminado->valor_cantidad_pro) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Brix') ?></th>
-            <td><?= $this->Number->format($productoTerminado->brix) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Valor Etiqueta') ?></th>
-            <td><?= $this->Number->format($productoTerminado->valor_etiqueta) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Valor Corcho') ?></th>
-            <td><?= $this->Number->format($productoTerminado->valor_corcho) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Valor Capuchon') ?></th>
-            <td><?= $this->Number->format($productoTerminado->valor_capuchon) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Num Cinta Sri') ?></th>
-            <td><?= $this->Number->format($productoTerminado->num_cinta_sri) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Num Cinta Inca') ?></th>
-            <td><?= $this->Number->format($productoTerminado->num_cinta_inca) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha') ?></th>
-            <td><?= h($productoTerminado->fecha) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Elb') ?></th>
-            <td><?= h($productoTerminado->fecha_elb) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Producto Terminado'), ['action' => 'edit', $productoTerminado->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Producto Terminado'), ['action' => 'delete', $productoTerminado->id], ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Producto Terminado'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Producto Terminado'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($productoTerminado->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Lote Pro Ter') ?>
+                        <div class="secondary-content">
+                            <?= h($productoTerminado->lote_pro_ter) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Cantidad Pro Ter') ?>
+                        <div class="secondary-content">
+                            <?= h($productoTerminado->cantidad_pro_ter) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Observaciones') ?>
+                        <div class="secondary-content">
+                            <?= h($productoTerminado->observaciones) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Pasteurizacion') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->pasteurizacion) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Valor Cantidad Pro') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->valor_cantidad_pro) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Brix') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->brix) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Valor Etiqueta') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->valor_etiqueta) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Valor Corcho') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->valor_corcho) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Valor Capuchon') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->valor_capuchon) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Num Cinta Sri') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->num_cinta_sri) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Num Cinta Inca') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->num_cinta_inca) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Mat Prim') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->id_mat_prim) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Tra') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($productoTerminado->id_tra) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha') ?>
+                        <div class="secondary-content">
+                            <?= h($productoTerminado->fecha) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Elb') ?>
+                        <div class="secondary-content">
+                            <?= h($productoTerminado->fecha_elb) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

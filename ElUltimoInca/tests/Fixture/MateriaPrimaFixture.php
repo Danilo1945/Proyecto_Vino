@@ -24,16 +24,16 @@ class MateriaPrimaFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_mat_prim' => ['type' => 'string', 'length' => 15, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'nombre_mat_pri' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'descripcion_mat_pri' => ['type' => 'string', 'length' => 100, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'id_uni_medi' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'unm_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_indexes' => [
-            'id_uni_medi' => ['type' => 'index', 'columns' => ['id_uni_medi'], 'length' => []],
+            'unm_id' => ['type' => 'index', 'columns' => ['unm_id'], 'length' => []],
         ],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_mat_prim'], 'length' => []],
-            'materia_prima_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_uni_medi'], 'references' => ['unidad_medida', 'id_uni_medi'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'materia_prima_ibfk_1' => ['type' => 'foreign', 'columns' => ['unm_id'], 'references' => ['unidad_medida', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -49,10 +49,10 @@ class MateriaPrimaFixture extends TestFixture
      */
     public $records = [
         [
-            'id_mat_prim' => '0b862681-a5e3-4f6d-9a7c-c8998023f7a8',
+            'id' => 1,
             'nombre_mat_pri' => 'Lorem ipsum dolor sit amet',
             'descripcion_mat_pri' => 'Lorem ipsum dolor sit amet',
-            'id_uni_medi' => 1
+            'unm_id' => 1
         ],
     ];
 }

@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * AreaProduccion Entity
  *
- * @property int $id_area_pro
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_elaboracion
  * @property string $num_procesos
  * @property int $brix_area_pro
@@ -15,8 +15,8 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $fecha_control
  * @property string $observaciones_area_pro
  * @property int $id_uni_medi
- * @property string $id_tra
- * @property string $id_inv
+ * @property int $id_tra
+ * @property int $id_inv
  */
 class AreaProduccion extends Entity
 {

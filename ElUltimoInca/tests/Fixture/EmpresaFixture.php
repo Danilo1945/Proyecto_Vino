@@ -24,12 +24,12 @@ class EmpresaFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_emp' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'nombre' => ['type' => 'string', 'length' => 70, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'direccion' => ['type' => 'string', 'length' => 100, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'email' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_emp'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -45,7 +45,7 @@ class EmpresaFixture extends TestFixture
      */
     public $records = [
         [
-            'id_emp' => 1,
+            'id' => 1,
             'nombre' => 'Lorem ipsum dolor sit amet',
             'direccion' => 'Lorem ipsum dolor sit amet',
             'email' => 'Lorem ipsum dolor sit amet'

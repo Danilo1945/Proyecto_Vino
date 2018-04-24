@@ -31,8 +31,8 @@ class AdministradorTable extends Table
         parent::initialize($config);
 
         $this->setTable('administrador');
-        $this->setDisplayField('Id_adm');
-        $this->setPrimaryKey('Id_adm');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,38 @@ class AdministradorTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('Id_adm')
-            ->allowEmpty('Id_adm', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('Cedula')
+            ->maxLength('Cedula', 11)
+            ->allowEmpty('Cedula');
+
+        $validator
+            ->scalar('Nombres')
+            ->maxLength('Nombres', 30)
+            ->allowEmpty('Nombres');
+
+        $validator
+            ->scalar('Apellidos')
+            ->maxLength('Apellidos', 30)
+            ->allowEmpty('Apellidos');
+
+        $validator
+            ->scalar('Telefono')
+            ->maxLength('Telefono', 12)
+            ->allowEmpty('Telefono');
+
+        $validator
+            ->scalar('Direccion')
+            ->maxLength('Direccion', 100)
+            ->allowEmpty('Direccion');
+
+        $validator
+            ->scalar('Email')
+            ->maxLength('Email', 50)
+            ->allowEmpty('Email');
 
         $validator
             ->scalar('user')

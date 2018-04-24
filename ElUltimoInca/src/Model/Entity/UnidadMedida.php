@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * UnidadMedida Entity
  *
- * @property int $id_uni_medi
+ * @property int $id
  * @property string $nombre_umed
  * @property string $detalle_umed
  */

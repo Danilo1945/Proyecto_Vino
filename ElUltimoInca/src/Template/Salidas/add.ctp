@@ -4,27 +4,54 @@
  * @var \App\Model\Entity\Salida $salida
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="salidas form large-9 medium-8 columns content">
-    <?= $this->Form->create($salida) ?>
-    <fieldset>
-        <legend><?= __('Add Salida') ?></legend>
-        <?php
-            echo $this->Form->control('fecha_sal', ['empty' => true]);
-            echo $this->Form->control('saldo_sal');
-            echo $this->Form->control('ingreso_sal');
-            echo $this->Form->control('egreso_sal');
-            echo $this->Form->control('donacion_sal');
-            echo $this->Form->control('devolucion_sal');
-            echo $this->Form->control('saldo_total');
-            echo $this->Form->control('observaciones_sal');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($salida) ?>
+                <span class="card-title green-text"><?= __('Add Salida') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('fecha_sal', ['type' => 'text', 'class' => 'datepicker']) ?>
+                </div>
+
+                <div class="input-field">
+                    <?= $this->Form->control('saldo_sal') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('ingreso_sal') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('egreso_sal') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('donacion_sal') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('devolucion_sal') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('saldo_total') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('observaciones_sal') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

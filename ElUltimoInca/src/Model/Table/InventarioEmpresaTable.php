@@ -31,8 +31,8 @@ class InventarioEmpresaTable extends Table
         parent::initialize($config);
 
         $this->setTable('inventario_empresa');
-        $this->setDisplayField('id_inv');
-        $this->setPrimaryKey('id_inv');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,9 +44,8 @@ class InventarioEmpresaTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('id_inv')
-            ->maxLength('id_inv', 20)
-            ->allowEmpty('id_inv', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('nombre_art_inv')

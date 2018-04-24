@@ -4,40 +4,82 @@
  * @var \App\Model\Entity\ProductoTerminado $productoTerminado
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $productoTerminado->id_pro_ter],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id_pro_ter)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Producto Terminado'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="productoTerminado form large-9 medium-8 columns content">
-    <?= $this->Form->create($productoTerminado) ?>
-    <fieldset>
-        <legend><?= __('Edit Producto Terminado') ?></legend>
-        <?php
-            echo $this->Form->control('fecha', ['empty' => true]);
-            echo $this->Form->control('pasteurizacion');
-            echo $this->Form->control('fecha_elb', ['empty' => true]);
-            echo $this->Form->control('lote_pro_ter');
-            echo $this->Form->control('cantidad_pro_ter');
-            echo $this->Form->control('valor_cantidad_pro');
-            echo $this->Form->control('brix');
-            echo $this->Form->control('valor_etiqueta');
-            echo $this->Form->control('valor_corcho');
-            echo $this->Form->control('valor_capuchon');
-            echo $this->Form->control('num_cinta_sri');
-            echo $this->Form->control('num_cinta_inca');
-            echo $this->Form->control('observaciones');
-            echo $this->Form->control('id_mat_prim');
-            echo $this->Form->control('id_tra');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Form->postLink(
+                            __('Delete'),
+                            ['action' => 'delete', $productoTerminado->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id)]
+                            )
+                            ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Producto Terminado'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($productoTerminado) ?>
+                <span class="card-title green-text"><?= __('Edit Producto Terminado') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('fecha', ['type' => 'text', 'class' => 'datepicker']) ?>
+                </div>
+
+                <div class="input-field">
+                    <?= $this->Form->control('pasteurizacion') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('fecha_elb', ['type' => 'text', 'class' => 'datepicker']) ?>
+                </div>
+
+                <div class="input-field">
+                    <?= $this->Form->control('lote_pro_ter') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('cantidad_pro_ter') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('valor_cantidad_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('brix') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('valor_etiqueta') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('valor_corcho') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('valor_capuchon') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('num_cinta_sri') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('num_cinta_inca') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('observaciones') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_mat_prim') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_tra') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

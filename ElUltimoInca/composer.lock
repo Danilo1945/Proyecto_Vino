@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88b55ec918bdc2e58836f91c053a4caa",
+    "content-hash": "875e689edbaff10c83303de8d69678ef",
     "packages": [
         {
             "name": "aura/intl",
@@ -339,6 +339,46 @@
                 "twitter"
             ],
             "time": "2018-04-16T21:52:50+00:00"
+        },
+        {
+            "name": "jeffersonbehling/materialize-theme-cakephp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersonbehling/materialize-theme-cakephp.git",
+                "reference": "9ef76d40bfedf171e1327c64490a29e7329b87e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersonbehling/materialize-theme-cakephp/zipball/9ef76d40bfedf171e1327c64490a29e7329b87e6",
+                "reference": "9ef76d40bfedf171e1327c64490a29e7329b87e6",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Materialize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Vantuir",
+                    "homepage": "https://jeffersonbehling.github.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "Materialize plugin for CakePHP",
+            "time": "2018-03-23T15:23:03+00:00"
         },
         {
             "name": "josegonzalez/dotenv",
@@ -2599,6 +2639,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "jeffersonbehling/materialize-theme-cakephp": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,
