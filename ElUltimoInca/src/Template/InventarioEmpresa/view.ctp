@@ -1,40 +1,64 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\InventarioEmpresa $inventarioEmpresa
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\InventarioEmpresa $inventarioEmpresa
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Inventario Empresa'), ['action' => 'edit', $inventarioEmpresa->id_inv]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Inventario Empresa'), ['action' => 'delete', $inventarioEmpresa->id_inv], ['confirm' => __('Are you sure you want to delete # {0}?', $inventarioEmpresa->id_inv)]) ?> </li>
-        <li><?= $this->Html->link(__('List Inventario Empresa'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Inventario Empresa'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="inventarioEmpresa view large-9 medium-8 columns content">
-    <h3><?= h($inventarioEmpresa->id_inv) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Id Inv') ?></th>
-            <td><?= h($inventarioEmpresa->id_inv) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Nombre Art Inv') ?></th>
-            <td><?= h($inventarioEmpresa->nombre_art_inv) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Descripcion Inv') ?></th>
-            <td><?= h($inventarioEmpresa->descripcion_inv) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Color Inv') ?></th>
-            <td><?= h($inventarioEmpresa->color_inv) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Item') ?></th>
-            <td><?= $this->Number->format($inventarioEmpresa->id_item) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Inventario Empresa'), ['action' => 'edit', $inventarioEmpresa->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Inventario Empresa'), ['action' => 'delete', $inventarioEmpresa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $inventarioEmpresa->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Inventario Empresa'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Inventario Empresa'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($inventarioEmpresa->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Nombre Art Inv') ?>
+                        <div class="secondary-content">
+                            <?= h($inventarioEmpresa->nombre_art_inv) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Descripcion Inv') ?>
+                        <div class="secondary-content">
+                            <?= h($inventarioEmpresa->descripcion_inv) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Color Inv') ?>
+                        <div class="secondary-content">
+                            <?= h($inventarioEmpresa->color_inv) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($inventarioEmpresa->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Item') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($inventarioEmpresa->id_item) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

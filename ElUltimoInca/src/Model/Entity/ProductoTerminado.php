@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * ProductoTerminado Entity
  *
- * @property int $id_pro_ter
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha
  * @property int $pasteurizacion
  * @property \Cake\I18n\FrozenDate $fecha_elb
@@ -20,8 +20,8 @@ use Cake\ORM\Entity;
  * @property int $num_cinta_sri
  * @property int $num_cinta_inca
  * @property string $observaciones
- * @property string $id_mat_prim
- * @property string $id_tra
+ * @property int $id_mat_prim
+ * @property int $id_tra
  */
 class ProductoTerminado extends Entity
 {

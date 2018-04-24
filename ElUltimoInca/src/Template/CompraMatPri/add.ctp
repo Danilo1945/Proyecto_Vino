@@ -4,26 +4,51 @@
  * @var \App\Model\Entity\CompraMatPri $compraMatPri
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="compraMatPri form large-9 medium-8 columns content">
-    <?= $this->Form->create($compraMatPri) ?>
-    <fieldset>
-        <legend><?= __('Add Compra Mat Pri') ?></legend>
-        <?php
-            echo $this->Form->control('fecha_mat', ['empty' => true]);
-            echo $this->Form->control('precio_u_mat');
-            echo $this->Form->control('precio_tot_mat');
-            echo $this->Form->control('observaciones_mat');
-            echo $this->Form->control('id_pro');
-            echo $this->Form->control('id_tra');
-            echo $this->Form->control('id_mat_prim');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($compraMatPri) ?>
+                <span class="card-title green-text"><?= __('Add Compra Mat Pri') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('fecha_mat', ['type' => 'text', 'class' => 'datepicker']) ?>
+                </div>
+
+                <div class="input-field">
+                    <?= $this->Form->control('precio_u_mat') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('precio_tot_mat') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('observaciones_mat') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_tra') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_mat_prim') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

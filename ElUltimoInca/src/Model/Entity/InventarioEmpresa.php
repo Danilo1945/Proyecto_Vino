@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * InventarioEmpresa Entity
  *
- * @property string $id_inv
+ * @property int $id
  * @property string $nombre_art_inv
  * @property string $descripcion_inv
  * @property string $color_inv

@@ -4,30 +4,53 @@
  * @var \App\Model\Entity\Trabajador $trabajador
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $trabajador->id_tra],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id_tra)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Trabajador'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="trabajador form large-9 medium-8 columns content">
-    <?= $this->Form->create($trabajador) ?>
-    <fieldset>
-        <legend><?= __('Edit Trabajador') ?></legend>
-        <?php
-            echo $this->Form->control('Nombres_tra');
-            echo $this->Form->control('Apellidos_tra');
-            echo $this->Form->control('Telefono_tra');
-            echo $this->Form->control('Direccion_tra');
-            echo $this->Form->control('Email_tra');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Form->postLink(
+                            __('Delete'),
+                            ['action' => 'delete', $trabajador->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id)]
+                            )
+                            ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Trabajador'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($trabajador) ?>
+                <span class="card-title green-text"><?= __('Edit Trabajador') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('cedula') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('Nombres_tra') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('Apellidos_tra') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('Telefono_tra') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('Direccion_tra') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('Email_tra') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

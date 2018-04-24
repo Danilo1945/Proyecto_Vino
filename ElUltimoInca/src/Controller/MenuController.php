@@ -13,4 +13,24 @@ class MenuController extends AppController
     {
        
     }
+     public function home()
+    {
+       
+    }
+     public function acercaDe ()
+    {
+       
+    }
+     public function catalogo ()
+    {
+       
+    }
+     public function contactos()
+    {
+       
+    }
+     public function pedidos ()
+    {
+       
+    }
 }

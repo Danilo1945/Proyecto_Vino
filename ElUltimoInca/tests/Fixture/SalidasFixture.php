@@ -17,7 +17,7 @@ class SalidasFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_sal' => ['type' => 'integer', 'length' => 20, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'fecha_sal' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'saldo_sal' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         'ingreso_sal' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
@@ -27,7 +27,7 @@ class SalidasFixture extends TestFixture
         'saldo_total' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         'observaciones_sal' => ['type' => 'string', 'length' => 200, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_sal'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -43,8 +43,8 @@ class SalidasFixture extends TestFixture
      */
     public $records = [
         [
-            'id_sal' => 1,
-            'fecha_sal' => '2018-04-22',
+            'id' => 1,
+            'fecha_sal' => '2018-04-24',
             'saldo_sal' => 1,
             'ingreso_sal' => 1,
             'egreso_sal' => 1,

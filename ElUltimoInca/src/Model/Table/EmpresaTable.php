@@ -31,8 +31,8 @@ class EmpresaTable extends Table
         parent::initialize($config);
 
         $this->setTable('empresa');
-        $this->setDisplayField('id_emp');
-        $this->setPrimaryKey('id_emp');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class EmpresaTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_emp')
-            ->allowEmpty('id_emp', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('nombre')

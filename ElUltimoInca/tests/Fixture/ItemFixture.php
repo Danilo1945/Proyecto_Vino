@@ -24,11 +24,11 @@ class ItemFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_item' => ['type' => 'integer', 'length' => 30, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'nom_item' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'detalle_item' => ['type' => 'string', 'length' => 200, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_item'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -44,7 +44,7 @@ class ItemFixture extends TestFixture
      */
     public $records = [
         [
-            'id_item' => 1,
+            'id' => 1,
             'nom_item' => 'Lorem ipsum dolor sit amet',
             'detalle_item' => 'Lorem ipsum dolor sit amet'
         ],

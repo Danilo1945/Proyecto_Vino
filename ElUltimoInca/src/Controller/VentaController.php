@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Venta Controller
@@ -13,6 +14,11 @@ use App\Controller\AppController;
 class VentaController extends AppController
 {
 
+    public function beforeRender(Event $event)
+    {
+        parent::beforeRender($event);
+//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+    }
     /**
      * Index method
      *

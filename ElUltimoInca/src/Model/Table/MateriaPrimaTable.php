@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * MateriaPrima Model
  *
+ * @property \App\Model\Table\UnidadMedidaTable|\Cake\ORM\Association\BelongsTo $UnidadMedida
+ *
  * @method \App\Model\Entity\MateriaPrima get($primaryKey, $options = [])
  * @method \App\Model\Entity\MateriaPrima newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\MateriaPrima[] newEntities(array $data, array $options = [])
@@ -31,8 +33,12 @@ class MateriaPrimaTable extends Table
         parent::initialize($config);
 
         $this->setTable('materia_prima');
-        $this->setDisplayField('id_mat_prim');
-        $this->setPrimaryKey('id_mat_prim');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
+
+        $this->belongsTo('UnidadMedida', [
+            'foreignKey' => 'unm_id'
+        ]);
     }
 
     /**
@@ -44,9 +50,8 @@ class MateriaPrimaTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('id_mat_prim')
-            ->maxLength('id_mat_prim', 15)
-            ->allowEmpty('id_mat_prim', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('nombre_mat_pri')
@@ -58,10 +63,20 @@ class MateriaPrimaTable extends Table
             ->maxLength('descripcion_mat_pri', 100)
             ->allowEmpty('descripcion_mat_pri');
 
-        $validator
-            ->integer('id_uni_medi')
-            ->allowEmpty('id_uni_medi');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['unm_id'], 'UnidadMedida'));
+
+        return $rules;
     }
 }

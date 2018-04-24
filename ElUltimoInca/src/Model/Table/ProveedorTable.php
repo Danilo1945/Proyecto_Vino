@@ -31,8 +31,8 @@ class ProveedorTable extends Table
         parent::initialize($config);
 
         $this->setTable('proveedor');
-        $this->setDisplayField('id_pro');
-        $this->setPrimaryKey('id_pro');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,9 +44,13 @@ class ProveedorTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('id_pro')
-            ->maxLength('id_pro', 30)
-            ->allowEmpty('id_pro', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('cedula')
+            ->maxLength('cedula', 11)
+            ->allowEmpty('cedula');
 
         $validator
             ->scalar('nombres_pro')

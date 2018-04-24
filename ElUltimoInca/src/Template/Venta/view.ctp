@@ -1,60 +1,94 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Ventum $ventum
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Ventum $ventum
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Ventum'), ['action' => 'edit', $ventum->id_ven]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Ventum'), ['action' => 'delete', $ventum->id_ven], ['confirm' => __('Are you sure you want to delete # {0}?', $ventum->id_ven)]) ?> </li>
-        <li><?= $this->Html->link(__('List Venta'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Ventum'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="venta view large-9 medium-8 columns content">
-    <h3><?= h($ventum->id_ven) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Id Tra') ?></th>
-            <td><?= h($ventum->id_tra) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Idcliente') ?></th>
-            <td><?= h($ventum->Idcliente) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Estado Cuenta') ?></th>
-            <td><?= h($ventum->estado_cuenta) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Observaciones Ven') ?></th>
-            <td><?= h($ventum->observaciones_ven) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Ven') ?></th>
-            <td><?= $this->Number->format($ventum->id_ven) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Pro Ter') ?></th>
-            <td><?= $this->Number->format($ventum->id_pro_ter) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Precio Uni') ?></th>
-            <td><?= $this->Number->format($ventum->precio_uni) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Precio Total') ?></th>
-            <td><?= $this->Number->format($ventum->precio_total) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Valor Donacion Vent') ?></th>
-            <td><?= $this->Number->format($ventum->valor_donacion_vent) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Ven') ?></th>
-            <td><?= h($ventum->fecha_ven) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Ventum'), ['action' => 'edit', $ventum->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Ventum'), ['action' => 'delete', $ventum->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ventum->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Venta'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Ventum'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($ventum->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Estado Cuenta') ?>
+                        <div class="secondary-content">
+                            <?= h($ventum->estado_cuenta) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Observaciones Ven') ?>
+                        <div class="secondary-content">
+                            <?= h($ventum->observaciones_ven) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Tra') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->id_tra) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Idcliente') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->Idcliente) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Pro Ter') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->id_pro_ter) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Precio Uni') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->precio_uni) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Precio Total') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->precio_total) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Valor Donacion Vent') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($ventum->valor_donacion_vent) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Ven') ?>
+                        <div class="secondary-content">
+                            <?= h($ventum->fecha_ven) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

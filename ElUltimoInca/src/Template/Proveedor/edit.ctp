@@ -4,30 +4,53 @@
  * @var \App\Model\Entity\Proveedor $proveedor
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $proveedor->id_pro],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $proveedor->id_pro)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Proveedor'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="proveedor form large-9 medium-8 columns content">
-    <?= $this->Form->create($proveedor) ?>
-    <fieldset>
-        <legend><?= __('Edit Proveedor') ?></legend>
-        <?php
-            echo $this->Form->control('nombres_pro');
-            echo $this->Form->control('apellidos_pro');
-            echo $this->Form->control('telefono_pro');
-            echo $this->Form->control('email_pro');
-            echo $this->Form->control('id_emp');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Form->postLink(
+                            __('Delete'),
+                            ['action' => 'delete', $proveedor->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $proveedor->id)]
+                            )
+                            ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Proveedor'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($proveedor) ?>
+                <span class="card-title green-text"><?= __('Edit Proveedor') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('cedula') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('nombres_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('apellidos_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('telefono_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('email_pro') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('id_emp') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

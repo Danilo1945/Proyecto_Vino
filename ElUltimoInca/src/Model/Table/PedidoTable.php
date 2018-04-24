@@ -31,8 +31,8 @@ class PedidoTable extends Table
         parent::initialize($config);
 
         $this->setTable('pedido');
-        $this->setDisplayField('Idpedido');
-        $this->setPrimaryKey('Idpedido');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class PedidoTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('Idpedido')
-            ->allowEmpty('Idpedido', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('Fecha')
@@ -61,8 +61,7 @@ class PedidoTable extends Table
             ->allowEmpty('unidad_medida');
 
         $validator
-            ->scalar('Idcliente')
-            ->maxLength('Idcliente', 10)
+            ->integer('Idcliente')
             ->allowEmpty('Idcliente');
 
         $validator

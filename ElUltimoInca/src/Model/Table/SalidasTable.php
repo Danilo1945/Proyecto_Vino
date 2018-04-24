@@ -31,8 +31,8 @@ class SalidasTable extends Table
         parent::initialize($config);
 
         $this->setTable('salidas');
-        $this->setDisplayField('id_sal');
-        $this->setPrimaryKey('id_sal');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class SalidasTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_sal')
-            ->allowEmpty('id_sal', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha_sal')

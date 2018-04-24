@@ -1,44 +1,70 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Pedido $pedido
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Pedido $pedido
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Pedido'), ['action' => 'edit', $pedido->Idpedido]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Pedido'), ['action' => 'delete', $pedido->Idpedido], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->Idpedido)]) ?> </li>
-        <li><?= $this->Html->link(__('List Pedido'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Pedido'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="pedido view large-9 medium-8 columns content">
-    <h3><?= h($pedido->Idpedido) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Unidad Medida') ?></th>
-            <td><?= h($pedido->unidad_medida) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Idcliente') ?></th>
-            <td><?= h($pedido->Idcliente) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Idpedido') ?></th>
-            <td><?= $this->Number->format($pedido->Idpedido) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Cantidad') ?></th>
-            <td><?= $this->Number->format($pedido->Cantidad) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Pro Ter') ?></th>
-            <td><?= $this->Number->format($pedido->id_pro_ter) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha') ?></th>
-            <td><?= h($pedido->Fecha) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Pedido'), ['action' => 'edit', $pedido->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Pedido'), ['action' => 'delete', $pedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Pedido'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Pedido'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($pedido->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Unidad Medida') ?>
+                        <div class="secondary-content">
+                            <?= h($pedido->unidad_medida) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($pedido->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Cantidad') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($pedido->Cantidad) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Idcliente') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($pedido->Idcliente) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Pro Ter') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($pedido->id_pro_ter) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha') ?>
+                        <div class="secondary-content">
+                            <?= h($pedido->Fecha) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

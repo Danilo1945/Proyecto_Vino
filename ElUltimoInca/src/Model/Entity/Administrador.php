@@ -6,7 +6,13 @@ use Cake\ORM\Entity;
 /**
  * Administrador Entity
  *
- * @property int $Id_adm
+ * @property int $id
+ * @property string $Cedula
+ * @property string $Nombres
+ * @property string $Apellidos
+ * @property string $Telefono
+ * @property string $Direccion
+ * @property string $Email
  * @property string $user
  * @property string $password
  * @property string $Rol
@@ -24,6 +30,12 @@ class Administrador extends Entity
      * @var array
      */
     protected $_accessible = [
+        'Cedula' => true,
+        'Nombres' => true,
+        'Apellidos' => true,
+        'Telefono' => true,
+        'Direccion' => true,
+        'Email' => true,
         'user' => true,
         'password' => true,
         'Rol' => true

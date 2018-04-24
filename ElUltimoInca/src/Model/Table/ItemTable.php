@@ -31,8 +31,8 @@ class ItemTable extends Table
         parent::initialize($config);
 
         $this->setTable('item');
-        $this->setDisplayField('id_item');
-        $this->setPrimaryKey('id_item');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class ItemTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_item')
-            ->allowEmpty('id_item', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('nom_item')

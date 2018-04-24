@@ -60,6 +60,7 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'M' => 
         array (
             'Migrations\\' => 11,
+            'Materialize\\' => 12,
             'M1\\Env\\' => 7,
         ),
         'J' => 
@@ -186,6 +187,10 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'Migrations\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/migrations/src',
+        ),
+        'Materialize\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeffersonbehling/materialize-theme-cakephp/src',
         ),
         'M1\\Env\\' => 
         array (

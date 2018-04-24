@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Salida Entity
  *
- * @property int $id_sal
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_sal
  * @property float $saldo_sal
  * @property float $ingreso_sal

@@ -1,56 +1,88 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Salida $salida
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Salida $salida
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Salida'), ['action' => 'edit', $salida->id_sal]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Salida'), ['action' => 'delete', $salida->id_sal], ['confirm' => __('Are you sure you want to delete # {0}?', $salida->id_sal)]) ?> </li>
-        <li><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Salida'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="salidas view large-9 medium-8 columns content">
-    <h3><?= h($salida->id_sal) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Observaciones Sal') ?></th>
-            <td><?= h($salida->observaciones_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Sal') ?></th>
-            <td><?= $this->Number->format($salida->id_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Saldo Sal') ?></th>
-            <td><?= $this->Number->format($salida->saldo_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Ingreso Sal') ?></th>
-            <td><?= $this->Number->format($salida->ingreso_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Egreso Sal') ?></th>
-            <td><?= $this->Number->format($salida->egreso_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Donacion Sal') ?></th>
-            <td><?= $this->Number->format($salida->donacion_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Devolucion Sal') ?></th>
-            <td><?= $this->Number->format($salida->devolucion_sal) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Saldo Total') ?></th>
-            <td><?= $this->Number->format($salida->saldo_total) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Sal') ?></th>
-            <td><?= h($salida->fecha_sal) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Salida'), ['action' => 'edit', $salida->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Salida'), ['action' => 'delete', $salida->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salida->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Salida'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($salida->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Observaciones Sal') ?>
+                        <div class="secondary-content">
+                            <?= h($salida->observaciones_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Saldo Sal') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->saldo_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Ingreso Sal') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->ingreso_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Egreso Sal') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->egreso_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Donacion Sal') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->donacion_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Devolucion Sal') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->devolucion_sal) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Saldo Total') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($salida->saldo_total) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Sal') ?>
+                        <div class="secondary-content">
+                            <?= h($salida->fecha_sal) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

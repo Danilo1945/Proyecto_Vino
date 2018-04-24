@@ -24,7 +24,8 @@ class ProveedorFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_pro' => ['type' => 'string', 'length' => 30, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'cedula' => ['type' => 'string', 'length' => 11, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'nombres_pro' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'apellidos_pro' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'telefono_pro' => ['type' => 'string', 'length' => 12, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -34,8 +35,8 @@ class ProveedorFixture extends TestFixture
             'id_emp' => ['type' => 'index', 'columns' => ['id_emp'], 'length' => []],
         ],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_pro'], 'length' => []],
-            'proveedor_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_emp'], 'references' => ['empresa', 'id_emp'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'proveedor_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_emp'], 'references' => ['empresa', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -51,7 +52,8 @@ class ProveedorFixture extends TestFixture
      */
     public $records = [
         [
-            'id_pro' => 'bdb1baef-8960-4123-9161-1971147da5b1',
+            'id' => 1,
+            'cedula' => 'Lorem ips',
             'nombres_pro' => 'Lorem ipsum dolor sit amet',
             'apellidos_pro' => 'Lorem ipsum dolor sit amet',
             'telefono_pro' => 'Lorem ipsu',

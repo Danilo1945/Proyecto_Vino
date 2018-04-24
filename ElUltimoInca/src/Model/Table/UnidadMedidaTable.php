@@ -31,8 +31,8 @@ class UnidadMedidaTable extends Table
         parent::initialize($config);
 
         $this->setTable('unidad_medida');
-        $this->setDisplayField('id_uni_medi');
-        $this->setPrimaryKey('id_uni_medi');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class UnidadMedidaTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_uni_medi')
-            ->allowEmpty('id_uni_medi', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('nombre_umed')

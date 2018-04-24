@@ -4,27 +4,41 @@
  * @var \App\Model\Entity\UnidadMedida $unidadMedida
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $unidadMedida->id_uni_medi],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $unidadMedida->id_uni_medi)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Unidad Medida'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="unidadMedida form large-9 medium-8 columns content">
-    <?= $this->Form->create($unidadMedida) ?>
-    <fieldset>
-        <legend><?= __('Edit Unidad Medida') ?></legend>
-        <?php
-            echo $this->Form->control('nombre_umed');
-            echo $this->Form->control('detalle_umed');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Actions</span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Form->postLink(
+                            __('Delete'),
+                            ['action' => 'delete', $unidadMedida->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $unidadMedida->id)]
+                            )
+                            ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Unidad Medida'), ['action' => 'index']) ?></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <?= $this->Form->create($unidadMedida) ?>
+                <span class="card-title green-text"><?= __('Edit Unidad Medida') ?></span>
+
+                <div class="input-field">
+                    <?= $this->Form->control('nombre_umed') ?>
+                </div>
+                <div class="input-field">
+                    <?= $this->Form->control('detalle_umed') ?>
+                </div>
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>

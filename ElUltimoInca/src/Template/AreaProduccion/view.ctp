@@ -1,64 +1,100 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\AreaProduccion $areaProduccion
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\AreaProduccion $areaProduccion
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Area Produccion'), ['action' => 'edit', $areaProduccion->id_area_pro]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Area Produccion'), ['action' => 'delete', $areaProduccion->id_area_pro], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id_area_pro)]) ?> </li>
-        <li><?= $this->Html->link(__('List Area Produccion'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Area Produccion'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="areaProduccion view large-9 medium-8 columns content">
-    <h3><?= h($areaProduccion->id_area_pro) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Num Procesos') ?></th>
-            <td><?= h($areaProduccion->num_procesos) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Clase Vino') ?></th>
-            <td><?= h($areaProduccion->clase_vino) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Observaciones Area Pro') ?></th>
-            <td><?= h($areaProduccion->observaciones_area_pro) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Tra') ?></th>
-            <td><?= h($areaProduccion->id_tra) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Inv') ?></th>
-            <td><?= h($areaProduccion->id_inv) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Area Pro') ?></th>
-            <td><?= $this->Number->format($areaProduccion->id_area_pro) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Brix Area Pro') ?></th>
-            <td><?= $this->Number->format($areaProduccion->brix_area_pro) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Temperatura Vino') ?></th>
-            <td><?= $this->Number->format($areaProduccion->temperatura_vino) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Uni Medi') ?></th>
-            <td><?= $this->Number->format($areaProduccion->id_uni_medi) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Elaboracion') ?></th>
-            <td><?= h($areaProduccion->fecha_elaboracion) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Control') ?></th>
-            <td><?= h($areaProduccion->fecha_control) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Area Produccion'), ['action' => 'edit', $areaProduccion->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Area Produccion'), ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Area Produccion'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Area Produccion'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($areaProduccion->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Num Procesos') ?>
+                        <div class="secondary-content">
+                            <?= h($areaProduccion->num_procesos) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Clase Vino') ?>
+                        <div class="secondary-content">
+                            <?= h($areaProduccion->clase_vino) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Observaciones Area Pro') ?>
+                        <div class="secondary-content">
+                            <?= h($areaProduccion->observaciones_area_pro) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Brix Area Pro') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->brix_area_pro) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Temperatura Vino') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->temperatura_vino) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Uni Medi') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->id_uni_medi) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Tra') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->id_tra) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Inv') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($areaProduccion->id_inv) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Elaboracion') ?>
+                        <div class="secondary-content">
+                            <?= h($areaProduccion->fecha_elaboracion) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Control') ?>
+                        <div class="secondary-content">
+                            <?= h($areaProduccion->fecha_control) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

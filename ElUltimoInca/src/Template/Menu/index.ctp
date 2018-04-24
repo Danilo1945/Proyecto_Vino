@@ -1,71 +1,58 @@
-<?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Administrador[]|\Cake\Collection\CollectionInterface $administrador
- */
-?>
-
-  
 
 
 
+<div class="row ">
+    <div class="col s2 Color_secundarioP"  >
 
 
+        <div class="row " style="align-items: flex-start">
+            <div class="col s12">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons" style=" color: black ; align-items: center">menu</i></a>
 
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <!--LISTA EL MENU DE OPCIONES DE LA ENTIDAD-->
-        <li class="heading"><?= __('PERSONAS') ?></li>
-        <li><?= $this->Html->link(__('Personal'), ['action' => 'index']) ?></li>
-      <li><a href="../ElUltimoInca/socio">Socio</a> </li>
-      <li><a href="../ElUltimoInca/cliente">Cliente</a> </li>
-      <li><a href="../ElUltimoInca/administrador">Administrador</a></li>
-      <li><a href="../ElUltimoInca/trabajador">Trabajador</a></li>
-      <li><a href="../ElUltimoInca/proveedor">Proveedor</a></li>
-     
-      
-       
-      
-       <li class="heading"><?= __('GESTIÓN') ?></li>
-   
-        <li><a href="../ElUltimoInca/pedido">Pedidos</a></li>
-      <li><a href="../ElUltimoInca/venta">Ventas</a></li>
-       <li><a href="../ElUltimoInca/AreaProduccion">Area de producción</a></li>
-      <li><a href="../ElUltimoInca/HojaProduccionVino">Hoja de producción de vino</a></li>
-       <li><a href="../ElUltimoInca/salidas">Gestion contabilidad (salidas)</a></li>
-       
-        <li class="heading"><?= __('INVENTARIO') ?></li>
-        <li><a href="../ElUltimoInca/CompraMatPri">Materia Prima</a></li>
-      
-   
-      
-          <li><a href="../ElUltimoInca/InventarioEmpresa">Inventario Empresa</a> </li>
-      
-  
-            <li><a href="../ElUltimoInca/ProductoTerminado">Producto Terminado</a> </li>
-      <li><a href="../ElUltimoInca/empresa">Empresa</a> </li>
-       
-      <li class="heading"><?= __('CONFIGURACIONES') ?></li>
-       <li><a href="../ElUltimoInca/item">Categoria de Artículos(items)</a></li>
- 
-      
-          <li><a href="../ElUltimoInca/UnidadMedida">Unidades de Medida</a></li>
+            </div>
+        </div>
+
         
-        <!--boton para regresar al menu-->
-       
-    </ul>
-</nav>
+        <div class="collection " style=" position: static">
+
+            <li class="heading"><?= __('') ?></li>
+            <li class="heading"><?= __('PERSONAS') ?></li>
+            <li class="heading"><?= __('') ?></li>
+            <a href="../ElUltimoInca/socio" class="collection-item">Socio</a>
+            <a href="../ElUltimoInca/cliente" class="collection-item">Cliente</a>
+            <a href="../ElUltimoInca/administrador" class="collection-item">Administrador</a>
+            <a href="../ElUltimoInca/trabajador" class="collection-item">Trabajador</a>
+            <a href="../ElUltimoInca/proveedor" class="collection-item">Proveedor</a>
+            <li class="heading"><?= __('') ?></li>
+            <li class="heading"><?= __('GESTIÓN') ?></li>
+            <li class="heading"><?= __('') ?></li>
+            <a href="../ElUltimoInca/pedido" class="collection-item">Pedidos</a>
+            <a href="../ElUltimoInca/venta" class="collection-item">Ventas</a>
+            <a href="../ElUltimoInca/AreaProduccion" class="collection-item">Area de producción</a>
+            <a href="../ElUltimoInca/HojaProduccionVino" class="collection-item">Hoja de producción de vino</a>
+            <a href="../ElUltimoInca/salidas" class="collection-item">Gestion contabilidad (salidas)</a>
+            <li class="heading"><?= __('') ?></li>
+            <li class="heading"><?= __('INVENTARIO') ?></li>
+            <li class="heading"><?= __('') ?></li>
+            <a href="../ElUltimoInca/CompraMatPri" class="collection-item">Materia Prima</a>
+            <a href="../ElUltimoInca/InventarioEmpresa" class="collection-item">Inventario Empresa</a>
+            <a href="../ElUltimoInca/ProductoTerminado" class="collection-item">Producto Terminado</a>
+            <a href="../../ElUltimoInca/empresa" class="collection-item">Empresa</a>
+            <li class="heading"><?= __('') ?></li>
+            <li class="heading"><?= __('CONFIGURACIONES') ?></li>
+            <li class="heading"><?= __('') ?></li>
+            <a href="../ElUltimoInca/item" class="collection-item">Categoria de Artículos(items)</a>
+            <a href="../ElUltimoInca/UnidadMedida" class="collection-item">Unidades de Medida</a>
+        </div>
 
 
-
-
-<div class="administrador index large-9 medium-8 columns content">
-    <h3><?= __('El Ultimo Inca') ?></h3>
-    
-    
-    
-    
-    
-    
+    </div>
+    <div class="col s10 center "> 
+        <h3><?= __('El Ultimo Inca') ?></h3>
+    </div>
 </div>
+
+
+
+
 

@@ -6,10 +6,12 @@ use Cake\ORM\Entity;
 /**
  * MateriaPrima Entity
  *
- * @property string $id_mat_prim
+ * @property int $id
  * @property string $nombre_mat_pri
  * @property string $descripcion_mat_pri
- * @property int $id_uni_medi
+ * @property int $unm_id
+ *
+ * @property \App\Model\Entity\UnidadMedida $unidad_medida
  */
 class MateriaPrima extends Entity
 {
@@ -26,6 +28,7 @@ class MateriaPrima extends Entity
     protected $_accessible = [
         'nombre_mat_pri' => true,
         'descripcion_mat_pri' => true,
-        'id_uni_medi' => true
+        'unm_id' => true,
+        'unidad_medida' => true
     ];
 }

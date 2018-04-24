@@ -1,52 +1,82 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\CompraMatPri $compraMatPri
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\CompraMatPri $compraMatPri
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Compra Mat Pri'), ['action' => 'edit', $compraMatPri->id_cmp]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Compra Mat Pri'), ['action' => 'delete', $compraMatPri->id_cmp], ['confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id_cmp)]) ?> </li>
-        <li><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Compra Mat Pri'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="compraMatPri view large-9 medium-8 columns content">
-    <h3><?= h($compraMatPri->id_cmp) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Observaciones Mat') ?></th>
-            <td><?= h($compraMatPri->observaciones_mat) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Pro') ?></th>
-            <td><?= h($compraMatPri->id_pro) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Tra') ?></th>
-            <td><?= h($compraMatPri->id_tra) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Mat Prim') ?></th>
-            <td><?= h($compraMatPri->id_mat_prim) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id Cmp') ?></th>
-            <td><?= $this->Number->format($compraMatPri->id_cmp) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Precio U Mat') ?></th>
-            <td><?= $this->Number->format($compraMatPri->precio_u_mat) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Precio Tot Mat') ?></th>
-            <td><?= $this->Number->format($compraMatPri->precio_tot_mat) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Fecha Mat') ?></th>
-            <td><?= h($compraMatPri->fecha_mat) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    <?= $this->layout = "Materialize.materialize"; ?>
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Compra Mat Pri'), ['action' => 'edit', $compraMatPri->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Compra Mat Pri'), ['action' => 'delete', $compraMatPri->id], ['confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Compra Mat Pri'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1">
+            <div class="card-content black-text">
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4><?= h($compraMatPri->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Observaciones Mat') ?>
+                        <div class="secondary-content">
+                            <?= h($compraMatPri->observaciones_mat) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->id) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Precio U Mat') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->precio_u_mat) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Precio Tot Mat') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->precio_tot_mat) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Pro') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->id_pro) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Tra') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->id_tra) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id Mat Prim') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($compraMatPri->id_mat_prim) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Fecha Mat') ?>
+                        <div class="secondary-content">
+                            <?= h($compraMatPri->fecha_mat) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>

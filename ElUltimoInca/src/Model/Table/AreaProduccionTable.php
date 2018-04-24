@@ -31,8 +31,8 @@ class AreaProduccionTable extends Table
         parent::initialize($config);
 
         $this->setTable('area_produccion');
-        $this->setDisplayField('id_area_pro');
-        $this->setPrimaryKey('id_area_pro');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,8 +44,8 @@ class AreaProduccionTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_area_pro')
-            ->allowEmpty('id_area_pro', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha_elaboracion')
@@ -83,13 +83,11 @@ class AreaProduccionTable extends Table
             ->allowEmpty('id_uni_medi');
 
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
+            ->integer('id_tra')
             ->allowEmpty('id_tra');
 
         $validator
-            ->scalar('id_inv')
-            ->maxLength('id_inv', 20)
+            ->integer('id_inv')
             ->allowEmpty('id_inv');
 
         return $validator;

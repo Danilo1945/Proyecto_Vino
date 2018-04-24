@@ -31,8 +31,8 @@ class TrabajadorTable extends Table
         parent::initialize($config);
 
         $this->setTable('trabajador');
-        $this->setDisplayField('id_tra');
-        $this->setPrimaryKey('id_tra');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,9 +44,13 @@ class TrabajadorTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
-            ->allowEmpty('id_tra', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('cedula')
+            ->maxLength('cedula', 11)
+            ->allowEmpty('cedula');
 
         $validator
             ->scalar('Nombres_tra')

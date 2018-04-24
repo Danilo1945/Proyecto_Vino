@@ -31,8 +31,8 @@ class HojaProduccionVinoTable extends Table
         parent::initialize($config);
 
         $this->setTable('hoja_produccion_vino');
-        $this->setDisplayField('id_hoja_pro');
-        $this->setPrimaryKey('id_hoja_pro');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
     }
 
     /**
@@ -44,16 +44,15 @@ class HojaProduccionVinoTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id_hoja_pro')
-            ->allowEmpty('id_hoja_pro', 'create');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
         $validator
             ->date('fecha_pro')
             ->allowEmpty('fecha_pro');
 
         $validator
-            ->scalar('id_inv')
-            ->maxLength('id_inv', 20)
+            ->integer('id_inv')
             ->allowEmpty('id_inv');
 
         $validator
@@ -82,8 +81,7 @@ class HojaProduccionVinoTable extends Table
             ->allowEmpty('observacion_pro');
 
         $validator
-            ->scalar('id_tra')
-            ->maxLength('id_tra', 15)
+            ->integer('id_tra')
             ->allowEmpty('id_tra');
 
         return $validator;

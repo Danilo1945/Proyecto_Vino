@@ -24,11 +24,11 @@ class UnidadMedidaFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id_uni_medi' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'nombre_umed' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'detalle_umed' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['id_uni_medi'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -44,7 +44,7 @@ class UnidadMedidaFixture extends TestFixture
      */
     public $records = [
         [
-            'id_uni_medi' => 1,
+            'id' => 1,
             'nombre_umed' => 'Lorem ipsum dolor sit amet',
             'detalle_umed' => 'Lorem ipsum dolor sit amet'
         ],

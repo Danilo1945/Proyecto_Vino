@@ -1,44 +1,76 @@
 <?php
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Socio $socio
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Socio $socio
+*/
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Socio'), ['action' => 'edit', $socio->id_so]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Socio'), ['action' => 'delete', $socio->id_so], ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id_so)]) ?> </li>
-        <li><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="socio view large-9 medium-8 columns content">
-    <h3><?= h($socio->id_so) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Id So') ?></th>
-            <td><?= h($socio->id_so) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Nombres') ?></th>
-            <td><?= h($socio->Nombres) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Apellidos') ?></th>
-            <td><?= h($socio->Apellidos) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Telefono') ?></th>
-            <td><?= h($socio->Telefono) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Direccion') ?></th>
-            <td><?= h($socio->Direccion) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Email') ?></th>
-            <td><?= h($socio->Email) ?></td>
-        </tr>
-    </table>
+<div class="hide">
+    
+</div>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content white-text" id="abajo_menu">
+                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <div class="card-action" id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Socio'), ['action' => 'edit', $socio->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Socio'), ['action' => 'delete', $socio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?> </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content black-text" id="abajo_menu">
+                <ul class="collection with-header" id="abajo_menu">
+                    <li class="collection-header">
+                        <h4><?= h($socio->id) ?></h4>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Cedula') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->cedula) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Nombres') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->Nombres) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Apellidos') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->Apellidos) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Telefono') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->Telefono) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Direccion') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->Direccion) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Email') ?>
+                        <div class="secondary-content">
+                            <?= h($socio->Email) ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Id') ?>
+                        <div class="secondary-content">
+                            <?= $this->Number->format($socio->id) ?>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>
