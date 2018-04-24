@@ -17,19 +17,39 @@
         <!--LISTA EL MENU DE OPCIONES DE LA ENTIDAD-->
         <li class="heading"><?= __('PERSONAS') ?></li>
         <li><?= $this->Html->link(__('Personal'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Socio'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Cliente'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Administrador'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Proveeedor'), ['action' => 'index']) ?></li>
-       <li class="heading"><?= __('GESTIÓN') ?></li>
-      <li><?= $this->Html->link(__('Pedido'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Venta'), ['action' => 'index']) ?></li>
-        <li class="heading"><?= __('INVENTARIO') ?></li>
-      <li><?= $this->Html->link(__('Materia Prima'), ['action' => 'index']) ?></li>
-      <li><?= $this->Html->link(__('Artículos de la Empresa'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Producto Terminado'), ['action' => 'index']) ?></li>
-   
+      <li><a href="../ElUltimoInca/socio">Socio</a> </li>
+      <li><a href="../ElUltimoInca/cliente">Cliente</a> </li>
+      <li><a href="../ElUltimoInca/administrador">Administrador</a></li>
+      <li><a href="../ElUltimoInca/trabajador">Trabajador</a></li>
+      <li><a href="../ElUltimoInca/proveedor">Proveedor</a></li>
+     
+      
        
+      
+       <li class="heading"><?= __('GESTIÓN') ?></li>
+   
+        <li><a href="../ElUltimoInca/pedido">Pedidos</a></li>
+      <li><a href="../ElUltimoInca/venta">Ventas</a></li>
+       <li><a href="../ElUltimoInca/AreaProduccion">Area de producción</a></li>
+      <li><a href="../ElUltimoInca/HojaProduccionVino">Hoja de producción de vino</a></li>
+       <li><a href="../ElUltimoInca/salidas">Gestion contabilidad (salidas)</a></li>
+       
+        <li class="heading"><?= __('INVENTARIO') ?></li>
+        <li><a href="../ElUltimoInca/CompraMatPri">Materia Prima</a></li>
+      
+   
+      
+          <li><a href="../ElUltimoInca/InventarioEmpresa">Inventario Empresa</a> </li>
+      
+  
+            <li><a href="../ElUltimoInca/ProductoTerminado">Producto Terminado</a> </li>
+      <li><a href="../ElUltimoInca/empresa">Empresa</a> </li>
+       
+      <li class="heading"><?= __('CONFIGURACIONES') ?></li>
+       <li><a href="../ElUltimoInca/item">Categoria de Artículos(items)</a></li>
+ 
+      
+          <li><a href="../ElUltimoInca/UnidadMedida">Unidades de Medida</a></li>
         
         <!--boton para regresar al menu-->
        
