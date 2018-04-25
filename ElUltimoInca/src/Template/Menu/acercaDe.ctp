@@ -120,53 +120,103 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
           <!--  LO QUE APARECE EL MENU GENERAL-->
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
-        <li class="tab "><a href="#test3">PEDIDOS</a></li>
-         <li class="tab "><a href="#test3">CATALOGO</a></li>
-        <li class="tab"><a href="#test4">ACERCA DE..</a></li>
+        <li class="tab"><a  href="#test1">Inicio</a></li>
+        <li class="tab"><a   href="#test2">CONTACTOS</a></li>
+        <li class="tab "><a  href="#test3">PEDIDOS</a></li>
+         <li class="tab "><a  href="#test3">CATALOGO</a></li>
+        <li class="tab"><a class="active" href="#test4">ACERCA DE..</a></li>
       </ul>
     </div>
-  </nav>
-
-    
-    
-    
-    
+  </nav
     
     <div class="row" style="height: 1000px">
-        <div class="col s12">
+        
+        <div class="col s9">
             
-            
+            <div class="row">
+    <div class="col s12 m6">
+      <div class="card #00695c teal darken-3 darken-1">
+        <div class="card-content white-text">
+            <center><strong><span class="card-title">MISIÓN</span></strong></>
+          <p>Ser una Empresa líder en la producción y distribución de vino de mortiño, con reconocimiento en
+             el mercado vinícola local y nacional, ofreciendo un producto del resultado de un proceso con altos
+             estándares de calidad, y buenas prácticas de manufactura que satisfaga los paladares de los
+             consumidores más exigentes.</p>
         </div>
-        
-        
+      </div>
     </div>
-    
-    
-
-        <footer class="page-footer" id="abajo_menu" >
-                <div class="container">
+              
+                
+            
+            <div class="row">
+    <div class="col s10 m6">
+      <div class="card #00695c teal darken-3 darken-1">
+        <div class="card-content white-text">
+            <center><strong><span class="card-title">VISIÓN</span></strong></>
+          <p>Posicionar sólidamente a la Empresa Ultimo Inca hasta el año 2020 dentro del mercado local y
+nacional como líder y pionera en la producción de vinos de mortiño y caracterizarse por una
+producción que cumpla con procesos de estricto control de calidad, teniendo un impacto positivo
+en mejorar la calidad de vida de sus integrantes.</p>
+        </div>
+      </div>
+    </div>          
+</div>   
+</div>  
+       
+          <div class="row">
+    <div class="col s12 m6">
+      <div class="card #00695c teal darken-3 darken-1">
+        <div class="card-content white-text">
+            <center><strong><span class="card-title">UBICACIÓN</span></strong></>
+          <p>
+La Planta de producción de Vino de Mortiño el Ultimo Inca de la Asociación de Productores y
+Comercializadores Agropecuarios de Quinticusig se encuentra ubicada en la Comunidad de
+Quinticusig en el cerro Guingopana, a 3000 metros de altura, pertenece al Cantón Sigchos,
+Provincia Cotopaxi.</p>
+        </div>
+      </div>
+    </div> 
+                
+              <div class="col s12 m6">
+      <div class="card #00695c teal darken-3 darken-1">
+        <div class="card-content white-text">
+            <center><strong><span class="card-title">DE DONDE NACE LA FABRICA?</span></strong></>
+          <p> La Asociación de Productores y Comercializadores Agropecuarios de Quinticusig nace con la
+iniciativa de trabajar asociadamente en búsqueda de mejorar la economía de sus 22 socias/os 12
+mujeres y 10 hombres que actualmente trabajan en un emprendimiento innovador como es la
+producción de vino de mortiño.</p>
+        </div>
+      </div>
+    </div> 
+                
+        </div>     
+            
+         
+            <footer class="page-footer #880e4f pink darken-3" id="abajo_menu" >
+                <div class="container" >
+                    <div class=" #880e4f pink darken-3" >
                     <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text">Footer Content</h5>
-                            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                        <div class="col l6 s10">
+                            <h5 class="white-text">SOMOS:</h5>
+                            <p class="grey-text text-lighten-4">Importadores de vino de Mortiño dentro y fuera de la provincia.</p>
                         </div>
                         <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text">Links</h5>
+                            <h5 class="white-text">CONTACTANOS EN:</h5>
                             <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                            </ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">FACEBOOK</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">TWITTER</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">GMAIL</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">YOUTUBE</a></li>
+                            </ul> 
                         </div>
                     </div>
                 </div>
-                <div class="footer-copyright">
+                    <div class="footer-copyright">
                     <div class="container">
-                        © 2014 Copyright Text
-                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                        © 2018 Copyright derechos reservados    
+                        <a class="grey-text text-lighten-4 right" href="#!">vino de mortiño el ultimo inca</a>
                     </div>
                 </div>
-            </footer>       
+                
+            </footer>    
+             </div>
