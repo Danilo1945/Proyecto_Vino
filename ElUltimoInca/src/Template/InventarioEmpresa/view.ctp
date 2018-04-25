@@ -5,25 +5,25 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+    
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Inventario Empresa'), ['action' => 'edit', $inventarioEmpresa->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Inventario Empresa'), ['action' => 'delete', $inventarioEmpresa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $inventarioEmpresa->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Inventario Empresa'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Inventario Empresa'), ['action' => 'add']) ?> </li>
+        <div class="card darken-1 " id="abajo_menu">
+            <div class="card-content white-text" id="abajo_menu">
+                <span class="card-title green-text" id="abajo_menu"><?= __('Acciones') ?></span>
+                <div class="card-action" id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Inventario Empresa'), ['action' => 'edit', $inventarioEmpresa->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Inventario Empresa'), ['action' => 'delete', $inventarioEmpresa->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $inventarioEmpresa->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista del Inventario Empresa'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nuevo Inventario Empresa'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
     </div>
     <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content black-text" id="abajo_menu">
                 <ul class="collection with-header">
                     <li class="collection-header">
                         <h4><?= h($inventarioEmpresa->id) ?></h4>
