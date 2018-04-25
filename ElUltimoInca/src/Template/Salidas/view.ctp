@@ -5,14 +5,14 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
                 <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
+                <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('Edit Salida'), ['action' => 'edit', $salida->id]) ?> </li>
                     <li class="padding-action"><?= $this->Form->postLink(__('Delete Salida'), ['action' => 'delete', $salida->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salida->id)]) ?> </li>
                     <li class="padding-action"><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?> </li>
