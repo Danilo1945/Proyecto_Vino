@@ -11,9 +11,9 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title green-text">Acciones</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista Socio'), ['action' => 'index']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
                 <?= $this->Form->create($socio) ?>
-                <span class="card-title green-text"><?= __('Add Socio') ?></span>
+                <span class="card-title green-text"><?= __('Añadir Socios') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('cedula') ?>
@@ -42,7 +42,7 @@
                 <div class="input-field">
                     <?= $this->Form->control('Email') ?>
                 </div>
-                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->button(__('Enviar'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
             </div>
         </div>

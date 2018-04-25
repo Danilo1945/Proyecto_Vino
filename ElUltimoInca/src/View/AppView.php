@@ -27,6 +27,15 @@ class AppView extends View
 {
 <<<<<<< HEAD
 
+<<<<<<< HEAD
+    
+
+
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 0c07ce9874a74d91bf4f50466f4b58d63280ac49
+
     
 
 
@@ -54,6 +63,7 @@ class AppView extends View
      *
      * @return void
      */
+>>>>>>> 503b2000bc8c21b7f68a8d123831658c6c887bd0
     public function initialize()
     {
         //$this->initialize()
