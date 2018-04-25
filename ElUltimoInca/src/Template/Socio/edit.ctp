@@ -14,7 +14,7 @@
                 <span class="card-title green-text">Actions</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
-                            __('Delete'),
+                            __('Delete',['name'=>'asd']),
                             ['action' => 'delete', $socio->id],
                             ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]
                             )

@@ -30,18 +30,21 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1><?= __('Error') ?></h1>
-        </div>
-        <div id="content">
-            <?= $this->Flash->render() ?>
+    
+    <div class="row" style="width: 100px; height: 100px">
+        <h1><?= __('Error') ?></h1>
+        
+    </div>
+    <div class="row" style="width: 100px; height: 100px">
+        <h1><?= __('Error') ?></h1>
+        
+          <?= $this->Flash->render() ?>
 
             <?= $this->fetch('content') ?>
-        </div>
-        <div id="footer">
-            <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
-        </div>
+         <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
+        
     </div>
+    
+    
 </body>
 </html>
