@@ -151,17 +151,21 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         
         
         
-  <ul id="slide-out" class="side-nav">
-    <li><div class="user-view">
-         
-    <?=$this -> Html -> image ( 'logo250x250.png' , [ 'alt' => 'CakePHP' ])?>
         
+        
+         <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+         <?=$this -> Html -> image ( 'logo250x250.png' , [ 'alt' => 'CakePHP' ])?>
       </div>
-      <!--<a href="#"><img class="circle" src="images/yuna.jpg"></a>-->
-      <!--      <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
-      <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>-->
-    </div></li>
-    <li><div class="divider"></div></li>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+         <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
+      <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>
+    </div>
+    </li>
+    
+    
+     <li><div class="divider"></div></li>
      <li><a class="subheader center">Home</a></li>
    
     <li><?=$this->Html->link('Inicio',['controller'=>''])  ?> </li>
@@ -182,7 +186,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
       <li><?=$this->Html->link('Ventas',['controller'=>'Venta','action'=>'index','class'=>'waves-effect'])  ?> </li>
         <li><?=$this->Html->link('Area de producción',['controller'=>'AreaProduccion','action'=>'index','class'=>'waves-effect'])  ?> </li>
       <li><?=$this->Html->link('Hojas de producción de vino',['controller'=>'HojaProduccionVino','action'=>'index','class'=>'waves-effect'])  ?> </li>
-       <li><?=$this->Html->link('Jestión de la contabilidad',['controller'=>'Salidas','action'=>'index','class'=>'waves-effect'])  ?> </li>
+       <li><?=$this->Html->link('Gestión de la contabilidad',['controller'=>'Salidas','action'=>'index','class'=>'waves-effect'])  ?> </li>
       <li><div class="divider"></div></li>
        <li><a class="subheader center">INVENTARIO</a></li>
  
@@ -201,11 +205,58 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
        <li><?=$this->Html->link('',['controller'=>''])  ?> </li>
       <li><?=$this->Html->link('',['controller'=>''])  ?> </li>
        <li><?=$this->Html->link('',['controller'=>''])  ?> </li>
+    
+    
+    
+  </ul>
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+         
+    <?=$this -> Html -> image ( 'logo250x250.png' , [ 'alt' => 'CakePHP' ])?>
+        
+      </div>
+      <a href="#"><img class="circle" src="images/yuna.jpg"></a>
+            <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
+      <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>
+    </div></li>
+   
       
   </ul>
-<!--  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>-->
         
-        -->
+        
         
         
         

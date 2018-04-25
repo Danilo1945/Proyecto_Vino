@@ -14,11 +14,11 @@
                 <span class="card-title green-text">Acciones</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
-<<<<<<< HEAD
-                            __('Delete',['name'=>'asd']),
-=======
+
+                         
+
                             __('Eliminar'),
->>>>>>> 0c07ce9874a74d91bf4f50466f4b58d63280ac49
+
                             ['action' => 'delete', $socio->id],
                             ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $socio->id)]
                             )
