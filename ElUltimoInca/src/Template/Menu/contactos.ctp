@@ -32,17 +32,14 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <!DOCTYPE html>
 <html>
 <head>
-       
-    
     <?= $this->Html->meta('icon') ?>
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('home.css') ?>
-    
-    
+
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
- <?= $this->Html->script('jquery-3.3.1.min')?>
+    <?= $this->Html->script('jquery-3.3.1.min')?>
     <?= $this->Html->css ('materialize.min.css') ?>
     <?= $this->Html->script('materialize.min.js')?>
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
@@ -54,7 +51,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <?= $cakeDescription ?>
     </title>
     <!--        jquery-->
-   
+    
     <div>
         <style type="text/css" data-styleid="theme_fonts">
             .font_0 {font: normal normal bold 22px/1.4em 'open sans',sans-serif ;color:#891519;} 
@@ -107,38 +104,17 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .color_34 {color: #5F605B;}            .backcolor_34 {background-color: #5F605B;}
             .color_35 {color: #30302E;}            .backcolor_35 {background-color: #30302E;}
         </style>
-        <style type="text/css" data-styleid="hc1">
-            .hc1screenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .hc1[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
-            .hc1[data-state~="fixedPosition"].hc1_footer {top:auto;bottom:0;}
-            .hc1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .hc1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .hc1centeredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style>
-        <style type="text/css" data-styleid="style-il43hcll">.style-il43hcllscreenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .style-il43hcll[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
-            .style-il43hcll[data-state~="fixedPosition"].style-il43hcll_footer {top:auto;bottom:0;}
-            .style-il43hcll_bg {position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(47, 46, 46, 1);box-shadow:0 0 5px rgba(0, 0, 0, 0.7);  border-top:0px solid rgba(47, 46, 46, 1);border-bottom:0px solid rgba(47, 46, 46, 1);}
-            .style-il43hcll[data-state~="mobileView"] .style-il43hcllbg {left:10px;right:10px;}
-            .style-il43hcllbg {position:absolute;top:0px;right:0;bottom:0px;left:0;background-color:rgba(47, 46, 46, 1);border-radius:0;}
-            .style-il43hcllinlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .style-il43hcllcenteredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style>
-        <style type="text/css" data-styleid="pc1">.pc1screenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .pc1[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
-            .pc1[data-state~="fixedPosition"].pc1_footer {top:auto;bottom:0;}
-            .pc1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .pc1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .pc1centeredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style>
-        <style type="text/css" data-styleid="strc1">.strc1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .strc1[data-responsive] {display:-ms-grid;display:grid;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;grid-template-columns:1fr;-ms-grid-columns:1fr;}
-            .strc1[data-responsive] > .strc1inlineContent {display:-webkit-box;display:-webkit-flex;display:flex;}
-            .strc1[data-responsive] > * {position:relative;grid-row-start:1;grid-column-start:1;grid-row-end:2;grid-column-end:2;-ms-grid-row-span:1;-ms-grid-column-span:1;margin:0 auto;}</style><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;pointer-events:none;}
+      
+        <style type="text/css" data-styleid="txtNew">
+            .txtNew {word-wrap:break-word;text-align:start;pointer-events:none;}
             .txtNew_override-left * {text-align:left !important;}
             .txtNew_override-right * {text-align:right !important;}
             .txtNew_override-center * {text-align:center !important;}
             .txtNew_override-justify * {text-align:justify !important;}
             .txtNew > * {pointer-events:auto;}
             .txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-            .txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
+            .txtNew ol,
+            .txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
             .txtNew ul {list-style-type:disc;}
             .txtNew ol {list-style-type:decimal;}
             .txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
@@ -153,16 +129,22 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
             .txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
             .txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-            .txtNew a {color:inherit;}</style><style type="text/css" data-styleid="lb1">.lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:nowrap;}
+            .txtNew a {color:inherit;}</style>
+        <style type="text/css" data-styleid="lb1">
+            .lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:nowrap;}
             .lb1itemsContainer > li:last-child {margin:0 !important;}
-            .lb1[data-state~="mobileView"] .lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:normal;}
+            .lb1[data-state~="mobileView"] 
+            .lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:normal;}
             .lb1 a {display:block;height:100%;}
             .lb1imageItemlink {cursor:pointer;}
-            .lb1imageItemimageimage {position:static;box-shadow:#000 0 0 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><style type="text/css" data-styleid="s_VOwPageGroupSkin"></style><style type="text/css" data-styleid="wp2">.wp2_zoomedin {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;overflow:hidden;display:block;}
+            .lb1imageItemimageimage {position:static;box-shadow:#000 0 0 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style>
+        <style type="text/css" data-styleid="s_VOwPageGroupSkin"></style>
+        <style type="text/css" data-styleid="wp2">.wp2_zoomedin {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;overflow:hidden;display:block;}
             .wp2_zoomedout {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.cur), auto;}
             .wp2link {display:block;overflow:hidden;}
             .wp2img {overflow:hidden;}
-            .wp2imgimage {position:static;box-shadow:#000 0 0 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><style type="text/css" data-styleid="ddm3">.ddm3itemsContainer {width:calc(100% - 0px);height:calc(100% - 0px);white-space:nowrap;display:inline-block;overflow:visible;position:relative;}
+            .wp2imgimage {position:static;box-shadow:#000 0 0 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style>
+        <style type="text/css" data-styleid="ddm3">.ddm3itemsContainer {width:calc(100% - 0px);height:calc(100% - 0px);white-space:nowrap;display:inline-block;overflow:visible;position:relative;}
             .ddm3moreContainer {overflow:visible;display:inherit;white-space:nowrap;width:auto;background-color:rgba(255, 255, 255, 1);border-radius:0 0 20px 20px;  }
             .ddm3dropWrapper {z-index:99999;display:block;opacity:1;visibility:hidden;position:absolute;margin-top:7px;}
             .ddm3dropWrapper[data-dropMode="dropUp"] {margin-top:0;margin-bottom:7px;}
@@ -174,16 +156,15 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .ddm3repeaterButton[data-state~="drop"] {width:100%;display:block;}
             .ddm3repeaterButton[data-state~="drop"] .ddm3repeaterButtonlabel {padding:0 .5em;}
             .ddm3repeaterButton[data-state~="over"] .ddm3repeaterButtonlabel,.ddm3repeaterButton[data-preview~="hover"] .ddm3repeaterButtonlabel {color:#0C4D9C;transition:color 0.4s ease 0s;}
-            .ddm3repeaterButton[data-state~="selected"] .ddm3repeaterButtonlabel,.ddm3repeaterButton[data-preview~="active"] .ddm3repeaterButtonlabel {color:#CE2026;transition:color 0.4s ease 0s;}</style><style type="text/css" data-styleid="style-illkwy24">.style-illkwy24link,.style-illkwy24svg {position:absolute;top:0;right:0;bottom:0;left:0;}
+            .ddm3repeaterButton[data-state~="selected"] .ddm3repeaterButtonlabel,.ddm3repeaterButton[data-preview~="active"] .ddm3repeaterButtonlabel {color:#CE2026;transition:color 0.4s ease 0s;}</style>
+        <style type="text/css" data-styleid="style-illkwy24">.style-illkwy24link,.style-illkwy24svg {position:absolute;top:0;right:0;bottom:0;left:0;}
             .style-illkwy24 svg {position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;margin:auto;}
-            .style-illkwy24_non-scaling-stroke * {vector-effect:non-scaling-stroke;}</style><style type="text/css" data-styleid="style-illkx568">.style-illkx568link,.style-illkx568svg {position:absolute;top:0;right:0;bottom:0;left:0;}
+            .style-illkwy24_non-scaling-stroke * {vector-effect:non-scaling-stroke;}</style>
+        <style type="text/css" data-styleid="style-illkx568">.style-illkx568link,.style-illkx568svg {position:absolute;top:0;right:0;bottom:0;left:0;}
             .style-illkx568 svg {position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;margin:auto;}
-            .style-illkx568_non-scaling-stroke * {vector-effect:non-scaling-stroke;}</style><style type="text/css" data-styleid="style-iltdw64n">.style-iltdw64nlink,.style-iltdw64nsvg {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .style-iltdw64n svg {position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;margin:auto;}
-            .style-iltdw64n_non-scaling-stroke * {vector-effect:non-scaling-stroke;}</style><style type="text/css" data-styleid="style-il43cksw">.style-il43cksw {max-height:2000px;width:0 !important;min-width:0 !important;}
-            .style-il43ckswline {border-left:1px solid rgba(255, 255, 255, 1);margin-left:-0.5px;width:100%;height:100%;}</style><style type="text/css" data-styleid="p1">.p1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-            .p1[data-state~="mobileView"] .p1bg {left:10px;right:10px;}
-            .p1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="Anchor_1">.Anchor_1 {visibility:hidden;pointer-events:none;width:0 !important;}</style><style type="text/css" data-styleid="style-iltapvdh">.style-iltapvdhwrapper {min-width:180px;max-width:980px;position:absolute;width:100%;}
+            .style-illkx568_non-scaling-stroke * {vector-effect:non-scaling-stroke;}</style>
+   
+        <style type="text/css" data-styleid="style-iltapvdh">.style-iltapvdhwrapper {min-width:180px;max-width:980px;position:absolute;width:100%;}
             .style-iltapvdh_hiddenField {display:none !important;}
             .style-iltapvdh span {color:#605E5E;float:left;font:normal 14px 'Helvetica Neue', Helvetica, sans-serif;max-width:60%;}
             .style-iltapvdh span.style-iltapvdh_success {color:#BADA55;}
@@ -212,6 +193,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .style-iltapvdh[data-state~="right"] button {float:left;}
             .style-iltapvdh[data-state~="left"] {direction:ltr;text-align:left;}
             .style-iltapvdh[data-state~="left"] span {float:left;}
+
             .style-iltapvdh[data-state~="left"] button {float:right;}</style><style type="text/css" data-styleid="gm1">.gm1[data-state~="squared"],.gm1[data-state~="squared"] .gm1mapContainer {border-radius:0;}
             .gm1mapContainer {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="siteBackground">.siteBackground {width:100%;position:absolute;}
             .siteBackgroundbgBeforeTransition {position:absolute;top:0;}
@@ -372,9 +354,67 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="row" style="height: 1200px">
                     </br>                    </br>
 
+=======
+            .style-iltapvdh[data-state~="left"] button {float:right;}</style>
+       
+        <style type="text/css">.testStyles {position:absolute; display: none; z-index: 1}</style>
+        <div class="testStyles"></div>
+         
+    </div>
+   
+ <script >
+          
+  $(document).ready(function(){
+    
+    $(".button-collapse").sideNav();
+     $('.carousel.carousel-slider').carousel({fullWidth: true});
+  });
+  
+      </script>
+ 
+</head>
+ 
+    <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
+<<<<<<< HEAD
+        
+      <nav class="nav-extended #01579b light-blue darken-4">
+        <div class="nav-wrapper ">
+        <a href="#" class="brand-logo center">El Ultimo Inca</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i></a>
+=======
+     
+    
+      <nav class="nav-extended #880e4f pink darken-3">
+          
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center">El Ultimo Inca</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+>>>>>>> 3eb5ea5d4fc1cfd8ab1d7fcb28ed74be62d852f1
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+       
+           <!-- LO QUE APARECE EN LA S PC-->
+          
+          <li><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Acerca de</a></li>
+        <li><a href="../menu">LOG IN</a></li>
+      </ul>
+      
+       <!-- LO QUE APARECE EN LOS MOVILES-->
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">INICIO</a></li>
+        <li><a href="badges.html">ACERCA DE..</a></li>
+        <li><a href="../ElUltimoInca/menu">LOG IN</a></li>
+      </ul>
+    </div>
+     
+  </nav>
+
+    <div class="row" style="height: 1000px">
+>>>>>>> d55a08ab5fe2f0cac0274e0aa992acd36f2563a7
 
         <section class="strc1" id="comp-il58sepc" style="width: 980px; position: absolute; min-width: 980px; 
-                 margin-left: 280px; top: 180px; height: 521px; left: 0px;">
+                 margin-left: 250px; top: 180px; height: 521px; left: 0px;">
             <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" id="comp-il58sepcbalata" 
                  style="top: 0px; bottom: 0px; left: calc(0px); right: calc(980px); width: calc(980px); 
                  position: absolute; height: 100%; overflow: hidden; pointer-events: auto; 
@@ -417,10 +457,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                                         <div>
                                             <input type="text" id="field1" required="" aria-invalid="false" name="Nombre" 
                                                    value="" class="style-iltapvdh_required" placeholder="Nombre" 
-                                                   data-aid="nameField"><input type="text" id="field2" 
-                                                   required="" aria-invalid="false" name="Email" value="" 
-                                                   class="style-iltapvdh_required" placeholder="Email" 
-                                                   data-aid="emailField"><input type="tel" id="field3" 
+                                                   data-aid="nameField">
+                                            <input type="text" id="field2" required="" aria-invalid="false" name="Email" value=""
+                                                   class="style-iltapvdh_required" placeholder="Email" data-aid="emailField">
+                                                   
+                                            <input type="tel" id="field3" 
                                                    aria-invalid="false" name="Teléfono" value="" 
                                                    class="style-iltapvdh_hidden style-iltapvdh_hiddenField" 
                                                    placeholder="Teléfono" data-aid="phoneField">
@@ -449,7 +490,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                                 <p class="font_7">
                                     <span class="color_18">Teléfonos</span>
                                 </p>
-                                <p class="font_7">Tel: 032-806-668</p>
+                                <p class="font_7">Tel: 0991868307</p>
                                 <p class="font_7">Fax: 032-810-555</p>
                                 <p class="font_7">&nbsp;</p>
                                 <p class="font_7"><span class="color_18">Email</span></p>
@@ -467,7 +508,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                         </div>
                     </div>
                 </div>
-        </section>     
+        </section>   
+        
         <section class="strc1" id="comp-il597903" style="width: 980px; position: absolute; min-width: 980px; 
                  margin-left: 280px; top: 670px; height: 586px; left: 0px;">
             <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" 
@@ -475,12 +517,13 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                  right: calc(980px); width: calc(980px); position: absolute; height: 100%; 
                  overflow: hidden; pointer-events: auto; clip: rect(0px, 980px, 586px, 0px);">
                 <div class="bgColor" id="comp-il597903balatabgcolor" style="width: 100%; height: 100%; 
+                     
                      background-color: transparent; position: absolute;">
                     <div id="comp-il597903balatabgcoloroverlay" class="bgColoroverlay" 
                          style="width: 100%; height: 100%; position: absolute;">
                              
                     </div>
-                        
+                       
                 </div>
                     
             </div>
@@ -492,50 +535,17 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                          style="position: absolute; width: calc(980px); left: calc(0px); top: 0px; 
                          bottom: 0px; height: 100%; overflow: hidden; pointer-events: auto; 
                          clip: rect(0px, 980px, 586px, 0px);">
-                        <div class="bgColor" id="mediait2pzfvs13balatabgcolor" 
-                             style="width: 100%; height: 100%; background-color: rgb(238, 240, 228); position: absolute;">
-                            <div id="mediait2pzfvs13balatabgcoloroverlay" class="bgColoroverlay" 
-                                 style="width: 100%; height: 100%; position: absolute;">
-                                     
-                            </div>
-                                
-                        </div>
+                        
                             
                     </div>
-                    <div id="mediait2pzfvs13inlineContent" class="strc1inlineContent" 
-                         style="position: absolute; width: 980px; top: 0px; bottom: 0px; 
-                         left: calc((100% - 980px) * 0.5);">
-                        <div data-packed="true" class="txtNew" id="comp-il597lhq" 
-                             style="left: 46px; width: 887px; position: absolute; top: 116px;">
-                            <h6 class="font_6" style="line-height:1em; text-align:center;">
-                                <span style="color:rgb(47, 46, 46);">ENCUENTRANOS:</span>
-                            </h6>
-                        </div>
-                        <div tabindex="0" title="Google Maps" aria-label="Google Maps" 
-                             class="gm1" id="comp-il598lwn" style="left: 76px; width: 827px; position: 
-                             absolute; top: 232px; height: 233px;">
-                            <div id="comp-il598lwnmapContainer" class="gm1mapContainer">
-                                <iframe width="100%" height="100%" frameborder="0" scrolling="no" 
-                                        title="Google Maps" aria-label="Google Maps" 
-                                        src="https://static.parastorage.com/services/santa/1.3141.40/static/external/googleMap.html?language=pt-BR">
-                                </iframe>
-                            </div>
-                        </div>
-                        <div data-packed="true" class="txtNew" id="comp-il5bh34u" 
-                             style="left: 43px; width: 890px; position: absolute; top: 180px;">
-                            <p class="font_7" style="text-align:center;">SIGCHOS-QUINTICUSIG.</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
-        </section>          
-                                      
-        <div class="col s12">
-             
-        </div>
-                
+        </section> 
+                    
     </div>
     
+<<<<<<< HEAD
    
         
     
@@ -570,3 +580,38 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 </body>    
                 
                
+=======
+    <div style="width: 980px; position: absolute; min-width: 980px; 
+                 margin-left: 400px; top: 670px; height: 586px; left: 0px;">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14545.081939797094!2d-78.87574277773058!3d-0.7142569916627176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNDInNTEuMyJTIDc4wrA1MicwMS4yIlc!5e1!3m2!1ses-419!2sec!4v1524713526700" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   
+    </div>
+       
+                <footer class="page-footer #01579b light-blue darken-4" id="abajo_menu" >
+                <div class="container" >
+                    <div class=" #01579b light-blue darken-3" >
+                    <div class="row">
+                        <div class="col l6 s10">
+                            <h5 class="white-text">SOMOS:</h5>
+                            <p class="grey-text text-lighten-4">Importadores de vino de Mortiño dentro y fuera de la provincia.</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">CONTACTANOS EN:</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">FACEBOOK</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">TWITTER</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">GMAIL</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">YOUTUBE</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                    <div class="footer-copyright">
+                    <div class="container">
+                        © 2018 Copyright derechos reservados    
+                        <a class="grey-text text-lighten-4 right" href="#!">vino de mortiño el ultimo inca</a>
+                    </div>
+                </div>
+            </footer>  
+    
+
