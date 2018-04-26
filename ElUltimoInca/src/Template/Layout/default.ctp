@@ -119,25 +119,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <div class="container" >
                         <div class="row">
                             <div class="col l6 s12">
-                                <h5 class="white-text">Footer Content</h5>
-                                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                            </div>
+                                 <h5 class="white-text">EL ULTIMO INCA</h5>
+                    <p class="grey-text text-lighten-4">puedes ponerte en contacto con nosotros.</p>
+                               </div>
                             <div class="col l4 offset-l2 s12">
-                                <h5 class="white-text">Links</h5>
-                                <ul>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                                </ul>
+                                <h5 class="white-text">Páginas Relacionadas</h5>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="footer-copyright">
-                        <div class="container">
-                            © 2014 Copyright Text
-                            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                        </div>
+                         <div class="container">
+                © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
+                <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
+            </div>
                     </div>
                 </footer>         
 
@@ -168,7 +163,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
      <li><div class="divider"></div></li>
      <li><a class="subheader center">Home</a></li>
    
-    <li><?=$this->Html->link('Inicio',['controller'=>''])  ?> </li>
+    <li><?=$this->Html->link('Inicio',['controller'=>'/'])  ?> </li>
     <li><div class="divider"></div></li>
      <li><a class="subheader center">PERSONAS</a></li>
    

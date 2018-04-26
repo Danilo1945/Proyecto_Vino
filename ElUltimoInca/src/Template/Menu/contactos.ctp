@@ -262,49 +262,108 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
     
     
- <script >
-          
-  $(document).ready(function(){
-    
-    $(".button-collapse").sideNav();
-     $('.carousel.carousel-slider').carousel({fullWidth: true});
-  });
-  
-      </script>
-   
-    
-</head>
+        <style>
 
-    
-    
-    
+            .Color_primP{
+                background: #009688;
+
+            }
+            .Color_secundarioP{
+                background: #E0E0E0;
+
+            }
+
+            nav{
+                position:   inherit;
+                top: 0;
+
+
+            }
+            .banner_pos{
+                
+            }
+            .menu-principal{
+               
+                position: float;
+            }
+
+            #abajo_menu{
+                position: static;
+
+            }
+
+        </style>
+        <script >
+
+            $(document).ready(function () {
+                $('.slider').slider();
+
+                $(".button-collapse").sideNav();
+
+
+
+                $(".button-collapse").click(function () {
+
+                    $("#asd").css("position", "initial");
+
+                });
+              
+
+            });
+
+        </script>
+
+
+    </head  >
+
+    <body>
+
+
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
-     
-    
-      <nav class="nav-extended #880e4f pink darken-3">
-          
-    <div class="nav-wrapper ">
-      <a href="#" class="brand-logo center">El Ultimo Inca</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       
-           <!-- LO QUE APARECE EN LA S PC-->
-          
-          <li><a href="sass.html">Inicio</a></li>
-        <li><a href="badges.html">Acerca de</a></li>
-        <li><a href="../menu">LOG IN</a></li>
-      </ul>
-      
-       <!-- LO QUE APARECE EN LOS MOVILES-->
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">INICIO</a></li>
-        <li><a href="badges.html">ACERCA DE..</a></li>
-        <li><a href="../ElUltimoInca/menu">LOG IN</a></li>
-      </ul>
-    </div>
-     
-  </nav>
 
+
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content Color_primP">
+        <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+        <li class="divider"></li>
+        <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+
+    </ul>
+
+
+
+    <nav id="asd">
+        <div class="nav-wrapper Color_primP">
+            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+        </div>
+
+
+    </nav>
     
     
     
@@ -477,386 +536,37 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 
     </div>
     
-    <footer class="style-il43hcll_footer style-il43hcll" data-sitewidth="980" data-fixedposition="false" 
-            data-isrunninginmobile="false" data-state=" " id="SITE_FOOTER" 
-            style="bottom: auto; left: 0px; width: 980px; position: absolute; min-width: 980px; 
-            margin-left: 280px; top: 1238px; height: 395px;">
-        <div id="SITE_FOOTERscreenWidthBackground" class="style-il43hcllscreenWidthBackground" 
-             style="width: 714px; left: 0px;">
-            <div class="style-il43hcll_bg">
-                
-            </div>
-                
-        </div>
-        <div id="SITE_FOOTERcenteredContent" class="style-il43hcllcenteredContent" 
-             style="width: 100%;"><div id="SITE_FOOTERbg" class="style-il43hcllbg">
-                 
-            </div>
-            <div id="SITE_FOOTERinlineContent" class="style-il43hcllinlineContent">
-                <div data-packed="true" class="txtNew" id="comp-il5cnn5z" 
-                     style="left: 47px; width: 217px; position: absolute; top: 196px;">
-                    <p class="font_8">
-                        <span class="color_13">
-                            Tenemos mas de 30 años d servicio con nuestro personal capacitados en el exterior.
-                        </span>
-                    </p>
-                </div>
-                <div data-packed="true" class="txtNew" id="comp-il5cp0hs" 
-                     style="left: 683px; width: 252px; position: absolute; top: 146px;">
-                    <h6 class="font_6"><span style="color:rgb(160, 160, 159); letter-spacing:0.05em;">VISÍTANOS</span></h6>
-                </div>
-                <div data-packed="true" class="txtNew" id="comp-il5cr9td" 
-                     style="left: 47px; width: 252px; position: absolute; top: 146px;">
-                    <h6 class="font_6">
-                        <span style="color:rgb(160, 160, 159); letter-spacing:0.05em;">
-                            MÁS DE 30 AÑOS DE EXPERIENCIA
-                        </span>
-                    </h6>
-                </div>
-                <div data-packed="true" class="txtNew" id="comp-il5csysb" 
-                     style="left: 368px; width: 251px; position: absolute; top: 146px;">
-                    <h6 class="font_6">
-                        <span class="color_13">
-                            <span style="letter-spacing:0.05em;">
-                                NUESTROS SERVICIOS
-                            </span>
-                                
-                        </span>
-                    </h6>
-                </div>
-                <div data-packed="true" class="txtNew" id="comp-il5csysr" 
-                     style="left: 368px; width: 251px; position: absolute; top: 174px;">
-                    <p class="font_8">- Vinos</p>
+   
+        
+    
+  
 
-                    <p class="font_8">- Mermelada</p>   
+    <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">EL ULTIMO INCA</h5>
+                    <p class="grey-text text-lighten-4">puedes ponerte en contacto con nosotros.</p>
                 </div>
-                <div data-hide-prejs="true" class="lb1" id="comp-il5d17p8" 
-                     style="left: 46px; width: 174px; position: absolute; top: 292px; height: 24px;">
-                    <ul aria-label="Social bar" id="comp-il5d17p8itemsContainer" class="lb1itemsContainer">
-                        <li class="lb1imageItem" id="comp-il5d17p80image" 
-                            style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: inline-block;">
-                            <a href="https://www.facebook.com/wix" target="_blank" data-content="https://www.facebook.com/wix" 
-                               data-type="external" rel="nofollow" id="comp-il5d17p80imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{
-                                     &quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-il5d17pr1&quot;,
-                                     &quot;metaData&quot;:{&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,
-                                     &quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.facebook.com/wix&quot;,&quot;target&quot;:
-                                     &quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17pr&quot;,
-                                     &quot;metaData&quot;:{&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,
-                                     &quot;isHidden&quot;:false},&quot;title&quot;:&quot;Facebook Social Icon&quot;,&quot;uri&quot;:
-                                     &quot;e316f544f9094143b9eac01f1f19e697.png&quot;,&quot;description&quot;:&quot;&quot;,
-                                     &quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Facebook Social Icon&quot;},
-                                     &quot;displayMode&quot;:&quot;fill&quot;}" data-style="position:absolute;width:24;height:24" 
-                                     class="lb1imageItemimage" id="comp-il5d17p80imageimage" 
-                                     style="width: 24px; height: 24px; position: absolute;">
-                                    <img id="comp-il5d17p80imageimageimage" alt="Facebook Social Icon" data-type="image" 
-                                         src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/e316f544f9094143b9eac01f1f19e697.png" 
-                                         style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="lb1imageItem" id="comp-il5d17p81image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: 
-                            inline-block;"><a href="https://twitter.com/wix" target="_blank" data-content="https://twitter.com/wix" 
-                             data-type="external" rel="nofollow" id="comp-il5d17p81imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,
-                                     &quot;id&quot;:&quot;dataItem-il5d17py1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:true,
-                                     &quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;
-                                     https://twitter.com/wix&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;
-                                     Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17py&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:
-                                     true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;
-                                     Twitter Social Icon&quot;,&quot;uri&quot;:&quot;9c4b521dd2404cd5a05ed6115f3a0dc8.png&quot;,&quot;
-                                     description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;
-                                     Twitter Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" data-style="position:absolute;
-                                     width:24;height:24" class="lb1imageItemimage" id="comp-il5d17p81imageimage" 
-                                     style="width: 24px; height: 24px; position: absolute;">
-                                    <img id="comp-il5d17p81imageimageimage" alt="Twitter Social Icon" data-type="image" 
-                                         src="https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/9c4b521dd2404cd5a05ed6115f3a0dc8.png" 
-                                         style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="lb1imageItem" id="comp-il5d17p82image" 
-                            style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: inline-block;">
-                            <a href="https://plus.google.com/+Wix" target="_blank" data-content="https://plus.google.com/+Wix" 
-                               data-type="external" rel="nofollow" id="comp-il5d17p82imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,
-                                     &quot;id&quot;:&quot;dataItem-im0d6g2g&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:true,
-                                     &quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;
-                                     https://plus.google.com/+Wix&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;
-                                     Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17py2&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:
-                                     true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;
-                                     Google+ Social Icon&quot;,&quot;uri&quot;:&quot;74d327d3628e4f14800301f1c61013b0.png&quot;,&quot;
-                                     width&quot;:200,&quot;height&quot;:201,&quot;alt&quot;:&quot;Google+ Social Icon&quot;},&quot;
-                                     displayMode&quot;:&quot;fill&quot;}" data-style="position:absolute;width:24;height:24" 
-                                     class="lb1imageItemimage" id="comp-il5d17p82imageimage" 
-                                     style="width: 24px; height: 24px; position: absolute;">
-                                    <img id="comp-il5d17p82imageimageimage" alt="Google+ Social Icon" data-type="image" 
-                                         src="https://static.wixstatic.com/media/74d327d3628e4f14800301f1c61013b0.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/74d327d3628e4f14800301f1c61013b0.png" 
-                                         style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="lb1imageItem" id="comp-il5d17p83image" 
-                            style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: inline-block;">
-                            <a href="https://www.youtube.com/user/Wix" target="_blank" 
-                               data-content="https://www.youtube.com/user/Wix" 
-                               data-type="external" rel="nofollow" id="comp-il5d17p83imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:
-                                     &quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-il5d17pz1&quot;,&quot;metaData&quot;:{
-                                     &quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},
-                                     &quot;url&quot;:&quot;https://www.youtube.com/user/Wix&quot;,&quot;target&quot;:&quot;_blank&quot;},
-                                     &quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17pz&quot;,&quot;metaData&quot;:{
-                                     &quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},
-                                     &quot;title&quot;:&quot;YouTube Social  Icon&quot;,&quot;uri&quot;:&quot;a1b09fe8b7f04378a9fe076748ad4a6a.png&quot;,
-                                     &quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:
-                                     &quot;YouTube Social  Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" 
-                                     data-style="position:absolute;width:24;height:24" class="lb1imageItemimage" id="comp-il5d17p83imageimage" 
-                                     style="width: 24px; height: 24px; position: absolute;"><img id="comp-il5d17p83imageimageimage" 
-                                     alt="YouTube Social  Icon" data-type="image" src="https://static.wixstatic.com/media/a1b09fe8b7f04378a9fe076748ad4a6a.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/a1b09fe8b7f04378a9fe076748ad4a6a.png" 
-                                     style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="lb1imageItem" id="comp-il5d17p84image" 
-                            style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: inline-block;">
-                            <a href="https://www.pinterest.com/wixcom/" target="_blank" data-content="https://www.pinterest.com/wixcom/" 
-                               data-type="external" rel="nofollow" id="comp-il5d17p84imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,
-                                    &quot;id&quot;:&quot;dataItem-il5d17q01&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:true,
-                                    &quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;
-                                    https://www.pinterest.com/wixcom/&quot;,&quot;target&quot;:&quot;_blank&quot;},
-                                    &quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17q0&quot;,&quot;metaData&quot;:{
-                                    &quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},
-                                    &quot;title&quot;:&quot;Pinterest Social Icon&quot;,&quot;uri&quot;:&quot;28e77d0b179d4121891d847ed43de6cc.png&quot;,
-                                    &quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;
-                                    Pinterest Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" 
-                                    data-style="position:absolute;width:24;height:24" class="lb1imageItemimage" id="comp-il5d17p84imageimage" 
-                                    style="width: 24px; height: 24px; position: absolute;">
-                                    <img id="comp-il5d17p84imageimageimage" alt="Pinterest Social Icon" data-type="image" 
-                                         src="https://static.wixstatic.com/media/28e77d0b179d4121891d847ed43de6cc.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/28e77d0b179d4121891d847ed43de6cc.png" 
-                                         style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="lb1imageItem" id="comp-il5d17p85image" 
-                            style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 6px; display: inline-block;">
-                            <a href="https://instagram.com/wix/" target="_blank" data-content="https://instagram.com/wix/" 
-                               data-type="external" rel="nofollow" id="comp-il5d17p85imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,
-                                     &quot;id&quot;:&quot;dataItem-il5d17q03&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:true,
-                                     &quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;
-                                     https://instagram.com/wix/&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;
-                                     Image&quot;,&quot;id&quot;:&quot;dataItem-il5d17q02&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:
-                                     true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;
-                                     Instagram Social Icon&quot;,&quot;uri&quot;:&quot;fb5d18fdfff64a56a7e136d2016a1b7b.png&quot;,
-                                     &quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:
-                                     &quot;Instagram Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" 
-                                     data-style="position:absolute;width:24;height:24" class="lb1imageItemimage" id="comp-il5d17p85imageimage" 
-                                     style="width: 24px; height: 24px; position: absolute;">
-                                    <img id="comp-il5d17p85imageimageimage" alt="Instagram Social Icon" data-type="image" 
-                                         src="https://static.wixstatic.com/media/fb5d18fdfff64a56a7e136d2016a1b7b.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/fb5d18fdfff64a56a7e136d2016a1b7b.png" 
-                                         style="width: 24px; height: 24px; object-fit: cover;">
-                                </div>
-                            </a>
-                        </li>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Paginas amigas</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
+
                     </ul>
                 </div>
-                <section class="strc1" id="comp-il5d4tq2" 
-                         style="width: 980px; position: absolute; min-width: 980px; margin-left: 0px; top: 353px; height: 42px; left: 0px;">
-                    <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" id="comp-il5d4tq2balata" 
-                         style="top: 0px; bottom: 0px; left: calc(0px); right: calc(980px); width: calc(980px); position: absolute; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 980px, 42px, 0px);">
-                        <div class="bgColor" id="comp-il5d4tq2balatabgcolor" style="width: 100%; height: 100%; 
-                             background-color: transparent; position: absolute;">
-                            <div id="comp-il5d4tq2balatabgcoloroverlay" 
-                                 class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;">
-                                     
-                            </div>
-                                
-                        </div>
-                            
-                    </div>
-                    <div id="comp-il5d4tq2inlineContent" class="strc1inlineContent">
-                        <div class="strc1" id="mediait2pzfvm7" 
-                             style="left: calc(0px); width: 980px; position: absolute; top: 0px; height: 42px;">
-                            <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" id="mediait2pzfvm7balata" 
-                                 style="position: absolute; width: calc(980px); left: calc(0px); top: 0px; bottom: 0px; height: 
-                                 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 980px, 42px, 0px);">
-                                <div class="bgColor" id="mediait2pzfvm7balatabgcolor" style="width: 100%; height: 100%; 
-                                     background-color: rgb(36, 35, 35); position: absolute;">
-                                    <div id="mediait2pzfvm7balatabgcoloroverlay" class="bgColoroverlay" 
-                                         style="width: 100%; height: 100%; position: absolute;">
-                                             
-                                    </div>
-                                        
-                                </div>
-                                    
-                            </div>
-                            <div id="mediait2pzfvm7inlineContent" class="strc1inlineContent" 
-                                 style="position: absolute; width: 980px; top: 0px; bottom: 0px; left: calc((100% - 980px) * 0.5);">
-                                <div data-packed="true" class="txtNew" id="comp-il5d5xvj" 
-                                     style="left: 156px; width: 688px; position: absolute; top: 12px;">
-                                    <p class="font_8" style="text-align:center;">
-                                        <span class="color_13">© 2018&nbsp;by El-Ultimo-Inca</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="strc1" id="comp-il9hw1uv" 
-                         style="width: 980px; position: absolute; min-width: 980px; margin-left: 0px; top: 0px; height: 100px; left: 0px;">
-                    <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" id="comp-il9hw1uvbalata" 
-                         style="top: 0px; bottom: 0px; left: calc(0px); right: calc(980px); width: calc(980px); position: absolute; 
-                         height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 980px, 100px, 0px);">
-                        <div class="bgColor" id="comp-il9hw1uvbalatabgcolor" style="width: 100%; height: 100%; 
-                             background-color: transparent; position: absolute;">
-                            <div id="comp-il9hw1uvbalatabgcoloroverlay" class="bgColoroverlay" 
-                                 style="width: 100%; height: 100%; position: absolute;">
-                                     
-                            </div>
-                                
-                        </div>
-                            
-                    </div>
-                    <div id="comp-il9hw1uvinlineContent" class="strc1inlineContent">
-                        <div class="strc1" id="mediait2pzfvn5" 
-                             style="left: calc(0px); width: 980px; position: absolute; top: 0px; height: 100px;">
-                            <div data-enable-video="true" data-bg-effect-name="" class="strc1balata" id="mediait2pzfvn5balata" 
-                                 style="position: absolute; width: calc(980px); left: calc(0px); top: 0px; bottom: 0px; 
-                                 height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 980px, 100px, 0px);">
-                                <div class="bgColor" id="mediait2pzfvn5balatabgcolor" style="width: 100%; height: 100%; 
-                                     background-color: rgb(206, 32, 38); position: absolute;">
-                                    <div id="mediait2pzfvn5balatabgcoloroverlay" class="bgColoroverlay" 
-                                         style="width: 100%; height: 100%; position: absolute;">
-                                             
-                                    </div>
-                                        
-                                </div>
-                                    
-                            </div>
-                            <div id="mediait2pzfvn5inlineContent" class="strc1inlineContent" 
-                                 style="position: absolute; width: 980px; top: 0px; bottom: 0px; left: calc((100% - 980px) * 0.5);">
-                                <div data-svg-id="9f511d107e9040fcb86c5ad358aeaf8a.svg" 
-                                     data-svg-type="shape" 
-                                     data-display-mode="legacyFit" 
-                                     data-strokewidth="1" 
-                                     data-viewbox="0 0 200 200" 
-                                     data-preserve-viewbox="ignore" 
-                                     class="style-illkwy24" id="comp-il9hxvz8" style="left: 46px; width: 18px; position: absolute; top: 31px; height: 18px;">
-                                    <div class="style-illkwy24_comp-il9hxvz8 style-illkwy24_non-scaling-stroke style-illkwy24svg" id="comp-il9hxvz8svg" 
-                                         style="fill-opacity: 0; stroke-width: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; fill: rgb(206, 32, 38);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" 
-                               viewBox="-68.05626813103171 -355.9209837072036 144.02723963120405 144.02723963120405" 
-                               role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 1px;">
-                        <g>
-                            <path d="M71.3-243.6l-.7-2c-1.6-4.8-6.9-9.7-11.7-11L41-261.5c-4.8-1.3-11.8.5-15.3 4l-6.5 6.5c-23.5-6.3-41.9-24.8-
-                                  48.2-48.2l6.5-6.5c3.5-3.5 5.3-10.4 4-15.3l-4.9-17.9c-1.3-4.8-6.3-10.1-11-11.7l-2-.7c-4.8-1.6-11.6 0-15.1 
-                                  3.6l-9.7 9.7c-1.7 1.7-2.8 6.6-2.8 6.7-.3 30.7 11.7 60.3 33.4 82 21.7 21.7 51.1 33.7 81.7 33.4.2 0 5.2-1.1 
-                                  6.9-2.8l9.7-9.7c3.6-3.7 5.2-10.5 3.6-15.2z">
-                                      
-                            </path>
-                        </g>
-                        </svg>
-                                        </div>
-                                        <div id="comp-il9hxvz8link" class="style-illkwy24link">
-                                            
-                                        </div>
-                                            
-                                    </div>
-                                    <div data-packed="true" class="txtNew" id="comp-il9hykbl4" 
-                                         style="left: 71px; width: 225px; position: absolute; top: 29px;">
-                                        <h6 class="font_6">
-                                            <span style="color:rgb(255, 255, 255); letter-spacing:0.05em;">Llámanos</span>
-                                        </h6>
-                                    </div>
-                                    <div data-packed="true" class="txtNew" id="comp-il9hykbk" 
-                                         style="left: 47px; width: 264px; position: absolute; top: 56px;">
-                                        <p class="font_8">
-                                            <span class="color_16">Tel: 032-806-668 | Fax: 032-810-555</span>
-                                        </p>
-                                    </div>
-                                    <div data-svg-id="680a748941d54105aec1c00186931f30.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="1" data-viewbox="0 0 200 200" data-preserve-viewbox="ignore" class="style-illkx568" id="comp-il9hxvzr" style="left: 362px; width: 18px; position: absolute; top: 31px; height: 18px;"><div class="style-illkx568_comp-il9hxvzr style-illkx568_non-scaling-stroke style-illkx568svg" id="comp-il9hxvzrsvg" style="fill-opacity: 0; stroke-width: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; fill: rgb(206, 32, 38);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="24.463759927188647 22.1847567838781 152.07249540441177 152.07249540441177" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 1px;">
-                                <g>
-                                    <path d="M100.491 100.909l71.821-33.113V53.338a2.99 2.99 0 0 0-2.992-2.992H31.68a2.99 2.99 0 0 0-2.992 2.992v14.681l71.803 32.89z"></path>
-                                    <path d="M101.754 106.923a2.987 2.987 0 0 1-1.251.275h-.006c-.415 0-.838-.087-1.245-.269L28.688 74.6v68.504a2.99 2.99 0 0 0 2.992 2.992h137.64a2.99 2.99 0 0 0 2.992-2.992V74.389l-70.558 32.534z"></path>
-                                </g>
-                            </svg>
-                            </div>
-                                        <div id="comp-il9hxvzrlink" class="style-illkx568link"></div>
-                                            
-                                    </div>
-                                <div data-packed="true" class="txtNew" id="comp-il9hykbl3" 
-                                     style="left: 391px; width: 208px; position: absolute; top: 29px;">
-                                    <h6 class="font_6">
-                                        <span style="color:rgb(255, 255, 255); letter-spacing:0.05em;">EMAIL</span>
-                                    </h6>
-                                </div>
-                                <div data-packed="true" class="txtNew" id="comp-il9hykbl" 
-                                     style="left: 363px; width: 264px; position: absolute; top: 56px;">
-                                    <p class="font_8">
-                                        <span class="color_16">
-                                            <object height="0">
-                                                <a class="auto-generated-link" data-auto-recognition="true" 
-                                                   data-content="elultimo-inca@gmail.com" href="mailto:magdiesel-latacunga@gmail.com" 
-                                                   data-type="mail">Vinos-elultimo-inca@gmail.com</a>
-                                            </object>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div data-svg-id="2e1f098e46f140f78fbfaba56cba650d.svg" data-svg-type="shape" data-display-mode="legacyFit" 
-                                     data-strokewidth="1" data-viewbox="0 0 200 200" 
-                                     data-preserve-viewbox="ignore" class="style-iltdw64n" id="comp-il9hxvzr1" 
-                                     style="left: 672px; width: 18px; position: absolute; top: 31px; height: 18px;">
-                                    <div class="style-iltdw64n_comp-il9hxvzr1 style-iltdw64n_non-scaling-stroke style-iltdw64nsvg" 
-                                         id="comp-il9hxvzr1svg" style="fill-opacity: 0; stroke-width: 1; stroke: rgb(255, 255, 255); 
-                                         stroke-opacity: 1; fill: rgb(255, 255, 255);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" 
-                                             viewBox="8.940110150505518 8.940116826225733 182.11977969898896 182.11977969898896" 
-                                             role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 1px;">
-                                <g>
-                                    <path d="M100 13.999c-47.496 0-86 38.504-86 86.001s38.504 86.001 86 86.001 86-38.504 86-86.001-38.504-86.001-86-86.001zM148 114H98a4 4 0 0 1-4-4V48a4 4 0 0 1 8 0v58h46a4 4 0 0 1 0 8z"></path>
-                                </g>
-                            </svg>
-                        </div>
-                                            <div id="comp-il9hxvzr1link" class="style-iltdw64nlink"></div>
-                                                
-                                        </div>
-                                        <div data-packed="true" class="txtNew" id="comp-il9hykbl2" style="left: 700px; width: 233px; position: absolute; top: 29px;">
-                                            <h6 class="font_6">
-                                                <span style="color:rgb(255, 255, 255); letter-spacing:0.05em;">HORARIO DE ATENCIÓN</span>
-                                            </h6>
-                                        </div>
-                                        <div data-packed="true" class="txtNew" id="comp-il9hykbl1" 
-                                             style="left: 672px; width: 263px; position: absolute; top: 56px;">
-                                            <p class="font_8" style="font-size:14px;">
-                                                <span class="color_16">Lunes-Viernes: 7,30 am - 8 pm</span>
-                                            </p>
-                                        </div>
-                                <div class="style-il43cksw" id="comp-il9hykbc" 
-                                     style="left: 327px; width: 5px; position: absolute; top: 26px; height: 56px;">
-                                    <div id="comp-il9hykbcline" class="style-il43ckswline"></div>
-                                        
-                                </div>
-                                <div class="style-il43cksw" id="comp-il9hykbl5" 
-                                     style="left: 646px; width: 5px; position: absolute; top: 26px; height: 56px;">
-                                    <div id="comp-il9hykbl5line" class="style-il43ckswline"></div>
-                                        
-                                </div>
-                                    
-                            </div>
-                                
-                        </div>
-                            
-                    </div>
-                </section>
-                <div data-packed="true" class="txtNew" id="comp-il9idbvr" 
-                     style="left: 681px; width: 252px; position: absolute; top: 174px;">
-                    <p class="font_8"><span class="color_13">Barrio Quinticusig</span></p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright El Ultimo Inca
+                <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
+            </div>
+        </div>
+    </footer>   
 
-                        <p class="font_8"><span class="color_13">Sigchos-Ecuador.</span></p>
-
-                        <p class="font_8"><span class="color_13">22222.</span></p></div></div></div></footer>
-
-        
+</body>    
                 
-            </footer>       
+               
