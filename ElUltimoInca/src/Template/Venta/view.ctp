@@ -5,18 +5,18 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+    
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1"id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Ventum'), ['action' => 'edit', $ventum->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Ventum'), ['action' => 'delete', $ventum->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ventum->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Venta'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Ventum'), ['action' => 'add']) ?> </li>
+                <span class="card-title green-text"><?= __('Acciones') ?></span>
+                <div class="card-action"id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Venta'), ['action' => 'edit', $ventum->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Venta'), ['action' => 'delete', $ventum->id], ['confirm' => __('Desea Eliminar', $ventum->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista Venta'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Venta'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
