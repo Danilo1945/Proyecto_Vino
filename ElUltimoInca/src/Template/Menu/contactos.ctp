@@ -282,6 +282,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
      
     
       <nav class="nav-extended #880e4f pink darken-3">
+          
     <div class="nav-wrapper ">
       <a href="#" class="brand-logo center">El Ultimo Inca</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -301,17 +302,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <li><a href="../ElUltimoInca/menu">LOG IN</a></li>
       </ul>
     </div>
-          
-          <!--  LO QUE APARECE EL MENU GENERAL-->
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
-        <li class="tab "><a href="#test3">PEDIDOS</a></li>
-         <li class="tab "><a href="#test3">CATALOGO</a></li>
-        <li class="tab"><a href="#test4">ACERCA DE..</a></li>
-      </ul>
-    </div>
+     
   </nav>
 
     
