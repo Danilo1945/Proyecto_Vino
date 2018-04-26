@@ -5,12 +5,7 @@
     <div class="col s2 "  >
 
 
-        <div class="row " style="align-items: flex-start">
-            <div class="col s12">
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons" style=" color: black ; align-items: center">menu</i></a>
-
-            </div>
-        </div>
+       
 
         
         <div class="collection " style=" position: static">
@@ -50,6 +45,15 @@
     
     <div class="col s10 center "> 
         <h3><?= __('El Ultimo Inca') ?></h3>
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 </div>
 

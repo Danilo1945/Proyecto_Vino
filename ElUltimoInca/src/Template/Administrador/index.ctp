@@ -75,4 +75,5 @@
 
         <p class="right"><?= $this->Paginator->counter(['format' => __('vino el ultimo inca ©todos los derechos reservados')]) ?></p>
     </div>
+    
 </div>

@@ -121,8 +121,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
-        <li class="tab "><a href="#test3">PEDIDOS</a></li>
+        <li class="tab"><a  href="#test2">CONTACTOS</a></li>
+        <li class="tab "><a class="active" href="#test3">PEDIDOS</a></li>
          <li class="tab "><a href="#test3">CATALOGO</a></li>
         <li class="tab"><a href="#test4">ACERCA DE..</a></li>
       </ul>
@@ -137,6 +137,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="row" style="height: 1000px">
         <div class="col s12">
             
+            <h1>PEDIDOS</h1>
             
         </div>
         
@@ -149,24 +150,24 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
-                            <h5 class="white-text">Footer Content</h5>
-                            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                            <h5 class="white-text"></h5>
+                            <p class="grey-text text-lighten-4"></p>
                         </div>
                         <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text">Links</h5>
+                            <h5 class="white-text"></h5>
                             <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="footer-copyright">
                     <div class="container">
-                        © 2014 Copyright Text
-                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                        © Copyright 2018
+                        <a class="grey-text text-lighten-4 right" href="#!"></a>
                     </div>
                 </div>
             </footer>       

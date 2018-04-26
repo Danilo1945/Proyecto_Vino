@@ -5,21 +5,21 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1"id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
+                <span class="card-title green-text">Acciones</span>
+                <div class="card-action"id="abajo_menu">
                     <li class="padding-action"><?= $this->Form->postLink(
-                            __('Delete'),
+                            __('Eliminar'),
                             ['action' => 'delete', $compraMatPri->id],
-                            ['confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id)]
+                            ['confirm' => __('Desea Eliminar', $compraMatPri->id)]
                             )
                             ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista de Compra de Materia Prima'), ['action' => 'index']) ?></li>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
         <div class="card darken-1">
             <div class="card-content black-text">
                 <?= $this->Form->create($compraMatPri) ?>
-                <span class="card-title green-text"><?= __('Edit Compra Mat Pri') ?></span>
+                <span class="card-title green-text"><?= __('Editar Compra Mat Pri') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('fecha_mat', ['type' => 'text', 'class' => 'datepicker']) ?>

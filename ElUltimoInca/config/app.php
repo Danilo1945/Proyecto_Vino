@@ -223,6 +223,7 @@ return [
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
 
+<<<<<<< HEAD
 
             'host' => 'localhost:3306',
 
@@ -231,6 +232,9 @@ return [
             'host' => 'localhost:3306',
 
 
+=======
+            'host' => 'localhost:3307',
+>>>>>>> 3eb5ea5d4fc1cfd8ab1d7fcb28ed74be62d852f1
            
 
             /**
