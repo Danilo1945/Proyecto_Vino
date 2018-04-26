@@ -5,30 +5,36 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+ 
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title green-text">Acciones</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Unidad Medida'), ['action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Unidad de Medida'), ['action' => 'add']) ?></li>
                 </div>
             </div>
+            
+            
+            
+            
+            
+            
         </div>
     </div>
 
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Unidad Medida') ?></span>
+                <span class="card-title green-text"><?= __('Unidad de Medida') ?></span>
                 <table class="responsive-table">
                     <thead>
                         <tr>
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('nombre_umed') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('detalle_umed') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Nombre U/M') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Detalle U/M') ?></th>
                             <th><?= __('Actions') ?></th>
                         </tr>
                     </thead>
@@ -39,9 +45,9 @@
                             <td><?= h($unidadMedida->nombre_umed) ?></td>
                             <td><?= h($unidadMedida->detalle_umed) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $unidadMedida->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $unidadMedida->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $unidadMedida->id], ['confirm' => __('Are you sure you want to delete # {0}?', $unidadMedida->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $unidadMedida->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $unidadMedida->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $unidadMedida->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $unidadMedida->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
