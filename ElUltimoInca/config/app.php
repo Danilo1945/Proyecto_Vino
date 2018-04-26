@@ -223,19 +223,18 @@ return [
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
 
-<<<<<<< HEAD
 
 
-=======
-<<<<<<< HEAD
->>>>>>> 6fd198f0f78157336cca0799b8c5153ae4196fb9
+
+
+
+
             'host' => 'localhost:3306',
 
             'host' => 'localhost:3306',
-=======
 
-            'host' => 'localhost:3307',
->>>>>>> 8e60e8c0cd507a7b8adfe13dbf03f5b121087c31
+            'host' => 'localhost:3306',
+
 
 
            

@@ -137,6 +137,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="col s12 m6">
       <div class="card #00695c teal darken-3 darken-1">
         <div class="card-content white-text">
+            
             <center><strong><span class="card-title">MISIÓN</span></strong></>
           <p>Ser una Empresa líder en la producción y distribución de vino de mortiño, con reconocimiento en
              el mercado vinícola local y nacional, ofreciendo un producto del resultado de un proceso con altos
@@ -218,7 +219,11 @@ producción de vino de mortiño.</p>
                     </div>
                 </div>
                 
-            </footer>    
+                       
+       
+      </div>
+            </footer>  
+       
              </div>
                 
     
