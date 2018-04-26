@@ -5,22 +5,22 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Proveedor'), ['action' => 'add']) ?></li>
+                <span class="card-title green-text">Accion </span>
+                <div class="card-action" id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Nuevo Proveedor'), ['accion' => 'add']) ?></li>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="col s12 m9">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text">
                 <span class="card-title green-text"><?= __('Proveedor') ?></span>
                 <table class="responsive-table">
@@ -33,7 +33,7 @@
                             <th scope="col"><?= $this->Paginator->sort('telefono_pro') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('email_pro') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('id_emp') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('Acciones') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,9 +47,9 @@
                             <td><?= h($proveedor->email_pro) ?></td>
                             <td><?= $this->Number->format($proveedor->id_emp) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $proveedor->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $proveedor->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $proveedor->id], ['confirm' => __('Are you sure you want to delete # {0}?', $proveedor->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Nuevo') . '" >zoom_in</i>', ['action' => 'view', $proveedor->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $proveedor->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $proveedor->id], ['confirm' => __('Desea Eliminar', $proveedor->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -67,6 +67,6 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Lista de Proveedores')]) ?></p>
     </div>
 </div>

@@ -13,7 +13,7 @@
         <div class="card darken-1 " id="abajo_menu">
             <div class="card-content white-text">
                 <span class="card-title green-text">Actions</span>
-                <div class="card-action" id="abajo_menu">
+                <div class="card-action" id="abajo_menu"> 
                     <li class="padding-action"><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?></li>
                 </div>
             </div>
