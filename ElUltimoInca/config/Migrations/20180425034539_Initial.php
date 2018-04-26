@@ -644,6 +644,54 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
+        $this->table('users')
+            ->addColumn('Cedula', 'string', [
+                'default' => null,
+                'limit' => 11,
+                'null' => true,
+            ])
+            ->addColumn('Nombres', 'string', [
+                'default' => null,
+                'limit' => 30,
+                'null' => true,
+            ])
+            ->addColumn('Apellidos', 'string', [
+                'default' => null,
+                'limit' => 30,
+                'null' => true,
+            ])
+            ->addColumn('Telefono', 'string', [
+                'default' => null,
+                'limit' => 12,
+                'null' => true,
+            ])
+            ->addColumn('Direccion', 'string', [
+                'default' => null,
+                'limit' => 100,
+                'null' => true,
+            ])
+            ->addColumn('Email', 'string', [
+                'default' => null,
+                'limit' => 50,
+                'null' => true,
+            ])
+            ->addColumn('user', 'string', [
+                'default' => null,
+                'limit' => 10,
+                'null' => true,
+            ])
+            ->addColumn('password', 'string', [
+                'default' => null,
+                'limit' => 10,
+                'null' => true,
+            ])
+            ->addColumn('Rol', 'string', [
+                'default' => null,
+                'limit' => 20,
+                'null' => true,
+            ])
+            ->create();
+
         $this->table('venta')
             ->addColumn('fecha_ven', 'date', [
                 'default' => null,
@@ -987,6 +1035,7 @@ class Initial extends AbstractMigration
         $this->dropTable('socio');
         $this->dropTable('trabajador');
         $this->dropTable('unidad_medida');
+        $this->dropTable('users');
         $this->dropTable('venta');
     }
 }

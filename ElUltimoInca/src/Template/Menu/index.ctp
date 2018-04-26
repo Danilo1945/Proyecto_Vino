@@ -2,7 +2,7 @@
 
 
 <div class="row ">
-    <div class="col s2 Color_secundarioP"  >
+    <div class="col s2 "  >
 
 
         <div class="row " style="align-items: flex-start">
@@ -47,6 +47,7 @@
 
 
     </div>
+    
     <div class="col s10 center "> 
         <h3><?= __('El Ultimo Inca') ?></h3>
     </div>

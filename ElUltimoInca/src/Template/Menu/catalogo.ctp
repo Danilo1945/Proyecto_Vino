@@ -121,9 +121,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
+        <li class="tab"><a  href="#test2">CONTACTOS</a></li>
         <li class="tab "><a href="#test3">PEDIDOS</a></li>
-         <li class="tab "><a href="#test3">CATALOGO</a></li>
+         <li class="tab "><a class="active" href="#test3">CATALOGO</a></li>
         <li class="tab"><a href="#test4">ACERCA DE..</a></li>
       </ul>
     </div>
