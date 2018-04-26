@@ -5,15 +5,15 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title green-text">Acciones</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Hoja Produccion Vino'), ['action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Hoja de Produccion Vino'), ['acciones' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                             <th scope="col"><?= $this->Paginator->sort('numero_procesos') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('observacion_pro') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('id_tra') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('Acciones') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,9 +53,9 @@
                             <td><?= h($hojaProduccionVino->observacion_pro) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->id_tra) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $hojaProduccionVino->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $hojaProduccionVino->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $hojaProduccionVino->id], ['confirm' => __('Are you sure you want to delete # {0}?', $hojaProduccionVino->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Nuevo') . '" >zoom_in</i>', ['action' => 'view', $hojaProduccionVino->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $hojaProduccionVino->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $hojaProduccionVino->id], ['confirm' => __('Desea Eliminar', $hojaProduccionVino->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -73,6 +73,6 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Lista Produccion Vino')]) ?></p>
     </div>
 </div>

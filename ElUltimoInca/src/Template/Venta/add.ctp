@@ -5,12 +5,12 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content white-text"id="abajo_menu">
                 <span class="card-title green-text">Actions</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Html->link(__('List Venta'), ['action' => 'index']) ?></li>
@@ -19,8 +19,8 @@
         </div>
     </div>
     <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
+        <div class="card darken-1"id="abajo_menu">
+            <div class="card-content black-text"id="abajo_menu">
                 <?= $this->Form->create($ventum) ?>
                 <span class="card-title green-text"><?= __('Add Ventum') ?></span>
 

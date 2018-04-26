@@ -5,18 +5,18 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+    
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1"id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Compra Mat Pri'), ['action' => 'edit', $compraMatPri->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Compra Mat Pri'), ['action' => 'delete', $compraMatPri->id], ['confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Compra Mat Pri'), ['action' => 'add']) ?> </li>
+                <span class="card-title green-text"><?= __('Acciones') ?></span>
+                <div class="card-action"id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Compra Materia Prima'), ['action' => 'edit', $compraMatPri->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Compra Materia Prima'), ['action' => 'delete', $compraMatPri->id], ['confirm' => __('Desea Eliminar', $compraMatPri->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista de Compra Materia Prima'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Compra Materia Prima'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
