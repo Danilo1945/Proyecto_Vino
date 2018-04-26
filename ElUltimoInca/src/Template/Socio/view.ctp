@@ -11,12 +11,12 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <span class="card-title green-text"><?= __('Acciones') ?></span>
                 <div class="card-action" id="abajo_menu">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Socio'), ['action' => 'edit', $socio->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Socio'), ['action' => 'delete', $socio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Socio'), ['action' => 'edit', $socio->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Socio'), ['action' => 'delete', $socio->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $socio->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista de Socios'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nuevo Socio'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>

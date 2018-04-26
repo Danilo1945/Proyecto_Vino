@@ -5,7 +5,11 @@
  */
 ?>
 <div class="hide">
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 1cadd66ab92a85fed4fab14808736b147c8efa35
 </div>
 <div class="row">
     <div class="col s12 m3">

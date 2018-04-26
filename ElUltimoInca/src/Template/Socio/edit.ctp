@@ -11,15 +11,19 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title green-text">Acciones</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
-                            __('Delete'),
+
+                         
+
+                            __('Eliminar'),
+
                             ['action' => 'delete', $socio->id],
-                            ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]
+                            ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $socio->id)]
                             )
                             ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista de Socios'), ['action' => 'index']) ?></li>
                 </div>
             </div>
         </div>
@@ -28,7 +32,7 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
                 <?= $this->Form->create($socio) ?>
-                <span class="card-title green-text"><?= __('Edit Socio') ?></span>
+                <span class="card-title green-text"><?= __('Editar  Socio') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('cedula') ?>
@@ -48,7 +52,7 @@
                 <div class="input-field">
                     <?= $this->Form->control('Email') ?>
                 </div>
-                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->button(__('Enviar'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
             </div>
         </div>
