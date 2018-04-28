@@ -5,85 +5,85 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <span class="card-title green-text"><?= __('ACCIONES') ?></span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Administrador'), ['action' => 'edit', $administrador->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Administrador'), ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Administrador'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Administrador'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('EDITAR ADMINISTRADOR'), ['action' => 'edit', $administrador->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('ELIMINAR ADMINISTRADOR'), ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('LISTA DE ADMINISTRADORES'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('NUEVO ADMINISTRADOR'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
     </div>
     <div class="col s12 m9">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text">
                 <ul class="collection with-header">
                     <li class="collection-header">
                         <h4><?= h($administrador->id) ?></h4>
                     </li>
                     <li class="collection-item">
-                        <?= __('Cedula') ?>
+                        <?= __('CEDULA') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Cedula) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Nombres') ?>
+                        <?= __('NOMBRES') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Nombres) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Apellidos') ?>
+                        <?= __('APELLIDOS') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Apellidos) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Telefono') ?>
+                        <?= __('TELEFONO') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Telefono) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Direccion') ?>
+                        <?= __('DIRECCION') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Direccion) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Email') ?>
+                        <?= __('EMAIL') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Email) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('User') ?>
+                        <?= __('USUARIO') ?>
                         <div class="secondary-content">
                             <?= h($administrador->user) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Password') ?>
+                        <?= __('PASSWORD') ?>
                         <div class="secondary-content">
                             <?= h($administrador->password) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Rol') ?>
+                        <?= __('ROL') ?>
                         <div class="secondary-content">
                             <?= h($administrador->Rol) ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Id') ?>
+                        <?= __('ID') ?>
                         <div class="secondary-content">
                             <?= $this->Number->format($administrador->id) ?>
                         </div>

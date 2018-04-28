@@ -24,6 +24,9 @@ class AdministradorController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+    
+     
+    
     public function index()
     {
         $administrador = $this->paginate($this->Administrador);
@@ -31,6 +34,14 @@ class AdministradorController extends AppController
         $this->set(compact('administrador'));
     }
 
+    
+    
+    
+    
+  
+    
+    
+  
     /**
      * View method
      *

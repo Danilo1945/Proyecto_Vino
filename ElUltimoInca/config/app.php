@@ -223,9 +223,25 @@ return [
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
 
+<<<<<<< HEAD
             'host' => 'localhost:3306',
 
             'host' => 'localhost',
+=======
+<<<<<<< HEAD
+
+            'host' => 'localhost:3306',
+
+            'host' => 'localhost:3306',
+
+            'host' => 'localhost:3306',
+
+
+=======
+            'host' => 'localhost:3307',
+>>>>>>> 3eb5ea5d4fc1cfd8ab1d7fcb28ed74be62d852f1
+           
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 
             /**
              * CakePHP will use the default DB port based on the driver selected

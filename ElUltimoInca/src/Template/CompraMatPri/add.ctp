@@ -5,14 +5,14 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1"id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
+                <span class="card-title green-text">Acciones</span>
+                <div class="card-action"id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['action' => 'index']) ?></li>
                 </div>
             </div>

@@ -5,15 +5,15 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+    
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Salida'), ['action' => 'add']) ?></li>
+                <span class="card-title green-text">Acciones</span>
+                <div class="card-action" id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Salida'), ['action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                             <th scope="col"><?= $this->Paginator->sort('devolucion_sal') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('saldo_total') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('observaciones_sal') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('Acciones') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,14 +53,16 @@
                             <td>
                                 <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $salida->id], ['escape' => false]) ?>
                                 <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $salida->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $salida->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salida->id), 'escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $salida->id], ['confirm' => __('Esta seguro que desea eliminar # {0}?', $salida->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
+            
         </div>
+        <img src="Menu/img/fondoCon.jpg"/>
         <div class="center">
             <ul class="pagination">
                 <?= $this->Paginator->first('<i class="material-icons">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
@@ -71,6 +73,6 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Página de, mostrando registro (s) del total')]) ?></p>
     </div>
 </div>

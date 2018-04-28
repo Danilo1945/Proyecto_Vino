@@ -5,15 +5,15 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+  
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Administrador'), ['action' => 'add']) ?></li>
+                <span class="card-title green-text">ACCIONES</span>
+                <div class="card-action" id="abajo_menu">
+                    <li  class="padding-action"><?= $this->Html->link(__('NUEVO ADMINISTRADOR'), ['action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,21 +22,21 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Administrador') ?></span>
+                <span class="card-title green-text"><?= __('ADMINISTRADOR') ?></span>
                 <table class="responsive-table">
                     <thead>
                         <tr>
-                            <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Cedula') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Apellidos') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Telefono') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Direccion') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Email') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('user') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('password') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('User') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Password') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Rol') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('ACCIONES') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,9 +53,9 @@
                             <td><?= h($administrador->password) ?></td>
                             <td><?= h($administrador->Rol) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $administrador->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $administrador->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('VER') . '" >zoom_in</i>', ['action' => 'view', $administrador->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('EDITAR') . '" >create</i>', ['action' => 'edit', $administrador->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('ELIMINAR') . '" >delete</i>', ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -73,6 +73,7 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('vino el ultimo inca ©todos los derechos reservados')]) ?></p>
     </div>
+    
 </div>
