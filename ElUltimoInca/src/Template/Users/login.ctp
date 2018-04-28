@@ -37,32 +37,83 @@ $description = 'Login';
 <body >
 
     <?= $this->Flash->render() ?>
-       
-    <div class="row">
+    
+    
+    <br>
+    <br>
+     <br>
+    
+   
+<div class="row">
+    <div class="col s12 m3">
+        <div class="card darken-1 " id="abajo_menu">
+            <div class="card-content white-text">
+                <span class="card-title green-text">Acciones</span>
+                <div class="card-action">
+                  
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m9">
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content black-text">
+                <span class="card-title green-text center">Login</span>
+                <div class="card-action">
+                  <div class="row">
         
      <?= $this->Form->create() ?>
      
       
       <div class="row">
           <div class="input-field">
-                    <?= $this->Form->control('user',['placeholder'=>'hola']) ?>
+                    <?= $this->Form->control('Usuario') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('password') ?>
+                    
+                    <?= $this->Form->control('Contraseña') ?>
                 </div>
       </div>
      
       
-          <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
-     <?= $this->Form->end() ?>
-  </div>
+                      <div class="row ">
+                          <div class="col s6 m3 center">
+                              <?= $this->Form->button(__('Iniciar Sesión'), ['class' => 'btn waves-effect waves-light']) ?>
+                              <br>
+                              <br>
+                               <?=$this->Html->link('Olvide mi contraseña',['controller'=>'Menu','action'=>'index','class'=>'waves-effect'])  ?> 
+                          
+                          </div>
+                          <div class="col s6 m3 center">
+                              <?= $this->Form->button(__('Registrarse'), ['class' => 'btn waves-effect waves-light']) ?>
+                          </div>
+                           <div class="col s6 m6 center">
+                              
+                          </div>
+                         
+                      </div>
+   
+        
+   
+                    <?= $this->Form->end() ?>
+                   </div>
+                
+                </div>
+            </div>
+        </div>
+       
+
+        
+    </div>
+</div>
+
+       
     
     
     
     
     
     
-    <footer>
-    </footer>
-</body>
-</html>
+ 

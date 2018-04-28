@@ -24,24 +24,24 @@ class UsersController extends AppController
     
       public function login()
     {
-        if($this->request->is('post'))
-        {
-            $user = $this->Auth->identify();
-            if($user)
-            {
-                $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
-            }
-            else
-            {
-                $this->Flash->error('Datos son invalidos, por favor intente nuevamente', ['key' => 'auth']);
-            }
-        }
-
-        if ($this->Auth->user())
-        {
-            return $this->redirect(['controller' => 'Menu', 'action' => 'index']);
-        }
+//        if($this->request->is('post'))
+//        {
+//            $user = $this->Auth->identify();
+//            if($user)
+//            {
+//                $this->Auth->setUser($user);
+//                return $this->redirect($this->Auth->redirectUrl());
+//            }
+//            else
+//            {
+//                $this->Flash->error('Datos son invalidos, por favor intente nuevamente', ['key' => 'auth']);
+//            }
+//        }
+//
+//        if ($this->Auth->user())
+//        {
+//            return $this->redirect(['controller' => 'Menu', 'action' => 'index']);
+//        }
     }  
     /**
      * Index method
