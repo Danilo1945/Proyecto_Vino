@@ -5,16 +5,16 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content white-text" id="abajo_menu">
+                <span class="card-title green-text">ACCION</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
-                            __('Delete'),
+                            __('Eliminar'),
                             ['action' => 'delete', $item->id],
                             ['confirm' => __('Are you sure you want to delete # {0}?', $item->id)]
                             )
@@ -28,13 +28,13 @@
         <div class="card darken-1">
             <div class="card-content black-text">
                 <?= $this->Form->create($item) ?>
-                <span class="card-title green-text"><?= __('Edit Item') ?></span>
+                <span class="card-title green-text"><?= __('EDITAR ITEMS') ?></span>
 
                 <div class="input-field">
-                    <?= $this->Form->control('nom_item') ?>
+                    <?= $this->Form->control('Nom_item') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('detalle_item') ?>
+                    <?= $this->Form->control('Detalle_item') ?>
                 </div>
                 <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
