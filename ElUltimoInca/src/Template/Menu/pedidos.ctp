@@ -74,61 +74,114 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     
     
     
-    
-    
-    
- <script >
-          
-  $(document).ready(function(){
-    
-    $(".button-collapse").sideNav();
-     $('.carousel.carousel-slider').carousel({fullWidth: true});
-  });
-  
-      </script>
-   
-    
-</head>
+    <style>
 
-    
-    
-    
+            .Color_primP{
+                background: #009688;
+
+            }
+            .Color_secundarioP{
+                background: #E0E0E0;
+
+            }
+
+            nav{
+                position:   inherit;
+                top: 0;
+
+
+            }
+            .banner_pos{
+                
+            }
+            .menu-principal{
+               
+                position: float;
+            }
+
+            #abajo_menu{
+                position: static;
+
+            }
+
+        </style>
+        <script >
+
+            $(document).ready(function () {
+                $('.slider').slider();
+
+                $(".button-collapse").sideNav();
+
+
+
+                $(".button-collapse").click(function () {
+
+                    $("#asd").css("position", "initial");
+
+                });
+              
+
+            });
+
+        </script>
+
+
+    </head  >
+
+    <body>
+
+
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
-     
-    
-      <nav class="nav-extended #880e4f pink darken-3">
-    <div class="nav-wrapper ">
-      <a href="#" class="brand-logo center">El Ultimo Inca</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       
-           <!-- LO QUE APARECE EN LA S PC-->
-          
-          <li><a href="sass.html">Inicio</a></li>
-        <li><a href="badges.html">Acerca de</a></li>
-        <li><a href="../menu">LOG IN</a></li>
-      </ul>
-      
-       <!-- LO QUE APARECE EN LOS MOVILES-->
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">INICIO</a></li>
-        <li><a href="badges.html">ACERCA DE..</a></li>
-        <li><a href="../ElUltimoInca/menu">LOG IN</a></li>
-      </ul>
-    </div>
-          
-          <!--  LO QUE APARECE EL MENU GENERAL-->
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Inicio</a></li>
-        <li class="tab"><a class="active" href="#test2">CONTACTOS</a></li>
-        <li class="tab "><a href="#test3">PEDIDOS</a></li>
-         <li class="tab "><a href="#test3">CATALOGO</a></li>
-        <li class="tab"><a href="#test4">ACERCA DE..</a></li>
-      </ul>
-    </div>
-  </nav>
 
+
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content Color_primP">
+        <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+        <li class="divider"></li>
+        <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+
+    </ul>
+
+
+
+    <nav id="asd">
+        <div class="nav-wrapper Color_primP">
+            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+
+    
+    
+    
     
     
     
@@ -137,6 +190,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="row" style="height: 1000px">
         <div class="col s12">
             
+            <h1>PEDIDOS</h1>
             
         </div>
         
@@ -149,24 +203,24 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
-                            <h5 class="white-text">Footer Content</h5>
-                            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                            <h5 class="white-text"></h5>
+                            <p class="grey-text text-lighten-4"></p>
                         </div>
                         <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text">Links</h5>
+                            <h5 class="white-text"></h5>
                             <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="footer-copyright">
                     <div class="container">
-                        © 2014 Copyright Text
-                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                        © Copyright 2018
+                        <a class="grey-text text-lighten-4 right" href="#!"></a>
                     </div>
                 </div>
             </footer>       

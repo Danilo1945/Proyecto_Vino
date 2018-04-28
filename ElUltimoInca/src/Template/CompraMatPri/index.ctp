@@ -5,15 +5,15 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
+        <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Compra Mat Pri'), ['action' => 'add']) ?></li>
+                <span class="card-title green-text">Acccion</span>
+                <div class="card-action" id="abajo_menu">
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Compra de Materia Prima'), ['action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Compra Mat Pri') ?></span>
+                <span class="card-title green-text"><?= __('Compra de Materia Prima') ?></span>
                 <table class="responsive-table">
                     <thead>
                         <tr>
@@ -34,7 +34,7 @@
                             <th scope="col"><?= $this->Paginator->sort('id_pro') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('id_tra') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('id_mat_prim') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('Accion') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,9 +49,9 @@
                             <td><?= $this->Number->format($compraMatPri->id_tra) ?></td>
                             <td><?= $this->Number->format($compraMatPri->id_mat_prim) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $compraMatPri->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $compraMatPri->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $compraMatPri->id], ['confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Nuevo') . '" >zoom_in</i>', ['action' => 'view', $compraMatPri->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $compraMatPri->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $compraMatPri->id], ['confirm' => __('Desea Eliminar', $compraMatPri->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -69,6 +69,6 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Total de Productos')]) ?></p>
     </div>
 </div>

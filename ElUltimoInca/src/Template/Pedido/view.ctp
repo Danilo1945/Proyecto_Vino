@@ -5,18 +5,18 @@
 */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+ 
 </div>
 <div class="row">
     <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
+        <div class="card darken-1" id="abajo_menu">
+            <div class="card-content white-text" id="abajo_menu">
+                <span class="card-title black-text"><?= __('Acciones') ?></span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Pedido'), ['action' => 'edit', $pedido->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Pedido'), ['action' => 'delete', $pedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Pedido'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Pedido'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Pedido'), ['Acciones' => 'editar', $pedido->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Pedido'), ['Actiones' => 'eliminar', $pedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista Pedido'), ['Acciones' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nuevo Pedido'), ['Acciones' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
