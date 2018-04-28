@@ -224,7 +224,7 @@ return [
             'persistent' => false,
 
 
-            'host' => 'localhost:3307',
+            'host' => 'localhost:3306',
 
 
            
