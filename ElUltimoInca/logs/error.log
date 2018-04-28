@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+=======
 2018-04-26 05:43:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
@@ -16769,12 +16774,18 @@ Stack Trace:
 2018-04-26 05:47:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16792,15 +16803,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Css',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16818,15 +16838,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Css',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Medium.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16844,15 +16873,26 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+=======
 2018-04-26 05:47:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16870,15 +16910,26 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+=======
 2018-04-26 05:47:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16896,15 +16947,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -16922,7 +16982,11 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
@@ -16930,6 +16994,9 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /fonts/roboto/Roboto-Medium.woff
+<<<<<<< HEAD
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
@@ -17009,6 +17076,7 @@ Exception Attributes: array (
 )
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17026,15 +17094,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17052,15 +17129,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:47:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17078,15 +17164,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:51:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Css',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17104,6 +17199,9 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:51:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
@@ -17157,6 +17255,7 @@ Stack Trace:
 
 
 2018-04-26 05:51:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
@@ -17164,7 +17263,11 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /fonts/roboto/Roboto-Medium.woff2
+<<<<<<< HEAD
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17182,13 +17285,21 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:51:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
 Stack Trace:
@@ -17217,6 +17328,7 @@ Exception Attributes: array (
 )
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17234,67 +17346,94 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:53:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/home.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:53:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/cake.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:53:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
+Request URL: /css/home.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:53:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
+Request URL: /css/cake.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:53:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17312,7 +17451,11 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:53:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
@@ -17320,6 +17463,9 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /fonts/roboto/Roboto-Medium.woff
+<<<<<<< HEAD
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
@@ -17347,6 +17493,7 @@ Exception Attributes: array (
 )
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17364,67 +17511,94 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/cake.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/home.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
+Request URL: /css/cake.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
+Request URL: /css/home.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17442,15 +17616,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:53:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17468,15 +17651,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17494,15 +17686,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17520,15 +17721,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17546,7 +17756,11 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
@@ -17554,7 +17768,11 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /fonts/roboto/Roboto-Medium.woff2
+<<<<<<< HEAD
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17572,13 +17790,21 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
 Stack Trace:
@@ -17607,6 +17833,7 @@ Exception Attributes: array (
 )
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17624,67 +17851,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/home.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
-Exception Attributes: array (
-  'class' => 'Css',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /css/cake.css
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
-#13 {main}
-
-
-2018-04-26 05:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
-Request URL: /fonts/roboto/Roboto-Medium.woff2
-Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
+Request URL: /css/home.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17702,6 +17886,79 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
+Request URL: /css/cake.css
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
+2018-04-26 05:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Medium.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
+Request URL: /fonts/roboto/Roboto-Medium.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
+Stack Trace:
+#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\BaseApplication.php(109): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\webroot\index.php(41): Cake\Http\Server->run()
+#13 {main}
+
+
+<<<<<<< HEAD
+2018-04-26 05:18:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:54:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
 Exception Attributes: array (
   'class' => 'Fonts',
@@ -17729,14 +17986,20 @@ Stack Trace:
 
 
 2018-04-26 05:55:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17754,15 +18017,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17780,15 +18052,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17806,7 +18087,11 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
@@ -17814,7 +18099,11 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /fonts/roboto/Roboto-Medium.woff2
+<<<<<<< HEAD
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17832,15 +18121,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17858,15 +18156,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17884,15 +18191,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17910,15 +18226,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Medium.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17936,15 +18261,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17962,15 +18296,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/71?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -17988,15 +18331,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18014,15 +18366,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18040,15 +18401,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Medium.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18066,15 +18436,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18092,15 +18471,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:55:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff2
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18118,15 +18506,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:56:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Light.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/base.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18144,15 +18541,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:56:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Thin.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/home.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18170,15 +18576,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:56:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
-  'class' => 'Css',
+  'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Medium.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /css/cake.css
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/menu/contactos
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18196,15 +18611,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:56:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Bold.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff2
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
@@ -18222,15 +18646,24 @@ Stack Trace:
 #13 {main}
 
 
+<<<<<<< HEAD
+2018-04-26 05:18:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+=======
 2018-04-26 05:56:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Exception Attributes: array (
   'class' => 'Fonts',
   'plugin' => false,
   'prefix' => false,
   '_ext' => false,
 )
+<<<<<<< HEAD
+Request URL: /fonts/roboto/Roboto-Regular.woff
+Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/producto-terminado/index/2?accion=editar
+=======
 Request URL: /fonts/roboto/Roboto-Medium.woff
 Referer URL: http://localhost/Proyecto_Vino/ElUltimoInca/css/materialize.min.css
+>>>>>>> 72dd03b19918952e44dab1a02a08a6efbca113e4
 Stack Trace:
 #0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
 #1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
