@@ -242,9 +242,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?=$this -> Html -> image ( 'logo250x250.png' , [ 'alt' => 'CakePHP' ])?>
         
       </div>
-      <a href="#"><img class="circle" src="images/yuna.jpg"></a>
-            <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
-      <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>
+      <!--/<a href="#"><img class="circle" src="images/yuna.jpg"></a>-->
+        <a href="#!name"><span class="white-text name" style="color: black">El Ultimo Inca</span></a>
+      <a href="#!email"><span class="white-text email" style="color: black">elultimoinca@hotmail.com</span></a>
     </div></li>
    
       

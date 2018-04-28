@@ -5,7 +5,7 @@
  */
 ?>
 <div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
+   
 </div>
 <div class="row">
     <div class="col s12 m3">
