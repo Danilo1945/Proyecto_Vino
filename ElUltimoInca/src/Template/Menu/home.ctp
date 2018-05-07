@@ -50,7 +50,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
         <style>
             .Color_primP{
-                background: #009688;
+                background: #000;
             }
             .Color_secundarioP{
                 background: #E0E0E0;
