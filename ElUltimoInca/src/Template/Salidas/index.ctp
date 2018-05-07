@@ -62,7 +62,7 @@
             </div>
             
         </div>
-        <img src="Menu/img/fondoCon.jpg"/>
+        <img src="src/Template/Menu/img/fondoCon.jpg"/>
         <div class="center">
             <ul class="pagination">
                 <?= $this->Paginator->first('<i class="material-icons">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
