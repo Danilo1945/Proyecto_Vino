@@ -1,7 +1,5 @@
-
 /vendor/*
 /config/app.php
-
 /tmp/cache/models/*
 !/tmp/cache/models/empty
 /tmp/cache/persistent/*
@@ -15,3 +13,10 @@
 
 /logs/*
 !/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/vendors/*
