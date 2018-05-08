@@ -6,7 +6,7 @@
 /tmp/*
 /tmp/*
 /vendor/*
-
+config/*
 # OS generated files #
 ######################
 .DS_Store
