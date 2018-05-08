@@ -227,11 +227,6 @@ return [
 
             'host' => 'localhost:3307',
 
-         
-       
-
-
-            'host' => 'localhost:3306',
 
             /**
              * CakePHP will use the default DB port based on the driver selected
@@ -241,8 +236,6 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '',
-
-
             'database' => 'elultimoinca',
 
             'encoding' => 'utf8',
