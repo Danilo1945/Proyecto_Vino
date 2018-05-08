@@ -49,13 +49,18 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
+    $routes->connect('/', ['controller' => 'Menu', 'action' => 'home', 'home']);
+    $routes->connect('/menu', ['controller' => 'Menu', 'action' => 'index', 'home']);
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    
+    
+//    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    
+    
+    
     /**
      * Connect catchall routes for all controllers.
      *
@@ -65,7 +70,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      *
      * Any route class can be used with this method, such as:
      * - DashedRoute
-     * - InflectedRoute
+     * - 
      * - Route
      * - Or your own route class
      *
@@ -80,3 +85,5 @@ Router::scope('/', function (RouteBuilder $routes) {
  * how to customize the loading of plugin routes.
  */
 Plugin::routes();
+
+
