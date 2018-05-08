@@ -170,7 +170,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
        <div id="menu">
             <ul>
-                <li><h4 style="color: #ffd700">El Ultimo Inca</h4></li>
+                <li><?= $this->Html->image('100.png', ['alt' => 'CakePHP']) ?></li>
                 <li class="item-r"><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
                 <li class="item-r"><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?></li>
                 <li class="item-r"><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?></li>
