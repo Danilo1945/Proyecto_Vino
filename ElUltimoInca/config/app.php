@@ -238,7 +238,7 @@ return [
             'username' => 'root',
             'password' => '',
 
-            'database' => 'elulitmoinca',
+            'database' => 'elultimoinca',
 
             'encoding' => 'utf8',
             'timezone' => 'UTC',
