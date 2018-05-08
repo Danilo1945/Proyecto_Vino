@@ -22,15 +22,12 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <html>
     <head>
 
-
         <?= $this->Html->meta('icon') ?>
         <?= $this->Html->css('base.css') ?>
         <?= $this->Html->css('cake.css') ?>
         <?= $this->Html->css('home.css') ?>
         <?= $this->Html->css('fonts.css') ?>
         <?= $this->Html->css('3D.css') ?>
-
-        
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -47,22 +44,20 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </title>
         <!--        jquery-->
 
-
         <style>
 
             .Color_primP{
-                background: #009688;
+                background: #000;
 
             }
             .Color_secundarioP{
-                background: #E0E0E0;
+                background: #000;
 
             }
 
             nav{
                 position:   inherit;
                 top: 0;
-
 
             }
             .banner_pos{
@@ -120,7 +115,31 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 padding: 10px 30px;
                 background: #000;
             }
-                        
+            /*stilos de menu*/
+            #menu{
+                background-color: #000;
+                width: 100%;
+                
+            }
+            #menu ul {
+                list-style: none;
+            }
+            #menu ul li {
+                display: inline-block;
+            }
+            #menu ul li a{
+                color: #ffd700;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+            #menu ul li a:hover{
+                background-color: #9e9e9e;
+            }
+            .item-r{
+                background-color: black;
+                float: right;
+            }           
         </style>
         <script >
 
@@ -149,33 +168,18 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
         </ul>
 
-        <nav id="asd">
-            <div class="nav-wrapper Color_primP">
-                <a href="#!" class="brand-logo ">El Ultimo Inca</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                    <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                    <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                    <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                    <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right"></i></a></li>
-                </ul>
-
-                <ul class="side-nav" id="mobile-demo">
-                    <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                    <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                    <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                    <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                    <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
-                </ul>
-            </div>
-
-        </nav>
-
-            <div class="social">
+       <div id="menu">
+            <ul>
+                <li><h4 style="color: #ffd700">El Ultimo Inca</h4></li>
+                <li class="item-r"><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+                <li class="item-r"><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?></li>
+                <li class="item-r"><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
+            </ul>
+        </div>
+            
+        <div class="social">
             <ul>
                 <li><a href="https://www.facebook.com/vino.ultimo.inca/" target="_blank" class="icon-facebook"></a></li>
                 <li><a href="http://www.twitter.com" target="_blank" class="icon-twitter"></a></li>
