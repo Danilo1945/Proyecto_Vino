@@ -25,6 +25,7 @@ use BootstrapUI\View\UIViewTrait;
  */
 class AppView extends View
 {
+
     /**
      * Initialization hook method.
      *
@@ -34,6 +35,7 @@ class AppView extends View
      *
      * @return void
      */
+
     public function initialize()
     {
         //$this->initialize()

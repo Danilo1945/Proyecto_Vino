@@ -1,0 +1,104 @@
+2018-04-21 03:36:00 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\tmp\bake\Bake-Element-create-tables-ctp.php, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - ROOT\tmp\bake\Bake-Element-create-tables-ctp.php, line 8
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1561
+Cake\View\View::element() - CORE\src\View\View.php, line 675
+include - ROOT\tmp\bake\Bake-config-snapshot-ctp.php, line 37
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 103
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationSnapshotTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php, line 48
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 89
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 507
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 500
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 141
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-04-21 03:43:44 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\tmp\bake\Bake-Element-create-tables-ctp.php, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - ROOT\tmp\bake\Bake-Element-create-tables-ctp.php, line 8
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1561
+Cake\View\View::element() - CORE\src\View\View.php, line 675
+include - ROOT\tmp\bake\Bake-config-snapshot-ctp.php, line 37
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 103
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationSnapshotTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php, line 48
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 89
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 507
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 500
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 141
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-04-21 03:44:23 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\tmp\bake\Bake-Element-create-tables-ctp.php, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - ROOT\tmp\bake\Bake-Element-create-tables-ctp.php, line 8
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1561
+Cake\View\View::element() - CORE\src\View\View.php, line 675
+include - ROOT\tmp\bake\Bake-config-snapshot-ctp.php, line 37
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 103
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationSnapshotTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php, line 48
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 89
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 507
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 500
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 141
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-04-22 02:39:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\tmp\bake\Bake-Element-create-tables-ctp.php, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - ROOT\tmp\bake\Bake-Element-create-tables-ctp.php, line 8
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1561
+Cake\View\View::element() - CORE\src\View\View.php, line 675
+include - ROOT\tmp\bake\Bake-config-snapshot-ctp.php, line 37
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 214
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 166
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 103
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationSnapshotTask::bake() - ROOT\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php, line 48
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php, line 89
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 507
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 500
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 141
+[main] - ROOT\bin\cake.php, line 12
+
+
+

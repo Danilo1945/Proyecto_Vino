@@ -140,22 +140,22 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <ul class="slides" >
                     <li><?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
                         <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <h3>Este es nuestro gran lema!</h3>
+                            <h5 class="light grey-text text-lighten-3">Aqui esta nuestro pequeño lema.</h5>
                         </div>
                     </li>
                     <li>
                         <?= $this->Html->image('img2.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
                         <div class="caption left-align">
-                            <h3>Left Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <h3>Aqui esta nuestro mejor producto</h3>
+                            <h5 class="light grey-text text-lighten-3">Aqui esta nuestro pequeño lema.</h5>
                         </div>
                     </li>
                     <li>
                         <?= $this->Html->image('img3.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
                         <div class="caption right-align">
                             <h3>Right Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <h5 class="light grey-text text-lighten-3">Aqui esta nuestro pequeño lema.</h5>
                         </div>
                     </li>
                     <li>
