@@ -11,7 +11,7 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text">Acciones</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
 
@@ -32,7 +32,7 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
                 <?= $this->Form->create($socio) ?>
-                <span class="card-title green-text"><?= __('Editar  Socio') ?></span>
+                <span class="card-title black-text"><?= __('Editar  Socio') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('cedula') ?>
