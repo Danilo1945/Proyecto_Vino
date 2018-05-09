@@ -4,19 +4,51 @@
  * @var \App\Model\Entity\Pedido[]|\Cake\Collection\CollectionInterface $pedido
  */
 ?>
+<style>
+    .color_negro{
+        background: #000000;
+        color: #AA8100;
+    }
+    .co_buton_ver  {
+      color: #990000;  
+    }
+    .co_buton_editar  {
+      color: #990000 ;  
+    }
+    .co_buton_eliminar  {
+      color: #990000 ;  
+    }
+    .color_encabezado a{
+        color: #990000;
+    }
+    .color_menu {
+        color: #990000;
+    }
+    .color_paginator li  a {
+         color: #990000;
+         
+    }
+    .active a{
+        background: #990000;
+    }
+    .padding-action a{
+        color: #AA8100;
+    }
+</style>
+
+
 <div class="hide">
-<<<<<<< HEAD
-   
-=======
- 
->>>>>>> e258ca626eab3f6a502cf168d403504f3987475b
+
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
+            
             <div class="card-content white-text" id="abajo_menu">
                 <span class="card-title black-text">Acciones</span>
-                <div class="card-action">
+                
+<div class="card-action " id="abajo_menu"> 
+                   
                     <li class="padding-action"><?= $this->Html->link(__('Nuevo Pedido'), ['acciones' => 'add']) ?></li>
                 </div>
             </div>
@@ -24,12 +56,12 @@
     </div>
 
     <div class="col s12 m9">
-        <div class="card darken-1">
+        <div class="card darken-1"  id="abajo_menu"> 
             <div class="card-content black-text">
                 <span class="card-title black-text"><?= __('Pedido') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
+                            <tr class="color_encabezado">
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Fecha') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Cantidad') ?></th>
@@ -69,15 +101,7 @@
                 <?= $this->Paginator->last('<i class="material-icons">last_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
             </ul>
         </div>
-<div class="center">
-        <div class="card-panel teal lighten-5">
-            
-            <a class="waves-effect waves-light btn">Actualizar</a>
-<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Agregar</a>
-<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Guardar</a>
-        </div>
-     
-    </div>
+
         
     </div>
 </div>

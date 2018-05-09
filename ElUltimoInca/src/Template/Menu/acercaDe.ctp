@@ -38,6 +38,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('home.css') ?>
+    <?= $this->Html->css('clic.css') ?>
+    <?= $this->Html->css('fff.css') ?>
     
     
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -63,7 +65,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <style>
 
             .Color_primP{
-                background: #009688;
+                background: black;
 
             }
             .Color_secundarioP{
@@ -87,8 +89,35 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
             #abajo_menu{
                 position: static;
-
             }
+            
+      
+
+
+#menu{
+                background-color: #000;
+                width: 100%;
+                
+            }
+            #menu ul {
+                list-style: none;
+            }
+            #menu ul li {
+                display: inline-block;
+            }
+            #menu ul li a{
+                color: #ffd700;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+            #menu ul li a:hover{
+                background-color: #9e9e9e;
+            }
+            .item-r{
+                background-color: black;
+                float: right;
+            }      
 
         </style>
         <script >
@@ -130,120 +159,70 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </ul>
 
 
-
-    <nav id="asd">
-        <div class="nav-wrapper Color_primP">
-            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
+<div id="menu">
+            <ul>
+                <li><?= $this->Html->image('100a.png', ['alt' => 'CakePHP']) ?></li>
+                <li class="item-r"><?= $this->Html->link('ACERCA DE', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+                <li class="item-r"><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?></li>
+                <li class="item-r"><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
             </ul>
         </div>
 
+   
 
-    </nav>
+    <section class="portafolio">
+		<h1>ASOCIACIÓN DE COMERCIALIZADORES AGROPECUARIOS DE QUINTICUSIG</h1>
+		<div class="portafolio-container">
+			<section class="portafolio-item">
+				  <figure><?= $this->Html->image('vino1.jpg', ['alt' => 'CakePHP']) ?></figure>
+				<section class="portafolio-text">
+					<h2>MISIÓN</h2>
+					<p> Ser una Empresa líder en la producción y distribución de vino de mortiño, con reconocimiento en
+                                            el mercado vinícola local y nacional, ofreciendo un producto del resultado de un proceso con altos
+                                            estándares de calidad, y buenas prácticas de manufactura que satisfaga los paladares de los
+                                            consumidores más exigentes</p>
+				</section>
+			</section>
+                    
+			<section class="portafolio-item">
+				<figure><?= $this->Html->image('vino2.jpg', ['alt' => 'CakePHP']) ?></figure>
+				<section class="portafolio-text">
+					<h2>VISIÓN</h2>
+					<p> Posicionar sólidamente a la Empresa Ultimo Inca hasta el año 2020 dentro del mercado local y
+                                            nacional como líder y pionera en la producción de vinos de mortiño y caracterizarse por una
+                                            producción que cumpla con procesos de estricto control de calidad, teniendo un impacto positivo
+                                            en mejorar la calidad de vida de sus integrantes.</p>
+				</section>
+			</section>
+                    
+			<section class="portafolio-item">
+				<figure><?= $this->Html->image('vino3.jpg', ['alt' => 'CakePHP']) ?></figure>
+				<section class="portafolio-text">
+					<h2>UBICACIÓN</h2>
+					<p> La Planta de producción de Vino de Mortiño el Ultimo Inca de la Asociación de Productores y
+                                            Comercializadores Agropecuarios de Quinticusig se encuentra ubicada en la Comunidad de
+                                            Quinticusig en el cerro Guingopana, a 3000 metros de altura, pertenece al Cantón Sigchos,
+                                            Provincia Cotopaxi.</p>
+				</section>
+			</section>
+                 
+                </div>
+                <center><section class="portafolio-item">
+				<figure><?= $this->Html->image('vino4.jpg', ['alt' => 'CakePHP']) ?></figure>
+				<section class="portafolio-text">
+					<h2>LA FABRICA?</h2>
+					<p> La Asociación de Productores y Comercializadores Agropecuarios de Quinticusig nace con la
+                                            iniciativa de trabajar asociadamente en búsqueda de mejorar la economía de sus 22 socias/os 12
+                                            mujeres y 10 hombres que actualmente trabajan en un emprendimiento innovador como es la
+                                            producción de vino de mortiño.</p>
+				</section>
+			</section>
+                    </center>
+		</div>
+	</section>
 
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    <div class="row" style="height: 1000px">
-        
-        <div class="col s9">
-            
-            <div class="row">
-    <div class="col s12 m6">
-      <div class="card #00695c teal darken-3 darken-1">
-        <div class="card-content white-text">
-            
-            <center><strong><span class="card-title">MISIÓN</span></strong></>
-          <p>Ser una Empresa líder en la producción y distribución de vino de mortiño, con reconocimiento en
-             el mercado vinícola local y nacional, ofreciendo un producto del resultado de un proceso con altos
-             estándares de calidad, y buenas prácticas de manufactura que satisfaga los paladares de los
-             consumidores más exigentes.</p>
-        </div>
-      </div>
-    </div>
-              
-                
-            
-            <div class="row">
-    <div class="col s10 m6">
-      <div class="card #00695c teal darken-3 darken-1">
-        <div class="card-content white-text">
-            <center><strong><span class="card-title">VISIÓN</span></strong></>
-          <p>Posicionar sólidamente a la Empresa Ultimo Inca hasta el año 2020 dentro del mercado local y
-nacional como líder y pionera en la producción de vinos de mortiño y caracterizarse por una
-producción que cumpla con procesos de estricto control de calidad, teniendo un impacto positivo
-en mejorar la calidad de vida de sus integrantes.</p>
-        </div>
-      </div>
-    </div>          
-</div>   
-</div>  
-       
-          <div class="row">
-    <div class="col s12 m6">
-      <div class="card #00695c teal darken-3 darken-1">
-        <div class="card-content white-text">
-            <center><strong><span class="card-title">UBICACIÓN</span></strong></>
-          <p>
-La Planta de producción de Vino de Mortiño el Ultimo Inca de la Asociación de Productores y
-Comercializadores Agropecuarios de Quinticusig se encuentra ubicada en la Comunidad de
-Quinticusig en el cerro Guingopana, a 3000 metros de altura, pertenece al Cantón Sigchos,
-Provincia Cotopaxi.</p>
-        </div>
-      </div>
-    </div> 
-                
-              <div class="col s12 m6">
-      <div class="card #00695c teal darken-3 darken-1">
-        <div class="card-content white-text">
-            <center><strong><span class="card-title">DE DONDE NACE LA FABRICA?</span></strong></>
-          <p> La Asociación de Productores y Comercializadores Agropecuarios de Quinticusig nace con la
-iniciativa de trabajar asociadamente en búsqueda de mejorar la economía de sus 22 socias/os 12
-mujeres y 10 hombres que actualmente trabajan en un emprendimiento innovador como es la
-producción de vino de mortiño.</p>
-        </div>
-      </div>
-    </div> 
-                
-        </div>     
-            
-         
-         </div>
-             </div>
-                
-    
-        
-        
          <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
         <div class="container">
             <div class="row">
