@@ -119,8 +119,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </div>
 
         </div>
-        <!--
-                <nav>
+        
+<!--                <nav>
                     <nav>
             <div class="nav-wrapper Color_primP" >
               <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium-8 material-icons button-collapse center">menu</i><?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?></a>
@@ -353,19 +353,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     </div>
                 </div>
             </footer>
-
-
-
-
-
-
-
-
-
-
-            <!--MENU  DE ABAJO-->
-
-
 
 
 
