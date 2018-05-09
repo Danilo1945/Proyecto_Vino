@@ -75,7 +75,7 @@
                             <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Apellidos') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Telefono') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Direccion') ?></th>
+                            <th scope="col"><?= $this->Paginatoryo->sort('Direccion') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Email') ?></th>
                             <th><?= __('Acciones') ?></th>
                         </tr>
