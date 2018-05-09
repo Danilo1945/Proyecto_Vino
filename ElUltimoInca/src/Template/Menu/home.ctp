@@ -50,10 +50,25 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
         <style>
             .Color_primP{
+
+                background:black  ;
+               
+
+            }
+             .Color_men{
+                background: #839192    ;
+               
+
+            }
+            .Color_secundarioP{
+                background: yellow  ;
+
+
                 background: #000;
             }
             .Color_secundarioP{
                 background: #E0E0E0;
+
             }
 
             nav{
@@ -66,13 +81,38 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .menu-principal{
                
                 position: float;
+                
             }
 
             #abajo_menu{
                 position: static;
 
             }
-
+             /*stilos de menu*/
+            #menu{
+                background-color: #000;
+                width: 100%;
+                
+            }
+            #menu ul {
+                list-style: none;
+            }
+            #menu ul li {
+                display: inline-block;
+            }
+            #menu ul li a{
+                color: #ffd700;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+            #menu ul li a:hover{
+                background-color: #9e9e9e;
+            }
+            .item-r{
+                background-color: black;
+                float: right;
+            } 
         </style>
         <script >
 
@@ -86,6 +126,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                     $("#asd").css("position", "initial");
                 });
             });
+             $(document).ready(function(){
+    $('.carousel').carousel();
+  });
 
         </script>
     </head  >
@@ -99,80 +142,180 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
 
     </ul>
-    <nav id="asd">
+
+ <nav id="asd">
         <div class="nav-wrapper Color_primP">
             <a href="#!" class="brand-logo ">El Ultimo Inca</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li style="color: #ffd700"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                 <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
                 <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
                 <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
             </ul>
+
             <ul class="side-nav" id="mobile-demo">
                 <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
                 <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                 <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
                 <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
                 <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
             </ul>
         </div>
+
+
     </nav>
 
-    <div class="row">
-        <div class="col s12 "><br>
-            <div class="slider col s12 " style="position: relative">
-                <ul class="slides" >
-                    <li><?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('img2.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption left-align">
-                            <h3>Left Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('img3.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption right-align">
-                            <h3>Right Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('img2.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
+
+                        <br>
                         
-                    </li>
-                </ul>
+                        <br>
+                        
+     
+        <div class="col s12 m4">
+  <div class="row" >
+      
+      <div class="col s12 m12" style=" height: 800px"" >  <!--   inicio del columna-->
+                <div class="slider">
+                    <ul class="slides" style="height:800px">
+                        <li>
+                            <?= $this->Html->image('vin.jpg', ['alt' => 'CakePHP'],['width' => '100px'],
+                                    ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3 >BIENVENIDOS</h3>
+                                  <span class="card-title yellow-text">Registrate en nuestra pagina web </span>
+                                  <br>
+                                  <br>
+                                  <a class="waves-effect waves-light #b71c1c red darken-4 btn" >Registrate</a>
+                                <div class="caption left-align">
+                   
+                            <h5 class="light grey-text text-lighten-3"></h5>
+                        </div>
+                     
+                    
+                            </div>
+                        </li>
+                        <li>
+                            <?= $this->Html->image('vinot.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Vinos de Mortiño</h3>
+                            </div>
+        </li>
+                        <li>
+                            <?= $this->Html->image('vino11.png', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Helados Quinticusig</h3>
+                            </div>
+                                    </li>
+                        
+                    </ul>
+                    
+                </div>
             </div>
-        </div>  
     </div>
+        </div>  
+
+
+
+  <br>
+  <br><br><br>
+                        <br><br>
+  <br><br><br>
+                   <br><br>
+                        <br>     <br>
+                        <br>
+                   <br><br>
+                        <br>     <br>
+                        
+
+    
+   
+    
+    <div class="col s13 m4">
+        <div class="caption center-align">
+                            
+                             <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
+                            <h5 class="light grey-text text-lighten-3 "></h5>
+                        </div>
+                <div class="card-action">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
     <div class="row">
     <div class="col s12 m4">
         <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text">Vino Blanco</span>
+            <div class="card-content red-text">
+               
                 <div class="card-action">
-                    <div class="card-image">
-                        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo, amarillo verdoso o amarillo oro.</p>
-                    </div>
-                    <div class="card-action">
-                       <li><?= $this->Html->link('Hacer Pedido', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                    </div>
+
+                    
+                    
+       
+                      <div class="card-image">
+             <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
+              <span class="card-title">VINO TINTO</span>
+            </div>
+                   <div class="card-content">
+                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo.</p>
+            </div>
+
+                  
+
+                
+
+                </div>
+                  </div>
+  
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card darken-1">
+            <div class="card-content white-text">
+               
+                <div class="card-action">
+   <div class="card-image">
+             <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
+              <span class="card-title">Mermelada de Mortiño</span>
+            </div>
+                   <div class="card-content">
+                       <p style="color: black; text-justify:distribute "> 
+                       Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
+            </div>
+
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+
                 </div>
             </div>
         </div>
@@ -180,42 +323,35 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="col s12 m4">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Vino Seco</span>
                 <div class="card-action">
                     <div class="card-image">
-                        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                       <p style="color: black; text-justify:distribute "> El vino seco es también conocido como vino de mesa y se denomina de esta manera porque, al contrario de los vinos dulces, tiene muy poca o nula cantidad de azúcar. Es principalmente determinado por su sabor, aunque factores como la acidez y alcohol también pueden influir en su percepción.</p>
-                    </div>
-                    <div class="card-action">
-                        <li><?= $this->Html->link('Hacer Pedido', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                    </div>
+
+             <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
+              <span class="card-title">Helado de Mortiño</span>
+            </div>
+                   <div class="card-content ">
+                       <p  style="color: black">
+                           Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
+            </div>
+
+                    
+                    
+                    
+
+                          
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text">Vino Tinto</span>
-                <div class="card-action">
-                    <div class="card-image">
-                        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
-                        <span class="card-title">Card Title</span>
-                    </div>
-                        <div class="card-content ">
-                            <p  style="color: black">El vino tinto es un tipo de vino procedente mayormente de mostos de uvas tintas, con la elaboración pertinente para conseguir la difusión de la materia colorante que contienen los hollejos de la uva</p>
-                        </div>
-                        <div class="card-action">
-                          <li><?= $this->Html->link('Hacer Pedido', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                        </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+
+     
+</div>
+    
+   
+    
+    
+
 
     <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
         <div class="container">
@@ -223,22 +359,43 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <div class="col l6 s12">
                     <h5 class="white-text">EL ULTIMO INCA</h5>
                     <p class="grey-text text-lighten-4">puedes ponerte en contacto con nosotros.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Paginas amigas</h5>
-                    <ul>
+                      <p class="grey-text text-lighten-4">Telefono:(593) 0991868307 </p>
+                       <p class="grey-text text-lighten-4"> Email: vinoelultimoinca@hotmail.com</p>
+                        <p class="grey-text text-lighten-4">Facebook: Vino elultimoinca</p>
+                    
+                    </div>
+                <div class="caption center-align">
+                        
+                            <h5 class="white-text">PAGINAS AMIGOS</h5>
+                             <ul>
                         <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
-                    </ul>
-                </div>
+                        </ul>
+                        </div>
+                  
+                   
+
+                </div> 
+
+               
+    </footer>   
+ <div class="col s13 m4">
+        <div class="card darken-1 center">
+            <div class="card-content white-text ">
+                <span class="card-title yellow-text">EL ULTIMO INCA </span>
+               
             </div>
         </div>
-        <div class="footer-copyright">
+    </div>
+</body>
+<div class="footer-copyright">
             <div class="container">
-                © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
+              
                 <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
             </div>
         </div>
     </footer>   
 </body>
+
+codigo interfaz valida

@@ -5,23 +5,30 @@
  */
 ?>
 
+<style>
+    .color_negro{
+        background: #000000;
+        color: #AA8100;
+    }
+</style>
+
+
+
+
+
+
 <div class="hide" >
     
 </div>
 <div class="row" >
     <div class="col s12 m3" >
-        <div class="card darken-1 " id="abajo_menu">
-<<<<<<< HEAD
+        <div class="card darken-1 " id="abajo_menu ">
+
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title black-text">Acciones</span>  <!--cambio el color por black-text -->
                 <div class="card-action" id="abajo_menu"> 
-                    <li class="padding-action"><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?></li>
-=======
-            <div class="card-content white-text"id="abajo_menu" >
-                <span class="card-title green-text">Acciones</span>
-                <div class="card-action" id="abajo_menu">
-                    <li class="padding-action"><?= $this->Html->link(__('Nuevo Socio'), ['action' => 'add']) ?></li>
->>>>>>> 1cadd66ab92a85fed4fab14808736b147c8efa35
+                    <li class="padding-action "><?= $this->Html->link(__('Nuevo Socio'), ['action' => 'add']) ?></li>
+
                 </div>
             </div>
         </div>
@@ -30,11 +37,11 @@
     <div class="col s12 m9">
         <div class="card darken-1"  id="abajo_menu"> 
             <div class="card-content black-text" >
-                <span class="card-title green-text"><?= __('Socio') ?></span>
+                <span class="card-title black-text"><?= __('Socio') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
-                            <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                        <tr class="color_negro">
+                            <th scope="col" ><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cedula') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Apellidos') ?></th>
