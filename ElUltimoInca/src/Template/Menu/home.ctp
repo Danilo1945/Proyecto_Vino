@@ -182,55 +182,16 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </nav>
 
 <div class="row">
-        <div class="col s12 ">
-
-            <!--feature descover-->
-
             <br>
-           
-           
-
-    
-      
-
-              <div class="slider col s14 " style="position: relative">
-                <ul class="slides" >
-                    <li >
-                        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption center-align">
-                            <h1>EL ULTIMO INCA</h1>
-                            <h5 class="light grey-text text-lighten-6">VINO TINTO</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('img2.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption left-align">
-                            <h1>Vino de Mortiño </h1>
-                            <h5 class="light grey-text text-lighten-3"></h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('campo.jpeg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption center-align">
-                         <h3 style="color: #000  ">REALIZACION DEL VINO </h3>
-                            <h5 class="light grey-text text-lighten-3">
-                            El último Inca es la marca artesanal de vino de mortiño que produce un grupo de mujeres 
-                            de la comunidad Quinticusig del cantón Sigchos, en Cotopaxi. Hace seis años y medio comercializan este producto que cuenta con 
-                            registro sanitario.</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <?= $this->Html->image('el inca.jpg', ['alt' => 'CakePHP']) ?> <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>PERSONAL DE PLANTA</h3>
-                            <h5 class="light grey-text text-lighten-3"></h5>
-                        </div>
-                        
-                    </li>
-                </ul>
+            <!--feature descover-->
+              <div class="slider col s12 " style="position: relative">
+                <div class="row ">
+      <div class="col s12 #37474f blue-grey darken-3">1</div>
+  
+    </div>
             </div>
         </div>  
-    </div>
+
 
 
 
@@ -239,10 +200,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
    
     
     <div class="col s13 m4">
-        <div class="card darken-1 center">
-            <div class="card-content white-text ">
-                <span class="card-title #ffd54f amber lighten-2">PRODUCTOS</span>
-               
+        <div class="caption center-align">
+                            
+                             <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
+                            <h5 class="light grey-text text-lighten-3 "></h5>
+                        </div>
                 <div class="card-action">
                    
                 </div>
@@ -317,7 +279,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <div class="card-action">
                     
                     <div class="card-image">
-             <?= $this->Html->image('helado1.jpg', ['alt' => 'CakePHP']) ?>
+             <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
               <span class="card-title">Helado de Mortiño</span>
             </div>
                    <div class="card-content ">
