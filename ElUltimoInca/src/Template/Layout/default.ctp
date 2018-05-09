@@ -65,12 +65,32 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             }
             .c_dorado{
                 color: #AA8100;
+                
+            
             }
-            .c_vino{
-               color: #990000;
+            
+            
+            .blanco_color{
+                color: #f5f5f5;
             }
 
-
+/*para cambiar color bo*/
+ /* label color */
+   .input-field label {
+       /*color del texto*/
+     color: #000;   
+   }
+     .input-field input[type=text]:focus + label {
+     color: #AA8100;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+         
+      
+            
+            
         </style>
 
 
@@ -138,74 +158,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
             <!--</div>  fin container-->
 
-             
-
-      
-
-
-
-
-
-            
-         <footer class="page-footer Color_primP">
-          <div class="container">
-            <div class="row">
-                <!--inicio baner-->
-                
-            <div class="col s3 m3 l3 xl3">
-                  <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
-            </div>
-
-            <div class="col s3 m3 l3 xl3">
-                <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
-            </div>
-
-            <div class="col s3 m3 l3 xl3">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-
-            <div class="col s3 m3 l3 xl3">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-                
-                
-            <div class="col s4 m4 l4 xl4">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-                <div class="col s4 m4 l4 xl4">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-                <div class="col s4 m4 l4 xl4">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-                
-                
-                
-                
-                
-                
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
 
 
 
@@ -215,16 +167,211 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
+            <footer class="page-footer Color_primP">
+                <div class="container">
+                    <div class="row">
+                        <!--inicio baner-->
 
- <!--MENU  DE ABAJO-->
+                        <!--///// redes sociales-->
+
+                        <div class="row " >
+                            <div class="col  s12  m12 l12 xl12 " >
+                                <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                    <div class="card-content white-text">
+                                        <span class="card-title c_dorado">Siguenos en:</span>
+                                        <div class="card-action" id="abajo_menu"> 
 
 
-            
-            
-            
-            
-            
-            
+                                            <div class="col s3 m3 l3 xl3">
+                                                <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
+                                            </div>
+
+                                            <div class="col s3 m3 l3 xl3">
+                                                <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
+                                            </div>
+
+                                            <div class="col s3 m3 l3 xl3">
+                                                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                            </div>
+
+                                            <div class="col s3 m3 l3 xl3">
+                                                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <!--//// fin redes sociales-->
+
+                        
+                        <!--/////// iniciao mapa-->
+
+                        <div class="row " >
+                            <div class="col  s12  m12 l12 xl12 " >
+                                <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                    <div class="card-content white-text">
+                                        <span class="card-title c_dorado ">Como Llegar a Quinticusig-Sigchos</span>
+                                        <div class="card-action" id="abajo_menu"> 
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13589.262514870908!2d-78.8755357812871!3d-0.7141739916636745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNDInNTEuMCJTIDc4wrA1MicwMC40Ilc!5e1!3m2!1ses-419!2sec!4v1525822446458" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <!--///// fin mapa-->
+                        <!--para los contactos-->
+                        <div class="row " >
+                            <div class="col  s12  m12 l12 xl12 " >
+                                <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                    <div class="card-content white-text">
+                                        <span class="card-title c_dorado">CONTACTOS</span>
+                                        <div class="card-action" id="abajo_menu"> 
+                                            <!--////////////////////////////////////////////////////////-->
+
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12 m6 l6 xl6">
+                                                            <i class="material-icons prefix  ">account_circle</i>
+                                                            <input id="icon_prefix" type="text" class="validate ">
+                                                            <label for="icon_prefix" >Nombre:</label>
+                                                        </div>
+                                                        <div class="input-field col s12 m6 l6 xl6">
+                                                            <i class="material-icons prefix">email</i>
+                                                            <input id="icon_prefix" type="text" class="validate">
+                                                            <label for="icon_prefix">Email:</label>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="input-field col s12 m12 l12 xl12">
+                                                            <i class="material-icons prefix " >insert_comment</i>
+                                                            <input id="icon_prefix" type="text" class="validate ">
+                                                            <label for="icon_prefix">Asunto:</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="input-field col s12 m12 l12 xl12">
+                                                            <i class="material-icons prefix">mode_edit</i>
+                                                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                                            <label for="icon_prefix2">Mensaje</label>
+
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn waves-effect " type="submit" name="action" style=" background:#AA8100; ">Enviar
+                                                        <i class="material-icons right">send</i>
+                                                    </button>
+                                                   
+                                                </form>
+                                            </div>
+                                            <!--////////////////////////////////////////////////////////-->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>  
+                        </div>
+
+                        <!--fin contactos-->
+
+                        <!--para los contactos-->
+
+
+
+                        <!--fin contactos-->
+
+
+
+
+
+
+
+                        <div class="col l6 s12 ">
+                            <!--                            <h5 class="white-text">Footer Content</h5>-->
+                            <!--inicio imagen-->
+                            <div class="row " >
+                                <div class="col  s12  m12 l12 xl12 " >
+                                    <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                        <div class="card-content white-text">
+<!--                                            <span class="card-title green-text">CONTACTOS</span>-->
+                                            <div class="card-action" id="abajo_menu"> 
+                                                <!--////////////////////////////////////////////////////////-->
+                                                <?= $this->Html->image('logo 300x114.png', ['alt' => 'CakePHP']) ?>
+                                                <!--////////////////////////////////////////////////////////-->
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>  
+                            </div>
+                            <!--fin imagen-->
+                        </div>
+
+
+                        <div class="col l4 offset-l2 s12">
+                            <!--                            <h5 class="white-text">Links</h5>-->
+                            <!--inicio logos utc-->
+                            <div class="row " >
+                                <div class="col  s12  m12 l12 xl12 " >
+                                    <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                        <div class="card-content white-text">
+                                            <!--<span class="card-title green-text">CONTACTOS</span>-->
+                                            <div class="card-action" id="abajo_menu"> 
+                                                <!--////////////////////////////////////////////////////////-->
+                                                <?= $this->Html->image('UtcSistemas300x114.png', ['alt' => 'CakePHP']) ?>
+                                                <!--////////////////////////////////////////////////////////-->
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>  
+                            </div>
+                            <!--fin logos utc-->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2018 Copyright El Ultimo Inca: Todos los derechos reservados
+                        <a class="grey-text text-lighten-4 right" href="">Grupo desarrollo UTC</a>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+
+
+            <!--MENU  DE ABAJO-->
+
+
+
+
+
+
+
+
         </div>  <!-- fin contenedor principal-->
 
 
