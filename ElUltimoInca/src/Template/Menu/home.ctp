@@ -180,7 +180,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             <!--feature descover-->
               <div class="slider col s12 " style="position: relative">
                 <div class="row ">
-                    <div class="col s12 #37474f blue-grey darken-3 " style="height: 430px">
+                    <div class="col s12 #37474f blue-grey darken-3 " style="height: 460px">
                         <br>
                         </br>
                         <br>
@@ -241,7 +241,6 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
     
 
-
     <div class="row">
     <div class="col s12 m4">
         <div class="card darken-1">
@@ -257,7 +256,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
               <span class="card-title">VINO TINTO</span>
             </div>
                    <div class="card-content">
-                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo.</p>
+                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro.</p>
             </div>
 
                   
