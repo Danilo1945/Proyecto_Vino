@@ -175,46 +175,69 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
     </nav>
 
-<div class="row">
-            <br>
-            <!--feature descover-->
-              <div class="slider col s12 " style="position: relative">
-                <div class="row ">
-                    <div class="col s12 #37474f blue-grey darken-3 " style="height: 460px">
+
                         <br>
-                        </br>
+                        
                         <br>
-                        </br>
+                        
      
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h1 style="color:#FBFCFC  ">BIENVENIDOS </h1>
-                    <span class="card-title yellow-text">Registrate en nuestra pagina web </span>
-                              
-                    <h5 class="light grey-text text-lighten-3"></h5>
-                 
-                    </div>
-            
-             </div>
-            <a class="waves-effect waves-light #b71c1c red darken-4 btn"  >Registrate</a>
-                  
-                      </div>   
-                  
-        
-          
-
-                    </div>
-         
-
-    </div>
-              
+        <div class="col s12 m4">
+  <div class="row" >
+      
+      <div class="col s12 m12" style=" height: 800px"" >  <!--   inicio del columna-->
+                <div class="slider">
+                    <ul class="slides" style="height:800px">
+                        <li>
+                            <?= $this->Html->image('vin.jpg', ['alt' => 'CakePHP'],['width' => '100px'],
+                                    ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3 >BIENVENIDOS</h3>
+                                  <span class="card-title yellow-text">Registrate en nuestra pagina web </span>
+                                  <br>
+                                  <br>
+                                  <a class="waves-effect waves-light #b71c1c red darken-4 btn" >Registrate</a>
+                                <div class="caption left-align">
+                   
+                            <h5 class="light grey-text text-lighten-3"></h5>
+                        </div>
+                     
+                    
+                            </div>
+                        </li>
+                        <li>
+                            <?= $this->Html->image('vinot.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Vinos de Mortiño</h3>
+                            </div>
+        </li>
+                        <li>
+                            <?= $this->Html->image('vino11.png', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Helados Quinticusig</h3>
+                            </div>
+                                    </li>
+                        
+                    </ul>
+                    
+                </div>
             </div>
+    </div>
         </div>  
 
 
 
-
+  <br>
+  <br><br><br>
+                        <br><br>
+  <br><br><br>
+                   <br><br>
+                        <br>     <br>
+                        <br>
+                   <br><br>
+                        <br>     <br>
+                        
 
     
    
@@ -241,6 +264,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
     
 
+
     <div class="row">
     <div class="col s12 m4">
         <div class="card darken-1">
@@ -256,7 +280,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
               <span class="card-title">VINO TINTO</span>
             </div>
                    <div class="card-content">
-                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro.</p>
+                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo.</p>
             </div>
 
                   
