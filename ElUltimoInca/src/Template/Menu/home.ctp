@@ -129,62 +129,53 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
              $(document).ready(function(){
     $('.carousel').carousel();
   });
+ var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
 
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  
+  
         </script>
     </head  >
 
     <body>
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content Color_primP">
-        <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
-        <li class="divider"></li>
-        <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
-
-    </ul>
-
- <nav id="asd">
-        <div class="nav-wrapper Color_primP">
-            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
+    
+     <div id="menu">
+            <ul>
+                <li><?= $this->Html->image('100.png', ['alt' => 'CakePHP']) ?></li>
+                <li class="item-r"><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+                <li class="item-r"><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?></li>
+                <li class="item-r"><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?></li>
+                <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
             </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
+        </div>
+            
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/vino.ultimo.inca/" target="_blank" class="icon-facebook"></a></li>
+                <li><a href="http://www.twitter.com" target="_blank" class="icon-twitter"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=KLNCAFlpQPk" target="_blank" class="icon-youtube"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" class="icon-instagram"></a></li>
+                <li><a href="mailto:juan.topa63@gmail.com" class="icon-mail"></a></li>
             </ul>
         </div>
 
 
-    </nav>
-
-
-                        <br>
-                        
-                        <br>
-                        
-     
-        <div class="col s12 m4">
+ 
+ <div class="col s12 m4">
   <div class="row" >
       
-      <div class="col s12 m12" style=" height: 800px"" >  <!--   inicio del columna-->
+            <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
                 <div class="slider">
                     <ul class="slides" style="height:800px">
                         <li>
@@ -212,10 +203,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                             </div>
         </li>
                         <li>
-                            <?= $this->Html->image('vino11.png', ['alt' => 'CakePHP'], ['width' => '100px'],
+                            <?= $this->Html->image('socios.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
                         ['height' => '100px']) ?>
                             <div class="caption">
-                                <h3>Helados Quinticusig</h3>
+                                <h3>Socios</h3>
                             </div>
                                     </li>
                         
@@ -224,22 +215,6 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 </div>
             </div>
     </div>
-        </div>  
-
-
-
-  <br>
-  <br><br><br>
-                        <br><br>
-  <br><br><br>
-                   <br><br>
-                        <br>     <br>
-                        <br>
-                   <br><br>
-                        <br>     <br>
-                        
-
-    
    
     
     <div class="col s13 m4">
@@ -264,7 +239,6 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
     
 
-
     <div class="row">
     <div class="col s12 m4">
         <div class="card darken-1">
@@ -280,7 +254,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
               <span class="card-title">VINO TINTO</span>
             </div>
                    <div class="card-content">
-                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo.</p>
+                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
             </div>
 
                   

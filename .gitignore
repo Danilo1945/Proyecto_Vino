@@ -20,3 +20,6 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+*.log
+ElUltimoInca/tmp/cache/models/myapp_cake_model_default_socio
+ElUltimoInca/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s
