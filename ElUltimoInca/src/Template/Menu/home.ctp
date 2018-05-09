@@ -209,9 +209,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
         <!--///////////////////////////////////////////////////////////////inicio del contenido-->
         <!--//////////////////////////////inicio banner-->
-        <div class="row center">
-            <div class="s1 m1 l1 xl1">ssss</div>
-            <div class="col s12 m10 l10 xl10 center " style=" width: 1160px; height: auto;">
+        <div class="row ">
+          
+            <div class="col s12 " style=" width:1150px; height: auto;">
 
 
                 <div class="carousel carousel-slider center">
@@ -239,8 +239,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
 
             </div>
-             <div class="s1 m1 l1 xl1">ssss</div>
-
+            
         </div>
 
 

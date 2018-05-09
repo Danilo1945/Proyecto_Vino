@@ -94,7 +94,37 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </style>
 
 
-
+<style>
+    .color_negro{
+        background: #000000;
+        color: #AA8100;
+    }
+    .co_buton_ver  {
+      color: #990000;  
+    }
+    .co_buton_editar  {
+      color: #990000 ;  
+    }
+    .co_buton_eliminar  {
+      color: #990000 ;  
+    }
+    .color_encabezado a{
+        color: #990000;
+    }
+    .color_menu {
+        color: #990000;
+    }
+    .color_paginator li  a {
+         color: #990000;
+         
+    }
+    .active a{
+        background: #990000;
+    }
+    .padding-action a{
+        color: #AA8100;
+    }
+</style>
 
 
 
