@@ -71,9 +71,10 @@
                             <td><?= h($item->nom_item) ?></td>
                             <td><?= h($item->detalle_item) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Vista') . '" >zoom_in</i>', ['action' => 'vista', $item->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'editar', $item->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'eliminar', $item->id], ['confirm' => __('Are you sure you want to delete # {0}?', $item->id), 'escape' => false]) ?>
+                               
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Vista') . '" >zoom_in</i>', ['action' => 'vista', $item->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Editar') . '" >create</i>', ['action' => 'editar', $item->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_ver" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'eliminar', $item->id], ['confirm' => __('Are you sure you want to delete # {0}?', $item->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

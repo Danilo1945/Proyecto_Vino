@@ -68,7 +68,7 @@
                             <th scope="col"><?= $this->Paginator->sort('unidad_medida') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Idcliente') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('id_pro_ter') ?></th>
-                            <th><?= __('Actions') ?></th>
+                            <th><?= __('Acciones') ?></th>
                         </tr>
                     </thead>
                     
@@ -82,9 +82,9 @@
                             <td><?= $this->Number->format($pedido->Idcliente) ?></td>
                             <td><?= $this->Number->format($pedido->id_pro_ter) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Vista') . '" >zoom_in</i>', ['action' => 'view', $pedido->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $pedido->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $pedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Vista') . '" >zoom_in</i>', ['action' => 'view', $pedido->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $pedido->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_ver" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $pedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pedido->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -94,7 +94,7 @@
         </div>
         <div class="center">
             <ul class="pagination">
-                <?= $this->Paginator->first('<i class="material-icons">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
+                <?= $this->Paginator->first('<i class="material-icons  ">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
                 <?= $this->Paginator->prev('<i class="material-icons">chevron_left</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
                 <?= $this->Paginator->numbers() ?>
                 <?= $this->Paginator->next('<i class="material-icons">chevron_right</i>', ['class' => 'waves-effect', 'escape' => false]) ?>

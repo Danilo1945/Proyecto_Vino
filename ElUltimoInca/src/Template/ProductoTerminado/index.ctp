@@ -99,9 +99,9 @@
                             <td><?= $this->Number->format($productoTerminado->id_mat_prim) ?></td>
                             <td><?= $this->Number->format($productoTerminado->id_tra) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Vista') . '" >zoom_in</i>', ['accion' => 'vista', $productoTerminado->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['accion' => 'editar', $productoTerminado->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['accion' => 'elliminar', $productoTerminado->id], ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Vista') . '" >zoom_in</i>', ['accion' => 'vista', $productoTerminado->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Editar') . '" >create</i>', ['accion' => 'editar', $productoTerminado->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_ver" title="'. __('Eliminar') . '" >delete</i>', ['accion' => 'elliminar', $productoTerminado->id], ['confirm' => __('Are you sure you want to delete # {0}?', $productoTerminado->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
