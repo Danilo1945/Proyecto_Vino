@@ -4,6 +4,39 @@
  * @var \App\Model\Entity\Administrador[]|\Cake\Collection\CollectionInterface $administrador
  */
 ?>
+
+<style>
+    .color_negro{
+        background: #000000;
+        color: #AA8100;
+    }
+    .co_buton_ver  {
+      color: #990000;  
+    }
+    .co_buton_editar  {
+      color: #990000 ;  
+    }
+    .co_buton_eliminar  {
+      color: #990000 ;  
+    }
+    .color_encabezado a{
+        color: #990000;
+    }
+    .color_menu {
+        color: #990000;
+    }
+    .color_paginator li  a {
+         color: #990000;
+         
+    }
+    .active a{
+        background: #990000;
+    }
+    .padding-action a{
+        color: #AA8100;
+    }
+</style>
+
 <div class="hide">
   
 </div>
@@ -11,7 +44,7 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text">
-                <span class="card-title green-text">ACCIONES</span>
+                <span class="card-title black-text">ACCIONES</span>
                 <div class="card-action" id="abajo_menu">
                     <li  class="padding-action"><?= $this->Html->link(__('NUEVO ADMINISTRADOR'), ['action' => 'add']) ?></li>
                 </div>
@@ -22,10 +55,10 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('ADMINISTRADOR') ?></span>
+                <span class="card-title black-text"><?= __('ADMINISTRADOR') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
+                        <tr class="color_encabezado">
                             <th scope="col"><?= $this->Paginator->sort('Id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Cedula') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
@@ -53,9 +86,9 @@
                             <td><?= h($administrador->password) ?></td>
                             <td><?= h($administrador->Rol) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('VER') . '" >zoom_in</i>', ['action' => 'view', $administrador->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('EDITAR') . '" >create</i>', ['action' => 'edit', $administrador->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('ELIMINAR') . '" >delete</i>', ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('VER') . '" >zoom_in</i>', ['action' => 'view', $administrador->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_editar" title="'. __('EDITAR') . '" >create</i>', ['action' => 'edit', $administrador->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_eliminar" title="'. __('ELIMINAR') . '" >delete</i>', ['action' => 'delete', $administrador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrador->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
