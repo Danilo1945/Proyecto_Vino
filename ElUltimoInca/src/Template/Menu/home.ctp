@@ -374,3 +374,4 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </footer>   
 </body>
 
+codigo interfaz valida

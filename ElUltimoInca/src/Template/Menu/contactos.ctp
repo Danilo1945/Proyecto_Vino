@@ -1,6 +1,5 @@
 <?php
 
-
 use Cake\Cache\Cache;
 use Cake\Core\Configure;
 use Cake\Core\Plugin;
@@ -46,26 +45,19 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <!--        jquery-->
 
         <style>
-
             .Color_primP{
                 background: #000;
-
             }
             .Color_secundarioP{
                 background: #000;
-
             }
-
             nav{
                 position:   inherit;
                 top: 0;
-
             }
             .banner_pos{
-                
             }
             .menu-principal{
-               
                 position: float;
             }
 
@@ -204,11 +196,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <figure><?= $this->Html->image('vino10.jpg', ['alt' => 'CakePHP']) ?></figure>
             </div>
         </div>
-
         <br><br><br><br><br><br><br><br><br><br><br><br>
-        
         <h1 style="text-align:center;"><em>Contáctenos</em></h1>
-        
         <footer class="page-footer #ffffff white" id="abajo_menu" >
             <div class="container">
                 <div class="row">
