@@ -59,116 +59,45 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <!--        jquery-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        
+        
+        
         <style>
+    
+    
+</style>
 
-            .Color_primP{
-                background: #009688;
-
-            }
-            .Color_secundarioP{
-                background: #E0E0E0;
-
-            }
-
-            nav{
-                position:   inherit;
-                top: 0;
-
-
-            }
-            .banner_pos{
-                
-            }
-            .menu-principal{
-               
-                position: float;
-            }
-
-            #abajo_menu{
-                position: static;
-
-            }
-
-        </style>
         <script >
 
-            $(document).ready(function () {
-                $('.slider').slider();
-                $(".button-collapse").sideNav();
-                $(".button-collapse").click(function () {
-                    $("#asd").css("position", "initial");
-                });
-            });
+          
         </script>
     </head>
     <body style="background-color:#E8F6F3">
 
 
-    <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
-
-
-
+        
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content Color_primP">
-        <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
-        <li class="divider"></li>
-        <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+   
 
-    </ul>
-
-
-
-    <nav id="asd">
-        <div class="nav-wrapper Color_primP">
-            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
-                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
-                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
-                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
-
-            </ul>
-        </div>
-         
-            </div> 
-    </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
        <div class="row">
            <center><b><h6>Catálogo de productos</h6></b></center>

@@ -52,12 +52,12 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             .Color_primP{
 
                 background:black  ;
-               
+
 
             }
-             .Color_men{
+            .Color_men{
                 background: #839192    ;
-               
+
 
             }
             .Color_secundarioP{
@@ -76,23 +76,23 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 top: 0;
             }
             .banner_pos{
-                
+
             }
             .menu-principal{
-               
+
                 position: float;
-                
+
             }
 
             #abajo_menu{
                 position: static;
 
             }
-             /*stilos de menu*/
+            /*stilos de menu*/
             #menu{
                 background-color: #000;
                 width: 100%;
-                
+
             }
             #menu ul {
                 list-style: none;
@@ -113,6 +113,14 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 background-color: black;
                 float: right;
             } 
+
+            /*/// para el menu*/
+
+            .color_negro{
+                background: #000000;
+
+            }
+
         </style>
         <script >
 
@@ -125,251 +133,456 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
                     $("#asd").css("position", "initial");
                 });
+
+               $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
             });
-             $(document).ready(function(){
-    $('.carousel').carousel();
-  });
- var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-  });
 
-  // Or with jQuery
 
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
-  
-  
         </script>
+        <script>
+            /// para el carrouser banner
+
+
+        </script>
+
+
+
+
+
+
     </head  >
 
     <body>
-    <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
-    <!-- Dropdown Structure -->
-    
-     <div id="menu">
-            <ul>
-                <li><?= $this->Html->image('100.png', ['alt' => 'CakePHP']) ?></li>
-                <li class="item-r"><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-                <li class="item-r"><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?></li>
-                <li class="item-r"><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?></li>
-                <li class="item-r"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?></li>
-                <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
-            </ul>
-        </div>
-            
-        <div class="social">
-            <ul>
-                <li><a href="https://www.facebook.com/vino.ultimo.inca/" target="_blank" class="icon-facebook"></a></li>
-                <li><a href="http://www.twitter.com" target="_blank" class="icon-twitter"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=KLNCAFlpQPk" target="_blank" class="icon-youtube"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" class="icon-instagram"></a></li>
-                <li><a href="mailto:juan.topa63@gmail.com" class="icon-mail"></a></li>
-            </ul>
-        </div>
+
+        <ul id="dropdown1" class="dropdown-content #212121 grey darken-4">
+            <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+            <li class="divider"></li>
+            <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+
+        </ul>
 
 
- 
- <div class="col s12 m4">
-  <div class="row" >
-      
-            <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
-                <div class="slider">
-                    <ul class="slides" style="height:800px">
-                        <li>
-                            <?= $this->Html->image('vin.jpg', ['alt' => 'CakePHP'],['width' => '100px'],
-                                    ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3 >BIENVENIDOS</h3>
-                                  <span class="card-title yellow-text">Registrate en nuestra pagina web </span>
-                                  <br>
-                                  <br>
-                                  <a class="waves-effect waves-light #b71c1c red darken-4 btn" >Registrate</a>
-                                <div class="caption left-align">
-                   
-                            <h5 class="light grey-text text-lighten-3"></h5>
-                        </div>
-                     
-                    
-                            </div>
-                        </li>
-                        <li>
-                            <?= $this->Html->image('vinot.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
-                        ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3>Vinos de Mortiño</h3>
-                            </div>
-        </li>
-                        <li>
-                            <?= $this->Html->image('socios.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
-                        ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3>Socios</h3>
-                            </div>
-                                    </li>
-                        
-                    </ul>
-                    
-                </div>
-            </div>
-    </div>
-   
-    
-    <div class="col s13 m4">
-        <div class="caption center-align">
-                            
-                             <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
-                            <h5 class="light grey-text text-lighten-3 "></h5>
-                        </div>
-                <div class="card-action">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
 
-    
+        <!--inicio nav-->  
+        <nav id="asd">
+            <div class="nav-wrapper #212121 grey darken-4 ">
+                <?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?>
+                <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
 
-    <div class="row">
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content red-text">
-               
-                <div class="card-action">
+                <!--para el escritorio-->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><?= $this->Html->link('Inicio', ['controller' => 'Menu', 'action' => 'home'], ['class' => 'cc']) ?> </li>
+                    <li><?= $this->Html->link('Nosotros', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                    <li><?= $this->Html->link('Contactos', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                    <li><?= $this->Html->link('Registrarse', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                    <li><?= $this->Html->link('Login', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
 
-                    
-                    
-       
-                      <div class="card-image">
-             <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
-              <span class="card-title">VINO TINTO</span>
-            </div>
-                   <div class="card-content">
-                       <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
+                    <!-- Dropdown Trigger -->
+
+
+                </ul>
+
+
+                <!--para el movile-->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><?= $this->Html->link('Inicio', ['controller' => 'Menu', 'action' => 'home'], ['class' => 'cc']) ?> </li>
+                    <li><?= $this->Html->link('Nosotros', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                    <li><?= $this->Html->link('Contactos', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                    <li><?= $this->Html->link('Registrarse', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                    <li><?= $this->Html->link('Login', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
             </div>
 
-                  
 
-                
+        </nav> 
+        <!--/// fin nav-->
 
-                </div>
-                  </div>
-  
-        </div>
-    </div>
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-               
-                <div class="card-action">
-   <div class="card-image">
-             <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
-              <span class="card-title">Mermelada de Mortiño</span>
-            </div>
-                   <div class="card-content">
-                       <p style="color: black; text-justify:distribute "> 
-                       Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
-            </div>
-
-                  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <div class="card-action">
-                    <div class="card-image">
-
-             <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
-              <span class="card-title">Helado de Mortiño</span>
-            </div>
-                   <div class="card-content ">
-                       <p  style="color: black">
-                           Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
-            </div>
-
-                    
-                    
-                    
-
-                          
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-     
-</div>
-    
-   
-    
-    
+        <!--///////////////////////////////////////////////////////////////inicio del contenido-->
+        <!--//////////////////////////////inicio banner-->
+        <div class="row center">
+            <div class="s1 m1 l1 xl1">ssss</div>
+            <div class="col s12 m10 l10 xl10 center " style=" width: 1160px; height: auto;">
 
 
-    <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">EL ULTIMO INCA</h5>
-                    <p class="grey-text text-lighten-4">puedes ponerte en contacto con nosotros.</p>
-                      <p class="grey-text text-lighten-4">Telefono:(593) 0991868307 </p>
-                       <p class="grey-text text-lighten-4"> Email: vinoelultimoinca@hotmail.com</p>
-                        <p class="grey-text text-lighten-4">Facebook: Vino elultimoinca</p>
-                    
+                <div class="carousel carousel-slider center">
+                    <div class="carousel-fixed-item center">
+                        <a class="btn waves-effect white grey-text darken-text-2">button</a>
                     </div>
-                <div class="caption center-align">
-                        
-                            <h5 class="white-text">PAGINAS AMIGOS</h5>
-                             <ul>
-                        <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
-                        </ul>
+                    <div class="carousel-item red white-text" href="#one!">
+                       
+                        <?= $this->Html->image('imgBanner1000x530.png', ['alt' => 'CakePHP']) ?>
+                    </div>
+                    <div class="carousel-item amber white-text" href="#two!">
+                        <h2>Second Panel</h2>
+                        <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="carousel-item green white-text" href="#three!">
+                        <h2>Third Panel</h2>
+                        <p class="white-text">This is your third panel</p>
+                    </div>
+                    <div class="carousel-item blue white-text" href="#four!">
+                        <h2>Fourth Panel</h2>
+                        <p class="white-text">This is your fourth panel</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+             <div class="s1 m1 l1 xl1">ssss</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--//////////////////////////////////////////////////////fin bannner-->
+
+
+
+
+
+        <!--
+        
+        
+        
+        
+        
+                <div class="col s12 m12 ">
+                    <div class="caption center-align">
+        
+                        <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
+                        <h5 class="light grey-text text-lighten-3 "></h5>
+                    </div>
+                    <div class="card-action">
+        
+                    </div>
+                </div>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content red-text">
+        
+                            <div class="card-action">
+        
+        
+        
+        
+                                <div class="card-image">
+        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">VINO TINTO</span>
+                                </div>
+                                <div class="card-content">
+                                    <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
+                                </div>
+        
+        
+        
+        
+        
+                            </div>
                         </div>
-                  
-                   
-
-                </div> 
-
-               
-    </footer>   
- <div class="col s13 m4">
-        <div class="card darken-1 center">
-            <div class="card-content white-text ">
-                <span class="card-title yellow-text">EL ULTIMO INCA </span>
-               
+        
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content white-text">
+        
+                            <div class="card-action">
+                                <div class="card-image">
+        <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">Mermelada de Mortiño</span>
+                                </div>
+                                <div class="card-content">
+                                    <p style="color: black; text-justify:distribute "> 
+                                        Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
+                                </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content white-text">
+                            <div class="card-action">
+                                <div class="card-image">
+        
+        <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">Helado de Mortiño</span>
+                                </div>
+                                <div class="card-content ">
+                                    <p  style="color: black">
+                                        Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
+                                </div>
+        
+        
+        
+        
+        
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
             </div>
-        </div>
-    </div>
-</body>
-<div class="footer-copyright">
+        -->
+
+
+        <!--////////////////////////////////////////////////////////inicio footer-->
+
+
+
+        <footer class="page-footer Color_primP">
             <div class="container">
-              
-                <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
-            </div>
-        </div>
-    </footer>   
-</body>
+                <div class="row">
+                    <!--inicio baner-->
 
-codigo interfaz valida
+                    <!--///// redes sociales-->
+
+                    <div class="row " >
+                        <div class="col  s12  m12 l12 xl12 " >
+                            <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                <div class="card-content white-text">
+                                    <span class="card-title c_dorado">Siguenos en:</span>
+                                    <div class="card-action" id="abajo_menu"> 
+
+
+                                        <div class="col s3 m3 l3 xl3">
+                                            <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
+                                        </div>
+
+                                        <div class="col s3 m3 l3 xl3">
+                                            <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
+                                        </div>
+
+                                        <div class="col s3 m3 l3 xl3">
+                                            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                        </div>
+
+                                        <div class="col s3 m3 l3 xl3">
+                                            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <!--//// fin redes sociales-->
+
+
+                    <!--/////// iniciao mapa-->
+
+                    <div class="row " >
+                        <div class="col  s12  m12 l12 xl12 " >
+                            <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                <div class="card-content white-text">
+                                    <span class="card-title c_dorado ">Como Llegar a Quinticusig-Sigchos</span>
+                                    <div class="card-action" id="abajo_menu"> 
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13589.262514870908!2d-78.8755357812871!3d-0.7141739916636745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNDInNTEuMCJTIDc4wrA1MicwMC40Ilc!5e1!3m2!1ses-419!2sec!4v1525822446458" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <!--///// fin mapa-->
+                    <!--para los contactos-->
+                    <div class="row " >
+                        <div class="col  s12  m12 l12 xl12 " >
+                            <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                <div class="card-content white-text">
+                                    <span class="card-title c_dorado">CONTACTOS</span>
+                                    <div class="card-action" id="abajo_menu"> 
+                                        <!--////////////////////////////////////////////////////////-->
+
+                                        <div class="row">
+                                            <form class="col s12">
+                                                <div class="row">
+                                                    <div class="input-field col s12 m6 l6 xl6">
+                                                        <i class="material-icons prefix  ">account_circle</i>
+                                                        <input id="icon_prefix" type="text" class="validate ">
+                                                        <label for="icon_prefix" >Nombre:</label>
+                                                    </div>
+                                                    <div class="input-field col s12 m6 l6 xl6">
+                                                        <i class="material-icons prefix">email</i>
+                                                        <input id="icon_prefix" type="text" class="validate">
+                                                        <label for="icon_prefix">Email:</label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="input-field col s12 m12 l12 xl12">
+                                                        <i class="material-icons prefix " >insert_comment</i>
+                                                        <input id="icon_prefix" type="text" class="validate ">
+                                                        <label for="icon_prefix">Asunto:</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="input-field col s12 m12 l12 xl12">
+                                                        <i class="material-icons prefix">mode_edit</i>
+                                                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                                        <label for="icon_prefix2">Mensaje</label>
+
+                                                    </div>
+                                                </div>
+                                                <button class="btn waves-effect " type="submit" name="action" style=" background:#AA8100; ">Enviar
+                                                    <i class="material-icons right">send</i>
+                                                </button>
+
+                                            </form>
+                                        </div>
+                                        <!--////////////////////////////////////////////////////////-->
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>  
+                    </div>
+
+                    <!--fin contactos-->
+
+                    <!--para los contactos-->
+
+
+
+                    <!--fin contactos-->
+
+
+
+
+
+
+
+                    <div class="col l6 s12 ">
+                        <!--                            <h5 class="white-text">Footer Content</h5>-->
+                        <!--inicio imagen-->
+                        <div class="row " >
+                            <div class="col  s12  m12 l12 xl12 " >
+                                <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                    <div class="card-content white-text">
+    <!--                                            <span class="card-title green-text">CONTACTOS</span>-->
+                                        <div class="card-action" id="abajo_menu"> 
+                                            <!--////////////////////////////////////////////////////////-->
+                                            <?= $this->Html->image('logo 300x114.png', ['alt' => 'CakePHP']) ?>
+                                            <!--////////////////////////////////////////////////////////-->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>  
+                        </div>
+                        <!--fin imagen-->
+                    </div>
+
+
+                    <div class="col l4 offset-l2 s12">
+                        <!--                            <h5 class="white-text">Links</h5>-->
+                        <!--inicio logos utc-->
+                        <div class="row " >
+                            <div class="col  s12  m12 l12 xl12 " >
+                                <div class="card darken-1 Color_primP" id="abajo_menu">
+
+                                    <div class="card-content white-text">
+                                        <!--<span class="card-title green-text">CONTACTOS</span>-->
+                                        <div class="card-action" id="abajo_menu"> 
+                                            <!--////////////////////////////////////////////////////////-->
+                                            <?= $this->Html->image('UtcSistemas300x114.png', ['alt' => 'CakePHP']) ?>
+                                            <!--////////////////////////////////////////////////////////-->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>  
+                        </div>
+                        <!--fin logos utc-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright El Ultimo Inca: Todos los derechos reservados
+                    <a class="grey-text text-lighten-4 right" href="">Grupo desarrollo UTC</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </div>  <!-- fin contenedor principal-->
+
+
+
+
+
+
