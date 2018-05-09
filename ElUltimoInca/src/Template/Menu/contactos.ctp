@@ -287,6 +287,6 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 </div>
             </div>
         </footer>
+        <br>
       </body>
 </html>
->>>>>>> a3eecf72e2da675c4a4bd5526b1a4b29fe5802b5
