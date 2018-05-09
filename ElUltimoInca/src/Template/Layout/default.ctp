@@ -119,8 +119,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </div>
 
         </div>
-        <!--
-                <nav>
+        
+<!--                <nav>
                     <nav>
             <div class="nav-wrapper Color_primP" >
               <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium-8 material-icons button-collapse center">menu</i><?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?></a>
@@ -359,19 +359,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-
-
-
-
-            <!--MENU  DE ABAJO-->
-
-
-
-
-
-
-
-
         </div>  <!-- fin contenedor principal-->
 
 
@@ -477,7 +464,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             // Initialize collapse button
             $(".button-collapse").sideNav();
 
-
+ 
 
         </script> 
     </body>
