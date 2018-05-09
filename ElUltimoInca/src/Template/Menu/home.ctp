@@ -81,6 +81,12 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
             .Color_primP{
                 background:black  ;
+               
+
+            }
+             .Color_men{
+                background: #839192    ;
+               
 
             }
             .Color_secundarioP{
@@ -186,9 +192,35 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             <!--feature descover-->
               <div class="slider col s12 " style="position: relative">
                 <div class="row ">
-      <div class="col s12 #37474f blue-grey darken-3">1</div>
-  
+                    <div class="col s12 #37474f blue-grey darken-3 " style="height: 460px">
+                        <br>
+                        </br>
+                        <br>
+                        </br>
+     
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h1 style="color:#FBFCFC  ">BIENVENIDOS </h1>
+                    <span class="card-title yellow-text">Registrate en nuestra pagina web </span>
+                              
+                    <h5 class="light grey-text text-lighten-3"></h5>
+                 
+                    </div>
+            
+             </div>
+            <a class="waves-effect waves-light #b71c1c red darken-4 btn"  >Registrate</a>
+                  
+                      </div>   
+                  
+        
+          
+
+                    </div>
+         
+
     </div>
+              
             </div>
         </div>  
 
