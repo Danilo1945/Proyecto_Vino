@@ -477,7 +477,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             // Initialize collapse button
             $(".button-collapse").sideNav();
 
-
+ 
 
         </script> 
     </body>
