@@ -222,7 +222,6 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-<<<<<<< HEAD
             'host' => 'localhost:3306',
             'host' =>  'localhost',
             'host' => 'localhost:3306',
@@ -234,7 +233,7 @@ return [
 
             'host' => 'localhost:3307',
 
-=======
+
 
             'host' => 'localhost:3306',
             'host' =>  'localhost',
@@ -245,7 +244,6 @@ return [
 
             'host' => 'localhost:3306',
             'host' => 'localhost',
->>>>>>> 5388f0d39a46a81dd9dc47018fecca1b7da9682e
 
             
             /**
