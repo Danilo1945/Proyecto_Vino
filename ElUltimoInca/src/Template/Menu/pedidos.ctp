@@ -61,7 +61,7 @@
 
     
     <div class="row" >
-         <center><b><h6>Catálogo de productos</h6></b></center>
+         <center><b><h6>Catálogo de productossssssss</h6></b></center>
             <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
                 <div class="slider">
                     <ul class="slides" style="height:200px">

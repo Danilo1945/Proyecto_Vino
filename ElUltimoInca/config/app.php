@@ -223,6 +223,7 @@ return [
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
 
+<<<<<<< HEAD
             'host' => 'localhost:3307',
             
             /**
@@ -230,6 +231,15 @@ return [
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
+=======
+            
+            'host' =>  'localhost',
+            'host' => 'localhost:3306',
+         
+
+           
+        
+>>>>>>> 5d185cf7f15bef57e6a1e9b59806060acfc04649
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '',
