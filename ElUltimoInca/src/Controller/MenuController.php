@@ -13,6 +13,10 @@ class MenuController extends AppController
     {
        
     }
+    public function index1()
+    {
+       
+    }
      public function home()
     {
        

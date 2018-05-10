@@ -1,5 +1,5 @@
-<?php
 
+<<<<<<< HEAD
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -159,6 +159,12 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
             </ul>
         </div>
+=======
+<div class="hide">
+    <?= $this->layout = "publico"; ?>
+</div>
+
+>>>>>>> 3d88921d82f7205c1a7a2fc35ea7a8dbaf723b90
             
         <div class="social">
             <ul>
@@ -171,6 +177,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </div>
 
 
+<<<<<<< HEAD
  
  <div class="col s12 m4">
   <div class="row" >
@@ -261,115 +268,123 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
                 
 
-                </div>
-                  </div>
-  
-        </div>
-    </div>
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-               
-                <div class="card-action">
-   <div class="card-image">
-             <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
-              <span class="card-title">Mermelada de Mortiño</span>
-            </div>
-                   <div class="card-content">
-                       <p style="color: black; text-justify:distribute "> 
-                       Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
-            </div>
-
-                  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col s12 m4">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <div class="card-action">
-                    <div class="card-image">
-
-             <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
-              <span class="card-title">Helado de Mortiño</span>
-            </div>
-                   <div class="card-content ">
-                       <p  style="color: black">
-                           Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
-            </div>
-
-                    
-                    
-                    
-
-                          
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-     
-</div>
-    
-   
-    
-    
+=======
 
 
-    <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">EL ULTIMO INCA</h5>
-                    <p class="grey-text text-lighten-4">puedes ponerte en contacto con nosotros.</p>
-                      <p class="grey-text text-lighten-4">Telefono:(593) 0991868307 </p>
-                       <p class="grey-text text-lighten-4"> Email: vinoelultimoinca@hotmail.com</p>
-                        <p class="grey-text text-lighten-4">Facebook: Vino elultimoinca</p>
-                    
+
+        
+        
+        
+        
+        
+        
+                <div class="col s12 m12 ">
+                    <div class="caption center-align">
+        
+                        <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
+                        <h5 class="light grey-text text-lighten-3 "></h5>
                     </div>
-                <div class="caption center-align">
-                        
-                            <h5 class="white-text">PAGINAS AMIGOS</h5>
-                             <ul>
-                        <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
-                        </ul>
+                    <div class="card-action">
+        
+                    </div>
+                </div>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content red-text">
+        
+                            <div class="card-action">
+        
+        
+        
+        
+                                <div class="card-image">
+        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">VINO TINTO</span>
+                                </div>
+                                <div class="card-content">
+                                    <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
+                                </div>
+        
+        
+        
+        
+        
+                            </div>
                         </div>
-                  
-                   
-
-                </div> 
-
-               
-    </footer>   
- <div class="col s13 m4">
-        <div class="card darken-1 center">
-            <div class="card-content white-text ">
-                <span class="card-title yellow-text">EL ULTIMO INCA </span>
-               
+        
+                    </div>
+>>>>>>> 3d88921d82f7205c1a7a2fc35ea7a8dbaf723b90
+                </div>
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content white-text">
+        
+                            <div class="card-action">
+                                <div class="card-image">
+        <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">Mermelada de Mortiño</span>
+                                </div>
+                                <div class="card-content">
+                                    <p style="color: black; text-justify:distribute "> 
+                                        Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
+                                </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content white-text">
+                            <div class="card-action">
+                                <div class="card-image">
+        
+        <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
+                                    <span class="card-title">Helado de Mortiño</span>
+                                </div>
+                                <div class="card-content ">
+                                    <p  style="color: black">
+                                        Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
+                                </div>
+        
+        
+        
+        
+        
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
             </div>
-        </div>
-    </div>
-</body>
-<div class="footer-copyright">
-            <div class="container">
-              
-                <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
-            </div>
-        </div>
-    </footer>   
-</body>
+        
 
-codigo interfaz valida
+
+        <!--////////////////////////////////////////////////////////inicio footer-->
+
