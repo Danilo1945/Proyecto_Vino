@@ -55,7 +55,7 @@ class ItemFixture extends TestFixture
             'engine' => 'InnoDB',
             'collation' => 'utf8_general_ci'
         ],
-    ];
+    ],
     // @codingStandardsIgnoreEnd
 
     /**
@@ -63,21 +63,21 @@ class ItemFixture extends TestFixture
      *
      * @var array
      */
-    public $records = [
+    public $records =
+            [
         [
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             'Iditem' => 1,
             'Idventa' => 1,
             'Idproducto_terminado' => 1
-=======
+
             'id_item' => 1,
-=======
+
             'id' => 1,
->>>>>>> 89fc6887533a1b710dc7716e8079275ba874dfba
+
             'nom_item' => 'Lorem ipsum dolor sit amet',
             'detalle_item' => 'Lorem ipsum dolor sit amet'
->>>>>>> aad36dacdf3881aeabdc527932b7437689d7e567
+
         ],
     ];
 }
