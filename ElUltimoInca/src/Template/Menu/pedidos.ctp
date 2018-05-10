@@ -38,6 +38,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('home.css') ?>
+   
     
     
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -178,7 +179,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </nav>
     
     <div class="row" >
-         <center><b><h6>Catálogo de productossssssss</h6></b></center>
+         <center><b><h6></h6></b></center>
             <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
                 <div class="slider">
                     <ul class="slides" style="height:200px">
@@ -546,29 +547,32 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         
         
         
-
-        <footer class="page-footer" id="abajo_menu" >
+ <br>
+        <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">EL ULTIMO INCA</h5>
+                        <p class="grey-text text-lighten-4">Puedes ponerte en contacto con nosotros.</p>
+                        <p class="grey-text text-lighten-4">Celular: 0991868307-0995259342</p>
+                        <p class="grey-text text-lighten-4" href="mailto:aso.quinticusig@hotmail.es">E-Mail: aso.quinticusig@hotmail.es</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Paginas amigas</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
                 <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text"></h5>
-                            <p class="grey-text text-lighten-4"></p>
-                        </div>
-                        <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text"></h5>
-                            <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
+                    <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        © Copyright 2018
-                        <a class="grey-text text-lighten-4 right" href="#!"></a>
-                    </div>
-                </div>
-        </footer>  
+            </div>
+        </footer>
+        <br>
+                
