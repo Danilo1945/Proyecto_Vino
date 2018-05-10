@@ -1,20 +1,7 @@
 <div class="hide">
     <?= $this->layout = "publico"; ?>
 </div>
-<<<<<<< HEAD
 
-
-
-  
-    
-    
-    
-    
-    
-    
-=======
->>>>>>> a34a757e40a9fa79f7103abe15929fbde40f2455
-    
     <style>
 
             .Color_primP{
