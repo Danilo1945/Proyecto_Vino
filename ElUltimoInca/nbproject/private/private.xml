@@ -14,6 +14,9 @@
 =======
 <<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
+=======
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/view.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
@@ -44,6 +47,7 @@
 >>>>>>> 27ff5e0b0c82d8a6b84c108ed872ffc1be5448ec
 >>>>>>> 9ce97b012d05c31edb1387486bc7ce7720d9b4b0
 >>>>>>> 9492cf8abadf2978cf7f06bbbfa26ce353785ded
+>>>>>>> 3d88921d82f7205c1a7a2fc35ea7a8dbaf723b90
         </group>
     </open-files>
 </project-private>
