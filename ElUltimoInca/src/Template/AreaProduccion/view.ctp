@@ -11,12 +11,12 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
+                <span class="card-title black-text"><?= __('Acciones') ?></span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Area Produccion'), ['action' => 'edit', $areaProduccion->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Area Produccion'), ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Area Produccion'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Area Produccion'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Editar Area Produccion'), ['action' => 'edit', $areaProduccion->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Area Produccion'), ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista Area Produccion'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Area Produccion'), ['action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>

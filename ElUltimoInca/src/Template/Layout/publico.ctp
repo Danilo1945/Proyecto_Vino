@@ -156,7 +156,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><?= $this->Html->link('Inicio', ['controller' => 'Menu', 'action' => 'home'], ['class' => 'cc']) ?> </li>
                     <li><?= $this->Html->link('Nosotros', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
                     <li><?= $this->Html->link('Contactos', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                     <li><?= $this->Html->link('Registrarse', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                     <li><?= $this->Html->link('Login', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
@@ -202,15 +202,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Html->image('imgBanner1000x530.png', ['alt' => 'CakePHP']) ?>
                 </div>
                 <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
+                    
+                    <?= $this->Html->image('2imgBanner1000x530.jpg', ['alt' => 'CakePHP']) ?>
                     <p class="white-text">This is your second panel</p>
                 </div>
                 <div class="carousel-item green white-text" href="#three!">
-                    <h2>Third Panel</h2>
+                     <?= $this->Html->image('3imgBanner1000x530.jpg', ['alt' => 'CakePHP']) ?>
                     <p class="white-text">This is your third panel</p>
                 </div>
                 <div class="carousel-item blue white-text" href="#four!">
-                    <h2>Fourth Panel</h2>
+                     <?= $this->Html->image('4imgBanner1000x530.jpg', ['alt' => 'CakePHP']) ?>
                     <p class="white-text">This is your fourth panel</p>
                 </div>
             </div>

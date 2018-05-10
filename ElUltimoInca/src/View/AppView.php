@@ -26,8 +26,6 @@ use BootstrapUI\View\UIViewTrait;
 class AppView extends View
 {
 
-<<<<<<< HEAD
-
 
   ///  use UIViewTrait;
 
@@ -39,8 +37,6 @@ class AppView extends View
     //use UIViewTrait;
 
 
-=======
->>>>>>> 17d5efcef4789ff68bc8b6c29101f671b6c75b14
 
    // use UIViewTrait;
   /**
@@ -52,7 +48,6 @@ class AppView extends View
      *
      * @return void
      */
-
     public function initialize()
     {
         //$this->initialize()

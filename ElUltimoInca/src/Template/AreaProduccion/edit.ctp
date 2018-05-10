@@ -11,7 +11,7 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Form->postLink(
                             __('Delete'),
@@ -28,7 +28,7 @@
         <div class="card darken-1">
             <div class="card-content black-text">
                 <?= $this->Form->create($areaProduccion) ?>
-                <span class="card-title green-text"><?= __('Edit Area Produccion') ?></span>
+                <span class="card-title green-text"><?= __('Editar Area Produccion') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('fecha_elaboracion', ['type' => 'text', 'class' => 'datepicker']) ?>

@@ -3,57 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Pedido/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/index.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/edit.ctp</file>
-=======
-<<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/View/AppView.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Administrador/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/MateriaPrima/index.ctp</file>
-=======
-<<<<<<< HEAD
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/materialize.min.css</file>
-=======
-<<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
-<<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
-=======
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/view.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Pedido/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/ProductoTerminado/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/ProductoTerminado/add.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/ProductoTerminado/index.ctp</file>
-=======
-<<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/acercaDe.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/MateriaPrima/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/catalogo.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/etalage.css</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/clic.css</file>
-=======
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/default.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/view.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/error.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/add.ctp</file>
->>>>>>> d9bdba094c9369d1ca598686ff41fa3cf663fb02
->>>>>>> 27ff5e0b0c82d8a6b84c108ed872ffc1be5448ec
->>>>>>> 9ce97b012d05c31edb1387486bc7ce7720d9b4b0
->>>>>>> 9492cf8abadf2978cf7f06bbbfa26ce353785ded
->>>>>>> 3d88921d82f7205c1a7a2fc35ea7a8dbaf723b90
->>>>>>> a34a757e40a9fa79f7103abe15929fbde40f2455
         </group>
     </open-files>
 </project-private>
