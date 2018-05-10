@@ -1,7 +1,7 @@
 <div class="hide">
     <?= $this->layout = "publico"; ?>
 </div>
-    
+
     <style>
 
             .Color_primP{

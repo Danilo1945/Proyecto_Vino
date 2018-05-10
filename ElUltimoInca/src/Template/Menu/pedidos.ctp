@@ -59,39 +59,6 @@
 
 
 
-    
-    <div class="row" >
-         <center><b><h6>Catálogo de productossssssss</h6></b></center>
-            <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
-                <div class="slider">
-                    <ul class="slides" style="height:200px">
-                        <li>
-                            <?= $this->Html->image('carucel.jpg', ['alt' => 'CakePHP'],['width' => '100px'],
-                                    ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3>Los mejores vinos</h3>
-                            </div>
-                        </li>
-                        <li>
-                            <?= $this->Html->image('carucel2.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
-                        ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3>Vinos Inca El Mejor</h3>
-                            </div>
-        </li>
-                        <li>
-                            <?= $this->Html->image('pedido4.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
-                        ['height' => '100px']) ?>
-                            <div class="caption">
-                                <h3>Helados Quinticusig</h3>
-                            </div>
-                                    </li>
-                        
-                    </ul>
-                    
-                </div>
-            </div>
-    </div>
     <div class="row">
         <div class="col s12 m4">
         <div class="card darken-1">
