@@ -156,7 +156,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><?= $this->Html->link('Inicio', ['controller' => 'Menu', 'action' => 'home'], ['class' => 'cc']) ?> </li>
                     <li><?= $this->Html->link('Nosotros', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
-                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                    <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
                     <li><?= $this->Html->link('Contactos', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                     <li><?= $this->Html->link('Registrarse', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                     <li><?= $this->Html->link('Login', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
