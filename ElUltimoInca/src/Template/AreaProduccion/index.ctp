@@ -4,6 +4,39 @@
  * @var \App\Model\Entity\AreaProduccion[]|\Cake\Collection\CollectionInterface $areaProduccion
  */
 ?>
+
+<style>
+    .color_negro{
+        background: #000000;
+        color: #AA8100;
+    }
+    .co_buton_ver  {
+      color: #990000;  
+    }
+    .co_buton_editar  {
+      color: #990000 ;  
+    }
+    .co_buton_eliminar  {
+      color: #990000 ;  
+    }
+    .color_encabezado a{
+        color: #990000;
+    }
+    .color_menu {
+        color: #990000;
+    }
+    .color_paginator li  a {
+         color: #990000;
+         
+    }
+    .active a{
+        background: #990000;
+    }
+    .padding-action a{
+        color: #AA8100;
+    }
+</style>
+
 <div class="hide">
    
 </div>
@@ -11,9 +44,9 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Area Produccion'), ['action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Nueva Area de Produccion'), ['action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,10 +55,10 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Area Produccion') ?></span>
+                <span class="card-title black-text"><?= __('Area de Produccion') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
+                        <tr class="color_encabezado">
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('fecha_elaboracion') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('num_procesos') ?></th>
@@ -55,9 +88,9 @@
                             <td><?= $this->Number->format($areaProduccion->id_tra) ?></td>
                             <td><?= $this->Number->format($areaProduccion->id_inv) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $areaProduccion->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $areaProduccion->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $areaProduccion->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_editar" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $areaProduccion->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_eliminar" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -75,6 +108,6 @@
             </ul>
         </div>
 
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Página de, mostrando registro (s) del total')]) ?></p>
     </div>
 </div>

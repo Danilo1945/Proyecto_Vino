@@ -27,6 +27,17 @@ class AppView extends View
 {
 
 
+  ///  use UIViewTrait;
+
+
+    //use UIViewTrait;
+
+
+
+    //use UIViewTrait;
+
+
+
    // use UIViewTrait;
   /**
      * Initialization hook method.
