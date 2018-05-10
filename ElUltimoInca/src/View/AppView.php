@@ -26,6 +26,33 @@ use BootstrapUI\View\UIViewTrait;
 class AppView extends View
 {
 
+<<<<<<< HEAD
+
+
+  ///  use UIViewTrait;
+
+
+    //use UIViewTrait;
+
+
+
+    //use UIViewTrait;
+
+
+=======
+>>>>>>> 17d5efcef4789ff68bc8b6c29101f671b6c75b14
+
+   // use UIViewTrait;
+  /**
+     * Initialization hook method.
+     *
+     * Use this method to add common initialization code like loading helpers.
+     *
+     * e.g. `$this->loadHelper('Html');`
+     *
+     * @return void
+     */
+
     public function initialize()
     {
         //$this->initialize()
