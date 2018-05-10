@@ -1,48 +1,12 @@
-<?php
 
-use Cake\Cache\Cache;
-use Cake\Core\Configure;
-use Cake\Core\Plugin;
-use Cake\Datasource\ConnectionManager;
-use Cake\Error\Debugger;
-use Cake\Network\Exception\NotFoundException;
+<div class="hide">
+    <?= $this->layout = "publico"; ?>
+</div>
 
-$this->layout = false;
 
-if (!Configure::read('debug')) :
-    throw new NotFoundException(
-    'Please replace src/Template/Pages/home.ctp with your own version or re-enable debug mode.'
-    );
-endif;
-
-$cakeDescription = 'CakePHP: the rapid development PHP framework';
-?>
-<!DOCTYPE html>
-<html>
-
-    <head>
-
-        <?= $this->Html->meta('icon') ?>
-        <?= $this->Html->css('base.css') ?>
-        <?= $this->Html->css('cake.css') ?>
-        <?= $this->Html->css('home.css') ?>
         <?= $this->Html->css('fonts.css') ?>
         <?= $this->Html->css('3D.css') ?>
-        
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        <?= $this->Html->script('jquery-3.3.1.min') ?>
-        <?= $this->Html->css('materialize.min.css') ?>
-        <?= $this->Html->script('materialize.min.js') ?>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
-        
-        <?= $this->Html->charset() ?>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            <?= $cakeDescription ?>
-        </title>
-        <!--        jquery-->
+      
 
         <style>
             .Color_primP{
@@ -150,11 +114,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
         </script>
 
-    </head  >
 
-    <body>
 
-        <ul id="dropdown1" class="dropdown-content Color_primP">
+ 
+
+<!--        <ul id="dropdown1" class="dropdown-content Color_primP">
             <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
             <li class="divider"></li>
             <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
@@ -170,7 +134,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <li class="item-r"><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?></li>
                 <li class="item-r"><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?></li>
             </ul>
-        </div>
+        </div>-->
             
         <div class="social">
             <ul>
@@ -250,32 +214,4 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </footer>
    
         <br>
-        <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">EL ULTIMO INCA</h5>
-                        <p class="grey-text text-lighten-4">Puedes ponerte en contacto con nosotros.</p>
-                        <p class="grey-text text-lighten-4">Celular: 0991868307-0995259342</p>
-                        <p class="grey-text text-lighten-4" href="mailto:aso.quinticusig@hotmail.es">E-Mail: aso.quinticusig@hotmail.es</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Paginas amigas</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
-                    <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
-                </div>
-            </div>
-        </footer>
-        <br>
-      </body>
-</html>
+       
