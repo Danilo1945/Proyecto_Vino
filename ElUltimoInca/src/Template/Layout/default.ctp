@@ -33,6 +33,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
+       
+        
         <style>
 
             .Color_primP{
@@ -134,7 +136,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </head>
     <body>
 
-
+        
+        
         <div class="row  Color_primP center"   >
             <div class="col s1 m2 l1  xl1" >
                 <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium material-icons button-collapse center" style=" color: #AA8100">menu</i></a>
@@ -144,11 +147,26 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?>
 
             </div>
-            <div class="col m9 l9  xl10" >
-
+            <div class="col m9 l9  xl10 right" >
+               
             </div>
 
         </div>
+
+<!--        <div class="row  Color_primP center"   >
+            <div class="col s1 m2 l1  xl1" >
+                <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium material-icons button-collapse center" style=" color: #AA8100">menu</i></a>
+            </div>
+
+            <div class="col s12 m1 l2 xl1">
+                <?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?>
+
+            </div>
+            <div class="col m9 l9  xl10 right" >
+               <?=$this->Html->link('Salir',['controller'=>'Menu','action'=>'home','class'=>'waves-effect'])  ?> 
+            </div>
+
+        </div>-->
         
 <!--                <nav>
                     <nav>
@@ -400,12 +418,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
         <ul id="slide-out" class="side-nav">
             <li><div class="user-view">
-                    <div class="background">
-                        <?= $this->Html->image('logo250x250.png', ['alt' => 'CakePHP']) ?>
+                    <div class="background" style="height: 250px;">
+                        <?= $this->Html->image('logo250x250.2.png', ['alt' => 'CakePHP']) ?>
                     </div>
-                    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-                    <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
-                    <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>
+<!--                    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                     <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>-->
+<!--                    <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
+                    <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </li>
 
@@ -432,6 +456,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li><?= $this->Html->link('Area de producción', ['controller' => 'AreaProduccion', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
             <li><?= $this->Html->link('Hojas de producción de vino', ['controller' => 'HojaProduccionVino', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
             <li><?= $this->Html->link('Gestión de la contabilidad', ['controller' => 'Salidas', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
+           <li><?= $this->Html->link('Catálogo', ['controller' => 'catalogo', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
+           
             <li><div class="divider"></div></li>
             <li><a class="subheader center">INVENTARIO</a></li>
 

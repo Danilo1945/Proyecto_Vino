@@ -51,6 +51,9 @@
 
                 });
               
+  
+             $('.modal').modal();
+  
 
             });
 
@@ -135,6 +138,7 @@
                        <p style="color: black;size:10px" align="justify">Descripción:Pulpa</p>
             </div>
             <div class="card-action">
+               
                 <center><a class="waves-effect waves-light btn modal-trigger" href="#modal2">Hacer Pedido</a></center>
                 <!-- Modal Structure -->
                 <div id="modal2" class="modal bottom-sheet">
@@ -392,4 +396,8 @@
     </div>
     </div>
 
+ //////
+ 
+ <!--par formulario emergente-->
+ <!-- Modal Trigger -->
  
