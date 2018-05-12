@@ -2,6 +2,62 @@
     <?= $this->layout = "publico"; ?>
 </div>
 
+<<<<<<< HEAD
+$this->layout = false;
+
+if (!Configure::read('debug')) :
+    throw new NotFoundException(
+        'Please replace src/Template/Pages/home.ctp with your own version or re-enable debug mode.'
+    );
+endif;
+
+$cakeDescription = 'CakePHP: the rapid development PHP framework';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+       
+    
+    <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->css('base.css') ?>
+    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('home.css') ?>
+   
+    
+    
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+ <?= $this->Html->script('jquery-3.3.1.min')?>
+    <?= $this->Html->css ('materialize.min.css') ?>
+    <?= $this->Html->script('materialize.min.js')?>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
+    
+    
+    <?= $this->Html->charset() ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?= $cakeDescription ?>
+    </title>
+    <!--        jquery-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     
     
     
@@ -62,6 +118,88 @@
 
 
 
+<<<<<<< HEAD
+
+    <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
+
+
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content Color_primP">
+        <li><?= $this->Html->link('LOGIN', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+        <li class="divider"></li>
+        <li><?= $this->Html->link('REGISTRARSE', ['controller' => 'Menu', 'action' => 'login']) ?> </li>
+
+    </ul>
+
+
+
+    <nav id="asd">
+        <div class="nav-wrapper Color_primP">
+            <a href="#!" class="brand-logo ">El Ultimo Inca</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" id="boton_cambio"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><?= $this->Html->link('MENU', ['controller' => 'Menu', 'action' => 'home']) ?> </li>
+                <li><?= $this->Html->link('CONTACTOS', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                <li><?= $this->Html->link('CATALOGO', ['controller' => 'Menu', 'action' => 'catalogo']) ?> </li>
+                <li><?= $this->Html->link('PEDIDOS', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
+                <li><?= $this->Html->link('ACER CADE..', ['controller' => 'Menu', 'action' => 'acercade']) ?> </li>
+
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">MAS OPCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+    
+    <div class="row" >
+         <center><b><h6></h6></b></center>
+            <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
+                <div class="slider">
+                    <ul class="slides" style="height:200px">
+                        <li>
+                            <?= $this->Html->image('carucel.jpg', ['alt' => 'CakePHP'],['width' => '100px'],
+                                    ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Los mejores vinos</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <?= $this->Html->image('carucel2.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Vinos Inca El Mejor</h3>
+                            </div>
+        </li>
+                        <li>
+                            <?= $this->Html->image('pedido4.jpg', ['alt' => 'CakePHP'], ['width' => '100px'],
+                        ['height' => '100px']) ?>
+                            <div class="caption">
+                                <h3>Helados Quinticusig</h3>
+                            </div>
+                                    </li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+    </div>
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     <div class="row">
         <div class="col s12 m4">
         <div class="card darken-1">
@@ -398,6 +536,41 @@
 
  //////
  
+<<<<<<< HEAD
+        
+        
+        
+ <br>
+        <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">EL ULTIMO INCA</h5>
+                        <p class="grey-text text-lighten-4">Puedes ponerte en contacto con nosotros.</p>
+                        <p class="grey-text text-lighten-4">Celular: 0991868307-0995259342</p>
+                        <p class="grey-text text-lighten-4" href="mailto:aso.quinticusig@hotmail.es">E-Mail: aso.quinticusig@hotmail.es</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Paginas amigas</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
+                    <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
+                </div>
+            </div>
+        </footer>
+        <br>
+                
+=======
  <!--par formulario emergente-->
  <!-- Modal Trigger -->
  
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
