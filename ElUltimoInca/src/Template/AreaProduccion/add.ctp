@@ -11,9 +11,9 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('List Area Produccion'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista de Area Produccion'), ['action' => 'index']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="card darken-1">
             <div class="card-content black-text">
                 <?= $this->Form->create($areaProduccion) ?>
-                <span class="card-title green-text"><?= __('Add Area Produccion') ?></span>
+                <span class="card-title green-text"><?= __('Nueva Area Produccion') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('fecha_elaboracion', ['type' => 'text', 'class' => 'datepicker']) ?>
@@ -56,7 +56,7 @@
                 <div class="input-field">
                     <?= $this->Form->control('id_inv') ?>
                 </div>
-                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->button(__('Enviar'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
             </div>
         </div>

@@ -1,24 +1,8 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
-use Cake\Cache\Cache;
-use Cake\Core\Configure;
-use Cake\Core\Plugin;
-use Cake\Datasource\ConnectionManager;
-use Cake\Error\Debugger;
-use Cake\Network\Exception\NotFoundException;
+<div class="hide">
+    <?= $this->layout = "publico"; ?>
+</div>
 
+<<<<<<< HEAD
 $this->layout = false;
 
 if (!Configure::read('debug')) :
@@ -72,6 +56,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     
     
     
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     
     
     
@@ -121,16 +107,18 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
                 });
               
+  
+             $('.modal').modal();
+  
 
             });
 
         </script>
 
 
-    </head  >
 
-    <body style="background-color:#E8F6F3">
 
+<<<<<<< HEAD
 
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
 
@@ -210,6 +198,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 </div>
             </div>
     </div>
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     <div class="row">
         <div class="col s12 m4">
         <div class="card darken-1">
@@ -286,6 +276,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                        <p style="color: black;size:10px" align="justify">Descripción:Pulpa</p>
             </div>
             <div class="card-action">
+               
                 <center><a class="waves-effect waves-light btn modal-trigger" href="#modal2">Hacer Pedido</a></center>
                 <!-- Modal Structure -->
                 <div id="modal2" class="modal bottom-sheet">
@@ -543,7 +534,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </div>
     </div>
 
+ //////
  
+<<<<<<< HEAD
         
         
         
@@ -576,3 +569,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </footer>
         <br>
                 
+=======
+ <!--par formulario emergente-->
+ <!-- Modal Trigger -->
+ 
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69

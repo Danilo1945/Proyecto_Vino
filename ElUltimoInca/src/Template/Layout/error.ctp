@@ -32,16 +32,21 @@
 <body>
     
     <div class="row" style="width: 100px; height: 100px">
-        <h1><?= __('Error') ?></h1>
         
+        <div class="col s12 m12 l12 xl12">
+            <h1><?= __('Error') ?></h1>
+        </div>
     </div>
     <div class="row" style="width: 100px; height: 100px">
-        <h1><?= __('Error') ?></h1>
-        
+        <div class="col s12 m12 l12 xl12">
+            <h1><?= __('Error') ?></h1>
+         
           <?= $this->Flash->render() ?>
 
             <?= $this->fetch('content') ?>
-         <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
+         <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?> 
+        </div>
+       
         
     </div>
     
