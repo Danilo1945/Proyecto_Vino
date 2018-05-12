@@ -11,15 +11,15 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Form->postLink(
                             __('Delete'),
-                            ['action' => 'delete', $salida->id],
+                            ['action' => 'Eliminar', $salida->id],
                             ['confirm' => __('Are you sure you want to delete # {0}?', $salida->id)]
                             )
                             ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Salidas'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('Lista Salidas'), ['action' => 'index']) ?></li>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <div class="input-field">
                     <?= $this->Form->control('observaciones_sal') ?>
                 </div>
-                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
+                <?= $this->Form->button(__('enviar'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
             </div>
         </div>

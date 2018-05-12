@@ -43,6 +43,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        
 //        $this->loadComponent('Auth', [
 //            'authorize' => ['Controller'],// parte de configuracion del componente tome el control
 //            'authenticate' => [    
@@ -53,13 +54,15 @@ class AppController extends Controller
 //                    ]
 //                ]
 //            ],
+//            
+//            
 //            'loginAction' => [
 //                'controller' => 'Users',
 //                'action' => 'login'
 //            ],
 //            'authError' => 'Ingrese sus datos',
 //            'loginRedirect' => [
-//                'controller' => 'Menu',
+//                'controller' => 'socio',
 //                'action' => 'index'
 //            ],
 //            'logoutRedirect' => [
@@ -77,10 +80,10 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
         
     }
-    
-    public function isAuthorized($users)
-    {
-       
-        return true;
-    }
+//    
+//    public function isAuthorized($user)
+//    {
+//       
+//        return true;
+//    }
 }

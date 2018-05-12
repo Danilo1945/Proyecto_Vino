@@ -1,24 +1,8 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
-use Cake\Cache\Cache;
-use Cake\Core\Configure;
-use Cake\Core\Plugin;
-use Cake\Datasource\ConnectionManager;
-use Cake\Error\Debugger;
-use Cake\Network\Exception\NotFoundException;
+<div class="hide">
+    <?= $this->layout = "publico"; ?>
+</div>
 
+<<<<<<< HEAD
 $this->layout = false;
 
 if (!Configure::read('debug')) :
@@ -38,6 +22,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('home.css') ?>
+   
     
     
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -71,6 +56,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     
     
     
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     
     
     
@@ -120,16 +107,18 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
                 });
               
+  
+             $('.modal').modal();
+  
 
             });
 
         </script>
 
 
-    </head  >
 
-    <body style="background-color:#E8F6F3">
 
+<<<<<<< HEAD
 
     <!-- Menu creado con material designer  fuente http://materializecss.com/navbar.html -->
 
@@ -178,7 +167,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </nav>
     
     <div class="row" >
-         <center><b><h6>Catálogo de productos</h6></b></center>
+         <center><b><h6></h6></b></center>
             <div class="col s12 m12" style=" height: 425px" >  <!--   inicio del columna-->
                 <div class="slider">
                     <ul class="slides" style="height:200px">
@@ -209,6 +198,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 </div>
             </div>
     </div>
+=======
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
     <div class="row">
         <div class="col s12 m4">
         <div class="card darken-1">
@@ -285,6 +276,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                        <p style="color: black;size:10px" align="justify">Descripción:Pulpa</p>
             </div>
             <div class="card-action">
+               
                 <center><a class="waves-effect waves-light btn modal-trigger" href="#modal2">Hacer Pedido</a></center>
                 <!-- Modal Structure -->
                 <div id="modal2" class="modal bottom-sheet">
@@ -542,33 +534,43 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </div>
     </div>
 
+ //////
  
+<<<<<<< HEAD
         
         
         
-
-        <footer class="page-footer" id="abajo_menu" >
+ <br>
+        <footer class="page-footer Color_primP nav-extended" id="abajo_menu" >
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">EL ULTIMO INCA</h5>
+                        <p class="grey-text text-lighten-4">Puedes ponerte en contacto con nosotros.</p>
+                        <p class="grey-text text-lighten-4">Celular: 0991868307-0995259342</p>
+                        <p class="grey-text text-lighten-4" href="mailto:aso.quinticusig@hotmail.es">E-Mail: aso.quinticusig@hotmail.es</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Paginas amigas</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="www.utc.edu.ec">Universidad Técnica de Cotopaxi</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Sigchos</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gad Cotopaxi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
                 <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text"></h5>
-                            <p class="grey-text text-lighten-4"></p>
-                        </div>
-                        <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text"></h5>
-                            <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    © 2018 Copyright El Ultimo Inca Todos los derechaos Reserados
+                    <a class="grey-text text-lighten-4 right" href="Universidad Tecnica De Cotopaxi">www.utc.edu.ec</a>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        © Copyright 2018
-                        <a class="grey-text text-lighten-4 right" href="#!"></a>
-                    </div>
-                </div>
-        </footer>  
+            </div>
+        </footer>
+        <br>
+                
+=======
+ <!--par formulario emergente-->
+ <!-- Modal Trigger -->
+ 
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69

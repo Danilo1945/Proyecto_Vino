@@ -4,23 +4,51 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 <<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/acercaDe.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/MateriaPrima/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/catalogo.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/etalage.css</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/clic.css</file>
+            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
+            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/fonts.css</file>
+            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/CompraMatPri/index.ctp</file>
+            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
+            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
 =======
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/View/AppView.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/view.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/Migrations/20180425034539_Initial.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Users/login.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/view.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/index1.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/AppController.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/error.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/edit.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/default.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/view.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/acercaDe.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/UsersController.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/catalogo.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/Migrations/20180510003207_Catal.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/3D.css</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/edit.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/error.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/MenuController.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/clic.css</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/add.ctp</file>
->>>>>>> d9bdba094c9369d1ca598686ff41fa3cf663fb02
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/add.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Users/registro.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/publico.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/Login.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/CatalogoController.php</file>
+=======
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Pedido/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/edit.ctp</file>
+>>>>>>> 6c64c073d595e348ec3a99e5cb85034d6bbc4c66
+>>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
         </group>
     </open-files>
 </project-private>

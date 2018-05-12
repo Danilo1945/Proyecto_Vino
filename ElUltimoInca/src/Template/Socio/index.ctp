@@ -69,7 +69,7 @@
                 <table class="responsive-table">
                     <thead>
                         <!--aqui agregamos la clase color_encabezado-->
-                        <tr class="color_encabezado">
+                            <tr class="color_encabezado">
                             <th scope="col" ><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cedula') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombres') ?></th>
@@ -112,7 +112,5 @@
                 <?= $this->Paginator->last('<i class="material-icons">last_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
             </ul>
         </div>
-
-      
     </div>
 </div>
