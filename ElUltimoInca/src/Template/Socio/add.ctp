@@ -12,7 +12,11 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
 
+<<<<<<< HEAD
+                <span class="card-title black-text">Actions</span>
+=======
                 <span class="card-title black-text">Acciones</span>
+>>>>>>> d85fcc0e43cb5ec7bbcd034ece12b2338e51618c
                 <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?></li>
 
@@ -24,7 +28,7 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
                 <?= $this->Form->create($socio) ?>
-                <span class="card-title green-text"><?= __('Añadir Socios') ?></span>
+                <span class="card-title black-text"><?= __('Añadir Socios') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('cedula') ?>
