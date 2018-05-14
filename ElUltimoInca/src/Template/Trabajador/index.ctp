@@ -15,7 +15,7 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text" id="abajo_menu">Acciones</span>
+                <span class="card-title black-text" id="abajo_menu">Acciones</span>
                 <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('Nuevo Trabajador'), ['action' => 'add']) ?></li>
                 </div>
@@ -26,10 +26,10 @@
     <div class="col s12 m9">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
-                <span class="card-title green-text" id="abajo_menu"><?= __('Trabajador') ?></span>
+                <span class="card-title black-text" id="abajo_menu"><?= __('Trabajador') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
+                        <tr class="color_encabezado">
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cedula') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombres_tra') ?></th>
@@ -51,9 +51,9 @@
                             <td><?= h($trabajador->Direccion_tra) ?></td>
                             <td><?= h($trabajador->Email_tra) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $trabajador->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $trabajador->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $trabajador->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $trabajador->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_ver " title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $trabajador->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_buton_editar" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $trabajador->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_buton_eliminar" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $trabajador->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $trabajador->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

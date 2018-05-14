@@ -159,7 +159,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <li><?= $this->Html->link('Pedidos', ['controller' => 'Menu', 'action' => 'pedidos']) ?> </li>
                     <li><?= $this->Html->link('Contactos', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
                     <li><?= $this->Html->link('Registrarse', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
-                    <li><?= $this->Html->link('Login', ['controller' => 'Menu', 'action' => 'contactos']) ?> </li>
+                    <li><?= $this->Html->link('Login', ['controller' => 'users', 'action' => 'login']) ?> </li>
 
                     <!-- Dropdown Trigger -->
 
