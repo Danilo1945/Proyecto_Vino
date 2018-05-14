@@ -27,6 +27,7 @@ class AppView extends View
 {
 
 
+
   ///  use UIViewTrait;
 
 
@@ -48,6 +49,7 @@ class AppView extends View
      *
      * @return void
      */
+
     public function initialize()
     {
         //$this->initialize()

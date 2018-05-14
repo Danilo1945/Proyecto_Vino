@@ -222,21 +222,18 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-<<<<<<< HEAD
 
             'host' => 'localhost:3306',
             'host' =>  'localhost',
-=======
-<<<<<<< HEAD
+
 
             'host' => 'localhost:3306',
-           
-=======
+
 
 
             'host' => 'localhost:3306',
             'host' =>  'localhost',
-<<<<<<< HEAD
+
             'host' => 'localhost:3306',
             'host' => 'localhost',
             'host' => 'localhost:3306',
@@ -244,7 +241,7 @@ return [
 
             'host' => 'localhost:3306',
 
-            'host' => 'localhost:3307',
+            'host' => 'localhost:3306',
 
 
 
@@ -259,23 +256,14 @@ return [
             'host' => 'localhost:3306',
             'host' => 'localhost',
 
-=======
+
            
-
-<<<<<<< HEAD
-
-=======
-=======
             'host' => 'localhost:3306',
             'host' =>  'localhost',
             'host' => 'localhost:3306',
             'host' => 'localhost',
            
->>>>>>> 3e3bf91cf96ec236b9ff5a317f6ebf6e34317c9a
->>>>>>> 6c64c073d595e348ec3a99e5cb85034d6bbc4c66
->>>>>>> d85fcc0e43cb5ec7bbcd034ece12b2338e51618c
->>>>>>> 8507ae7db5b65cf9b36b266114f3ffff18b2c25c
->>>>>>> edeca42f82b997ecda5f363cebae1d399b767d4d
+
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
