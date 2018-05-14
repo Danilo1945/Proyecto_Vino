@@ -11,7 +11,7 @@
     <div class="col s12 m3">
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text"><?= __('Acciones') ?></span>
+                <span class="card-title black-text"><?= __('Acciones') ?></span>
                 <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('Editar Socio'), ['action' => 'edit', $socio->id]) ?> </li>
                     <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Socio'), ['action' => 'delete', $socio->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $socio->id)]) ?> </li>

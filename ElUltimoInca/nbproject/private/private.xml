@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Administrador/index.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/MateriaPrima/index.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/acercaDe.ctp</file>
+=======
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
+>>>>>>> 3b24739297dbbb6ead92013b615c0ccfc187e54c
         </group>
     </open-files>
 </project-private>
