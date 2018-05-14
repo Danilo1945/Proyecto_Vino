@@ -11,7 +11,7 @@
     <div class="col s12 m3">
         <div class="card darken-1 " id="abajo_menu">
             <div class="card-content white-text" id="abajo_menu">
-                <span class="card-title green-text" id="abajo_menu"><?= __('Acciones') ?></span>
+                <span class="card-title black-text" id="abajo_menu"><?= __('Acciones') ?></span>
                 <div class="card-action" id="abajo_menu">
                     <li class="padding-action"><?= $this->Html->link(__('Editar Inventario Empresa'), ['action' => 'edit', $inventarioEmpresa->id]) ?> </li>
                     <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Inventario Empresa'), ['action' => 'delete', $inventarioEmpresa->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $inventarioEmpresa->id)]) ?> </li>

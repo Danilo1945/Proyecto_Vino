@@ -11,7 +11,7 @@
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title green-text">Acciones</span>
+                <span class="card-title black-text">Acciones</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Html->link(__('Nueva Unidad de Medida'), ['action' => 'add']) ?></li>
                 </div>
@@ -28,10 +28,10 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Unidad de Medida') ?></span>
+                <span class="card-title black-text"><?= __('Unidad de Medida') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr>
+                        <tr class="color_encabezado">
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Nombre U/M') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Detalle U/M') ?></th>
@@ -45,9 +45,9 @@
                             <td><?= h($unidadMedida->nombre_umed) ?></td>
                             <td><?= h($unidadMedida->detalle_umed) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $unidadMedida->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $unidadMedida->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $unidadMedida->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $unidadMedida->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_button_ver co_buton_ver" title="'. __('Ver') . '" >zoom_in</i>', ['action' => 'view', $unidadMedida->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons co_button_editar co_buton_editar" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $unidadMedida->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons co_button_eliminar co_buton_eliminar" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $unidadMedida->id], ['confirm' => __('Esta seguro que quiere borrarlo # {0}?', $unidadMedida->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

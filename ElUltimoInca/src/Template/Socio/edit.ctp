@@ -32,7 +32,7 @@
         <div class="card darken-1" id="abajo_menu">
             <div class="card-content black-text" id="abajo_menu">
                 <?= $this->Form->create($socio) ?>
-                <span class="card-title green-text"><?= __('Editar  Socio') ?></span>
+                <span class="card-title black-text"><?= __('Editar  Socio') ?></span>
 
                 <div class="input-field">
                     <?= $this->Form->control('cedula') ?>
