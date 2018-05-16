@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/View/AppView.php</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/view.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/Migrations/20180425034539_Initial.php</file>
@@ -32,6 +33,23 @@
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/publico.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/Login.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/CatalogoController.php</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Pedido/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/edit.ctp</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Administrador/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/MateriaPrima/index.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/acercaDe.ctp</file>
+=======
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
+>>>>>>> 3b24739297dbbb6ead92013b615c0ccfc187e54c
+>>>>>>> 94f723bd84be826ef2696d239238bdf2d3d5aa4a
+>>>>>>> f357200944d8f862a79d475f89ae42bc03a55116
         </group>
     </open-files>
 </project-private>
