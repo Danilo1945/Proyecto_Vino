@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Socio/index.ctp</file>
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/webroot/css/fonts.css</file>
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/CompraMatPri/index.ctp</file>
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/pedidos.ctp</file>
-            <file>file:/C:/xamppp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/contactos.ctp</file>
-=======
-<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/View/AppView.php</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Catalogo/view.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/Migrations/20180425034539_Initial.php</file>
@@ -41,14 +32,6 @@
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/publico.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Layout/Login.ctp</file>
             <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Controller/CatalogoController.php</file>
-=======
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Menu/home.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/config/app.php</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Pedido/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ElUltimoInca/src/Template/Item/edit.ctp</file>
->>>>>>> 6c64c073d595e348ec3a99e5cb85034d6bbc4c66
->>>>>>> c33c663c100ff648a748db1d47c8e6e8f6668c69
         </group>
     </open-files>
 </project-private>
