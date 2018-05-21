@@ -79,18 +79,22 @@ class UsersTable extends Table
 
         $validator
             ->scalar('user')
-            ->maxLength('user', 10)
+            ->maxLength('user', 30)
             ->allowEmpty('user');
 
         $validator
             ->scalar('password')
-            ->maxLength('password', 10)
+            ->maxLength('password', 30)
             ->allowEmpty('password');
 
         $validator
-            ->scalar('Rol')
-            ->maxLength('Rol', 20)
-            ->allowEmpty('Rol');
+            ->scalar('rol')
+            ->maxLength('rol', 30)
+            ->allowEmpty('rol');
+
+        $validator
+            ->boolean('estado')
+            ->allowEmpty('estado');
 
         return $validator;
     }

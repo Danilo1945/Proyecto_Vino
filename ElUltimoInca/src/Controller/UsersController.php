@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\Event\Event;
 
+
 /**
  * Users Controller
  *
@@ -17,40 +18,53 @@ class UsersController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-       
-    }
-     public function login()
-    {
-         
-     }
+         $this->Auth->allow(['add']);
     
-//    
-//      public function login()
-//    {
-//        if($this->request->is('post'))
-//        {
-//            $user = $this->Auth->identify();
-//            if($user)
-//            {
-//                $this->Auth->setUser($user);
-//                return $this->redirect($this->Auth->redirectUrl());
-//            }
-//            else
-//            {
-//                $this->Flash->error('Datos son invalidos, por favor intente nuevamente', ['key' => 'auth']);
-//            }
-//        }
-//
-//        if ($this->Auth->user())
-//        {
-//            return $this->redirect(['controller' => 'Menu', 'action' => 'index']);
-//        }
-//    }  
+    }
     /**
      * Index method
      *
      * @return \Cake\Http\Response|void
      */
+    
+      public function login(){
+          if($this->request->is ('post')){
+            debug($this->request->data);
+           
+            $user = $this->Auth->identify();
+            
+            
+           debug($this->request->$user);
+            if($user)
+            {
+                $this->Auth->setUser($user);
+                
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            else
+            {
+                $this->Flash->error('Datos son invalidos, por favor intente nuevamente', ['key' => 'auth']);
+            }
+        }
+
+        
+        
+        
+        
+         
+        if ($this->Auth->user())
+        {
+            
+            return $this->redirect(['controller' => 'Menu', 'action' => 'home']);
+              $this->Flash->success('Bienvenido');
+        } 
+      }
+      
+      
+      
+      
+      
+      
     public function index()
     {
         $users = $this->paginate($this->Users);
@@ -90,21 +104,6 @@ class UsersController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
-        }
-        $this->set(compact('user'));
-    }
- public function registro()
-    {
-        $user = $this->Users->newEntity();
-        if ($this->request->is('post')) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('Usuario guardado Correctamente.'));
-
-                return $this->redirect(['controller'=>'menu','action'=>'home']);
-            }
-            $this->Flash->error(__('El usuario no pudo ser guardoado por favor intente nuevamente'));
-            return $this->redirect(['controller'=>'users','action'=>'registro']);
         }
         $this->set(compact('user'));
     }
