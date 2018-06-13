@@ -24,7 +24,18 @@ class InventarioEmpresaTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.inventario_empresa'
+        'app.inventario_empresa',
+        'app.item_inventario',
+        'app.area_produccion',
+        'app.unidad_medida',
+        'app.procesos',
+        'app.brix',
+        'app.hoja_producto_terminado',
+        'app.pasteurizacion',
+        'app.lote',
+        'app.trabajador',
+        'app.clase_vino',
+        'app.hoja_produccion_vino'
     ];
 
     /**
@@ -67,6 +78,16 @@ class InventarioEmpresaTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

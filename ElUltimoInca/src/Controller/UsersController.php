@@ -4,7 +4,6 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\Event\Event;
 
-
 /**
  * Users Controller
  *
@@ -18,55 +17,18 @@ class UsersController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-         $this->Auth->allow(['add']);
-    
+      
     }
     /**
      * Index method
      *
      * @return \Cake\Http\Response|void
      */
-    
-      public function login(){
-          if($this->request->is ('post')){
-            debug($this->request->data);
-           
-            $user = $this->Auth->identify();
-            
-            
-           debug($this->request->$user);
-            if($user)
-            {
-                $this->Auth->setUser($user);
-                
-                return $this->redirect($this->Auth->redirectUrl());
-            }
-            else
-            {
-                $this->Flash->error('Datos son invalidos, por favor intente nuevamente', ['key' => 'auth']);
-            }
-        }
-
-        
-        
-        
-        
-         
-        if ($this->Auth->user())
-        {
-            
-            return $this->redirect(['controller' => 'Menu', 'action' => 'home']);
-              $this->Flash->success('Bienvenido');
-        } 
-      }
-      
-      
-      
-      
-      
-      
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Roles']
+        ];
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));
@@ -82,7 +44,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => []
+            'contain' => ['Roles']
         ]);
 
         $this->set('user', $user);
@@ -105,7 +67,8 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $this->set(compact('user'));
+        $roles = $this->Users->Roles->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'roles'));
     }
 
     /**
@@ -129,7 +92,8 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $this->set(compact('user'));
+        $roles = $this->Users->Roles->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'roles'));
     }
 
     /**

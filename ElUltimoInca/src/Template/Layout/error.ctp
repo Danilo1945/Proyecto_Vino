@@ -30,16 +30,18 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    
-    <div class="row" style="width: 100px; height: 100px">
+
+    <div class="row" style="width: 100px; height: 100px"  ">
         
         <div class="col s12 m12 l12 xl12">
             <h1><?= __('Error') ?></h1>
         </div>
     </div>
-    <div class="row" style="width: 100px; height: 100px">
-        <div class="col s12 m12 l12 xl12">
-            <h1><?= __('Error') ?></h1>
+    
+    
+    <div class="row" style="width: 100px; height: 100px" >
+        <div class="col s12 m12 l12 xl12"  style="color: blue;">
+            <h1> <script>  <?= __('Error') ?>  </script>       </h1>
          
           <?= $this->Flash->render() ?>
 

@@ -16,7 +16,10 @@ class HojaProduccionVinoControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.hoja_produccion_vino'
+        'app.hoja_produccion_vino',
+        'app.inventario_empresa',
+        'app.procesos',
+        'app.trabajador'
     ];
 
     /**

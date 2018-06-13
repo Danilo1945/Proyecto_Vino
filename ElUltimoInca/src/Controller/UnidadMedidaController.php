@@ -17,7 +17,7 @@ class UnidadMedidaController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+        
     }
     /**
      * Index method
@@ -41,7 +41,7 @@ class UnidadMedidaController extends AppController
     public function view($id = null)
     {
         $unidadMedida = $this->UnidadMedida->get($id, [
-            'contain' => []
+            'contain' => ['CompraMatPri']
         ]);
 
         $this->set('unidadMedida', $unidadMedida);

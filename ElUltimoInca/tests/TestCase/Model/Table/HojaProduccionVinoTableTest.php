@@ -24,7 +24,10 @@ class HojaProduccionVinoTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.hoja_produccion_vino'
+        'app.hoja_produccion_vino',
+        'app.inventario_empresa',
+        'app.procesos',
+        'app.trabajador'
     ];
 
     /**
@@ -67,6 +70,16 @@ class HojaProduccionVinoTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

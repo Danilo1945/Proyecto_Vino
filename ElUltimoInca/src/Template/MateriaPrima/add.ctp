@@ -5,7 +5,7 @@
  */
 ?>
 <div class="hide">
- 
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
@@ -14,8 +14,10 @@
                 <span class="card-title green-text">Actions</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Html->link(__('List Materia Prima'), ['action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Unidad Medida'), ['controller' => 'UnidadMedida', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Unidad Medida'), ['controller' => 'UnidadMedida', 'action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['controller' => 'CompraMatPri', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Compra Mat Pri'), ['controller' => 'CompraMatPri', 'action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Prevee'), ['controller' => 'Prevee', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Prevee'), ['controller' => 'Prevee', 'action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -33,7 +35,7 @@
                     <?= $this->Form->control('descripcion_mat_pri') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('unm_id', ['options' => $unidadMedida, 'empty' => true]) ?>
+                    <?= $this->Form->control('contidad') ?>
                 </div>
                 <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>

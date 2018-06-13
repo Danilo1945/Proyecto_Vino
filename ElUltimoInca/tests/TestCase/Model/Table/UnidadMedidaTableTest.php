@@ -24,7 +24,27 @@ class UnidadMedidaTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.unidad_medida'
+        'app.unidad_medida',
+        'app.compra_mat_pri',
+        'app.proveedor',
+        'app.empresa',
+        'app.prevee',
+        'app.materia_prima',
+        'app.trabajador',
+        'app.area_produccion',
+        'app.inventario_empresa',
+        'app.item_inventario',
+        'app.hoja_produccion_vino',
+        'app.procesos',
+        'app.brix',
+        'app.hoja_producto_terminado',
+        'app.pasteurizacion',
+        'app.lote',
+        'app.clase_vino',
+        'app.hoja_ventas',
+        'app.users',
+        'app.roles',
+        'app.pedidos'
     ];
 
     /**

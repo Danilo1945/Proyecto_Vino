@@ -9,6 +9,13 @@ use Cake\Validation\Validator;
 /**
  * AreaProduccion Model
  *
+ * @property \App\Model\Table\InventarioEmpresaTable|\Cake\ORM\Association\BelongsTo $InventarioEmpresa
+ * @property \App\Model\Table\UnidadMedidaTable|\Cake\ORM\Association\BelongsTo $UnidadMedida
+ * @property \App\Model\Table\ProcesosTable|\Cake\ORM\Association\BelongsTo $Procesos
+ * @property \App\Model\Table\BrixTable|\Cake\ORM\Association\BelongsTo $Brix
+ * @property \App\Model\Table\ClaseVinoTable|\Cake\ORM\Association\BelongsTo $ClaseVino
+ * @property \App\Model\Table\TrabajadorTable|\Cake\ORM\Association\BelongsTo $Trabajador
+ *
  * @method \App\Model\Entity\AreaProduccion get($primaryKey, $options = [])
  * @method \App\Model\Entity\AreaProduccion newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\AreaProduccion[] newEntities(array $data, array $options = [])
@@ -33,6 +40,25 @@ class AreaProduccionTable extends Table
         $this->setTable('area_produccion');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('InventarioEmpresa', [
+            'foreignKey' => 'inventario_empresa_id'
+        ]);
+        $this->belongsTo('UnidadMedida', [
+            'foreignKey' => 'uni_medida_id'
+        ]);
+        $this->belongsTo('Procesos', [
+            'foreignKey' => 'procesos_id'
+        ]);
+        $this->belongsTo('Brix', [
+            'foreignKey' => 'brix_id'
+        ]);
+        $this->belongsTo('ClaseVino', [
+            'foreignKey' => 'clase_vino_id'
+        ]);
+        $this->belongsTo('Trabajador', [
+            'foreignKey' => 'trabajador_id'
+        ]);
     }
 
     /**
@@ -52,21 +78,11 @@ class AreaProduccionTable extends Table
             ->allowEmpty('fecha_elaboracion');
 
         $validator
-            ->scalar('num_procesos')
-            ->maxLength('num_procesos', 20)
-            ->allowEmpty('num_procesos');
+            ->numeric('cantidad_litros')
+            ->allowEmpty('cantidad_litros');
 
         $validator
-            ->integer('brix_area_pro')
-            ->allowEmpty('brix_area_pro');
-
-        $validator
-            ->scalar('clase_vino')
-            ->maxLength('clase_vino', 20)
-            ->allowEmpty('clase_vino');
-
-        $validator
-            ->integer('temperatura_vino')
+            ->numeric('temperatura_vino')
             ->allowEmpty('temperatura_vino');
 
         $validator
@@ -78,18 +94,25 @@ class AreaProduccionTable extends Table
             ->maxLength('observaciones_area_pro', 200)
             ->allowEmpty('observaciones_area_pro');
 
-        $validator
-            ->integer('id_uni_medi')
-            ->allowEmpty('id_uni_medi');
-
-        $validator
-            ->integer('id_tra')
-            ->allowEmpty('id_tra');
-
-        $validator
-            ->integer('id_inv')
-            ->allowEmpty('id_inv');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['inventario_empresa_id'], 'InventarioEmpresa'));
+        $rules->add($rules->existsIn(['uni_medida_id'], 'UnidadMedida'));
+        $rules->add($rules->existsIn(['procesos_id'], 'Procesos'));
+        $rules->add($rules->existsIn(['brix_id'], 'Brix'));
+        $rules->add($rules->existsIn(['clase_vino_id'], 'ClaseVino'));
+        $rules->add($rules->existsIn(['trabajador_id'], 'Trabajador'));
+
+        return $rules;
     }
 }

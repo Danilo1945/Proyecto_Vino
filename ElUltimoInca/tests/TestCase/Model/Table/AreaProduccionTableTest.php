@@ -24,7 +24,13 @@ class AreaProduccionTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.area_produccion'
+        'app.area_produccion',
+        'app.inventario_empresa',
+        'app.unidad_medida',
+        'app.procesos',
+        'app.brix',
+        'app.clase_vino',
+        'app.trabajador'
     ];
 
     /**
@@ -67,6 +73,16 @@ class AreaProduccionTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

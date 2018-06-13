@@ -30,13 +30,13 @@ class ProveedorFixture extends TestFixture
         'apellidos_pro' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'telefono_pro' => ['type' => 'string', 'length' => 12, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'email_pro' => ['type' => 'string', 'length' => 30, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'id_emp' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'empresa_id' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_indexes' => [
-            'id_emp' => ['type' => 'index', 'columns' => ['id_emp'], 'length' => []],
+            'empresa_id' => ['type' => 'index', 'columns' => ['empresa_id'], 'length' => []],
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'proveedor_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_emp'], 'references' => ['empresa', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'proveedor_ibfk_1' => ['type' => 'foreign', 'columns' => ['empresa_id'], 'references' => ['empresa', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -58,7 +58,7 @@ class ProveedorFixture extends TestFixture
             'apellidos_pro' => 'Lorem ipsum dolor sit amet',
             'telefono_pro' => 'Lorem ipsu',
             'email_pro' => 'Lorem ipsum dolor sit amet',
-            'id_emp' => 1
+            'empresa_id' => 1
         ],
     ];
 }

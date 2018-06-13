@@ -5,7 +5,7 @@
 */
 ?>
 <div class="hide">
- 
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
@@ -38,12 +38,6 @@
                         <?= __('Id') ?>
                         <div class="secondary-content">
                             <?= $this->Number->format($catalogo->id) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Pro Ter') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($catalogo->id_pro_ter) ?>
                         </div>
                     </li>
                 </ul>

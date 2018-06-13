@@ -17,7 +17,7 @@ class SocioController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']); 
+       
     }
     /**
      * Index method
@@ -110,6 +110,4 @@ class SocioController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    
-    
 }

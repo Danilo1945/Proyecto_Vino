@@ -9,7 +9,6 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $Descripcion
  * @property string|resource $Imagen
- * @property int $id_pro_ter
  */
 class Catalogo extends Entity
 {
@@ -25,7 +24,6 @@ class Catalogo extends Entity
      */
     protected $_accessible = [
         'Descripcion' => true,
-        'Imagen' => true,
-        'id_pro_ter' => true
+        'Imagen' => true
     ];
 }

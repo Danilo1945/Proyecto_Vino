@@ -5,18 +5,30 @@
 */
 ?>
 <div class="hide">
-  
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title black-text"><?= __('Acciones') ?></span>
+                <span class="card-title green-text"><?= __('Actions') ?></span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Editar Area Produccion'), ['action' => 'edit', $areaProduccion->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Eliminar Area Produccion'), ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('Lista Area Produccion'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('Nueva Area Produccion'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('Edit Area Produccion'), ['action' => 'edit', $areaProduccion->id]) ?> </li>
+                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Area Produccion'), ['action' => 'delete', $areaProduccion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $areaProduccion->id)]) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Area Produccion'), ['action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Area Produccion'), ['action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Inventario Empresa'), ['controller' => 'InventarioEmpresa', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Inventario Empresa'), ['controller' => 'InventarioEmpresa', 'action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Unidad Medida'), ['controller' => 'UnidadMedida', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Unidad Medida'), ['controller' => 'UnidadMedida', 'action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Procesos'), ['controller' => 'Procesos', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Proceso'), ['controller' => 'Procesos', 'action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Brix'), ['controller' => 'Brix', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Brix'), ['controller' => 'Brix', 'action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Clase Vino'), ['controller' => 'ClaseVino', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Clase Vino'), ['controller' => 'ClaseVino', 'action' => 'add']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Trabajador'), ['controller' => 'Trabajador', 'action' => 'index']) ?> </li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Trabajador'), ['controller' => 'Trabajador', 'action' => 'add']) ?> </li>
                 </div>
             </div>
         </div>
@@ -29,15 +41,39 @@
                         <h4><?= h($areaProduccion->id) ?></h4>
                     </li>
                     <li class="collection-item">
-                        <?= __('Num Procesos') ?>
+                        <?= __('Inventario Empresa Id') ?>
                         <div class="secondary-content">
-                            <?= h($areaProduccion->num_procesos) ?>
+                            <?= $areaProduccion->has('inventario_empresa') ? $this->Html->link($areaProduccion->inventario_empresa->id, ['controller' => 'InventarioEmpresa', 'action' => 'view', $areaProduccion->inventario_empresa->id]) : '' ?>
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Clase Vino') ?>
+                        <?= __('Uni Medida Id') ?>
                         <div class="secondary-content">
-                            <?= h($areaProduccion->clase_vino) ?>
+                            <?= $areaProduccion->has('unidad_medida') ? $this->Html->link($areaProduccion->unidad_medida->id, ['controller' => 'UnidadMedida', 'action' => 'view', $areaProduccion->unidad_medida->id]) : '' ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Procesos Id') ?>
+                        <div class="secondary-content">
+                            <?= $areaProduccion->has('proceso') ? $this->Html->link($areaProduccion->proceso->id, ['controller' => 'Procesos', 'action' => 'view', $areaProduccion->proceso->id]) : '' ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Brix Id') ?>
+                        <div class="secondary-content">
+                            <?= $areaProduccion->has('brix') ? $this->Html->link($areaProduccion->brix->id, ['controller' => 'Brix', 'action' => 'view', $areaProduccion->brix->id]) : '' ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Clase Vino Id') ?>
+                        <div class="secondary-content">
+                            <?= $areaProduccion->has('clase_vino') ? $this->Html->link($areaProduccion->clase_vino->id, ['controller' => 'ClaseVino', 'action' => 'view', $areaProduccion->clase_vino->id]) : '' ?>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <?= __('Trabajador Id') ?>
+                        <div class="secondary-content">
+                            <?= $areaProduccion->has('trabajador') ? $this->Html->link($areaProduccion->trabajador->id, ['controller' => 'Trabajador', 'action' => 'view', $areaProduccion->trabajador->id]) : '' ?>
                         </div>
                     </li>
                     <li class="collection-item">
@@ -53,33 +89,15 @@
                         </div>
                     </li>
                     <li class="collection-item">
-                        <?= __('Brix Area Pro') ?>
+                        <?= __('Cantidad Litros') ?>
                         <div class="secondary-content">
-                            <?= $this->Number->format($areaProduccion->brix_area_pro) ?>
+                            <?= $this->Number->format($areaProduccion->cantidad_litros) ?>
                         </div>
                     </li>
                     <li class="collection-item">
                         <?= __('Temperatura Vino') ?>
                         <div class="secondary-content">
                             <?= $this->Number->format($areaProduccion->temperatura_vino) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Uni Medi') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($areaProduccion->id_uni_medi) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Tra') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($areaProduccion->id_tra) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Inv') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($areaProduccion->id_inv) ?>
                         </div>
                     </li>
                     <li class="collection-item">

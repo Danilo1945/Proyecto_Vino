@@ -9,6 +9,10 @@ use Cake\Validation\Validator;
 /**
  * InventarioEmpresa Model
  *
+ * @property \App\Model\Table\ItemInventarioTable|\Cake\ORM\Association\BelongsTo $ItemInventario
+ * @property \App\Model\Table\AreaProduccionTable|\Cake\ORM\Association\HasMany $AreaProduccion
+ * @property \App\Model\Table\HojaProduccionVinoTable|\Cake\ORM\Association\HasMany $HojaProduccionVino
+ *
  * @method \App\Model\Entity\InventarioEmpresa get($primaryKey, $options = [])
  * @method \App\Model\Entity\InventarioEmpresa newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\InventarioEmpresa[] newEntities(array $data, array $options = [])
@@ -33,6 +37,16 @@ class InventarioEmpresaTable extends Table
         $this->setTable('inventario_empresa');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('ItemInventario', [
+            'foreignKey' => 'item_inventario_id'
+        ]);
+        $this->hasMany('AreaProduccion', [
+            'foreignKey' => 'inventario_empresa_id'
+        ]);
+        $this->hasMany('HojaProduccionVino', [
+            'foreignKey' => 'inventario_empresa_id'
+        ]);
     }
 
     /**
@@ -62,10 +76,20 @@ class InventarioEmpresaTable extends Table
             ->maxLength('color_inv', 20)
             ->allowEmpty('color_inv');
 
-        $validator
-            ->integer('id_item')
-            ->allowEmpty('id_item');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['item_inventario_id'], 'ItemInventario'));
+
+        return $rules;
     }
 }

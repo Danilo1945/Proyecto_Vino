@@ -24,7 +24,11 @@ class CompraMatPriTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.compra_mat_pri'
+        'app.compra_mat_pri',
+        'app.proveedor',
+        'app.trabajador',
+        'app.materia_prima',
+        'app.unidad_medida'
     ];
 
     /**
@@ -67,6 +71,16 @@ class CompraMatPriTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

@@ -17,7 +17,7 @@ class EmpresaController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+       
     }
     /**
      * Index method
@@ -41,7 +41,7 @@ class EmpresaController extends AppController
     public function view($id = null)
     {
         $empresa = $this->Empresa->get($id, [
-            'contain' => []
+            'contain' => ['Proveedor']
         ]);
 
         $this->set('empresa', $empresa);

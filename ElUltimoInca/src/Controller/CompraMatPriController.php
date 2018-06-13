@@ -17,7 +17,7 @@ class CompraMatPriController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+       
     }
     /**
      * Index method
@@ -26,6 +26,9 @@ class CompraMatPriController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Proveedor', 'Trabajador', 'MateriaPrima', 'UnidadMedida']
+        ];
         $compraMatPri = $this->paginate($this->CompraMatPri);
 
         $this->set(compact('compraMatPri'));
@@ -41,7 +44,7 @@ class CompraMatPriController extends AppController
     public function view($id = null)
     {
         $compraMatPri = $this->CompraMatPri->get($id, [
-            'contain' => []
+            'contain' => ['Proveedor', 'Trabajador', 'MateriaPrima', 'UnidadMedida']
         ]);
 
         $this->set('compraMatPri', $compraMatPri);
@@ -64,7 +67,11 @@ class CompraMatPriController extends AppController
             }
             $this->Flash->error(__('The compra mat pri could not be saved. Please, try again.'));
         }
-        $this->set(compact('compraMatPri'));
+        $proveedor = $this->CompraMatPri->Proveedor->find('list', ['limit' => 200]);
+        $trabajador = $this->CompraMatPri->Trabajador->find('list', ['limit' => 200]);
+        $materiaPrima = $this->CompraMatPri->MateriaPrima->find('list', ['limit' => 200]);
+        $unidadMedida = $this->CompraMatPri->UnidadMedida->find('list', ['limit' => 200]);
+        $this->set(compact('compraMatPri', 'proveedor', 'trabajador', 'materiaPrima', 'unidadMedida'));
     }
 
     /**
@@ -88,7 +95,11 @@ class CompraMatPriController extends AppController
             }
             $this->Flash->error(__('The compra mat pri could not be saved. Please, try again.'));
         }
-        $this->set(compact('compraMatPri'));
+        $proveedor = $this->CompraMatPri->Proveedor->find('list', ['limit' => 200]);
+        $trabajador = $this->CompraMatPri->Trabajador->find('list', ['limit' => 200]);
+        $materiaPrima = $this->CompraMatPri->MateriaPrima->find('list', ['limit' => 200]);
+        $unidadMedida = $this->CompraMatPri->UnidadMedida->find('list', ['limit' => 200]);
+        $this->set(compact('compraMatPri', 'proveedor', 'trabajador', 'materiaPrima', 'unidadMedida'));
     }
 
     /**

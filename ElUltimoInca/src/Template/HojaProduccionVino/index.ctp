@@ -5,15 +5,21 @@
  */
 ?>
 <div class="hide">
-   
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
         <div class="card darken-1">
             <div class="card-content white-text">
-                <span class="card-title black-text">Acciones</span>
+                <span class="card-title green-text">Actions</span>
                 <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Nueva Hoja de Produccion Vino'), ['acciones' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Hoja Produccion Vino'), ['action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Inventario Empresa'), ['controller' => 'InventarioEmpresa', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Inventario Empresa'), ['controller' => 'InventarioEmpresa', 'action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Procesos'), ['controller' => 'Procesos', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Proceso'), ['controller' => 'Procesos', 'action' => 'add']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Trabajador'), ['controller' => 'Trabajador', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Trabajador'), ['controller' => 'Trabajador', 'action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -22,40 +28,42 @@
     <div class="col s12 m9">
         <div class="card darken-1">
             <div class="card-content black-text">
-                <span class="card-title black-text"><?= __('Hoja Produccion Vino') ?></span>
+                <span class="card-title green-text"><?= __('Hoja Produccion Vino') ?></span>
                 <table class="responsive-table">
                     <thead>
-                        <tr class="color_encabezado">
+                        <tr>
                             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('inventario_empresa_id') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('procesos_id') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('trabajador_id') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('fecha_pro') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('id_inv') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cant_fruta_klg') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cant_agua_lts') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cant_azucar_klg') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('cant_levadura_grms') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('numero_procesos') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('observacion_pro') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('id_tra') ?></th>
-                            <th><?= __('Acciones') ?></th>
+                            <th><?= __('Actions') ?></th>
                         </tr>
                     </thead>
                     <tbody>
                     <?php foreach ($hojaProduccionVino as $hojaProduccionVino): ?>
                         <tr>
                             <td><?= $this->Number->format($hojaProduccionVino->id) ?></td>
+                            <td><?= $hojaProduccionVino->has('inventario_empresa') ? $this->Html->link($hojaProduccionVino->inventario_empresa->id, ['controller' => 'InventarioEmpresa', 'action' => 'view', $hojaProduccionVino->inventario_empresa->id]) : '' ?></td>
+                            <td><?= $hojaProduccionVino->has('proceso') ? $this->Html->link($hojaProduccionVino->proceso->id, ['controller' => 'Procesos', 'action' => 'view', $hojaProduccionVino->proceso->id]) : '' ?></td>
+                            <td><?= $hojaProduccionVino->has('trabajador') ? $this->Html->link($hojaProduccionVino->trabajador->id, ['controller' => 'Trabajador', 'action' => 'view', $hojaProduccionVino->trabajador->id]) : '' ?></td>
                             <td><?= h($hojaProduccionVino->fecha_pro) ?></td>
-                            <td><?= $this->Number->format($hojaProduccionVino->id_inv) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->cant_fruta_klg) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->cant_agua_lts) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->cant_azucar_klg) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->cant_levadura_grms) ?></td>
                             <td><?= $this->Number->format($hojaProduccionVino->numero_procesos) ?></td>
                             <td><?= h($hojaProduccionVino->observacion_pro) ?></td>
-                            <td><?= $this->Number->format($hojaProduccionVino->id_tra) ?></td>
                             <td>
-                                <?= $this->Html->link('<i class="material-icons co_buton_ver" title="'. __('Nuevo') . '" >zoom_in</i>', ['action' => 'view', $hojaProduccionVino->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons co_buton_editar" title="'. __('Editar') . '" >create</i>', ['action' => 'edit', $hojaProduccionVino->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons co_buton_eliminar" title="'. __('Eliminar') . '" >delete</i>', ['action' => 'delete', $hojaProduccionVino->id], ['confirm' => __('Desea Eliminar', $hojaProduccionVino->id), 'escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $hojaProduccionVino->id], ['escape' => false]) ?>
+                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $hojaProduccionVino->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $hojaProduccionVino->id], ['confirm' => __('Are you sure you want to delete # {0}?', $hojaProduccionVino->id), 'escape' => false]) ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -73,6 +81,6 @@
             </ul>
         </div>
 
-        
+        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
     </div>
 </div>

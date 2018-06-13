@@ -25,7 +25,11 @@ class MateriaPrimaTableTest extends TestCase
      */
     public $fixtures = [
         'app.materia_prima',
-        'app.unidad_medida'
+        'app.compra_mat_pri',
+        'app.proveedor',
+        'app.trabajador',
+        'app.unidad_medida',
+        'app.prevee'
     ];
 
     /**
@@ -68,16 +72,6 @@ class MateriaPrimaTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

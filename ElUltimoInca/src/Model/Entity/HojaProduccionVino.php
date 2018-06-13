@@ -7,15 +7,20 @@ use Cake\ORM\Entity;
  * HojaProduccionVino Entity
  *
  * @property int $id
+ * @property int $inventario_empresa_id
+ * @property int $procesos_id
+ * @property int $trabajador_id
  * @property \Cake\I18n\FrozenDate $fecha_pro
- * @property int $id_inv
  * @property float $cant_fruta_klg
  * @property float $cant_agua_lts
  * @property float $cant_azucar_klg
  * @property float $cant_levadura_grms
  * @property float $numero_procesos
  * @property string $observacion_pro
- * @property int $id_tra
+ *
+ * @property \App\Model\Entity\InventarioEmpresa $inventario_empresa
+ * @property \App\Model\Entity\Proceso $proceso
+ * @property \App\Model\Entity\Trabajador $trabajador
  */
 class HojaProduccionVino extends Entity
 {
@@ -30,14 +35,18 @@ class HojaProduccionVino extends Entity
      * @var array
      */
     protected $_accessible = [
+        'inventario_empresa_id' => true,
+        'procesos_id' => true,
+        'trabajador_id' => true,
         'fecha_pro' => true,
-        'id_inv' => true,
         'cant_fruta_klg' => true,
         'cant_agua_lts' => true,
         'cant_azucar_klg' => true,
         'cant_levadura_grms' => true,
         'numero_procesos' => true,
         'observacion_pro' => true,
-        'id_tra' => true
+        'inventario_empresa' => true,
+        'proceso' => true,
+        'trabajador' => true
     ];
 }

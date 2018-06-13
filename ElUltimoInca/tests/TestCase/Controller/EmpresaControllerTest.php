@@ -16,7 +16,8 @@ class EmpresaControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.empresa'
+        'app.empresa',
+        'app.proveedor'
     ];
 
     /**

@@ -28,13 +28,13 @@ class InventarioEmpresaFixture extends TestFixture
         'nombre_art_inv' => ['type' => 'string', 'length' => 40, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'descripcion_inv' => ['type' => 'string', 'length' => 200, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'color_inv' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'id_item' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'item_inventario_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_indexes' => [
-            'id_item' => ['type' => 'index', 'columns' => ['id_item'], 'length' => []],
+            'item_inventario_id' => ['type' => 'index', 'columns' => ['item_inventario_id'], 'length' => []],
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'inventario_empresa_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_item'], 'references' => ['item', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
+            'inventario_empresa_ibfk_1' => ['type' => 'foreign', 'columns' => ['item_inventario_id'], 'references' => ['item_inventario', 'id'], 'update' => 'restrict', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -54,7 +54,7 @@ class InventarioEmpresaFixture extends TestFixture
             'nombre_art_inv' => 'Lorem ipsum dolor sit amet',
             'descripcion_inv' => 'Lorem ipsum dolor sit amet',
             'color_inv' => 'Lorem ipsum dolor ',
-            'id_item' => 1
+            'item_inventario_id' => 1
         ],
     ];
 }
