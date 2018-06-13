@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="socio_add">
     <?= $this->Form->create($socio) ?>
     <fieldset>
-        <legend><?= __('Add Socio') ?></legend>
+        <legend><?= __('Añadir Socio') ?></legend>
         <?php
             echo $this->Form->control('cedula');
             echo $this->Form->control('Nombres');

@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="empresa_edit">
     <?= $this->Form->create($empresa) ?>
     <fieldset>
-        <legend><?= __('Edit Empresa') ?></legend>
+        <legend><?= __('Editar Empresa') ?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('direccion');

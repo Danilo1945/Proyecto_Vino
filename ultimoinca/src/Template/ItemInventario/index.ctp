@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="item_inventario_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Item Inventario'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Item Inventario'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Item Inventario') ?></h3>
@@ -22,7 +22,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nom_item') ?></th>
                 <th><?= $this->Paginator->sort('detalle_item') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -32,10 +32,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($itemInventario->nom_item) ?></td>
                 <td><?= h($itemInventario->detalle_item) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $itemInventario->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $itemInventario->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $itemInventario->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $itemInventario->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $itemInventario->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $itemInventario->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $itemInventario->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $itemInventario->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

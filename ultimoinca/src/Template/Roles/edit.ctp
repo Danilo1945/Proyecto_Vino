@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="roles_edit">
     <?= $this->Form->create($role) ?>
     <fieldset>
-        <legend><?= __('Edit Role') ?></legend>
+        <legend><?= __('Editar Rol') ?></legend>
         <?php
             echo $this->Form->control('role');
         ?>

@@ -172,7 +172,7 @@ $this->set('bakeEntities', array(
 <div class="container" id="pedidos_add">
     <?= $this->Form->create($pedido) ?>
     <fieldset>
-        <legend><?= __('Add Pedido') ?></legend>
+        <legend><?= __('Añadir Pedido') ?></legend>
         <?php
         echo $this->Form->control('fecha_ven', ['empty' => true]);
         echo $this->Form->control('trabajador_id', ['options' => $trabajador, 'empty' => true]);
@@ -186,7 +186,7 @@ $this->set('bakeEntities', array(
     <?= $this->Form->end() ?>
     <hr>
     <fieldset>
-        <legend><?= __('Add Detalle Pedido') ?></legend>
+        <legend><?= __('Añadir Detalle Pedido') ?></legend>
         <?php
         echo $this->Form->control('cantidad');
         echo $this->Form->control('detalle');

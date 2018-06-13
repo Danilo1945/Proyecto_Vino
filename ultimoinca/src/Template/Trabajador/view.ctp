@@ -11,14 +11,14 @@ $this->set('bakeEntities', array (
 <div class="container"  id="trabajador_view">
     <div class="float-right">
         <?= $this->Html->button(
-        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Editar'),
         ['action' => 'edit', $trabajador->id],
         ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
 
-        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $trabajador->id], [
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Eliminar'), ['action' => 'delete', $trabajador->id], [
         'escape' => false,
         'class' => 'btn btn-primary btn-sm',
-        'confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id)]) ?>
+        'confirm' => __('Estas seguro que quieres borrarlo', $trabajador->id)]) ?>
     </div>
 
     <h3 class="mb-3"><?= h($trabajador->id) ?></h3>

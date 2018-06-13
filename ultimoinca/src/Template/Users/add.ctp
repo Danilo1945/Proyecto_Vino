@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="users_add">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Add User') ?></legend>
+        <legend><?= __('Añadir User') ?></legend>
         <?php
             echo $this->Form->control('name');
             echo $this->Form->control('lastname');

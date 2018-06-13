@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="pedidos_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Pedido'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Pedido'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Pedidos') ?></h3>
@@ -26,7 +26,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('users_id') ?></th>
                 <th><?= $this->Paginator->sort('estado_cuenta') ?></th>
                 <th><?= $this->Paginator->sort('observaciones_ven') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -39,10 +39,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($pedido->estado_cuenta) ?></td>
                 <td><?= h($pedido->observaciones_ven) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $pedido->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $pedido->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $pedido->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $pedido->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $pedido->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $pedido->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $pedido->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $pedido->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

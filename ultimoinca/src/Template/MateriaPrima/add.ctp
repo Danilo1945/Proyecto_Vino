@@ -13,7 +13,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="materia_prima_add">
     <?= $this->Form->create($materiaPrima) ?>
     <fieldset>
-        <legend><?= __('Add Materia Prima') ?></legend>
+        <legend><?= __('Añadir Materia Prima') ?></legend>
         <?php
             echo $this->Form->control('nombre_mat_pri');
             echo $this->Form->control('descripcion_mat_pri');

@@ -14,7 +14,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="detalle_pedidos_edit">
     <?= $this->Form->create($detallePedido) ?>
     <fieldset>
-        <legend><?= __('Edit Detalle Pedido') ?></legend>
+        <legend><?= __('Editar Detalle Pedido') ?></legend>
         <?php
             echo $this->Form->control('cantidad');
             echo $this->Form->control('detalle');

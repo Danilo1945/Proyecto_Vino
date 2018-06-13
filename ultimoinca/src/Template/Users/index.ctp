@@ -46,7 +46,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('roles_id') ?></th>
              
                
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
                 
                 
             </tr>
@@ -67,10 +67,10 @@ $this->set('bakeEntities', array (
                
                
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $user->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $user->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $user->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $user->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $user->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $user->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $user->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $user->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

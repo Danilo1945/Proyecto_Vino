@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="unidad_medida_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Unidad Medida'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Unidad Medida'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Unidad Medida') ?></h3>
@@ -22,7 +22,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nombre_umed') ?></th>
                 <th><?= $this->Paginator->sort('detalle_umed') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -32,10 +32,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($unidadMedida->nombre_umed) ?></td>
                 <td><?= h($unidadMedida->detalle_umed) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $unidadMedida->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $unidadMedida->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $unidadMedida->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $unidadMedida->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $unidadMedida->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $unidadMedida->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $unidadMedida->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $unidadMedida->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>
