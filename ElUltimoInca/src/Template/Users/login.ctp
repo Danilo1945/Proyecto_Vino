@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col s12 m2 l2 xl4">
-        
+       <?=$this->Flash->render('auth')?>   
     </div>
     
     
@@ -22,19 +22,23 @@
       
       <div class="row">
           <div class="input-field">
-                    <?= $this->Form->control('Usuario') ?>
+                    <?= $this->Form->imput('username',['id'=>'username','type'=>'text','class'=>'validate','label'=>'false','placeholder'=>'Usuario','for'=>'Usuario']) ?>
+             
                 </div>
                 <div class="input-field">
+                   
+                    <?= $this->Form->imput('password',['id'=>'password','type'=>'password','class'=>'validate','label'=>'false','placeholder'=>'Contraseña','for'=>'Usuario']) ?>
+                  
                     
-                    <?= $this->Form->control('Contraseña') ?>
                 </div>
       </div>
      
       
                       <div class="row ">
                           <div class="col s6 m6  l6 xl6 center">
-                              <?=$this->Html->link('Inicial Sesión',['controller'=>'socio','action'=>'index','class'=>'btn waves-effect waves-light'])  ?>
+                              <?= $this->Form->button('Inicial Sesión',['class'=>'btn waves-effect waves-light','type'=>'submit']) ?>
                              
+                              </button>
                           </div>
                           <div class="col s6 m6 l6 xl6 center">
                             

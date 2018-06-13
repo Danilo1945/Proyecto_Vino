@@ -44,33 +44,33 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         
-//        $this->loadComponent('Auth', [
-//            'authorize' => ['Controller'],// parte de configuracion del componente tome el control
-//            'authenticate' => [    
-//                'Form' => [
-//                    'fields' => [
-//                        'username' => 'user',
-//                        'password' => 'password'
-//                    ]
-//                ]
-//            ],
-//            
-//            
-//            'loginAction' => [
-//                'controller' => 'Users',
-//                'action' => 'login'
-//            ],
-//            'authError' => 'Ingrese sus datos',
-//            'loginRedirect' => [
-//                'controller' => 'socio',
-//                'action' => 'index'
-//            ],
-//            'logoutRedirect' => [
-//                'controller' => 'Users',
-//                'action' => 'login'
-//            ]
-//           
-//        ]);
+        $this->loadComponent('Auth', [
+            'authorize' => ['Controller'],// parte de configuracion del componente tome el control
+            'authenticate' => [    
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'password',
+                    ]
+                ]
+            ],
+            
+            
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+            'authError' => 'Ingrese sus datos',
+            'loginRedirect' => [
+                'controller' => 'socio',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ]
+           
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -80,10 +80,10 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
         
     }
-//    
-//    public function isAuthorized($user)
-//    {
-//       
-//        return true;
-//    }
+    
+    public function isAuthorized($user)
+    {
+       
+        return true;
+    }
 }
