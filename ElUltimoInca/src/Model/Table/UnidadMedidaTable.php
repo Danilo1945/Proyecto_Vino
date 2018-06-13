@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * UnidadMedida Model
  *
+ * @property \App\Model\Table\CompraMatPriTable|\Cake\ORM\Association\HasMany $CompraMatPri
+ *
  * @method \App\Model\Entity\UnidadMedida get($primaryKey, $options = [])
  * @method \App\Model\Entity\UnidadMedida newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\UnidadMedida[] newEntities(array $data, array $options = [])
@@ -33,6 +35,10 @@ class UnidadMedidaTable extends Table
         $this->setTable('unidad_medida');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('CompraMatPri', [
+            'foreignKey' => 'unidad_medida_id'
+        ]);
     }
 
     /**

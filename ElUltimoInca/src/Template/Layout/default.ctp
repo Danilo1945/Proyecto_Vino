@@ -452,12 +452,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
             <li><?= $this->Html->link('Pedidos', ['controller' => 'Pedido', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Ventas', ['controller' => 'Venta', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Area de producción', ['controller' => 'AreaProduccion', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Hojas de producción de vino', ['controller' => 'HojaProduccionVino', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Gestión de la contabilidad', ['controller' => 'Salidas', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-           <li><?= $this->Html->link('Catálogo', ['controller' => 'catalogo', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-           
+             <li><?= $this->Html->link('Detalle del Pedidos', ['controller' => 'DetallePedido', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
+            <
             <li><div class="divider"></div></li>
             <li><a class="subheader center">INVENTARIO</a></li>
 

@@ -17,7 +17,7 @@ class InventarioEmpresaController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+     
     }
     /**
      * Index method
@@ -26,6 +26,9 @@ class InventarioEmpresaController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['ItemInventario']
+        ];
         $inventarioEmpresa = $this->paginate($this->InventarioEmpresa);
 
         $this->set(compact('inventarioEmpresa'));
@@ -41,7 +44,7 @@ class InventarioEmpresaController extends AppController
     public function view($id = null)
     {
         $inventarioEmpresa = $this->InventarioEmpresa->get($id, [
-            'contain' => []
+            'contain' => ['ItemInventario', 'AreaProduccion', 'HojaProduccionVino']
         ]);
 
         $this->set('inventarioEmpresa', $inventarioEmpresa);
@@ -64,7 +67,8 @@ class InventarioEmpresaController extends AppController
             }
             $this->Flash->error(__('The inventario empresa could not be saved. Please, try again.'));
         }
-        $this->set(compact('inventarioEmpresa'));
+        $itemInventario = $this->InventarioEmpresa->ItemInventario->find('list', ['limit' => 200]);
+        $this->set(compact('inventarioEmpresa', 'itemInventario'));
     }
 
     /**
@@ -88,7 +92,8 @@ class InventarioEmpresaController extends AppController
             }
             $this->Flash->error(__('The inventario empresa could not be saved. Please, try again.'));
         }
-        $this->set(compact('inventarioEmpresa'));
+        $itemInventario = $this->InventarioEmpresa->ItemInventario->find('list', ['limit' => 200]);
+        $this->set(compact('inventarioEmpresa', 'itemInventario'));
     }
 
     /**

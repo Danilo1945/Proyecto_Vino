@@ -17,7 +17,7 @@ class TrabajadorController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+       
     }
     /**
      * Index method
@@ -41,7 +41,7 @@ class TrabajadorController extends AppController
     public function view($id = null)
     {
         $trabajador = $this->Trabajador->get($id, [
-            'contain' => []
+            'contain' => ['AreaProduccion', 'CompraMatPri', 'HojaProduccionVino', 'HojaProductoTerminado', 'HojaVentas', 'Pedidos']
         ]);
 
         $this->set('trabajador', $trabajador);

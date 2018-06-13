@@ -5,7 +5,7 @@
  */
 ?>
 <div class="hide">
-   
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
@@ -32,9 +32,6 @@
 
                 <div class="input-field">
                     <?= $this->Form->control('Descripcion') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('id_pro_ter') ?>
                 </div>
                 <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>

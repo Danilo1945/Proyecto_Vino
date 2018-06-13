@@ -5,7 +5,7 @@
  */
 ?>
 <div class="hide">
-    
+    <?= $this->layout = "Materialize.materialize"; ?>
 </div>
 <div class="row">
     <div class="col s12 m3">
@@ -14,6 +14,8 @@
                 <span class="card-title green-text">Actions</span>
                 <div class="card-action">
                     <li class="padding-action"><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('List Roles'), ['controller' => 'Roles', 'action' => 'index']) ?></li>
+                    <li class="padding-action"><?= $this->Html->link(__('New Role'), ['controller' => 'Roles', 'action' => 'add']) ?></li>
                 </div>
             </div>
         </div>
@@ -25,33 +27,26 @@
                 <span class="card-title green-text"><?= __('Add User') ?></span>
 
                 <div class="input-field">
-                    <?= $this->Form->control('Cedula') ?>
+                    <?= $this->Form->control('name') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('Nombres') ?>
+                    <?= $this->Form->control('lastname') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('Apellidos') ?>
+                    <?= $this->Form->control('username') ?>
                 </div>
                 <div class="input-field">
                     <?= $this->Form->control('Telefono') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('Direccion') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('Email') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('user') ?>
+                    <?= $this->Form->control('email', ['type' => 'email', 'class' => 'validate']) ?>
                 </div>
                 <div class="input-field">
                     <?= $this->Form->control('password') ?>
                 </div>
                 <div class="input-field">
-                    <?= $this->Form->control('rol') ?>
+                    <?= $this->Form->control('roles_id', ['options' => $roles, 'empty' => true,]) ?>
                 </div>
-                <?= $this->Form->control('estado', ['type' => 'checkbox', 'class' => 'filled-in']) ?>
                 <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
                 <?= $this->Form->end() ?>
             </div>

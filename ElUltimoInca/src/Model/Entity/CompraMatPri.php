@@ -11,9 +11,16 @@ use Cake\ORM\Entity;
  * @property float $precio_u_mat
  * @property float $precio_tot_mat
  * @property string $observaciones_mat
- * @property int $id_pro
- * @property int $id_tra
+ * @property int $proveedor_id
+ * @property int $trabajador_id
  * @property int $id_mat_prim
+ * @property int $materia_prima_id
+ * @property int $unidad_medida_id
+ *
+ * @property \App\Model\Entity\Proveedor $proveedor
+ * @property \App\Model\Entity\Trabajador $trabajador
+ * @property \App\Model\Entity\MateriaPrima $materia_prima
+ * @property \App\Model\Entity\UnidadMedida $unidad_medida
  */
 class CompraMatPri extends Entity
 {
@@ -32,8 +39,14 @@ class CompraMatPri extends Entity
         'precio_u_mat' => true,
         'precio_tot_mat' => true,
         'observaciones_mat' => true,
-        'id_pro' => true,
-        'id_tra' => true,
-        'id_mat_prim' => true
+        'proveedor_id' => true,
+        'trabajador_id' => true,
+        'id_mat_prim' => true,
+        'materia_prima_id' => true,
+        'unidad_medida_id' => true,
+        'proveedor' => true,
+        'trabajador' => true,
+        'materia_prima' => true,
+        'unidad_medida' => true
     ];
 }

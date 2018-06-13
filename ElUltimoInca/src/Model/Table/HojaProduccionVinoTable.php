@@ -9,6 +9,10 @@ use Cake\Validation\Validator;
 /**
  * HojaProduccionVino Model
  *
+ * @property \App\Model\Table\InventarioEmpresaTable|\Cake\ORM\Association\BelongsTo $InventarioEmpresa
+ * @property \App\Model\Table\ProcesosTable|\Cake\ORM\Association\BelongsTo $Procesos
+ * @property \App\Model\Table\TrabajadorTable|\Cake\ORM\Association\BelongsTo $Trabajador
+ *
  * @method \App\Model\Entity\HojaProduccionVino get($primaryKey, $options = [])
  * @method \App\Model\Entity\HojaProduccionVino newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\HojaProduccionVino[] newEntities(array $data, array $options = [])
@@ -33,6 +37,16 @@ class HojaProduccionVinoTable extends Table
         $this->setTable('hoja_produccion_vino');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('InventarioEmpresa', [
+            'foreignKey' => 'inventario_empresa_id'
+        ]);
+        $this->belongsTo('Procesos', [
+            'foreignKey' => 'procesos_id'
+        ]);
+        $this->belongsTo('Trabajador', [
+            'foreignKey' => 'trabajador_id'
+        ]);
     }
 
     /**
@@ -50,10 +64,6 @@ class HojaProduccionVinoTable extends Table
         $validator
             ->date('fecha_pro')
             ->allowEmpty('fecha_pro');
-
-        $validator
-            ->integer('id_inv')
-            ->allowEmpty('id_inv');
 
         $validator
             ->numeric('cant_fruta_klg')
@@ -80,10 +90,22 @@ class HojaProduccionVinoTable extends Table
             ->maxLength('observacion_pro', 200)
             ->allowEmpty('observacion_pro');
 
-        $validator
-            ->integer('id_tra')
-            ->allowEmpty('id_tra');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['inventario_empresa_id'], 'InventarioEmpresa'));
+        $rules->add($rules->existsIn(['procesos_id'], 'Procesos'));
+        $rules->add($rules->existsIn(['trabajador_id'], 'Trabajador'));
+
+        return $rules;
     }
 }

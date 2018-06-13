@@ -9,6 +9,11 @@ use Cake\Validation\Validator;
 /**
  * CompraMatPri Model
  *
+ * @property \App\Model\Table\ProveedorTable|\Cake\ORM\Association\BelongsTo $Proveedor
+ * @property \App\Model\Table\TrabajadorTable|\Cake\ORM\Association\BelongsTo $Trabajador
+ * @property \App\Model\Table\MateriaPrimaTable|\Cake\ORM\Association\BelongsTo $MateriaPrima
+ * @property \App\Model\Table\UnidadMedidaTable|\Cake\ORM\Association\BelongsTo $UnidadMedida
+ *
  * @method \App\Model\Entity\CompraMatPri get($primaryKey, $options = [])
  * @method \App\Model\Entity\CompraMatPri newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\CompraMatPri[] newEntities(array $data, array $options = [])
@@ -33,6 +38,19 @@ class CompraMatPriTable extends Table
         $this->setTable('compra_mat_pri');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('Proveedor', [
+            'foreignKey' => 'proveedor_id'
+        ]);
+        $this->belongsTo('Trabajador', [
+            'foreignKey' => 'trabajador_id'
+        ]);
+        $this->belongsTo('MateriaPrima', [
+            'foreignKey' => 'materia_prima_id'
+        ]);
+        $this->belongsTo('UnidadMedida', [
+            'foreignKey' => 'unidad_medida_id'
+        ]);
     }
 
     /**
@@ -65,17 +83,26 @@ class CompraMatPriTable extends Table
             ->allowEmpty('observaciones_mat');
 
         $validator
-            ->integer('id_pro')
-            ->allowEmpty('id_pro');
-
-        $validator
-            ->integer('id_tra')
-            ->allowEmpty('id_tra');
-
-        $validator
             ->integer('id_mat_prim')
             ->allowEmpty('id_mat_prim');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['proveedor_id'], 'Proveedor'));
+        $rules->add($rules->existsIn(['trabajador_id'], 'Trabajador'));
+        $rules->add($rules->existsIn(['materia_prima_id'], 'MateriaPrima'));
+        $rules->add($rules->existsIn(['unidad_medida_id'], 'UnidadMedida'));
+
+        return $rules;
     }
 }
