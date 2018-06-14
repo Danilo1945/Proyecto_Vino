@@ -126,9 +126,9 @@ class DetallePedidosController extends AppController {
         $this->request->allowMethod(['post', 'delete']);
         $detallePedido = $this->DetallePedidos->get($id);
         if ($this->DetallePedidos->delete($detallePedido)) {
-            $this->Flash->success(__('El detalle pedido a sido elimanso.'));
+            $this->Flash->success(__('El detalle pedido a sido eliminado.'));
         } else {
-            $this->Flash->error(__('El detalle pedido no a podido ser eliminado.porfavor, intentalo de nuevo.'));
+            $this->Flash->error(__('El detalle pedido no a podido ser eliminado. Porfavor, intentalo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);
