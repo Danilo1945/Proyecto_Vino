@@ -64,11 +64,11 @@ class MenuController extends AppController
             
             $pedido = $this->Pedidos->patchEntity($pedido, $this->request->getData());
             if ($this->Pedidos->save($pedido)) {
-                $this->Flash->success(__('The pedido has been saved.'));
+                $this->Flash->success(__('El pedido se ha guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The pedido could not be saved. Please, try again.'));
+            $this->Flash->error(__('El pedido no pudo ser guardado. Inténtalo de nuevo.'));
         }
         $trabajador = $this->Pedidos->Trabajador->find('list', ['limit' => 200]);
         $users = $this->Pedidos->Users->find('list', ['limit' => 200]);
