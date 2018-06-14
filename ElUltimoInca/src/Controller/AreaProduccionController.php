@@ -17,7 +17,7 @@ class AreaProduccionController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+        $this->viewBuilder()->setHelpers(['Materialize.Form']);
     }
     /**
      * Index method
@@ -26,6 +26,9 @@ class AreaProduccionController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['InventarioEmpresa', 'UnidadMedida', 'Procesos', 'Brix', 'ClaseVino', 'Trabajador']
+        ];
         $areaProduccion = $this->paginate($this->AreaProduccion);
 
         $this->set(compact('areaProduccion'));
@@ -41,7 +44,7 @@ class AreaProduccionController extends AppController
     public function view($id = null)
     {
         $areaProduccion = $this->AreaProduccion->get($id, [
-            'contain' => []
+            'contain' => ['InventarioEmpresa', 'UnidadMedida', 'Procesos', 'Brix', 'ClaseVino', 'Trabajador']
         ]);
 
         $this->set('areaProduccion', $areaProduccion);
@@ -64,7 +67,13 @@ class AreaProduccionController extends AppController
             }
             $this->Flash->error(__('The area produccion could not be saved. Please, try again.'));
         }
-        $this->set(compact('areaProduccion'));
+        $inventarioEmpresa = $this->AreaProduccion->InventarioEmpresa->find('list', ['limit' => 200]);
+        $unidadMedida = $this->AreaProduccion->UnidadMedida->find('list', ['limit' => 200]);
+        $procesos = $this->AreaProduccion->Procesos->find('list', ['limit' => 200]);
+        $brix = $this->AreaProduccion->Brix->find('list', ['limit' => 200]);
+        $claseVino = $this->AreaProduccion->ClaseVino->find('list', ['limit' => 200]);
+        $trabajador = $this->AreaProduccion->Trabajador->find('list', ['limit' => 200]);
+        $this->set(compact('areaProduccion', 'inventarioEmpresa', 'unidadMedida', 'procesos', 'brix', 'claseVino', 'trabajador'));
     }
 
     /**
@@ -88,7 +97,13 @@ class AreaProduccionController extends AppController
             }
             $this->Flash->error(__('The area produccion could not be saved. Please, try again.'));
         }
-        $this->set(compact('areaProduccion'));
+        $inventarioEmpresa = $this->AreaProduccion->InventarioEmpresa->find('list', ['limit' => 200]);
+        $unidadMedida = $this->AreaProduccion->UnidadMedida->find('list', ['limit' => 200]);
+        $procesos = $this->AreaProduccion->Procesos->find('list', ['limit' => 200]);
+        $brix = $this->AreaProduccion->Brix->find('list', ['limit' => 200]);
+        $claseVino = $this->AreaProduccion->ClaseVino->find('list', ['limit' => 200]);
+        $trabajador = $this->AreaProduccion->Trabajador->find('list', ['limit' => 200]);
+        $this->set(compact('areaProduccion', 'inventarioEmpresa', 'unidadMedida', 'procesos', 'brix', 'claseVino', 'trabajador'));
     }
 
     /**

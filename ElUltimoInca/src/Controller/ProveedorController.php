@@ -17,7 +17,7 @@ class ProveedorController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+       
     }
     /**
      * Index method
@@ -26,6 +26,9 @@ class ProveedorController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Empresa']
+        ];
         $proveedor = $this->paginate($this->Proveedor);
 
         $this->set(compact('proveedor'));
@@ -41,7 +44,7 @@ class ProveedorController extends AppController
     public function view($id = null)
     {
         $proveedor = $this->Proveedor->get($id, [
-            'contain' => []
+            'contain' => ['Empresa', 'CompraMatPri', 'Prevee']
         ]);
 
         $this->set('proveedor', $proveedor);
@@ -64,7 +67,8 @@ class ProveedorController extends AppController
             }
             $this->Flash->error(__('The proveedor could not be saved. Please, try again.'));
         }
-        $this->set(compact('proveedor'));
+        $empresa = $this->Proveedor->Empresa->find('list', ['limit' => 200]);
+        $this->set(compact('proveedor', 'empresa'));
     }
 
     /**
@@ -88,7 +92,8 @@ class ProveedorController extends AppController
             }
             $this->Flash->error(__('The proveedor could not be saved. Please, try again.'));
         }
-        $this->set(compact('proveedor'));
+        $empresa = $this->Proveedor->Empresa->find('list', ['limit' => 200]);
+        $this->set(compact('proveedor', 'empresa'));
     }
 
     /**

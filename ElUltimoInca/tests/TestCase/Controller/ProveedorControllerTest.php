@@ -16,7 +16,13 @@ class ProveedorControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.proveedor'
+        'app.proveedor',
+        'app.empresa',
+        'app.compra_mat_pri',
+        'app.trabajador',
+        'app.materia_prima',
+        'app.prevee',
+        'app.unidad_medida'
     ];
 
     /**

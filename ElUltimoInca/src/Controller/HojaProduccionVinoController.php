@@ -17,7 +17,7 @@ class HojaProduccionVinoController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-//        $this->viewBuilder()->setHelpers(['Materialize.Form']);
+        
     }
     /**
      * Index method
@@ -26,6 +26,9 @@ class HojaProduccionVinoController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['InventarioEmpresa', 'Procesos', 'Trabajador']
+        ];
         $hojaProduccionVino = $this->paginate($this->HojaProduccionVino);
 
         $this->set(compact('hojaProduccionVino'));
@@ -41,7 +44,7 @@ class HojaProduccionVinoController extends AppController
     public function view($id = null)
     {
         $hojaProduccionVino = $this->HojaProduccionVino->get($id, [
-            'contain' => []
+            'contain' => ['InventarioEmpresa', 'Procesos', 'Trabajador']
         ]);
 
         $this->set('hojaProduccionVino', $hojaProduccionVino);
@@ -64,7 +67,10 @@ class HojaProduccionVinoController extends AppController
             }
             $this->Flash->error(__('The hoja produccion vino could not be saved. Please, try again.'));
         }
-        $this->set(compact('hojaProduccionVino'));
+        $inventarioEmpresa = $this->HojaProduccionVino->InventarioEmpresa->find('list', ['limit' => 200]);
+        $procesos = $this->HojaProduccionVino->Procesos->find('list', ['limit' => 200]);
+        $trabajador = $this->HojaProduccionVino->Trabajador->find('list', ['limit' => 200]);
+        $this->set(compact('hojaProduccionVino', 'inventarioEmpresa', 'procesos', 'trabajador'));
     }
 
     /**
@@ -88,7 +94,10 @@ class HojaProduccionVinoController extends AppController
             }
             $this->Flash->error(__('The hoja produccion vino could not be saved. Please, try again.'));
         }
-        $this->set(compact('hojaProduccionVino'));
+        $inventarioEmpresa = $this->HojaProduccionVino->InventarioEmpresa->find('list', ['limit' => 200]);
+        $procesos = $this->HojaProduccionVino->Procesos->find('list', ['limit' => 200]);
+        $trabajador = $this->HojaProduccionVino->Trabajador->find('list', ['limit' => 200]);
+        $this->set(compact('hojaProduccionVino', 'inventarioEmpresa', 'procesos', 'trabajador'));
     }
 
     /**

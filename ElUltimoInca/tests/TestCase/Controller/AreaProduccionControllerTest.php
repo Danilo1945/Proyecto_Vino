@@ -16,7 +16,13 @@ class AreaProduccionControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.area_produccion'
+        'app.area_produccion',
+        'app.inventario_empresa',
+        'app.unidad_medida',
+        'app.procesos',
+        'app.brix',
+        'app.clase_vino',
+        'app.trabajador'
     ];
 
     /**

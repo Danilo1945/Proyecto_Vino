@@ -17,7 +17,7 @@ class CatalogoController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
-       
+    
     }
     /**
      * Index method

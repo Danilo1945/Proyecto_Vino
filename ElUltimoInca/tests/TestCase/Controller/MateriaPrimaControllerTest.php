@@ -17,7 +17,11 @@ class MateriaPrimaControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.materia_prima',
-        'app.unidad_medida'
+        'app.compra_mat_pri',
+        'app.proveedor',
+        'app.trabajador',
+        'app.unidad_medida',
+        'app.prevee'
     ];
 
     /**

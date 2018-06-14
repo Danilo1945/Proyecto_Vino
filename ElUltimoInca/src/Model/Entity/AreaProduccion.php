@@ -8,15 +8,23 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha_elaboracion
- * @property string $num_procesos
- * @property int $brix_area_pro
- * @property string $clase_vino
- * @property int $temperatura_vino
+ * @property int $inventario_empresa_id
+ * @property float $cantidad_litros
+ * @property int $uni_medida_id
+ * @property int $procesos_id
+ * @property int $brix_id
+ * @property int $clase_vino_id
+ * @property float $temperatura_vino
  * @property \Cake\I18n\FrozenDate $fecha_control
+ * @property int $trabajador_id
  * @property string $observaciones_area_pro
- * @property int $id_uni_medi
- * @property int $id_tra
- * @property int $id_inv
+ *
+ * @property \App\Model\Entity\InventarioEmpresa $inventario_empresa
+ * @property \App\Model\Entity\UnidadMedida $unidad_medida
+ * @property \App\Model\Entity\Proceso $proceso
+ * @property \App\Model\Entity\Brix $brix
+ * @property \App\Model\Entity\ClaseVino $clase_vino
+ * @property \App\Model\Entity\Trabajador $trabajador
  */
 class AreaProduccion extends Entity
 {
@@ -32,14 +40,21 @@ class AreaProduccion extends Entity
      */
     protected $_accessible = [
         'fecha_elaboracion' => true,
-        'num_procesos' => true,
-        'brix_area_pro' => true,
-        'clase_vino' => true,
+        'inventario_empresa_id' => true,
+        'cantidad_litros' => true,
+        'uni_medida_id' => true,
+        'procesos_id' => true,
+        'brix_id' => true,
+        'clase_vino_id' => true,
         'temperatura_vino' => true,
         'fecha_control' => true,
+        'trabajador_id' => true,
         'observaciones_area_pro' => true,
-        'id_uni_medi' => true,
-        'id_tra' => true,
-        'id_inv' => true
+        'inventario_empresa' => true,
+        'unidad_medida' => true,
+        'proceso' => true,
+        'brix' => true,
+        'clase_vino' => true,
+        'trabajador' => true
     ];
 }

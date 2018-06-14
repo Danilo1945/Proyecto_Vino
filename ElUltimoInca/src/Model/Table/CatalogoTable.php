@@ -55,10 +55,6 @@ class CatalogoTable extends Table
         $validator
             ->allowEmpty('Imagen');
 
-        $validator
-            ->integer('id_pro_ter')
-            ->allowEmpty('id_pro_ter');
-
         return $validator;
     }
 }

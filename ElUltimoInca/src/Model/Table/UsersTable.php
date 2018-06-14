@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
+ * @property \App\Model\Table\RolesTable|\Cake\ORM\Association\BelongsTo $Roles
+ *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\User[] newEntities(array $data, array $options = [])
@@ -16,6 +18,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\User patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\User[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\User findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class UsersTable extends Table
 {
@@ -31,8 +35,14 @@ class UsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('name');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Roles', [
+            'foreignKey' => 'roles_id'
+        ]);
     }
 
     /**
@@ -48,19 +58,19 @@ class UsersTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('Cedula')
-            ->maxLength('Cedula', 11)
-            ->allowEmpty('Cedula');
+            ->scalar('name')
+            ->maxLength('name', 255)
+            ->allowEmpty('name');
 
         $validator
-            ->scalar('Nombres')
-            ->maxLength('Nombres', 30)
-            ->allowEmpty('Nombres');
+            ->scalar('lastname')
+            ->maxLength('lastname', 255)
+            ->allowEmpty('lastname');
 
         $validator
-            ->scalar('Apellidos')
-            ->maxLength('Apellidos', 30)
-            ->allowEmpty('Apellidos');
+            ->scalar('username')
+            ->maxLength('username', 20)
+            ->allowEmpty('username');
 
         $validator
             ->scalar('Telefono')
@@ -68,30 +78,30 @@ class UsersTable extends Table
             ->allowEmpty('Telefono');
 
         $validator
-            ->scalar('Direccion')
-            ->maxLength('Direccion', 100)
-            ->allowEmpty('Direccion');
-
-        $validator
-            ->scalar('Email')
-            ->maxLength('Email', 50)
-            ->allowEmpty('Email');
-
-        $validator
-            ->scalar('user')
-            ->maxLength('user', 10)
-            ->allowEmpty('user');
+            ->email('email')
+            ->allowEmpty('email');
 
         $validator
             ->scalar('password')
-            ->maxLength('password', 10)
+            ->maxLength('password', 255)
             ->allowEmpty('password');
 
-        $validator
-            ->scalar('Rol')
-            ->maxLength('Rol', 20)
-            ->allowEmpty('Rol');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->isUnique(['username']));
+        $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->existsIn(['roles_id'], 'Roles'));
+
+        return $rules;
     }
 }

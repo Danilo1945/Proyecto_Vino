@@ -7,15 +7,17 @@ use Cake\ORM\Entity;
  * User Entity
  *
  * @property int $id
- * @property string $Cedula
- * @property string $Nombres
- * @property string $Apellidos
+ * @property string $name
+ * @property string $lastname
+ * @property string $username
  * @property string $Telefono
- * @property string $Direccion
- * @property string $Email
- * @property string $user
+ * @property string $email
  * @property string $password
- * @property string $Rol
+ * @property int $roles_id
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Role $role
  */
 class User extends Entity
 {
@@ -30,15 +32,16 @@ class User extends Entity
      * @var array
      */
     protected $_accessible = [
-        'Cedula' => true,
-        'Nombres' => true,
-        'Apellidos' => true,
+        'name' => true,
+        'lastname' => true,
+        'username' => true,
         'Telefono' => true,
-        'Direccion' => true,
-        'Email' => true,
-        'user' => true,
+        'email' => true,
         'password' => true,
-        'Rol' => true
+        'roles_id' => true,
+        'created' => true,
+        'modified' => true,
+        'role' => true
     ];
 
     /**

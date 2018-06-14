@@ -10,7 +10,11 @@ use Cake\ORM\Entity;
  * @property string $nombre_art_inv
  * @property string $descripcion_inv
  * @property string $color_inv
- * @property int $id_item
+ * @property int $item_inventario_id
+ *
+ * @property \App\Model\Entity\ItemInventario $item_inventario
+ * @property \App\Model\Entity\AreaProduccion[] $area_produccion
+ * @property \App\Model\Entity\HojaProduccionVino[] $hoja_produccion_vino
  */
 class InventarioEmpresa extends Entity
 {
@@ -28,6 +32,9 @@ class InventarioEmpresa extends Entity
         'nombre_art_inv' => true,
         'descripcion_inv' => true,
         'color_inv' => true,
-        'id_item' => true
+        'item_inventario_id' => true,
+        'item_inventario' => true,
+        'area_produccion' => true,
+        'hoja_produccion_vino' => true
     ];
 }

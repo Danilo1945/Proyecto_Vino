@@ -16,7 +16,18 @@ class InventarioEmpresaControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.inventario_empresa'
+        'app.inventario_empresa',
+        'app.item_inventario',
+        'app.area_produccion',
+        'app.unidad_medida',
+        'app.procesos',
+        'app.brix',
+        'app.hoja_producto_terminado',
+        'app.pasteurizacion',
+        'app.lote',
+        'app.trabajador',
+        'app.clase_vino',
+        'app.hoja_produccion_vino'
     ];
 
     /**

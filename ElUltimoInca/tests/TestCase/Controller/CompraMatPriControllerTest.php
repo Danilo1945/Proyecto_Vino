@@ -16,7 +16,11 @@ class CompraMatPriControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.compra_mat_pri'
+        'app.compra_mat_pri',
+        'app.proveedor',
+        'app.trabajador',
+        'app.materia_prima',
+        'app.unidad_medida'
     ];
 
     /**

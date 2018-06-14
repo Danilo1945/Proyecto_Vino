@@ -24,7 +24,13 @@ class ProveedorTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.proveedor'
+        'app.proveedor',
+        'app.empresa',
+        'app.compra_mat_pri',
+        'app.trabajador',
+        'app.materia_prima',
+        'app.prevee',
+        'app.unidad_medida'
     ];
 
     /**
@@ -67,6 +73,16 @@ class ProveedorTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

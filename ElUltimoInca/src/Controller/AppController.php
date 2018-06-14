@@ -49,8 +49,8 @@ class AppController extends Controller
 //            'authenticate' => [    
 //                'Form' => [
 //                    'fields' => [
-//                        'username' => 'user',
-//                        'password' => 'password'
+//                        'username' => 'email',
+//                        'password' => 'password',
 //                    ]
 //                ]
 //            ],
@@ -80,10 +80,10 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
         
     }
-//    
-//    public function isAuthorized($user)
-//    {
-//       
-//        return true;
-//    }
+    
+    public function isAuthorized($user)
+    {
+       
+        return true;
+    }
 }
