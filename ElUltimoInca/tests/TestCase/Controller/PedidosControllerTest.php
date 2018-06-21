@@ -18,19 +18,8 @@ class PedidosControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.pedidos',
         'app.trabajador',
-        'app.users',
-        'app.roles'
+        'app.users'
     ];
-
-    /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

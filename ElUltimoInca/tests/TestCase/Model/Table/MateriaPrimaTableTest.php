@@ -26,9 +26,6 @@ class MateriaPrimaTableTest extends TestCase
     public $fixtures = [
         'app.materia_prima',
         'app.compra_mat_pri',
-        'app.proveedor',
-        'app.trabajador',
-        'app.unidad_medida',
         'app.prevee'
     ];
 

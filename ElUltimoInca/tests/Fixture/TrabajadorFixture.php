@@ -42,19 +42,23 @@ class TrabajadorFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'cedula' => 'Lorem ips',
-            'Nombres_tra' => 'Lorem ipsum dolor sit amet',
-            'Apellidos_tra' => 'Lorem ipsum dolor sit amet',
-            'Telefono_tra' => 'Lorem ipsu',
-            'Direccion_tra' => 'Lorem ipsum dolor sit amet',
-            'Email_tra' => 'Lorem ipsum dolor sit amet'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'cedula' => 'Lorem ips',
+                'Nombres_tra' => 'Lorem ipsum dolor sit amet',
+                'Apellidos_tra' => 'Lorem ipsum dolor sit amet',
+                'Telefono_tra' => 'Lorem ipsu',
+                'Direccion_tra' => 'Lorem ipsum dolor sit amet',
+                'Email_tra' => 'Lorem ipsum dolor sit amet'
+            ],
+        ];
+        parent::init();
+    }
 }

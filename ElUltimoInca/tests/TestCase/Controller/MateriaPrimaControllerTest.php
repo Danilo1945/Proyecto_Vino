@@ -18,21 +18,8 @@ class MateriaPrimaControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.materia_prima',
         'app.compra_mat_pri',
-        'app.proveedor',
-        'app.trabajador',
-        'app.unidad_medida',
         'app.prevee'
     ];
-
-    /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

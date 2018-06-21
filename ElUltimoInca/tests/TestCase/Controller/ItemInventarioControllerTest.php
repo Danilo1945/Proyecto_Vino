@@ -17,28 +17,8 @@ class ItemInventarioControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.item_inventario',
-        'app.inventario_empresa',
-        'app.area_produccion',
-        'app.unidad_medida',
-        'app.procesos',
-        'app.brix',
-        'app.hoja_producto_terminado',
-        'app.pasteurizacion',
-        'app.lote',
-        'app.trabajador',
-        'app.clase_vino',
-        'app.hoja_produccion_vino'
+        'app.inventario_empresa'
     ];
-
-    /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

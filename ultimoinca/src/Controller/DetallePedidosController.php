@@ -49,6 +49,7 @@ class DetallePedidosController extends AppController {
      */
     public function add() {
         $detallePedido = $this->DetallePedidos->newEntity();
+       
         if ($this->request->is('post')) {
             $detallePedido = $this->DetallePedidos->patchEntity($detallePedido, $this->request->getData());
             if ($this->DetallePedidos->save($detallePedido)) {
@@ -64,6 +65,34 @@ class DetallePedidosController extends AppController {
         $produccionTotal = $this->DetallePedidos->ProduccionTotal->find('list', ['limit' => 200]);
         $this->set(compact('detallePedido', 'pedidos', 'unidadMedida', 'produccionTotal'));
     }
+    
+    public function GpedidosNew($cantidad,$detalle,$v_unitario,$v_total,$pedido_id,$uni_medida,$pro_total) {
+        $detallePedido = $this->DetallePedidos->newEntity();
+       
+        if ($this->request->is('post')) {
+            $detallePedido = $this->DetallePedidos->patchEntity($detallePedido, $this->request->getData());
+            $detallePedido->cantidad=$cantidad;
+            $detallePedido->detalle=$detalle;
+            $detallePedido->valor_unitario=$v_unitario;
+            $detallePedido->valor_total=$v_total;
+            $detallePedido->pedidos_id=$pedido_id;
+            $detallePedido->unidad_medida_id=$uni_medida;
+            $detallePedido->produccion_total_id=$pro_total;
+            
+            
+            if ($this->DetallePedidos->save($detallePedido)) {
+                $this->Flash->success(__('Los pedidos se guardaron exitosamente.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('El Pedido no se pudo guardar, Intente de nuevo por favor '));
+        }
+       
+    }
+    
+    
+    
+    
 
     public function getUnidadMedida() {
         $unidadMedida = $this->DetallePedidos->UnidadMedida->find('list', ['limit' => 200]);

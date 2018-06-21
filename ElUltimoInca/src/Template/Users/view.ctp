@@ -1,96 +1,49 @@
 <?php
 /**
-* @var \App\View\AppView $this
-* @var \App\Model\Entity\User $user
-*/
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\User $user
+ */
+
+$this->set('bakeEntities', array (
+  0 => 'Users',
+  1 => 'Roles',
+));
 ?>
-<div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
-</div>
-<div class="row">
-    <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit User'), ['action' => 'edit', $user->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Roles'), ['controller' => 'Roles', 'action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Role'), ['controller' => 'Roles', 'action' => 'add']) ?> </li>
-                </div>
-            </div>
-        </div>
+<div class="container"  id="user_view">
+    <div class="float-right">
+        <?= $this->Html->button(
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        ['action' => 'edit', $user->id],
+        ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
+
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $user->id], [
+        'escape' => false,
+        'class' => 'btn btn-primary btn-sm',
+        'confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
     </div>
-    <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
-                <ul class="collection with-header">
-                    <li class="collection-header">
-                        <h4><?= h($user->name) ?></h4>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Name') ?>
-                        <div class="secondary-content">
-                            <?= h($user->name) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Lastname') ?>
-                        <div class="secondary-content">
-                            <?= h($user->lastname) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Username') ?>
-                        <div class="secondary-content">
-                            <?= h($user->username) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Telefono') ?>
-                        <div class="secondary-content">
-                            <?= h($user->Telefono) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Email') ?>
-                        <div class="secondary-content">
-                            <?= h($user->email) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Password') ?>
-                        <div class="secondary-content">
-                            <?= h($user->password) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Roles Id') ?>
-                        <div class="secondary-content">
-                            <?= $user->has('role') ? $this->Html->link($user->role->id, ['controller' => 'Roles', 'action' => 'view', $user->role->id]) : '' ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($user->id) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Created') ?>
-                        <div class="secondary-content">
-                            <?= h($user->created) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Modified') ?>
-                        <div class="secondary-content">
-                            <?= h($user->modified) ?>
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </div>
+
+    <h3 class="mb-3"><?= h($user->name) ?></h3>
+    <dl class="row">
+        <dt class="col-sm-3"><?= __('Name') ?></dt>
+        <dd class="col-sm-9"><?= h($user->name) ?></dd>
+        <dt class="col-sm-3"><?= __('Lastname') ?></dt>
+        <dd class="col-sm-9"><?= h($user->lastname) ?></dd>
+        <dt class="col-sm-3"><?= __('Username') ?></dt>
+        <dd class="col-sm-9"><?= h($user->username) ?></dd>
+        <dt class="col-sm-3"><?= __('Telefono') ?></dt>
+        <dd class="col-sm-9"><?= h($user->Telefono) ?></dd>
+        <dt class="col-sm-3"><?= __('Email') ?></dt>
+        <dd class="col-sm-9"><?= h($user->email) ?></dd>
+        <dt class="col-sm-3"><?= __('Password') ?></dt>
+        <dd class="col-sm-9"><?= h($user->password) ?></dd>
+        <dt class="col-sm-3"><?= __('Role') ?></dt>
+        <dd class="col-sm-9"><?= $user->has('role') ? $this->Html->link($user->role->role, ['controller' => 'Roles', 'action' => 'view', $user->role->id]) : '' ?></dd>
+        <dt class="col-sm-3"><?= __('Id') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($user->id) ?></dd>
+        <dt class="col-sm-3"><?= __('Created') ?></dt>
+        <dd class="col-sm-9"><?= h($user->created) ?></dd>
+        <dt class="col-sm-3"><?= __('Modified') ?></dt>
+        <dd class="col-sm-9"><?= h($user->modified) ?></dd>
+    </dl>
+
 </div>

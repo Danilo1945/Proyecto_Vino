@@ -16,18 +16,11 @@ class DetallePedidosControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.detalle_pedidos'
+        'app.detalle_pedidos',
+        'app.pedidos',
+        'app.unidad_medida',
+        'app.produccion_total'
     ];
-
-    /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

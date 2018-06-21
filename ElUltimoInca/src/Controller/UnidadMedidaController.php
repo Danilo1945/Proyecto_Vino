@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * UnidadMedida Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class UnidadMedidaController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-        
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class UnidadMedidaController extends AppController
         if ($this->request->is('post')) {
             $unidadMedida = $this->UnidadMedida->patchEntity($unidadMedida, $this->request->getData());
             if ($this->UnidadMedida->save($unidadMedida)) {
-                $this->Flash->success(__('The unidad medida has been saved.'));
+                $this->Flash->success(__('La unidad de medida se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The unidad medida could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Unidad de Medida no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('unidadMedida'));
     }
@@ -82,11 +76,11 @@ class UnidadMedidaController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $unidadMedida = $this->UnidadMedida->patchEntity($unidadMedida, $this->request->getData());
             if ($this->UnidadMedida->save($unidadMedida)) {
-                $this->Flash->success(__('The unidad medida has been saved.'));
+                $this->Flash->success(__('La unidad de medida se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The unidad medida could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Unidad de Medida no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('unidadMedida'));
     }
@@ -103,9 +97,9 @@ class UnidadMedidaController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $unidadMedida = $this->UnidadMedida->get($id);
         if ($this->UnidadMedida->delete($unidadMedida)) {
-            $this->Flash->success(__('The unidad medida has been deleted.'));
+            $this->Flash->success(__('La unidad de medida se elimino satisfactoriamente.'));
         } else {
-            $this->Flash->error(__('The unidad medida could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Unidad de Medida no se pudo guardar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

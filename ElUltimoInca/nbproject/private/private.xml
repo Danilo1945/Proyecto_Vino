@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ultimoinca/src/Controller/PedidosController.php</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ultimoinca/src/Template/Pedidos/addclientes.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ultimoinca/src/Template/Layout/publico.ctp</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ultimoinca/webroot/js/pedidos.js</file>
+            <file>file:/C:/xampp/htdocs/Proyecto_Vino/ultimoinca/src/Template/Menu/home.ctp</file>
+        </group>
     </open-files>
 </project-private>

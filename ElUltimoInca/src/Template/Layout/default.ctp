@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
@@ -14,9 +16,18 @@
  */
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AdminLTE 3 | Dashboard</title>
+
+
+
+
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
@@ -25,319 +36,126 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </title>
         <?= $this->Html->meta('icon') ?>
 
-        <!--PARA IMPLEMENTAR MATERIAL -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <?= $this->Html->script('jquery-3.3.1.min') ?>
-        <?= $this->Html->css('materialize.min.css') ?>
-        <?= $this->Html->script('materialize.min.js') ?>
+
+        <?= $this->Html->css('bootstrap.min.css') ?>
+        <?= $this->Html->script('bootstrap.min.js') ?>
+        <?= $this->Html->css('simple-sidebar.css') ?>
+
+        <?= $this->fetch('meta') ?>
+        <?= $this->fetch('css') ?>
+        <?= $this->fetch('script') ?>
 
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
-       
-        
+
+
+
+
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+
+
+        <?= $this->Html->css('font-awesome.min.css') ?>
+
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Theme style -->
+
+
+        <?= $this->Html->css('adminlte.min.css') ?>
+
+        <!-- iCheck -->
+
+        <?= $this->Html->css('blue.css') ?>
+
+        <!-- Morris chart -->
+        <?= $this->Html->css('morris.css') ?>
+
+
+        <!-- jvectormap -->
+
+        <?= $this->Html->css('jvectormap-1.2.2.css') ?>
+        <!-- Date Picker -->
+        <?= $this->Html->css('datepicker3.css') ?>
+
+        <!-- Daterange picker -->
+        <?= $this->Html->css('daterangepicker-bs3.css') ?>
+
+        <!-- bootstrap wysihtml5 - text editor -->
+        <?= $this->Html->css('bootstrap3-wysihtml5.min.css') ?>
+
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+
+
+
+        <!-- importante para todos los iconos podemos ver ejemplos https://www.w3schools.com/icons/icons_reference.asp-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <style>
-
-            .Color_primP{
-                background: #000000;
-
-            }
-            .Color_secundarioP{
-                background: #000000;
-
-            }
-
-            nav{
-                position: fixed;
-                top: 0;
-
-
-            }
-            .menu-principal{
-                margin-top: 60px;
-                position: float;
-            }
-
-            #abajo_menu{
-                position: static;
-
-            }
-            #menu_estatico{
-                position: fixed;
-                top: 0;
-            }
-            .c_dorado{
-                color: #AA8100;
-                
-            
-            }
-            
-            
-            .blanco_color{
-                color: #f5f5f5;
-            }
-
-/*para cambiar color bo*/
- /* label color */
-   .input-field label {
-       /*color del texto*/
-     color: #000;   
-   }
-     .input-field input[type=text]:focus + label {
-     color: #AA8100;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #000;
-   }
-         
-      
-            
-            
+            /* Rules for icon sizes: */
+            .material-icons.md-18 { font-size: 18px; }
+            .material-icons.md-24 { font-size: 24px; } /* Default */
+            .material-icons.md-36 { font-size: 36px; }
+            .material-icons.md-48 { font-size: 48px; }
         </style>
-
-
-<style>
-    .color_negro{
-        background: #000000;
-        color: #AA8100;
-    }
-    .co_buton_ver  {
-      color: #990000;  
-    }
-    .co_buton_editar  {
-      color: #990000 ;  
-    }
-    .co_buton_eliminar  {
-      color: #990000 ;  
-    }
-    .color_encabezado a{
-        color: #990000;
-    }
-    .color_menu {
-        color: #990000;
-    }
-    .color_paginator li  a {
-         color: #990000;
-         
-    }
-    .active a{
-        background: #990000;
-    }
-    .padding-action a{
-        color: #AA8100;
-    }
-</style>
-
-
 
 
 
 
     </head>
-    <body>
-
-        
-        
-        <div class="row  Color_primP center"   >
-            <div class="col s1 m2 l1  xl1" >
-                <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium material-icons button-collapse center" style=" color: #AA8100">menu</i></a>
-            </div>
-
-            <div class="col s12 m1 l2 xl1">
-                <?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?>
-
-            </div>
-            <div class="col m9 l9  xl10 right" >
-               
-            </div>
-
-        </div>
-
-<!--        <div class="row  Color_primP center"   >
-            <div class="col s1 m2 l1  xl1" >
-                <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium material-icons button-collapse center" style=" color: #AA8100">menu</i></a>
-            </div>
-
-            <div class="col s12 m1 l2 xl1">
-                <?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?>
-
-            </div>
-            <div class="col m9 l9  xl10 right" >
-               <?=$this->Html->link('Salir',['controller'=>'Menu','action'=>'home','class'=>'waves-effect'])  ?> 
-            </div>
-
-        </div>-->
-        
-<!--                <nav>
-                    <nav>
-            <div class="nav-wrapper Color_primP" >
-              <a href="" class="brand-logo"  class=""><i data-activates="slide-out" class="medium-8 material-icons button-collapse center">menu</i><?= $this->Html->image('logo250x64.png', ['alt' => 'CakePHP']) ?></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-              </ul>
-            </div>
-          </nav>-->
+    <body class="hold-transition sidebar-mini" >
 
 
 
 
+        <div class="wrapper">
 
+            <!-- Navbar -->
+             <!--navbar-dark bg-dark fixed-top-->
+            <nav class="main-header navbar navbar-expand-md bg-dark navbar-dark  fixed-top ">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+                    </li>
 
-        <div class="row">
-            <div class="col s12 m12 l12 xl12">
-                <?= $this->Flash->render() ?>
-            </div>
-        </div>
-
-
-        <!--/////////////////////////////////////////////////////////////////////////a partir de aqui--> 
-        <div class="menu-principal" >
-
-
-            <div class="row" >
-                <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
-                <?= $this->fetch('content') ?>  <!--     ////// aqui aparecera el contenido-->
-            </div>
-
-
-
-            <!--</div>  fin container-->
+                </ul>
 
 
 
 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-
-
-
-
-            <footer class="page-footer Color_primP">
-                <div class="container">
-                    <div class="row">
-                        <!--inicio baner-->
-
-                        <!--///// redes sociales-->
-
-                        <div class="row " >
-                            <div class="col  s12  m12 l12 xl12 " >
-                                <div class="card darken-1 Color_primP" id="abajo_menu">
-
-                                    <div class="card-content white-text">
-                                        <span class="card-title c_dorado">Siguenos en:</span>
-                                        <div class="card-action" id="abajo_menu"> 
-
-
-                                            <div class="col s3 m3 l3 xl3">
-                                                <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
-                                            </div>
-
-                                            <div class="col s3 m3 l3 xl3">
-                                                <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">add</i></a>
-                                            </div>
-
-                                            <div class="col s3 m3 l3 xl3">
-                                                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-                                            </div>
-
-                                            <div class="col s3 m3 l3 xl3">
-                                                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-
-                        <!--//// fin redes sociales-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <?= $this->Html->link(' Inicio', ['controller' => 'Menu', 'action' => 'home'], ['class' => ' nav-link active fa fa-home ']) ?>
+                        </li>
 
                         
-                        <!--/////// iniciao mapa-->
-
-                        <div class="row " >
-                            <div class="col  s12  m12 l12 xl12 " >
-                                <div class="card darken-1 Color_primP" id="abajo_menu">
-
-                                    <div class="card-content white-text">
-                                        <span class="card-title c_dorado ">Como Llegar a Quinticusig-Sigchos</span>
-                                        <div class="card-action" id="abajo_menu"> 
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13589.262514870908!2d-78.8755357812871!3d-0.7141739916636745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNDInNTEuMCJTIDc4wrA1MicwMC40Ilc!5e1!3m2!1ses-419!2sec!4v1525822446458" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!--///// fin mapa-->
-                        <!--para los contactos-->
-                        <div class="row " >
-                            <div class="col  s12  m12 l12 xl12 " >
-                                <div class="card darken-1 Color_primP" id="abajo_menu">
-
-                                    <div class="card-content white-text">
-                                        <span class="card-title c_dorado">CONTACTOS</span>
-                                        <div class="card-action" id="abajo_menu"> 
-                                            <!--////////////////////////////////////////////////////////-->
-
-                                            <div class="row">
-                                                <form class="col s12">
-                                                    <div class="row">
-                                                        <div class="input-field col s12 m6 l6 xl6">
-                                                            <i class="material-icons prefix  ">account_circle</i>
-                                                            <input id="icon_prefix" type="text" class="validate ">
-                                                            <label for="icon_prefix" >Nombre:</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m6 l6 xl6">
-                                                            <i class="material-icons prefix">email</i>
-                                                            <input id="icon_prefix" type="text" class="validate">
-                                                            <label for="icon_prefix">Email:</label>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="input-field col s12 m12 l12 xl12">
-                                                            <i class="material-icons prefix " >insert_comment</i>
-                                                            <input id="icon_prefix" type="text" class="validate ">
-                                                            <label for="icon_prefix">Asunto:</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-
-                                                        <div class="input-field col s12 m12 l12 xl12">
-                                                            <i class="material-icons prefix">mode_edit</i>
-                                                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                                                            <label for="icon_prefix2">Mensaje</label>
-
-                                                        </div>
-                                                    </div>
-                                                    <button class="btn waves-effect " type="submit" name="action" style=" background:#AA8100; ">Enviar
-                                                        <i class="material-icons right">send</i>
-                                                    </button>
-                                                   
-                                                </form>
-                                            </div>
-                                            <!--////////////////////////////////////////////////////////-->
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>  
-                        </div>
-
-                        <!--fin contactos-->
-
-                        <!--para los contactos-->
 
 
 
-                        <!--fin contactos-->
+                        <!--bloque de condicion-->
+
+                       
+                            <li>
+                                <?= $this->Html->link(__(' Salir'), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link fa fa-sign-out']) ?>
+                            </li>
+                            
+                            <li>
+                                <a class=" nav-link " >Bienvenido <?= $current_user['name'] . ' ' . $current_user['lastname'] ?></a>
+                            </li>
+
+                       
 
 
 
@@ -345,155 +163,301 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-                        <div class="col l6 s12 ">
-                            <!--                            <h5 class="white-text">Footer Content</h5>-->
-                            <!--inicio imagen-->
-                            <div class="row " >
-                                <div class="col  s12  m12 l12 xl12 " >
-                                    <div class="card darken-1 Color_primP" id="abajo_menu">
+                    </ul>
 
-                                        <div class="card-content white-text">
-<!--                                            <span class="card-title green-text">CONTACTOS</span>-->
-                                            <div class="card-action" id="abajo_menu"> 
-                                                <!--////////////////////////////////////////////////////////-->
-                                                <?= $this->Html->image('logo 300x114.png', ['alt' => 'CakePHP']) ?>
-                                                <!--////////////////////////////////////////////////////////-->
+                    <!-- FIN MENU -->
 
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>  
-                            </div>
-                            <!--fin imagen-->
-                        </div>
-
-
-                        <div class="col l4 offset-l2 s12">
-                            <!--                            <h5 class="white-text">Links</h5>-->
-                            <!--inicio logos utc-->
-                            <div class="row " >
-                                <div class="col  s12  m12 l12 xl12 " >
-                                    <div class="card darken-1 Color_primP" id="abajo_menu">
-
-                                        <div class="card-content white-text">
-                                            <!--<span class="card-title green-text">CONTACTOS</span>-->
-                                            <div class="card-action" id="abajo_menu"> 
-                                                <!--////////////////////////////////////////////////////////-->
-                                                <?= $this->Html->image('UtcSistemas300x114.png', ['alt' => 'CakePHP']) ?>
-                                                <!--////////////////////////////////////////////////////////-->
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>  
-                            </div>
-                            <!--fin logos utc-->
-
-                        </div>
-                    </div>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        © 2018 Copyright El Ultimo Inca: Todos los derechos reservados
-                        <a class="grey-text text-lighten-4 right" href="">Grupo desarrollo UTC</a>
+
+
+
+            </nav>
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+
+
+
+
+
+
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!--para colocar el logo -->
+                <a href="index3.html" class="brand-link">
+                    <?= $this->Html->image('logo250x64_new.png', ['alt' => 'CakePHP', 'class' => 'brand-image ', 'style' => 'opacity: .8']) ?>
+
+
+
+
+                    <span class="brand-text font-weight-light " style=" color: darkslategray">.</span>
+                </a>
+                <!--  FIn  para colocar el logo -->
+
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+
+
+
+
+
+
+
+
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+                        <div class="info">
+                            <a class="nav-link" ><?= $current_user['name'] . ' ' . $current_user['lastname'] ?></a>
+                        </div>
                     </div>
+                    <!--encabezado del menu-->
+                    <div class="row" style=" width: 5px">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-x1-12"  >
+                            <ul class="sidebar-nav">
+
+
+
+
+
+
+                                <li class="sidebar-brand">
+                                    <a href="#">
+                                        Menú
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Personas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-street-view" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Clientes', ['controller' => 'users', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-male" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Trabajadores', ['controller' => 'trabajador', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-handshake-o" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Socios', ['controller' => 'socio', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-truck" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Proveedores', ['controller' => 'proveedor', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Gestión
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-briefcase" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Empresa', ['controller' => 'empresa', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-cubes" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Materia Prima', ['controller' => 'MateriaPrima', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-sitemap" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Categoria-Inventario', ['controller' => 'ItemInventario', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-thermometer-2" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Unidades de Medida', ['controller' => 'UnidadMedida', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+                                <li>
+                                    <a  class="fa fa-square" style="font-size:26px">
+                                    </a>
+                                    <?= $this->Html->link('   Producción Total', ['controller' => 'ProduccionTotal', 'action' => 'index'], ['style' => 'font-size:18px;font-style: normal;']) ?>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--fin menu-->
+                    <!-- /#sidebar-wrapper -->
+
+                    <!-- Page Content -->
+
+
+
+                    <!-- /#page-content-wrapper -->
+
+
+
+
+                    <!-- menu izquierda -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                 with font-awesome or any other icon font library -->
+
+
+
+
+
+
+
+                            <!-- primer bloque -->
+
+
+
+
+
+
+
+                            <!-- segundo bloque -->
+
+
+
+
+
+
+                            <!-- tercer bloque -->
+
+
+
+
+
+                            <!-- tercer bloque -->
+
+
+
+
+
+
+
+
+
+
+
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="content-wrapper" style="padding-left: 30px; padding-right: 30px">
+                <!-- Content Header (Page header) -->
+                <!--                <div class="content-header">
+                
+                                </div>-->
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+
+                <!-- contenido  ////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+                <div class="row centered-text " style=" align-items: center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-x1-12">
+                        <br>  
+                        <br> 
+                        <br> 
+                    </div>
+
+
+                    <div class=" card col-12 col-sm-12 col-md-12 col-lg-12 col-x1-12" style=" background: white; ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+                                <?= $this->Flash->render() ?>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-x1-10">
+                            <br>
+                            <br>
+                        </div>
+
+
+
+                        <?= $this->fetch('content') ?>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-x1-10">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+                <!-- /.content  Fin contenido ////////////////////////////////////////////////////////////// -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- foooter pie de pagina     ///////////////////////////////////// -->
+            <footer class="main-footer bg-dark ">
+                <strong>© 2018 Copyright El Ultimo Inca: Todos los derechos reservados      <a href="www.utc.edu.ec">   Grupo de desarrollo UTC</a>.</strong>
+
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.0
                 </div>
             </footer>
 
+            <!-- Fin                      foooter pie de pagina     ///////////////////////////////////// -->
 
 
 
 
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
 
-        </div>  <!-- fin contenedor principal-->
-
-
-
-
-
-
-
-
-        <ul id="slide-out" class="side-nav">
-            <li><div class="user-view">
-                    <div class="background" style="height: 250px;">
-                        <?= $this->Html->image('logo250x250.2.png', ['alt' => 'CakePHP']) ?>
-                    </div>
-<!--                    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-                     <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-                      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>-->
-<!--                    <a href="#!name"><span class="white-text name">El Ultimo Inca</span></a>
-                    <a href="#!email"><span class="white-text email">elultimoinca@hotmail.com</span></a>-->
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </li>
-
-
-            <li><div class="divider"></div></li>
-            <li><a class="subheader center">Home</a></li>
-
-            <li><?= $this->Html->link('Inicio', ['controller' => '/']) ?> </li>
-            <li><div class="divider"></div></li>
-            <li><a class="subheader center">PERSONAS</a></li>
-
-
-            <li><?= $this->Html->link('Socio', ['controller' => 'Socio', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Cliente', ['controller' => 'Cliente', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Usuarios', ['controller' => 'Users', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Trabajador', ['controller' => 'Trabajador', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Proveedor', ['controller' => 'Proveedor', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><div class="divider"></div></li>
-            <li><a class="subheader center">GESTIÓN</a></li>
-
-
-            <li><?= $this->Html->link('Pedidos', ['controller' => 'Pedido', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-             <li><?= $this->Html->link('Detalle del Pedidos', ['controller' => 'DetallePedido', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <
-            <li><div class="divider"></div></li>
-            <li><a class="subheader center">INVENTARIO</a></li>
-
-
-            <li><?= $this->Html->link('Materia prima', ['controller' => 'MateriaPrima', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Inventario de la Empresa', ['controller' => 'InventarioEmpresa', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Producto terminado', ['controller' => 'ProductoTerminado', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Empresa', ['controller' => 'Socio', 'Empresa' => 'index', 'class' => 'waves-effect']) ?> </li>
-
-            <li><div class="divider"></div></li>
-            <li><a class="subheader center">CONFIGURACIONES</a></li>
-
-            <li><?= $this->Html->link('Categoria del artículo(items)', ['controller' => 'Item', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Unidad de Medida', ['controller' => 'UnidadMedida', 'action' => 'index', 'class' => 'waves-effect']) ?> </li>
-            <li><?= $this->Html->link('Home', ['controller' => '']) ?> </li>
-            <li><?= $this->Html->link('', ['controller' => '']) ?> </li>
-            <li><?= $this->Html->link('', ['controller' => '']) ?> </li>
-            <li><?= $this->Html->link('', ['controller' => '']) ?> </li>
-
-
-
-        </ul>
-
-
-
-
-        <ul id="slide-out" class="side-nav">
-            <li><div class="user-view">
-
-                    <?= $this->Html->image('logo250x250.png', ['alt' => 'CakePHP']) ?>
-
-                </div>
-                <!--/<a href="#"><img class="circle" src="images/yuna.jpg"></a>-->
-                <a href="#!name"><span class="white-text name" style="color: black">El Ultimo Inca</span></a>
-                <a href="#!email"><span class="white-text email" style="color: black">elultimoinca@hotmail.com</span></a>
-                </div></li>
-
-
-        </ul>
-        <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>-->
+        <!-- fin contenido principal////////////////////////////////////////////////////////////////////////////////// -->
 
 
 
@@ -505,19 +469,81 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
+        <!-- ./wrapper -->
 
 
 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-
-
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <script>
+            $.widget.bridge('uibutton', $.ui.button)
+        </script>
 
-            // Initialize collapse button
-            $(".button-collapse").sideNav();
 
- 
+        <!-- Bootstrap 4 -->
+        <?= $this->Html->script('bootstrap.bundle.min.js') ?>
 
-        </script> 
+        <!-- Morris.js charts -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <?= $this->Html->script('morris.min.js') ?>
+
+        <!-- Sparkline -->
+
+        <?= $this->Html->script('jquery.sparkline.min.js') ?>
+        <!-- jvectormap -->
+        <?= $this->Html->script('jquery-jvectormap-1.2.2.min.js') ?>
+        <?= $this->Html->script('jquery-jvectormap-world-mill-en.js') ?>
+
+        <!-- jQuery Knob Chart -->
+        <?= $this->Html->script('jquery.knob.js') ?>
+
+        <!-- daterangepicker -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+        <?= $this->Html->script('daterangepicker.js') ?>
+
+        <!-- datepicker -->
+        <?= $this->Html->script('bootstrap-datepickerjs') ?>
+
+        <!-- Bootstrap WYSIHTML5 -->
+        <?= $this->Html->script('bootstrap-datepicker') ?>
+        <?= $this->Html->script('bootstrap3-wysihtml5.all.min.js') ?>
+
+        <!-- Slimscroll -->
+        <?= $this->Html->script('jquery.slimscroll.min.js') ?>
+
+        <!-- FastClick -->
+        <?= $this->Html->script('fastclick.js') ?>
+
+        <!-- AdminLTE App -->
+
+        <?= $this->Html->script('adminlte.js') ?>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+        <?= $this->Html->script('dashboard.js') ?>
+        <!-- AdminLTE for demo purposes -->
+
+        <?= $this->Html->script('demo.js') ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

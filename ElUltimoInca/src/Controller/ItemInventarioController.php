@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * ItemInventario Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class ItemInventarioController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-        
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class ItemInventarioController extends AppController
         if ($this->request->is('post')) {
             $itemInventario = $this->ItemInventario->patchEntity($itemInventario, $this->request->getData());
             if ($this->ItemInventario->save($itemInventario)) {
-                $this->Flash->success(__('The item inventario has been saved.'));
+                $this->Flash->success(__('El Item del inventario se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The item inventario could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Item Inventario no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('itemInventario'));
     }
@@ -82,11 +76,11 @@ class ItemInventarioController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $itemInventario = $this->ItemInventario->patchEntity($itemInventario, $this->request->getData());
             if ($this->ItemInventario->save($itemInventario)) {
-                $this->Flash->success(__('The item inventario has been saved.'));
+                $this->Flash->success(__('El item del inventario se guardo correctamente'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The item inventario could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Item Inventario no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('itemInventario'));
     }
@@ -103,9 +97,9 @@ class ItemInventarioController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $itemInventario = $this->ItemInventario->get($id);
         if ($this->ItemInventario->delete($itemInventario)) {
-            $this->Flash->success(__('The item inventario has been deleted.'));
+            $this->Flash->success(__('El item del inventario se elimino correctamente.'));
         } else {
-            $this->Flash->error(__('The item inventario could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Item Inventario no se pudo eliminar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

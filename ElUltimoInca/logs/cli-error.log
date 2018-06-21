@@ -1,187 +1,92 @@
-2018-04-21 04:55:17 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.add' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+2018-05-24 16:18:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.pedido' doesn't exist in C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
 Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'add', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('add', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('add')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\TemplateTask->main('add')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#10 {main}
+#0 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'pedido', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('pedido', Array)
+#2 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('pedido')
+#3 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('pedido')
+#7 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#10 C:\xampp\htdocs\vino2\ultimoinca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#11 {main}
 
 
-2018-04-24 02:33:32 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+2018-06-09 18:42:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.pedidos_detalle' doesn't exist in C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
 Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('sua_tabela')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
+#0 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'pedidos_detalle', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('pedidos_detalle', Array)
+#2 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('pedidos_detalle')
+#3 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('pedidos_detalle')
+#7 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#10 C:\xampp\htdocs\vino2\ultimoinca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#11 {main}
 
 
-2018-04-24 02:45:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+2018-06-10 04:36:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
 Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('sua_tabela')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
+#0 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
+#2 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
+#3 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
+#7 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
+#8 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
+#9 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
+#10 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('sua_tabela')
+#12 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\vino2\ultimoinca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
 
 
-2018-04-24 02:53:34 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.la' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+2018-06-10 04:36:22 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
 Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'la', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('la', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('la')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'la', 'La')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('La')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('La')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('la', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('la')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
+#0 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
+#2 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
+#3 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
+#7 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
+#8 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
+#9 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
+#10 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('sua_tabela')
+#12 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\vino2\ultimoinca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
 
 
-2018-04-24 02:57:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+2018-06-10 04:36:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
 Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('sua_tabela', 'socio', 'index')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
-
-
-2018-04-24 02:58:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.sua_tabela' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('sua_tabela', 'socio')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
-
-
-2018-04-24 03:25:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elultimoinca.home' doesn't exist in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'home', Array, Object(Cake\Database\Schema\TableSchema))
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('home', Array)
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('home')
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'home', 'Home')
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Home')
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('Home')
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('home', 0)
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('home')
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#14 {main}
-
-
-2018-05-24 00:26:23 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'elultimoinca' in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php on line 115
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Command\MarkMigrated.php(106): Migrations\Command\MarkMigrated->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Command\Command.php(252): Migrations\Command\MarkMigrated->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\MarkMigrated), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'mark_migrated')
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(391): Cake\Console\ShellDispatcher->dispatch(Array)
-#14 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SnapshotTrait.php(74): Cake\Console\Shell->dispatchShell('migrations mark...')
-#15 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SnapshotTrait.php(42): Migrations\Shell\Task\MigrationSnapshotTask->markSnapshotApplied('C:\\xampp\\htdocs...')
-#16 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(106): Migrations\Shell\Task\MigrationSnapshotTask->createFile('C:\\xampp\\htdocs...', '<?php\nuse Migra...')
-#17 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php(95): Bake\Shell\Task\SimpleBakeTask->bake('BdUltimoinca')
-#18 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php(48): Migrations\Shell\Task\SimpleMigrationTask->bake('BdUltimoinca')
-#19 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(89): Migrations\Shell\Task\MigrationSnapshotTask->bake('BdUltimoinca')
-#20 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\SimpleBakeTask->main('bd_ultimoinca')
-#21 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
-#22 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#23 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#24 {main}
-
-
-2018-05-24 00:30:16 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'elultimoinca' in C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php on line 115
-Stack Trace:
-#0 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
-#1 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
-#2 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
-#3 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Command\MarkMigrated.php(106): Migrations\Command\MarkMigrated->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#4 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Command\Command.php(252): Migrations\Command\MarkMigrated->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#5 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#6 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\MarkMigrated), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#7 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#8 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
-#9 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'mark_migrated')
-#10 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
-#11 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
-#12 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
-#13 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(391): Cake\Console\ShellDispatcher->dispatch(Array)
-#14 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SnapshotTrait.php(74): Cake\Console\Shell->dispatchShell('migrations mark...')
-#15 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SnapshotTrait.php(42): Migrations\Shell\Task\MigrationSnapshotTask->markSnapshotApplied('C:\\xampp\\htdocs...')
-#16 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(106): Migrations\Shell\Task\MigrationSnapshotTask->createFile('C:\\xampp\\htdocs...', '<?php\nuse Migra...')
-#17 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\SimpleMigrationTask.php(95): Bake\Shell\Task\SimpleBakeTask->bake('Initial')
-#18 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php(48): Migrations\Shell\Task\SimpleMigrationTask->bake('Initial')
-#19 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(89): Migrations\Shell\Task\MigrationSnapshotTask->bake('Initial')
-#20 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\SimpleBakeTask->main('Initial')
-#21 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
-#22 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
-#23 C:\xampp\htdocs\Proyecto_Vino\ElUltimoInca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#24 {main}
+#0 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sua_tabela', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sua_tabela', Array)
+#2 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('sua_tabela')
+#3 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sua_tabela', 'SuaTabela')
+#7 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('SuaTabela')
+#8 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('SuaTabela')
+#9 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sua_tabela', 0)
+#10 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('sua_tabela')
+#12 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\vino2\ultimoinca\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\vino2\ultimoinca\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
 
 

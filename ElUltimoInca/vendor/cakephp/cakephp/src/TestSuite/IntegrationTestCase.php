@@ -22,7 +22,8 @@ if (class_exists('PHPUnit_Runner_Version', false) && !interface_exists('PHPUnit\
 
 use Cake\Core\Configure;
 use Cake\Database\Exception as DatabaseException;
-use Cake\Network\Session;
+use Cake\Http\ServerRequest;
+use Cake\Http\Session;
 use Cake\Routing\Router;
 use Cake\TestSuite\Stub\TestExceptionRenderer;
 use Cake\Utility\CookieCryptTrait;
@@ -130,7 +131,7 @@ abstract class IntegrationTestCase extends TestCase
     /**
      * The session instance from the last request
      *
-     * @var \Cake\Network\Session|null
+     * @var \Cake\Http\Session|null
      */
     protected $_requestSession;
 
@@ -367,6 +368,7 @@ abstract class IntegrationTestCase extends TestCase
      *
      * @param string|array $url The URL to request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function get($url)
     {
@@ -383,6 +385,7 @@ abstract class IntegrationTestCase extends TestCase
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function post($url, $data = [])
     {
@@ -399,6 +402,7 @@ abstract class IntegrationTestCase extends TestCase
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function patch($url, $data = [])
     {
@@ -415,6 +419,7 @@ abstract class IntegrationTestCase extends TestCase
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function put($url, $data = [])
     {
@@ -430,6 +435,7 @@ abstract class IntegrationTestCase extends TestCase
      *
      * @param string|array $url The URL to request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function delete($url)
     {
@@ -445,6 +451,7 @@ abstract class IntegrationTestCase extends TestCase
      *
      * @param string|array $url The URL to request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function head($url)
     {
@@ -460,6 +467,7 @@ abstract class IntegrationTestCase extends TestCase
      *
      * @param string|array $url The URL to request.
      * @return void
+     * @throws \PHPUnit\Exception
      */
     public function options($url)
     {
@@ -475,7 +483,7 @@ abstract class IntegrationTestCase extends TestCase
      * @param string $method The HTTP method
      * @param array|null $data The request data.
      * @return void
-     * @throws \Exception
+     * @throws \PHPUnit\Exception
      */
     protected function _sendRequest($url, $method, $data = [])
     {
@@ -534,7 +542,7 @@ abstract class IntegrationTestCase extends TestCase
                 $this->_viewName = $viewFile;
             }
             if ($this->_retainFlashMessages) {
-                $this->_flashMessages = $controller->request->session()->read('Flash');
+                $this->_flashMessages = $controller->getRequest()->getSession()->read('Flash');
             }
         });
         $events->on('View.beforeLayout', function ($event, $viewFile) {
@@ -581,12 +589,11 @@ abstract class IntegrationTestCase extends TestCase
         list ($url, $query) = $this->_url($url);
         $tokenUrl = $url;
 
-        parse_str($query, $queryData);
-
         if ($query) {
-            $tokenUrl .= '?' . http_build_query($queryData);
+            $tokenUrl .= '?' . $query;
         }
 
+        parse_str($query, $queryData);
         $props = [
             'url' => $url,
             'session' => $session,
@@ -659,14 +666,19 @@ abstract class IntegrationTestCase extends TestCase
      */
     protected function _url($url)
     {
-        $url = Router::url($url);
+        // re-create URL in ServerRequest's context so
+        // query strings are encoded as expected
+        $request = new ServerRequest(['url' => Router::url($url)]);
+        $url = $request->getRequestTarget();
+
         $query = '';
 
+        $path = parse_url($url, PHP_URL_PATH);
         if (strpos($url, '?') !== false) {
-            list($url, $query) = explode('?', $url, 2);
+            $query = parse_url($url, PHP_URL_QUERY);
         }
 
-        return [$url, $query];
+        return [$path, $query];
     }
 
     /**
@@ -918,7 +930,7 @@ abstract class IntegrationTestCase extends TestCase
         if ($alias !== false) {
             $type = $alias;
         }
-        $result = $this->_response->type();
+        $result = $this->_response->getType();
         $this->assertEquals($type, $result, $message);
     }
 
@@ -1089,7 +1101,7 @@ abstract class IntegrationTestCase extends TestCase
         if (!$this->_response) {
             $this->fail('Not response set, cannot assert cookies.');
         }
-        $result = $this->_response->cookie($name);
+        $result = $this->_response->getCookie($name);
         $this->assertEquals(
             $expected,
             $result['value'],
@@ -1148,7 +1160,7 @@ abstract class IntegrationTestCase extends TestCase
         if (!$this->_response) {
             $this->fail('No response set, cannot assert cookies.');
         }
-        $result = $this->_response->cookie($name);
+        $result = $this->_response->getCookie($name);
         $this->_cookieEncryptionKey = $key;
         $result['value'] = $this->_decrypt($result['value'], $encrypt);
         $this->assertEquals($expected, $result['value'], 'Cookie data differs. ' . $message);

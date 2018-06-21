@@ -10,6 +10,8 @@ use Cake\ORM\Entity;
  * @property string $nombre_producto
  * @property int $valor_total_producto
  * @property int $valor_ultima_suma
+ * @property float $precio
+ * @property string $presentacion
  */
 class ProduccionTotal extends Entity
 {
@@ -26,6 +28,8 @@ class ProduccionTotal extends Entity
     protected $_accessible = [
         'nombre_producto' => true,
         'valor_total_producto' => true,
-        'valor_ultima_suma' => true
+        'valor_ultima_suma' => true,
+        'precio' => true,
+        'presentacion' => true
     ];
 }

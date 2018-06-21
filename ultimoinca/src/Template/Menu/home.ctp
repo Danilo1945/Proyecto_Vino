@@ -16,7 +16,7 @@
 
 
 
-<div class="row" style=" align-items: center" >
+<div class="row" style="align-items: center" >
 
 
 

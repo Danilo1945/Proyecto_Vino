@@ -4,9 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
+class ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         'c720f792236cd163ece8049879166850' => __DIR__ . '/..' . '/cakephp/cakephp/src/Core/functions.php',
@@ -14,7 +15,7 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         '90236b492da7ca2983a2ad6e33e4152e' => __DIR__ . '/..' . '/cakephp/cakephp/src/I18n/functions.php',
         'b1fc73705e1bec51cd2b20a32cf1c60a' => __DIR__ . '/..' . '/cakephp/cakephp/src/Utility/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -37,6 +38,7 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Process\\' => 26,
@@ -60,8 +62,12 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'M' => 
         array (
             'Migrations\\' => 11,
-            'Materialize\\' => 12,
             'M1\\Env\\' => 7,
+        ),
+        'L' => 
+        array (
+            'LilHermit\\Toolkit\\' => 18,
+            'LilHermit\\Bootstrap4\\' => 21,
         ),
         'J' => 
         array (
@@ -87,7 +93,6 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         ),
         'B' => 
         array (
-            'BootstrapUI\\' => 12,
             'Bake\\' => 5,
         ),
         'A' => 
@@ -119,6 +124,10 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -166,7 +175,7 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         ),
         'Psy\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psy/psysh/src/Psy',
+            0 => __DIR__ . '/..' . '/psy/psysh/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -188,13 +197,17 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         array (
             0 => __DIR__ . '/..' . '/cakephp/migrations/src',
         ),
-        'Materialize\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jeffersonbehling/materialize-theme-cakephp/src',
-        ),
         'M1\\Env\\' => 
         array (
             0 => __DIR__ . '/..' . '/m1/env/src',
+        ),
+        'LilHermit\\Toolkit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lilhermit/cakephp-plugin-toolkit/src',
+        ),
+        'LilHermit\\Bootstrap4\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lilhermit/cakephp-plugin-bootstrap4/src',
         ),
         'JsonSchema\\' => 
         array (
@@ -247,10 +260,6 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
         'CakePHP\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/cakephp-codesniffer/CakePHP',
-        ),
-        'BootstrapUI\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/friendsofcake/bootstrap-ui/src',
         ),
         'Bake\\' => 
         array (
@@ -336,11 +345,11 @@ class ComposerStaticInit7b03d1332ed2cd782a73fe327202e726
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7b03d1332ed2cd782a73fe327202e726::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7b03d1332ed2cd782a73fe327202e726::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit7b03d1332ed2cd782a73fe327202e726::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7b03d1332ed2cd782a73fe327202e726::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7b03d1332ed2cd782a73fe327202e726::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit6662347cb774a04407a4ff01d1d88f5b::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,70 +1,47 @@
 <?php
 /**
-* @var \App\View\AppView $this
-* @var \App\Model\Entity\DetallePedido $detallePedido
-*/
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\DetallePedido $detallePedido
+ */
+
+$this->set('bakeEntities', array (
+  0 => 'DetallePedidos',
+  1 => 'Pedidos',
+  2 => 'UnidadMedida',
+  3 => 'ProduccionTotal',
+));
 ?>
-<div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
-</div>
-<div class="row">
-    <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Detalle Pedido'), ['action' => 'edit', $detallePedido->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Detalle Pedido'), ['action' => 'delete', $detallePedido->id], ['confirm' => __('Are you sure you want to delete # {0}?', $detallePedido->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Detalle Pedidos'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Detalle Pedido'), ['action' => 'add']) ?> </li>
-                </div>
-            </div>
-        </div>
+<div class="container"  id="detalle_pedido_view">
+    <div class="float-right">
+        <?= $this->Html->button(
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        ['action' => 'edit', $detallePedido->id],
+        ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
+
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $detallePedido->id], [
+        'escape' => false,
+        'class' => 'btn btn-primary btn-sm',
+        'confirm' => __('Are you sure you want to delete # {0}?', $detallePedido->id)]) ?>
     </div>
-    <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
-                <ul class="collection with-header">
-                    <li class="collection-header">
-                        <h4><?= h($detallePedido->id) ?></h4>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Detalle') ?>
-                        <div class="secondary-content">
-                            <?= h($detallePedido->detalle) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($detallePedido->id) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Cantidad') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($detallePedido->cantidad) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Pedidos') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($detallePedido->id_pedidos) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Unidad Medida') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($detallePedido->id_unidad_medida) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id Produccion Total') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($detallePedido->id_produccion_total) ?>
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </div>
+
+    <h3 class="mb-3"><?= h($detallePedido->id) ?></h3>
+    <dl class="row">
+        <dt class="col-sm-3"><?= __('Detalle') ?></dt>
+        <dd class="col-sm-9"><?= h($detallePedido->detalle) ?></dd>
+        <dt class="col-sm-3"><?= __('Pedido') ?></dt>
+        <dd class="col-sm-9"><?= $detallePedido->has('pedido') ? $this->Html->link($detallePedido->pedido->id, ['controller' => 'Pedidos', 'action' => 'view', $detallePedido->pedido->id]) : '' ?></dd>
+        <dt class="col-sm-3"><?= __('Unidad Medida') ?></dt>
+        <dd class="col-sm-9"><?= $detallePedido->has('unidad_medida') ? $this->Html->link($detallePedido->unidad_medida->id, ['controller' => 'UnidadMedida', 'action' => 'view', $detallePedido->unidad_medida->id]) : '' ?></dd>
+        <dt class="col-sm-3"><?= __('Produccion Total') ?></dt>
+        <dd class="col-sm-9"><?= $detallePedido->has('produccion_total') ? $this->Html->link($detallePedido->produccion_total->id, ['controller' => 'ProduccionTotal', 'action' => 'view', $detallePedido->produccion_total->id]) : '' ?></dd>
+        <dt class="col-sm-3"><?= __('Id') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($detallePedido->id) ?></dd>
+        <dt class="col-sm-3"><?= __('Cantidad') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($detallePedido->cantidad) ?></dd>
+        <dt class="col-sm-3"><?= __('Valor Unitario') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($detallePedido->valor_unitario) ?></dd>
+        <dt class="col-sm-3"><?= __('Valor Total') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($detallePedido->valor_total) ?></dd>
+    </dl>
+
 </div>

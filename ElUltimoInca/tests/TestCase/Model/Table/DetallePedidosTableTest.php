@@ -24,7 +24,10 @@ class DetallePedidosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.detalle_pedidos'
+        'app.detalle_pedidos',
+        'app.pedidos',
+        'app.unidad_medida',
+        'app.produccion_total'
     ];
 
     /**
@@ -67,6 +70,16 @@ class DetallePedidosTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

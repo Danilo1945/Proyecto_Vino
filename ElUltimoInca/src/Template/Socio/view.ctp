@@ -1,76 +1,42 @@
 <?php
 /**
-* @var \App\View\AppView $this
-* @var \App\Model\Entity\Socio $socio
-*/
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Socio $socio
+ */
+
+$this->set('bakeEntities', array (
+  0 => 'Socio',
+));
 ?>
-<div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
-</div>
-<div class="row">
-    <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text"><?= __('Actions') ?></span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('Edit Socio'), ['action' => 'edit', $socio->id]) ?> </li>
-                    <li class="padding-action"><?= $this->Form->postLink(__('Delete Socio'), ['action' => 'delete', $socio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Socio'), ['action' => 'index']) ?> </li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Socio'), ['action' => 'add']) ?> </li>
-                </div>
-            </div>
-        </div>
+<div class="container"  id="socio_view">
+    <div class="float-right">
+        <?= $this->Html->button(
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        ['action' => 'edit', $socio->id],
+        ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
+
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $socio->id], [
+        'escape' => false,
+        'class' => 'btn btn-primary btn-sm',
+        'confirm' => __('Are you sure you want to delete # {0}?', $socio->id)]) ?>
     </div>
-    <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
-                <ul class="collection with-header">
-                    <li class="collection-header">
-                        <h4><?= h($socio->id) ?></h4>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Cedula') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->cedula) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Nombres') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->Nombres) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Apellidos') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->Apellidos) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Telefono') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->Telefono) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Direccion') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->Direccion) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Email') ?>
-                        <div class="secondary-content">
-                            <?= h($socio->Email) ?>
-                        </div>
-                    </li>
-                    <li class="collection-item">
-                        <?= __('Id') ?>
-                        <div class="secondary-content">
-                            <?= $this->Number->format($socio->id) ?>
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </div>
+
+    <h3 class="mb-3"><?= h($socio->id) ?></h3>
+    <dl class="row">
+        <dt class="col-sm-3"><?= __('Cedula') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->cedula) ?></dd>
+        <dt class="col-sm-3"><?= __('Nombres') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->Nombres) ?></dd>
+        <dt class="col-sm-3"><?= __('Apellidos') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->Apellidos) ?></dd>
+        <dt class="col-sm-3"><?= __('Telefono') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->Telefono) ?></dd>
+        <dt class="col-sm-3"><?= __('Direccion') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->Direccion) ?></dd>
+        <dt class="col-sm-3"><?= __('Email') ?></dt>
+        <dd class="col-sm-9"><?= h($socio->Email) ?></dd>
+        <dt class="col-sm-3"><?= __('Id') ?></dt>
+        <dd class="col-sm-9"><?= $this->Number->format($socio->id) ?></dd>
+    </dl>
+
 </div>

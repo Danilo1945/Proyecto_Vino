@@ -42,19 +42,23 @@ class SocioFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'cedula' => 'Lorem ips',
-            'Nombres' => 'Lorem ipsum dolor sit amet',
-            'Apellidos' => 'Lorem ipsum dolor sit amet',
-            'Telefono' => 'Lorem ipsu',
-            'Direccion' => 'Lorem ipsum dolor sit amet',
-            'Email' => 'Lorem ipsum dolor sit amet'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'cedula' => 'Lorem ips',
+                'Nombres' => 'Lorem ipsum dolor sit amet',
+                'Apellidos' => 'Lorem ipsum dolor sit amet',
+                'Telefono' => 'Lorem ipsu',
+                'Direccion' => 'Lorem ipsum dolor sit amet',
+                'Email' => 'Lorem ipsum dolor sit amet'
+            ],
+        ];
+        parent::init();
+    }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Model\Table;
 
 use Cake\ORM\Query;
@@ -21,8 +22,7 @@ use Cake\Validation\Validator;
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class UsersTable extends Table
-{
+class UsersTable extends Table {
 
     /**
      * Initialize method
@@ -30,8 +30,7 @@ class UsersTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-    public function initialize(array $config)
-    {
+    public function initialize(array $config) {
         parent::initialize($config);
 
         $this->setTable('users');
@@ -51,40 +50,47 @@ class UsersTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    public function validationDefault(Validator $validator)
-    {
+    public function validationDefault(Validator $validator) {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
+                ->integer('id')
+                ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('name')
-            ->maxLength('name', 255)
-            ->allowEmpty('name');
+                ->scalar('name')
+                ->maxLength('name', 255)
+                ->allowEmpty('name');
 
         $validator
-            ->scalar('lastname')
-            ->maxLength('lastname', 255)
-            ->allowEmpty('lastname');
+                ->scalar('lastname')
+                ->maxLength('lastname', 255)
+                ->allowEmpty('lastname');
 
         $validator
-            ->scalar('username')
-            ->maxLength('username', 20)
-            ->allowEmpty('username');
+                ->scalar('username')
+                ->maxLength('username', 20)
+                ->allowEmpty('username');
 
         $validator
-            ->scalar('Telefono')
-            ->maxLength('Telefono', 12)
-            ->allowEmpty('Telefono');
+                ->scalar('Telefono')
+                ->maxLength('Telefono', 12)
+                ->allowEmpty('Telefono');
 
         $validator
-            ->email('email')
-            ->allowEmpty('email');
+                ->email('email')
+                ->allowEmpty('email');
 
         $validator
-            ->scalar('password')
-            ->maxLength('password', 255)
-            ->allowEmpty('password');
+                ->scalar('password')
+                ->maxLength('password', 255)
+                ->allowEmpty('password');
+
+        $validator
+                ->add(
+                        'confirm_password', 'compareWith', [
+                    'rule' => ['compareWith', 'password'],
+                    'message' => "La contraseña no es igual."
+                        ]
+        );
 
         return $validator;
     }
@@ -96,12 +102,18 @@ class UsersTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    public function buildRules(RulesChecker $rules)
-    {
+    public function buildRules(RulesChecker $rules) {
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['roles_id'], 'Roles'));
 
         return $rules;
     }
+    
+    public function findAuth(\Cake\ORM\Query $query, array $options){
+        $query
+                ->select(['id','name','lastname','email','password','roles_id']);
+                return $query;
+    }
+
 }

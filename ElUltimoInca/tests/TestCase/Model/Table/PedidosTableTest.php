@@ -26,8 +26,7 @@ class PedidosTableTest extends TestCase
     public $fixtures = [
         'app.pedidos',
         'app.trabajador',
-        'app.users',
-        'app.roles'
+        'app.users'
     ];
 
     /**

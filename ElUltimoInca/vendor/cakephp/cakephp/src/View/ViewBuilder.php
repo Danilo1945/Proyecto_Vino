@@ -48,14 +48,14 @@ class ViewBuilder implements JsonSerializable, Serializable
     /**
      * The plugin name to use.
      *
-     * @var string
+     * @var string|null|false
      */
     protected $_plugin;
 
     /**
      * The theme name to use.
      *
-     * @var string
+     * @var string|null|false
      */
     protected $_theme;
 
@@ -145,6 +145,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function templatePath($path = null)
     {
+        deprecationWarning('ViewBuilder::templatePath() is deprecated. Use ViewBuilder::setTemplatePath() or ViewBuilder::getTemplatePath() instead.');
         if ($path !== null) {
             return $this->setTemplatePath($path);
         }
@@ -184,6 +185,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function layoutPath($path = null)
     {
+        deprecationWarning('ViewBuilder::layoutPath() is deprecated. Use ViewBuilder::setLayoutPath() or ViewBuilder::getLayoutPath() instead.');
         if ($path !== null) {
             return $this->setLayoutPath($path);
         }
@@ -228,6 +230,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function autoLayout($enable = null)
     {
+        deprecationWarning('ViewBuilder::autoLayout() is deprecated. Use ViewBuilder::enableAutoLayout() or ViewBuilder::isAutoLayoutEnable() instead.');
         if ($enable !== null) {
             return $this->enableAutoLayout($enable);
         }
@@ -254,7 +257,7 @@ class ViewBuilder implements JsonSerializable, Serializable
     /**
      * Gets the plugin name to use.
      *
-     * @return string
+     * @return string|null|false
      */
     public function getPlugin()
     {
@@ -267,10 +270,11 @@ class ViewBuilder implements JsonSerializable, Serializable
      * @deprecated 3.4.0 Use setPlugin()/getPlugin() instead.
      * @param string|null|false $name Plugin name. If null returns current plugin.
      *   Use false to remove the current plugin name.
-     * @return string|$this
+     * @return string|false|null|$this
      */
     public function plugin($name = null)
     {
+        deprecationWarning('ViewBuilder::plugin() is deprecated. Use ViewBuilder::setPlugin() or ViewBuilder::getPlugin() instead.');
         if ($name !== null) {
             return $this->setPlugin($name);
         }
@@ -315,6 +319,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function helpers(array $helpers = null, $merge = true)
     {
+        deprecationWarning('ViewBuilder::helpers() is deprecated. Use ViewBuilder::setHelpers() or ViewBuilder::getHelpers() instead.');
         if ($helpers !== null) {
             return $this->setHelpers($helpers, $merge);
         }
@@ -341,7 +346,7 @@ class ViewBuilder implements JsonSerializable, Serializable
     /**
      * Gets the view theme to use.
      *
-     * @return string
+     * @return string|null|false
      */
     public function getTheme()
     {
@@ -354,10 +359,11 @@ class ViewBuilder implements JsonSerializable, Serializable
      * @deprecated 3.4.0 Use setTheme()/getTheme() instead.
      * @param string|null|false $theme Theme name. If null returns current theme.
      *   Use false to remove the current theme.
-     * @return string|$this
+     * @return string|false|null|$this
      */
     public function theme($theme = null)
     {
+        deprecationWarning('ViewBuilder::theme() is deprecated. Use ViewBuilder::setTheme() or ViewBuilder::getTheme() instead.');
         if ($theme !== null) {
             return $this->setTheme($theme);
         }
@@ -400,6 +406,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function template($name = null)
     {
+        deprecationWarning('ViewBuilder::template() is deprecated. Use ViewBuilder::setTemplate() or ViewBuilder::getTemplate() instead.');
         if ($name !== null) {
             return $this->setTemplate($name);
         }
@@ -443,6 +450,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function layout($name = null)
     {
+        deprecationWarning('ViewBuilder::layout() is deprecated. Use ViewBuilder::setLayout() or ViewBuilder::getLayout() instead.');
         if ($name !== null) {
             return $this->setLayout($name);
         }
@@ -491,6 +499,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function options(array $options = null, $merge = true)
     {
+        deprecationWarning('ViewBuilder::options() is deprecated. Use ViewBuilder::setOptions() or ViewBuilder::getOptions() instead.');
         if ($options !== null) {
             return $this->setOptions($options, $merge);
         }
@@ -530,6 +539,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function name($name = null)
     {
+        deprecationWarning('ViewBuilder::name() is deprecated. Use ViewBuilder::setName() or ViewBuilder::getName() instead.');
         if ($name !== null) {
             return $this->setName($name);
         }
@@ -577,6 +587,7 @@ class ViewBuilder implements JsonSerializable, Serializable
      */
     public function className($name = null)
     {
+        deprecationWarning('ViewBuilder::className() is deprecated. Use ViewBuilder::setClassName() or ViewBuilder::getClassName() instead.');
         if ($name !== null) {
             return $this->setClassName($name);
         }

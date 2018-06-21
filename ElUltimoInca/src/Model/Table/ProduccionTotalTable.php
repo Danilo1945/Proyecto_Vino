@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * ProduccionTotal Model
  *
+ * @property |\Cake\ORM\Association\HasMany $DetallePedidos
+ *
  * @method \App\Model\Entity\ProduccionTotal get($primaryKey, $options = [])
  * @method \App\Model\Entity\ProduccionTotal newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\ProduccionTotal[] newEntities(array $data, array $options = [])
@@ -31,8 +33,12 @@ class ProduccionTotalTable extends Table
         parent::initialize($config);
 
         $this->setTable('produccion_total');
-        $this->setDisplayField('id');
+        $this->setDisplayField('nombre_producto');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('DetallePedidos', [
+            'foreignKey' => 'produccion_total_id'
+        ]);
     }
 
     /**
@@ -59,6 +65,17 @@ class ProduccionTotalTable extends Table
         $validator
             ->integer('valor_ultima_suma')
             ->allowEmpty('valor_ultima_suma');
+
+        $validator
+            ->numeric('precio')
+            ->requirePresence('precio', 'create')
+            ->notEmpty('precio');
+
+        $validator
+            ->scalar('presentacion')
+            ->maxLength('presentacion', 255)
+            ->requirePresence('presentacion', 'create')
+            ->notEmpty('presentacion');
 
         return $validator;
     }

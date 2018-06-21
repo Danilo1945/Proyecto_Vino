@@ -19,21 +19,8 @@ class ProveedorControllerTest extends IntegrationTestCase
         'app.proveedor',
         'app.empresa',
         'app.compra_mat_pri',
-        'app.trabajador',
-        'app.materia_prima',
-        'app.prevee',
-        'app.unidad_medida'
+        'app.prevee'
     ];
-
-    /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

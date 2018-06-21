@@ -9,6 +9,10 @@ use Cake\Validation\Validator;
 /**
  * DetallePedidos Model
  *
+ * @property \App\Model\Table\PedidosTable|\Cake\ORM\Association\BelongsTo $Pedidos
+ * @property \App\Model\Table\UnidadMedidaTable|\Cake\ORM\Association\BelongsTo $UnidadMedida
+ * @property \App\Model\Table\ProduccionTotalTable|\Cake\ORM\Association\BelongsTo $ProduccionTotal
+ *
  * @method \App\Model\Entity\DetallePedido get($primaryKey, $options = [])
  * @method \App\Model\Entity\DetallePedido newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\DetallePedido[] newEntities(array $data, array $options = [])
@@ -33,6 +37,16 @@ class DetallePedidosTable extends Table
         $this->setTable('detalle_pedidos');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('Pedidos', [
+            'foreignKey' => 'pedidos_id'
+        ]);
+        $this->belongsTo('UnidadMedida', [
+            'foreignKey' => 'unidad_medida_id'
+        ]);
+        $this->belongsTo('ProduccionTotal', [
+            'foreignKey' => 'produccion_total_id'
+        ]);
     }
 
     /**
@@ -57,17 +71,29 @@ class DetallePedidosTable extends Table
             ->allowEmpty('detalle');
 
         $validator
-            ->integer('id_pedidos')
-            ->allowEmpty('id_pedidos');
+            ->numeric('valor_unitario')
+            ->allowEmpty('valor_unitario');
 
         $validator
-            ->integer('id_unidad_medida')
-            ->allowEmpty('id_unidad_medida');
-
-        $validator
-            ->integer('id_produccion_total')
-            ->allowEmpty('id_produccion_total');
+            ->numeric('valor_total')
+            ->allowEmpty('valor_total');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['pedidos_id'], 'Pedidos'));
+        $rules->add($rules->existsIn(['unidad_medida_id'], 'UnidadMedida'));
+        $rules->add($rules->existsIn(['produccion_total_id'], 'ProduccionTotal'));
+
+        return $rules;
     }
 }

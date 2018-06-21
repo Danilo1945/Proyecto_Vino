@@ -21,16 +21,6 @@ class UsersControllerTest extends IntegrationTestCase
     ];
 
     /**
-     * Test beforeRender method
-     *
-     * @return void
-     */
-    public function testBeforeRender()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
      * Test index method
      *
      * @return void

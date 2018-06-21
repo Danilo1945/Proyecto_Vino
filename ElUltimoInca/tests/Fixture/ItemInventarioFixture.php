@@ -38,15 +38,19 @@ class ItemInventarioFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'nom_item' => 'Lorem ipsum dolor sit amet',
-            'detalle_item' => 'Lorem ipsum dolor sit amet'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'nom_item' => 'Lorem ipsum dolor sit amet',
+                'detalle_item' => 'Lorem ipsum dolor sit amet'
+            ],
+        ];
+        parent::init();
+    }
 }

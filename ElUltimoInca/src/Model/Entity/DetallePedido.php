@@ -9,9 +9,15 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property float $cantidad
  * @property string $detalle
- * @property int $id_pedidos
- * @property int $id_unidad_medida
- * @property int $id_produccion_total
+ * @property float $valor_unitario
+ * @property float $valor_total
+ * @property int $pedidos_id
+ * @property int $unidad_medida_id
+ * @property int $produccion_total_id
+ *
+ * @property \App\Model\Entity\Pedido $pedido
+ * @property \App\Model\Entity\UnidadMedida $unidad_medida
+ * @property \App\Model\Entity\ProduccionTotal $produccion_total
  */
 class DetallePedido extends Entity
 {
@@ -28,8 +34,13 @@ class DetallePedido extends Entity
     protected $_accessible = [
         'cantidad' => true,
         'detalle' => true,
-        'id_pedidos' => true,
-        'id_unidad_medida' => true,
-        'id_produccion_total' => true
+        'valor_unitario' => true,
+        'valor_total' => true,
+        'pedidos_id' => true,
+        'unidad_medida_id' => true,
+        'produccion_total_id' => true,
+        'pedido' => true,
+        'unidad_medida' => true,
+        'produccion_total' => true
     ];
 }

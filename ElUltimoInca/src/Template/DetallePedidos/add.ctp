@@ -3,45 +3,28 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\DetallePedido $detallePedido
  */
-?>
-<div class="hide">
-    <?= $this->layout = "Materialize.materialize"; ?>
-</div>
-<div class="row">
-    <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('List Detalle Pedidos'), ['action' => 'index']) ?></li>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
-                <?= $this->Form->create($detallePedido) ?>
-                <span class="card-title green-text"><?= __('Add Detalle Pedido') ?></span>
 
-                <div class="input-field">
-                    <?= $this->Form->control('cantidad') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('detalle') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('id_pedidos') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('id_unidad_medida') ?>
-                </div>
-                <div class="input-field">
-                    <?= $this->Form->control('id_produccion_total') ?>
-                </div>
-                <?= $this->Form->button(__('Submit'), ['class' => 'btn waves-effect waves-light']) ?>
-                <?= $this->Form->end() ?>
-            </div>
-        </div>
-    </div>
+$this->set('bakeEntities', array (
+  0 => 'DetallePedidos',
+  1 => 'Pedidos',
+  2 => 'UnidadMedida',
+  3 => 'ProduccionTotal',
+));
+?>
+<div class="container" id="detalle_pedidos_add">
+    <?= $this->Form->create($detallePedido) ?>
+    <fieldset>
+        <legend><?= __('Add Detalle Pedido') ?></legend>
+        <?php
+            echo $this->Form->control('cantidad');
+            echo $this->Form->control('detalle');
+            echo $this->Form->control('valor_unitario');
+            echo $this->Form->control('valor_total');
+            echo $this->Form->control('pedidos_id', ['options' => $pedidos, 'empty' => true]);
+            echo $this->Form->control('unidad_medida_id', ['options' => $unidadMedida, 'empty' => true]);
+            echo $this->Form->control('produccion_total_id', ['options' => $produccionTotal, 'empty' => true]);
+        ?>
+    </fieldset>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
 </div>

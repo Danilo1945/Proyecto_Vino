@@ -39,16 +39,20 @@ class EmpresaFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'nombre' => 'Lorem ipsum dolor sit amet',
-            'direccion' => 'Lorem ipsum dolor sit amet',
-            'email' => 'Lorem ipsum dolor sit amet'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'nombre' => 'Lorem ipsum dolor sit amet',
+                'direccion' => 'Lorem ipsum dolor sit amet',
+                'email' => 'Lorem ipsum dolor sit amet'
+            ],
+        ];
+        parent::init();
+    }
 }

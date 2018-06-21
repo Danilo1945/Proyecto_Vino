@@ -14,7 +14,7 @@
 namespace App\View;
 
 use Cake\View\View;
-use BootstrapUI\View\UIViewTrait;
+use LilHermit\Bootstrap4\View\BootstrapViewTrait;
 
 /**
  * Application View
@@ -25,22 +25,8 @@ use BootstrapUI\View\UIViewTrait;
  */
 class AppView extends View
 {
-
-
-
-  ///  use UIViewTrait;
-
-
-    //use UIViewTrait;
-
-
-
-    //use UIViewTrait;
-
-
-
-   // use UIViewTrait;
-  /**
+ use BootstrapViewTrait;
+    /**
      * Initialization hook method.
      *
      * Use this method to add common initialization code like loading helpers.
@@ -49,9 +35,8 @@ class AppView extends View
      *
      * @return void
      */
-
     public function initialize()
     {
-        //$this->initialize()
+          $this->initializeBootstrap();
     }
 }

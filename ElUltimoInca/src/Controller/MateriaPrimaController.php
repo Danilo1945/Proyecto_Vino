@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * MateriaPrima Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class MateriaPrimaController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-        
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class MateriaPrimaController extends AppController
         if ($this->request->is('post')) {
             $materiaPrima = $this->MateriaPrima->patchEntity($materiaPrima, $this->request->getData());
             if ($this->MateriaPrima->save($materiaPrima)) {
-                $this->Flash->success(__('The materia prima has been saved.'));
+                $this->Flash->success(__('La Materia Prima se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The materia prima could not be saved. Please, try again.'));
+            $this->Flash->error(__('La Materia Prima no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('materiaPrima'));
     }
@@ -82,11 +76,11 @@ class MateriaPrimaController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $materiaPrima = $this->MateriaPrima->patchEntity($materiaPrima, $this->request->getData());
             if ($this->MateriaPrima->save($materiaPrima)) {
-                $this->Flash->success(__('The materia prima has been saved.'));
+                $this->Flash->success(__('La Materia Prima se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The materia prima could not be saved. Please, try again.'));
+            $this->Flash->error(__('La Materia Prima no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('materiaPrima'));
     }
@@ -103,9 +97,9 @@ class MateriaPrimaController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $materiaPrima = $this->MateriaPrima->get($id);
         if ($this->MateriaPrima->delete($materiaPrima)) {
-            $this->Flash->success(__('The materia prima has been deleted.'));
+            $this->Flash->success(__('La Materia Prima se elimino satisfactoriamente.'));
         } else {
-            $this->Flash->error(__('The materia prima could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La Materia Prima no se pudo eliminar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

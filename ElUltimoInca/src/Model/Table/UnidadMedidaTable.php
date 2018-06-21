@@ -33,7 +33,7 @@ class UnidadMedidaTable extends Table
         parent::initialize($config);
 
         $this->setTable('unidad_medida');
-        $this->setDisplayField('id');
+        $this->setDisplayField('nombre_umed');
         $this->setPrimaryKey('id');
 
         $this->hasMany('CompraMatPri', [

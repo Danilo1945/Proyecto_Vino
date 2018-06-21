@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * Trabajador Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class TrabajadorController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-       
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class TrabajadorController extends AppController
         if ($this->request->is('post')) {
             $trabajador = $this->Trabajador->patchEntity($trabajador, $this->request->getData());
             if ($this->Trabajador->save($trabajador)) {
-                $this->Flash->success(__('The trabajador has been saved.'));
+                $this->Flash->success(__('EL Trabajador se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The trabajador could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Trabajadeo no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('trabajador'));
     }
@@ -82,11 +76,11 @@ class TrabajadorController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $trabajador = $this->Trabajador->patchEntity($trabajador, $this->request->getData());
             if ($this->Trabajador->save($trabajador)) {
-                $this->Flash->success(__('The trabajador has been saved.'));
+                $this->Flash->success(__('EL Trabajador se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The trabajador could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Trabajador no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('trabajador'));
     }
@@ -103,9 +97,9 @@ class TrabajadorController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $trabajador = $this->Trabajador->get($id);
         if ($this->Trabajador->delete($trabajador)) {
-            $this->Flash->success(__('The trabajador has been deleted.'));
+            $this->Flash->success(__('EL Socio se elimino satisfactoriamente.'));
         } else {
-            $this->Flash->error(__('The trabajador could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Trabajador no se pudo guardar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

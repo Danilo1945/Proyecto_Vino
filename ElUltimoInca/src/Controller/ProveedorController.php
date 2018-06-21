@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * Proveedor Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class ProveedorController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-       
-    }
     /**
      * Index method
      *
@@ -61,11 +55,11 @@ class ProveedorController extends AppController
         if ($this->request->is('post')) {
             $proveedor = $this->Proveedor->patchEntity($proveedor, $this->request->getData());
             if ($this->Proveedor->save($proveedor)) {
-                $this->Flash->success(__('The proveedor has been saved.'));
+                $this->Flash->success(__('EL proveedor se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The proveedor could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Proveedor no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $empresa = $this->Proveedor->Empresa->find('list', ['limit' => 200]);
         $this->set(compact('proveedor', 'empresa'));
@@ -86,11 +80,11 @@ class ProveedorController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $proveedor = $this->Proveedor->patchEntity($proveedor, $this->request->getData());
             if ($this->Proveedor->save($proveedor)) {
-                $this->Flash->success(__('The proveedor has been saved.'));
+                $this->Flash->success(__('EL proveedor se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The proveedor could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Proveedor no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $empresa = $this->Proveedor->Empresa->find('list', ['limit' => 200]);
         $this->set(compact('proveedor', 'empresa'));
@@ -108,9 +102,9 @@ class ProveedorController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $proveedor = $this->Proveedor->get($id);
         if ($this->Proveedor->delete($proveedor)) {
-            $this->Flash->success(__('The proveedor has been deleted.'));
+            $this->Flash->success(__('EL proveedor se elimino satisfactoriamente.'));
         } else {
-            $this->Flash->error(__('The proveedor could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Proveedor no se pudo eliminar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * ProduccionTotal Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class ProduccionTotalController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-       
-    }
     /**
      * Index method
      *

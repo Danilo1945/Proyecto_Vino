@@ -1,117 +1,99 @@
 
-        
-        
-        
-<div class="hide">
-    <?= $this->layout = "publico"; ?>
+<div class="hide" style="color: white">
+    <?= $this->layout = 'publico'; ?>
 </div>
 
-      
-        
-        
-        
-                <div class="col s12 m12 ">
-                    <div class="caption center-align">
-        
-                        <h1 style="color: #F1C40F  ">PRODUCTOS </h1>
-                        <h5 class="light grey-text text-lighten-3 "></h5>
-                    </div>
-                    <div class="card-action">
-        
-                    </div>
-                </div>
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card darken-1">
-                        <div class="card-content red-text">
-        
-                            <div class="card-action">
-        
-        
-        
-        
-                                <div class="card-image">
-        <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
-                                    <span class="card-title">VINO TINTO</span>
-                                </div>
-                                <div class="card-content">
-                                    <p style="color: black">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
-                                </div>
-        
-        
-        
-        
-        
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card darken-1">
-                        <div class="card-content white-text">
-        
-                            <div class="card-action">
-                                <div class="card-image">
-        <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
-                                    <span class="card-title">Mermelada de Mortiño</span>
-                                </div>
-                                <div class="card-content">
-                                    <p style="color: black; text-justify:distribute "> 
-                                        Este fruto silvestre es convertido en mermelada y vino. La demanda influye para que se produzcan hasta mil botellas anuales.</p>
-                                </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card darken-1">
-                        <div class="card-content white-text">
-                            <div class="card-action">
-                                <div class="card-image">
-        
-        <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
-                                    <span class="card-title">Helado de Mortiño</span>
-                                </div>
-                                <div class="card-content ">
-                                    <p  style="color: black">
-                                        Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
-                                </div>
-        
-        
-        
-        
-        
-        
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-        
+
+<h2 class="Color_dorado" style="align-items: center"> Nuestros Productos</h2>
+
+<BR>
+<BR>
+<BR>
+
+
+
+
+
+
+
+<div class="row" style="align-items: center" >
+
+
+
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-x1-4"  >
+        <div class="row">
+            <div class="col-0 col-sm-0 col-md-2 col-lg-2 col-x1-2">
             </div>
-        
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-x1-10">
+                <div class="card" style="width:400px ; height: 500px;">
+                    <?= $this->Html->image('img1.jpg', ['alt' => 'CakePHP']) ?>
+                    <div class="card-body">
+                        <h4 class="card-title">VINO TINTO</h4>
+                        <p class="card-text" style="text-justify: auto ">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo de amarillo y oro, es el mejor producto.</p>
+                        <p style="color: black"></p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                        <a href="#" class="btn btn-primary">Hacer Pedido</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-x1-4" >
+        <div class="row">
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-x1-1">
+            </div>
+            <div class="col-12 col-sm-12 col-md-11 col-lg-11 col-x1-11">
+                <div class="card" style="width:400px ; height: 500px;">
+                    <?= $this->Html->image('helados.png', ['alt' => 'CakePHP']) ?>
+                    <div class="card-body">
+                        <h4 class="card-title">HELADO DE MORTIÑO</h4>
+                        <p class="card-text">Este producto es elaborado por mortiño es una fruta silvestre que se produce de manera orgánica en los páramos del cantón Sigchos.</p>
+                        <a href="#" class="btn btn-primary">Hacer pedido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-x1-4" >
+        <div class="card" style="width:400px ; height: 500px;">
+            <?= $this->Html->image('mermelada.jpg', ['alt' => 'CakePHP']) ?>
+            <div class="card-body">
+                <h4 class="card-title">MERMELADA DE MORTIÑO</h4>
+                <p class="card-text">Disfrute de este fruto silvestre convertido en mermelada.. 
+                    La demanda influye para que se produzcan hasta mil cajas anuales.</p>
+                <a href="#" class="btn btn-primary">Hacer Pedido</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-x1-12">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+

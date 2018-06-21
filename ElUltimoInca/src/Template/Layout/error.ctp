@@ -23,35 +23,25 @@
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('style.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-
-    <div class="row" style="width: 100px; height: 100px"  ">
-        
-        <div class="col s12 m12 l12 xl12">
+    <div id="container">
+        <div id="header">
             <h1><?= __('Error') ?></h1>
         </div>
-    </div>
-    
-    
-    <div class="row" style="width: 100px; height: 100px" >
-        <div class="col s12 m12 l12 xl12"  style="color: blue;">
-            <h1> <script>  <?= __('Error') ?>  </script>       </h1>
-         
-          <?= $this->Flash->render() ?>
+        <div id="content">
+            <?= $this->Flash->render() ?>
 
             <?= $this->fetch('content') ?>
-         <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?> 
         </div>
-       
-        
+        <div id="footer">
+            <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
+        </div>
     </div>
-    
-    
 </body>
 </html>

@@ -46,19 +46,23 @@ class ProveedorFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'cedula' => 'Lorem ips',
-            'nombres_pro' => 'Lorem ipsum dolor sit amet',
-            'apellidos_pro' => 'Lorem ipsum dolor sit amet',
-            'telefono_pro' => 'Lorem ipsu',
-            'email_pro' => 'Lorem ipsum dolor sit amet',
-            'empresa_id' => 1
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'cedula' => 'Lorem ips',
+                'nombres_pro' => 'Lorem ipsum dolor sit amet',
+                'apellidos_pro' => 'Lorem ipsum dolor sit amet',
+                'telefono_pro' => 'Lorem ipsu',
+                'email_pro' => 'Lorem ipsum dolor sit amet',
+                'empresa_id' => 1
+            ],
+        ];
+        parent::init();
+    }
 }

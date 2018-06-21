@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * Empresa Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class EmpresaController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-       
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class EmpresaController extends AppController
         if ($this->request->is('post')) {
             $empresa = $this->Empresa->patchEntity($empresa, $this->request->getData());
             if ($this->Empresa->save($empresa)) {
-                $this->Flash->success(__('The empresa has been saved.'));
+                $this->Flash->success(__('La empresa se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The empresa could not be saved. Please, try again.'));
+            $this->Flash->error(__('La empresa no se pudo guardar. Por favor Vuelva Intentarlo'));
         }
         $this->set(compact('empresa'));
     }
@@ -82,11 +76,11 @@ class EmpresaController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $empresa = $this->Empresa->patchEntity($empresa, $this->request->getData());
             if ($this->Empresa->save($empresa)) {
-                $this->Flash->success(__('The empresa has been saved.'));
+                $this->Flash->success(__('La empresa se modificado correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The empresa could not be saved. Please, try again.'));
+            $this->Flash->error(__('La empresa no se modifico. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('empresa'));
     }
@@ -103,9 +97,9 @@ class EmpresaController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $empresa = $this->Empresa->get($id);
         if ($this->Empresa->delete($empresa)) {
-            $this->Flash->success(__('The empresa has been deleted.'));
+            $this->Flash->success(__('La empresa se elimino.'));
         } else {
-            $this->Flash->error(__('The empresa could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La empresa no se puede eliminar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

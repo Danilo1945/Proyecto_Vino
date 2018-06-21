@@ -152,6 +152,10 @@ class RouteBuilder
      */
     public function routeClass($routeClass = null)
     {
+        deprecationWarning(
+            'RouteBuilder::routeClass() is deprecated. ' .
+            'Use RouteBuilder::setRouteClass()/getRouteClass() instead.'
+        );
         if ($routeClass === null) {
             return $this->getRouteClass();
         }
@@ -193,6 +197,10 @@ class RouteBuilder
      */
     public function extensions($extensions = null)
     {
+        deprecationWarning(
+            'RouteBuilder::extensions() is deprecated. ' .
+            'Use RouteBuilder::setExtensions()/getExtensions() instead.'
+        );
         if ($extensions === null) {
             return $this->getExtensions();
         }
@@ -578,6 +586,7 @@ class RouteBuilder
             'routeClass' => $this->_routeClass,
         ];
 
+        $target = $this->parseDefaults($target);
         $target['_method'] = $method;
 
         $route = $this->_makeRoute($template, $target, $options);
@@ -685,7 +694,7 @@ class RouteBuilder
      * The above route will only be matched for GET requests. POST requests will fail to match this route.
      *
      * @param string $route A string describing the template of the route
-     * @param array $defaults An array describing the default route parameters. These parameters will be used by default
+     * @param array|string $defaults An array describing the default route parameters. These parameters will be used by default
      *   and can supply routing parameters that are not dynamic. See above.
      * @param array $options An array matching the named elements in the route to regular expressions which that
      *   element should match. Also contains additional parameters such as which routed parameters should be
@@ -695,8 +704,9 @@ class RouteBuilder
      * @throws \InvalidArgumentException
      * @throws \BadMethodCallException
      */
-    public function connect($route, array $defaults = [], array $options = [])
+    public function connect($route, $defaults = [], array $options = [])
     {
+        $defaults = $this->parseDefaults($defaults);
         if (!isset($options['action']) && !isset($defaults['action'])) {
             $defaults['action'] = 'index';
         }
@@ -719,6 +729,41 @@ class RouteBuilder
         $this->_collection->add($route, $options);
 
         return $route;
+    }
+
+    /**
+     * Parse the defaults if they're a string
+     *
+     * @param string|array $defaults Defaults array from the connect() method.
+     * @return string|array
+     */
+    protected static function parseDefaults($defaults)
+    {
+        if (!is_string($defaults)) {
+            return $defaults;
+        }
+
+        $regex = '/(?:(?<plugin>[a-zA-Z0-9\/]*)\.)?(?<prefix>[a-zA-Z0-9\/]*?)' .
+            '(?:\/)?(?<controller>[a-zA-Z0-9]*):{2}(?<action>[a-zA-Z0-9_]*)/i';
+
+        if (preg_match($regex, $defaults, $matches)) {
+            foreach ($matches as $key => $value) {
+                // Remove numeric keys and empty values.
+                if (is_int($key) || $value === '' || $value === '::') {
+                    unset($matches[$key]);
+                }
+            }
+            $length = count($matches);
+
+            if (isset($matches['prefix'])) {
+                $matches['prefix'] = strtolower($matches['prefix']);
+            }
+
+            if ($length >= 2 || $length <= 4) {
+                return $matches;
+            }
+        }
+        throw new RuntimeException("Could not parse `{$defaults}` route destination string.");
     }
 
     /**

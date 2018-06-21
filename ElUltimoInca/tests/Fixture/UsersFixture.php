@@ -38,22 +38,26 @@ class UsersFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'name' => 'Lorem ipsum dolor sit amet',
-            'lastname' => 'Lorem ipsum dolor sit amet',
-            'username' => 'Lorem ipsum dolor ',
-            'Telefono' => 'Lorem ipsu',
-            'email' => 'Lorem ipsum dolor sit amet',
-            'password' => 'Lorem ipsum dolor sit amet',
-            'roles_id' => 1,
-            'created' => '2018-05-24 00:32:31',
-            'modified' => '2018-05-24 00:32:31'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'name' => 'Lorem ipsum dolor sit amet',
+                'lastname' => 'Lorem ipsum dolor sit amet',
+                'username' => 'Lorem ipsum dolor ',
+                'Telefono' => 'Lorem ipsu',
+                'email' => 'Lorem ipsum dolor sit amet',
+                'password' => 'Lorem ipsum dolor sit amet',
+                'roles_id' => 1,
+                'created' => '2018-05-24 15:48:08',
+                'modified' => '2018-05-24 15:48:08'
+            ],
+        ];
+        parent::init();
+    }
 }

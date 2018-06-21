@@ -67,14 +67,6 @@ class PedidosTable extends Table
             ->allowEmpty('estado_cuenta');
 
         $validator
-            ->numeric('precio_uni')
-            ->allowEmpty('precio_uni');
-
-        $validator
-            ->numeric('precio_total')
-            ->allowEmpty('precio_total');
-
-        $validator
             ->scalar('observaciones_ven')
             ->maxLength('observaciones_ven', 200)
             ->allowEmpty('observaciones_ven');

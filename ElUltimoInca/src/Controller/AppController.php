@@ -41,36 +41,40 @@ class AppController extends Controller
     {
         parent::initialize();
 
-        $this->loadComponent('RequestHandler');
+        $this->loadComponent('RequestHandler', [
+            'enableBeforeRedirect' => false,
+        ]);
         $this->loadComponent('Flash');
-        
-//        $this->loadComponent('Auth', [
-//            'authorize' => ['Controller'],// parte de configuracion del componente tome el control
-//            'authenticate' => [    
-//                'Form' => [
-//                    'fields' => [
-//                        'username' => 'email',
-//                        'password' => 'password',
-//                    ]
-//                ]
-//            ],
-//            
-//            
-//            'loginAction' => [
-//                'controller' => 'Users',
-//                'action' => 'login'
-//            ],
-//            'authError' => 'Ingrese sus datos',
-//            'loginRedirect' => [
-//                'controller' => 'socio',
-//                'action' => 'index'
-//            ],
-//            'logoutRedirect' => [
-//                'controller' => 'Users',
-//                'action' => 'login'
-//            ]
-//           
-//        ]);
+         $this->loadComponent('Auth', [
+           'authorize'=>['Controller'],
+            'authenticate' => [    
+                'Form' => [
+                    'fields' => [
+                        'username' => 'username',
+                        'password' => 'password',
+                    ],
+                    'finder'=>'auth'
+                ]
+            ],
+            
+            
+            'loginRedirect' => [
+                'controller' => 'menu',
+                'action' => 'home'
+            ],
+             
+            'authError' => 'Ingrese sus datos',
+            'loginRedirect' => [
+                'controller' => 'menu',
+                'action' => 'home'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'menu',
+                'action' => 'home'
+            ],
+             'unauthorizedRedirect'=>$this->referer()
+           
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -78,12 +82,35 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
-        
+         
+         
+       
+         
     }
     
-    public function isAuthorized($user)
-    {
-       
-        return true;
+  public function getUserAut(){
+        $user_aut=$this->Auth->user();
+      return $user_aut;
+  }
+
+
+//   envia a todo el proyecto la variable autorizada
+       public function beforeFilter(Event $event){
+           $this->set('current_user',$this->Auth->user());
+           
     }
+    
+    
+    public function isAuthorized($user) {
+        
+        if(isset($user['roles_id']) and $user['roles_id']===1){
+            
+          
+            return true;
+        }
+       
+        return false ;
+       
+    }
+    
 }

@@ -26,20 +26,21 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->Html->meta('icon') ?>
 
         <!--PARA IMPLEMENTAR MATERIAL -->
+       <!--PARA IMPLEMENTAR MATERIAL -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <?= $this->Html->script('jquery-3.3.1.min') ?>
-        <?= $this->Html->css('materialize.min.css') ?>
-        <?= $this->Html->script('materialize.min.js') ?>
+        <?= $this->Html->css('bootstrap.min.css') ?>
+        <?= $this->Html->script('bootstrap.min.js') ?>
+  
 
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
-        
-        
-       
+
+       <?= $this->Html->css('my-login.css') ?>
       
 
     </head>
-    <body>
+    <body class="my-login-page">
   
 
 
@@ -50,19 +51,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
         <div class="row">
-            <div class="col s12 m12 l12 xl12">
+            <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
                 <?= $this->Flash->render() ?>
             </div>
         </div>
 
 
         <!--/////////////////////////////////////////////////////////////////////////a partir de aqui--> 
-        <div class="menu-principal" >
+     
 
 
             <div class="row" >
+                <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+                    <?= $this->fetch('content') ?>  <!--     ////// aqui aparecera el contenido--> 
+                </div>
                 <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
-                <?= $this->fetch('content') ?>  <!--     ////// aqui aparecera el contenido-->
+               
             </div>
 
 
@@ -73,12 +77,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-        </div>  <!-- fin contenedor principal-->
+
 
 
   <!--////////////////////////////////////////////////////////inicio footer-->
 
-
+<?= $this->Html->script('my-login.js') ?>
 
 
     </body>

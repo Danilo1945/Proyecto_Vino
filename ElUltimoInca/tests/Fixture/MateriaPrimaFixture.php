@@ -39,16 +39,20 @@ class MateriaPrimaFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'nombre_mat_pri' => 'Lorem ipsum dolor sit amet',
-            'descripcion_mat_pri' => 'Lorem ipsum dolor sit amet',
-            'contidad' => 1
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'nombre_mat_pri' => 'Lorem ipsum dolor sit amet',
+                'descripcion_mat_pri' => 'Lorem ipsum dolor sit amet',
+                'contidad' => 1
+            ],
+        ];
+        parent::init();
+    }
 }

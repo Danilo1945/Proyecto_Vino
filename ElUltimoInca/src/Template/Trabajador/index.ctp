@@ -1,84 +1,62 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Trabajador[]|\Cake\Collection\CollectionInterface $trabajador
+ * @var \Cake\ORM\ResultSet $trabajador
  */
+
+$this->set('bakeEntities', array (
+  0 => 'Trabajador',
+));
 ?>
-<div class="hide">
-   
-</div>
-<div class="row">
-    <div class="col s12 m3">
-        <div class="card darken-1">
-            <div class="card-content white-text">
-                <span class="card-title green-text">Actions</span>
-                <div class="card-action">
-                    <li class="padding-action"><?= $this->Html->link(__('New Trabajador'), ['action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Area Produccion'), ['controller' => 'AreaProduccion', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Area Produccion'), ['controller' => 'AreaProduccion', 'action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Compra Mat Pri'), ['controller' => 'CompraMatPri', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Compra Mat Pri'), ['controller' => 'CompraMatPri', 'action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Hoja Produccion Vino'), ['controller' => 'HojaProduccionVino', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Hoja Produccion Vino'), ['controller' => 'HojaProduccionVino', 'action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Hoja Producto Terminado'), ['controller' => 'HojaProductoTerminado', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Hoja Producto Terminado'), ['controller' => 'HojaProductoTerminado', 'action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Hoja Ventas'), ['controller' => 'HojaVentas', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Hoja Venta'), ['controller' => 'HojaVentas', 'action' => 'add']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('List Pedidos'), ['controller' => 'Pedidos', 'action' => 'index']) ?></li>
-                    <li class="padding-action"><?= $this->Html->link(__('New Pedido'), ['controller' => 'Pedidos', 'action' => 'add']) ?></li>
-                </div>
-            </div>
-        </div>
+<div class="container" id="trabajador_index">
+    <?= $this->Html->button(
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Trabajador'),
+        ['action' => 'add'],
+        ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
+    <h3 class="mb-4"><?= __('Trabajador') ?></h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('cedula') ?></th>
+                <th><?= $this->Paginator->sort('Nombres_tra') ?></th>
+                <th><?= $this->Paginator->sort('Apellidos_tra') ?></th>
+                <th><?= $this->Paginator->sort('Telefono_tra') ?></th>
+                <th><?= $this->Paginator->sort('Direccion_tra') ?></th>
+                <th><?= $this->Paginator->sort('Email_tra') ?></th>
+                <th><?= __('Actions') ?></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($trabajador as $trabajador): ?>
+            <tr>
+                <td><?= $this->Number->format($trabajador->id) ?></td>
+                <td><?= h($trabajador->cedula) ?></td>
+                <td><?= h($trabajador->Nombres_tra) ?></td>
+                <td><?= h($trabajador->Apellidos_tra) ?></td>
+                <td><?= h($trabajador->Telefono_tra) ?></td>
+                <td><?= h($trabajador->Direccion_tra) ?></td>
+                <td><?= h($trabajador->Email_tra) ?></td>
+                <td class="text-right">
+                    <?= $this->Html->link(null, ['action' => 'view', $trabajador->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'edit', $trabajador->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'delete', $trabajador->id], [
+                    'confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id),
+                    'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
+                    ]) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
-
-    <div class="col s12 m9">
-        <div class="card darken-1">
-            <div class="card-content black-text">
-                <span class="card-title green-text"><?= __('Trabajador') ?></span>
-                <table class="responsive-table">
-                    <thead>
-                        <tr>
-                            <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('cedula') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Nombres_tra') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Apellidos_tra') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Telefono_tra') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Direccion_tra') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('Email_tra') ?></th>
-                            <th><?= __('Actions') ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <?php foreach ($trabajador as $trabajador): ?>
-                        <tr>
-                            <td><?= $this->Number->format($trabajador->id) ?></td>
-                            <td><?= h($trabajador->cedula) ?></td>
-                            <td><?= h($trabajador->Nombres_tra) ?></td>
-                            <td><?= h($trabajador->Apellidos_tra) ?></td>
-                            <td><?= h($trabajador->Telefono_tra) ?></td>
-                            <td><?= h($trabajador->Direccion_tra) ?></td>
-                            <td><?= h($trabajador->Email_tra) ?></td>
-                            <td>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('View') . '" >zoom_in</i>', ['action' => 'view', $trabajador->id], ['escape' => false]) ?>
-                                <?= $this->Html->link('<i class="material-icons" title="'. __('Edit') . '" >create</i>', ['action' => 'edit', $trabajador->id], ['escape' => false]) ?>
-                                <?= $this->Form->postLink('<i class="material-icons" title="'. __('Delete') . '" >delete</i>', ['action' => 'delete', $trabajador->id], ['confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id), 'escape' => false]) ?>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="center">
-            <ul class="pagination">
-                <?= $this->Paginator->first('<i class="material-icons">first_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
-                <?= $this->Paginator->prev('<i class="material-icons">chevron_left</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
-                <?= $this->Paginator->numbers() ?>
-                <?= $this->Paginator->next('<i class="material-icons">chevron_right</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
-                <?= $this->Paginator->last('<i class="material-icons">last_page</i>', ['class' => 'waves-effect', 'escape' => false]) ?>
-            </ul>
-        </div>
-
-        <p class="right"><?= $this->Paginator->counter(['format' => __('Page  of , showing  record(s) out of  total')]) ?></p>
-    </div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination pagination-sm">
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+        </ul>
+        <small class="text-muted"><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></small>
+    </nav>
 </div>

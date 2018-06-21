@@ -27,10 +27,7 @@ class ProveedorTableTest extends TestCase
         'app.proveedor',
         'app.empresa',
         'app.compra_mat_pri',
-        'app.trabajador',
-        'app.materia_prima',
-        'app.prevee',
-        'app.unidad_medida'
+        'app.prevee'
     ];
 
     /**

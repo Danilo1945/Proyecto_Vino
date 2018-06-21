@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
  * Socio Controller
@@ -14,11 +13,6 @@ use Cake\Event\Event;
 class SocioController extends AppController
 {
 
-    public function beforeRender(Event $event)
-    {
-        parent::beforeRender($event);
-       
-    }
     /**
      * Index method
      *
@@ -58,11 +52,11 @@ class SocioController extends AppController
         if ($this->request->is('post')) {
             $socio = $this->Socio->patchEntity($socio, $this->request->getData());
             if ($this->Socio->save($socio)) {
-                $this->Flash->success(__('The socio has been saved.'));
+                $this->Flash->success(__('EL Socio se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The socio could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Socio no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('socio'));
     }
@@ -82,11 +76,11 @@ class SocioController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $socio = $this->Socio->patchEntity($socio, $this->request->getData());
             if ($this->Socio->save($socio)) {
-                $this->Flash->success(__('The socio has been saved.'));
+                $this->Flash->success(__('EL socio se guardo satisfactoriamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The socio could not be saved. Please, try again.'));
+            $this->Flash->error(__('El Socio no se pudo guardar. Por favor vuelva intentarlo.'));
         }
         $this->set(compact('socio'));
     }
@@ -103,9 +97,9 @@ class SocioController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $socio = $this->Socio->get($id);
         if ($this->Socio->delete($socio)) {
-            $this->Flash->success(__('The socio has been deleted.'));
+            $this->Flash->success(__('EL Socio se eliminar satisfactoriamente.'));
         } else {
-            $this->Flash->error(__('The socio could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El Socio no se pudo eliminar. Por favor vuelva intentarlo.'));
         }
 
         return $this->redirect(['action' => 'index']);

@@ -87,10 +87,19 @@ class AppController extends Controller
        
          
     }
+    
+  public function getUserAut(){
+        $user_aut=$this->Auth->user();
+      return $user_aut;
+  }
+
+
 //   envia a todo el proyecto la variable autorizada
        public function beforeFilter(Event $event){
            $this->set('current_user',$this->Auth->user());
+           
     }
+    
     
     public function isAuthorized($user) {
         

@@ -38,15 +38,19 @@ class UnidadMedidaFixture extends TestFixture
     // @codingStandardsIgnoreEnd
 
     /**
-     * Records
+     * Init method
      *
-     * @var array
+     * @return void
      */
-    public $records = [
-        [
-            'id' => 1,
-            'nombre_umed' => 'Lorem ipsum dolor sit amet',
-            'detalle_umed' => 'Lorem ipsum dolor sit amet'
-        ],
-    ];
+    public function init()
+    {
+        $this->records = [
+            [
+                'id' => 1,
+                'nombre_umed' => 'Lorem ipsum dolor sit amet',
+                'detalle_umed' => 'Lorem ipsum dolor sit amet'
+            ],
+        ];
+        parent::init();
+    }
 }
