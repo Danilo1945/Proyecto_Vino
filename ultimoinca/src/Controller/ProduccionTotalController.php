@@ -52,11 +52,11 @@ class ProduccionTotalController extends AppController
         if ($this->request->is('post')) {
             $produccionTotal = $this->ProduccionTotal->patchEntity($produccionTotal, $this->request->getData());
             if ($this->ProduccionTotal->save($produccionTotal)) {
-                $this->Flash->success(__('The produccion total has been saved.'));
+                $this->Flash->success(__('El total de la producción se ha guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The produccion total could not be saved. Please, try again.'));
+            $this->Flash->error(__('El total de la producción no se pudo guardar. Inténtalo de nuevo.'));
         }
         $this->set(compact('produccionTotal'));
     }
@@ -76,11 +76,11 @@ class ProduccionTotalController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $produccionTotal = $this->ProduccionTotal->patchEntity($produccionTotal, $this->request->getData());
             if ($this->ProduccionTotal->save($produccionTotal)) {
-                $this->Flash->success(__('The produccion total has been saved.'));
+                $this->Flash->success(__('El total de la producción se ha guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The produccion total could not be saved. Please, try again.'));
+            $this->Flash->error(__('El total de la producción no se pudo guardar. Inténtalo de nuevo.'));
         }
         $this->set(compact('produccionTotal'));
     }
@@ -97,9 +97,9 @@ class ProduccionTotalController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $produccionTotal = $this->ProduccionTotal->get($id);
         if ($this->ProduccionTotal->delete($produccionTotal)) {
-            $this->Flash->success(__('The produccion total has been deleted.'));
+            $this->Flash->success(__('El total de la producción ha sido eliminado.'));
         } else {
-            $this->Flash->error(__('The produccion total could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El total de la producción no pudo ser eliminado. Inténtalo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);

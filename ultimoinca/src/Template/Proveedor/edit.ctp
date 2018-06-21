@@ -14,7 +14,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="proveedor_edit">
     <?= $this->Form->create($proveedor) ?>
     <fieldset>
-        <legend><?= __('Edit Proveedor') ?></legend>
+        <legend><?= __('Editar Proveedor') ?></legend>
         <?php
             echo $this->Form->control('cedula');
             echo $this->Form->control('nombres_pro');

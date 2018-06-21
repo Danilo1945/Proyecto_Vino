@@ -20,7 +20,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="users_edit">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Edit User') ?></legend>
+        <legend><?= __('Editar User') ?></legend>
         <?php
             echo $this->Form->control('name');
             echo $this->Form->control('lastname');

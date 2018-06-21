@@ -10,7 +10,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="trabajador_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Trabajador'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Trabajador'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Trabajador') ?></h3>
@@ -25,7 +25,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('Telefono_tra') ?></th>
                 <th><?= $this->Paginator->sort('Direccion_tra') ?></th>
                 <th><?= $this->Paginator->sort('Email_tra') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -39,10 +39,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($trabajador->Direccion_tra) ?></td>
                 <td><?= h($trabajador->Email_tra) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $trabajador->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $trabajador->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $trabajador->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $trabajador->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $trabajador->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $trabajador->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $trabajador->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $trabajador->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

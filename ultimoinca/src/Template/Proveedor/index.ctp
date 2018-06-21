@@ -13,7 +13,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="proveedor_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Proveedor'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Proveedor'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Proveedor') ?></h3>
@@ -28,7 +28,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('telefono_pro') ?></th>
                 <th><?= $this->Paginator->sort('email_pro') ?></th>
                 <th><?= $this->Paginator->sort('empresa_id') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -42,10 +42,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($proveedor->email_pro) ?></td>
                 <td><?= $proveedor->has('empresa') ? $this->Html->link($proveedor->empresa->id, ['controller' => 'Empresa', 'action' => 'view', $proveedor->empresa->id]) : '' ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $proveedor->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $proveedor->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $proveedor->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $proveedor->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $proveedor->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $proveedor->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $proveedor->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $proveedor->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

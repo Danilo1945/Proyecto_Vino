@@ -13,7 +13,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="pedidos_edit">
     <?= $this->Form->create($pedido) ?>
     <fieldset>
-        <legend><?= __('Edit Pedido') ?></legend>
+        <legend><?= __('Editar Pedido') ?></legend>
         <?php
             echo $this->Form->control('fecha_ven', ['empty' => true]);
             echo $this->Form->control('trabajador_id', ['options' => $trabajador, 'empty' => true]);

@@ -12,14 +12,14 @@ $this->set('bakeEntities', array (
 <div class="container"  id="unidad_medida_view">
     <div class="float-right">
         <?= $this->Html->button(
-        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Editar'),
         ['action' => 'edit', $unidadMedida->id],
         ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
 
-        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $unidadMedida->id], [
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Eliminar'), ['action' => 'delete', $unidadMedida->id], [
         'escape' => false,
         'class' => 'btn btn-primary btn-sm',
-        'confirm' => __('Are you sure you want to delete # {0}?', $unidadMedida->id)]) ?>
+        'confirm' => __('Estas seguro que quieres borrarlo', $unidadMedida->id)]) ?>
     </div>
 
     <h3 class="mb-3"><?= h($unidadMedida->id) ?></h3>
@@ -63,10 +63,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($compraMatPri->materia_prima_id) ?></td>
                 <td><?= h($compraMatPri->unidad_medida_id) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['controller' => 'CompraMatPri', 'action' => 'view', $compraMatPri->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['controller' => 'CompraMatPri', 'action' => 'edit', $compraMatPri->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['controller' => 'CompraMatPri', 'action' => 'delete', $compraMatPri->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $compraMatPri->id),
+                    <?= $this->Html->link(null, ['controller' => 'CompraMatPri', 'action' => 'Nuevo', $compraMatPri->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['controller' => 'CompraMatPri', 'action' => 'Editar', $compraMatPri->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['controller' => 'CompraMatPri', 'action' => 'Eliminar', $compraMatPri->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $compraMatPri->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

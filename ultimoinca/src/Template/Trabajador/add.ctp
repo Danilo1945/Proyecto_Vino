@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="trabajador_add">
     <?= $this->Form->create($trabajador) ?>
     <fieldset>
-        <legend><?= __('Add Trabajador') ?></legend>
+        <legend><?= __('Añadir Trabajador') ?></legend>
         <?php
             echo $this->Form->control('cedula');
             echo $this->Form->control('Nombres_tra');

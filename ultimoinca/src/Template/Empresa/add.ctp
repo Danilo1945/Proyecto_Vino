@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="empresa_add">
     <?= $this->Form->create($empresa) ?>
     <fieldset>
-        <legend><?= __('Add Empresa') ?></legend>
+        <legend><?= __('Añadir Empresa') ?></legend>
         <?php
             echo $this->Form->control('nombre',['required']);
             echo $this->Form->control('direccion');

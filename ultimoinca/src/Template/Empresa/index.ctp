@@ -11,7 +11,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="empresa_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Empresa'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __(' Empresa'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Empresa') ?></h3>
@@ -23,7 +23,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('nombre') ?></th>
                 <th><?= $this->Paginator->sort('direccion') ?></th>
                 <th><?= $this->Paginator->sort('email') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -34,10 +34,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($empresa->direccion) ?></td>
                 <td><?= h($empresa->email) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $empresa->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $empresa->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $empresa->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $empresa->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $empresa->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $empresa->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $empresa->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $empresa->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>
