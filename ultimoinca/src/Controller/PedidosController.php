@@ -184,6 +184,7 @@ public function guardarPedido( $usuario_id,$date,$tra_id,$estado_cuenta,$observa
            
            
            
+           
             if ($this->Pedidos->save($pedido)) {
                 $this->Flash->success(__('El Pedido se guardo satisfactoriamente.'));
                   
@@ -222,6 +223,8 @@ public function guardarPedido( $usuario_id,$date,$tra_id,$estado_cuenta,$observa
               debug($this->request->getData());
               
 ;            $user_id=$this->request->data['usuario'][0];
+
+
             date_default_timezone_set('America/Lima');
             $date=date('Y/m/d');
             $tra_id=9;
@@ -233,7 +236,7 @@ public function guardarPedido( $usuario_id,$date,$tra_id,$estado_cuenta,$observa
             debug($estado_cuenta);
             debug($observacion);
             
-           // $this->guardarPedido( $user_id,$date,$tra_id,$estado_cuenta,$observacion);
+            $this->guardarPedido( $user_id,$date,$tra_id,$estado_cuenta,$observacion);
             
             
             //debug($this->request->data);
@@ -288,7 +291,7 @@ public function guardarPedido( $usuario_id,$date,$tra_id,$estado_cuenta,$observa
                 debug($a['precio']);
                 debug($a['cantidad']);
                 debug($a['total']);
-               // $detaPed->GpedidosNew($a['cantidad'], $a['descripcion'],$a['precio'], $a['total'],$this->id_ultima, $unimed, $proTotal);
+               $detaPed->GpedidosNew($a['cantidad'], $a['descripcion'],$a['precio'], $a['total'],$this->id_ultima, $unimed, $proTotal);
                 // debug("////////////////////////////////////////////"); 
             }
         } // FIN IF
