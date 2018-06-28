@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="materia_prima_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Materia Prima'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('Materia Prima'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Materia Prima') ?></h3>
@@ -24,7 +24,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('nombre_mat_pri') ?></th>
                 <th><?= $this->Paginator->sort('descripcion_mat_pri') ?></th>
                 <th><?= $this->Paginator->sort('contidad') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -35,10 +35,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($materiaPrima->descripcion_mat_pri) ?></td>
                 <td><?= $this->Number->format($materiaPrima->contidad) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $materiaPrima->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $materiaPrima->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $materiaPrima->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $materiaPrima->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $materiaPrima->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $materiaPrima->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $materiaPrima->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $materiaPrima->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

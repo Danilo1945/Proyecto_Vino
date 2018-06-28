@@ -12,14 +12,14 @@ $this->set('bakeEntities', array (
 <div class="container"  id="item_inventario_view">
     <div class="float-right">
         <?= $this->Html->button(
-        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Editar'),
         ['action' => 'edit', $itemInventario->id],
         ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
 
-        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $itemInventario->id], [
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Eliminar'), ['action' => 'delete', $itemInventario->id], [
         'escape' => false,
         'class' => 'btn btn-primary btn-sm',
-        'confirm' => __('Are you sure you want to delete # {0}?', $itemInventario->id)]) ?>
+        'confirm' => __('Estas seguro que quieres borrarlo', $itemInventario->id)]) ?>
     </div>
 
     <h3 class="mb-3"><?= h($itemInventario->id) ?></h3>
@@ -53,10 +53,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($inventarioEmpresa->color_inv) ?></td>
                 <td><?= h($inventarioEmpresa->item_inventario_id) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['controller' => 'InventarioEmpresa', 'action' => 'view', $inventarioEmpresa->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['controller' => 'InventarioEmpresa', 'action' => 'edit', $inventarioEmpresa->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['controller' => 'InventarioEmpresa', 'action' => 'delete', $inventarioEmpresa->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $inventarioEmpresa->id),
+                    <?= $this->Html->link(null, ['controller' => 'InventarioEmpresa', 'action' => 'Nuevo', $inventarioEmpresa->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['controller' => 'InventarioEmpresa', 'action' => 'Editar', $inventarioEmpresa->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['controller' => 'InventarioEmpresa', 'action' => 'Eliminar', $inventarioEmpresa->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $inventarioEmpresa->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

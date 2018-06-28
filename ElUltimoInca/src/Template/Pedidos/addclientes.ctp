@@ -174,6 +174,7 @@ $this->set('bakeEntities', array(
 
 
 
+<<<<<<< HEAD
 <script>
 
 
@@ -211,3 +212,34 @@ $this->set('bakeEntities', array(
 
 
 </script>
+=======
+<div class="container" id="pedidos_add">
+    <?= $this->Form->create($pedido) ?>
+    <fieldset>
+        <legend><?= __('Añadir Pedido') ?></legend>
+        <?php
+        echo $this->Form->control('fecha_ven', ['empty' => true]);
+        echo $this->Form->control('trabajador_id', ['options' => $trabajador, 'empty' => true]);
+        echo $this->Form->control('users_id', ['options' => $users, 'empty' => true]);
+        echo $this->Form->control('estado_cuenta');
+        echo $this->Form->control('observaciones_ven');
+        ?>
+    </fieldset>
+
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
+    <hr>
+    <fieldset>
+        <legend><?= __('Añadir Detalle Pedido') ?></legend>
+        <?php
+        echo $this->Form->control('cantidad');
+        echo $this->Form->control('detalle');
+        echo $this->Form->control('valor_unitario');
+        echo $this->Form->control('valor_total');
+        echo $this->Form->control('pedidos_id', ['options' => $pedidos, 'empty' => true]);
+        echo $this->Form->control('unidad_medida_id', ['options' => $unidadMedida, 'empty' => true]);
+        echo $this->Form->control('produccion_total_id', ['options' => $produccionTotal, 'empty' => true]);
+        ?>
+    </fieldset>
+</div>
+>>>>>>> d3ca01adf1ba1c22bb571591468011524b1f221d

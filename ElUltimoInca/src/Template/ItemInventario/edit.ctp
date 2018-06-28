@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="item_inventario_edit">
     <?= $this->Form->create($itemInventario) ?>
     <fieldset>
-        <legend><?= __('Edit Item Inventario') ?></legend>
+        <legend><?= __('Editar Item Inventario') ?></legend>
         <?php
             echo $this->Form->control('nom_item');
             echo $this->Form->control('detalle_item');

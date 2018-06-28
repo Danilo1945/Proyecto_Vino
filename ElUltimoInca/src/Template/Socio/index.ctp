@@ -10,7 +10,7 @@ $this->set('bakeEntities', array (
 ?>
 <div class="container" id="socio_index">
     <?= $this->Html->button(
-        '<i class="fa fa-plus-circle fa-lg"></i> ' . __('New Socio'),
+        '<i class="fa fa-plus-circle fa-lg"></i> ' . __(' Socio'),
         ['action' => 'add'],
         ['class' => ['float-right'], 'escape' => false, 'size' => 'small']); ?>
     <h3 class="mb-4"><?= __('Socio') ?></h3>
@@ -25,7 +25,7 @@ $this->set('bakeEntities', array (
                 <th><?= $this->Paginator->sort('Telefono') ?></th>
                 <th><?= $this->Paginator->sort('Direccion') ?></th>
                 <th><?= $this->Paginator->sort('Email') ?></th>
-                <th><?= __('Actions') ?></th>
+                <th><?= __('Acciones') ?></th>
             </tr>
             </thead>
             <tbody>
@@ -39,10 +39,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($socio->Direccion) ?></td>
                 <td><?= h($socio->Email) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['action' => 'view', $socio->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['action' => 'edit', $socio->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['action' => 'delete', $socio->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $socio->id),
+                    <?= $this->Html->link(null, ['action' => 'Nuevo', $socio->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['action' => 'Editar', $socio->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['action' => 'Eliminar', $socio->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $socio->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

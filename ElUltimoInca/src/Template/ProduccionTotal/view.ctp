@@ -12,14 +12,14 @@ $this->set('bakeEntities', array (
 <div class="container"  id="produccion_total_view">
     <div class="float-right">
         <?= $this->Html->button(
-        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Edit'),
+        '<i class="fa fa-pencil fa-lg pr-3"></i> ' . __('Editar'),
         ['action' => 'edit', $produccionTotal->id],
         ['class' => ['mr-3'], 'escape' => false, 'size' => 'sm']); ?>
 
-        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Delete'), ['action' => 'delete', $produccionTotal->id], [
+        <?= $this->Form->postLink('<i class="fa fa-trash fa-lg pr-3"></i>'. __('Eliminar'), ['action' => 'delete', $produccionTotal->id], [
         'escape' => false,
         'class' => 'btn btn-primary btn-sm',
-        'confirm' => __('Are you sure you want to delete # {0}?', $produccionTotal->id)]) ?>
+        'confirm' => __('Estas seguro que quieres borrarlo', $produccionTotal->id)]) ?>
     </div>
 
     <h3 class="mb-3"><?= h($produccionTotal->nombre_producto) ?></h3>
@@ -65,10 +65,10 @@ $this->set('bakeEntities', array (
                 <td><?= h($detallePedidos->unidad_medida_id) ?></td>
                 <td><?= h($detallePedidos->produccion_total_id) ?></td>
                 <td class="text-right">
-                    <?= $this->Html->link(null, ['controller' => 'DetallePedidos', 'action' => 'view', $detallePedidos->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
-                            <?= $this->Html->link(null, ['controller' => 'DetallePedidos', 'action' => 'edit', $detallePedidos->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
-                            <?= $this->Form->postLink(null, ['controller' => 'DetallePedidos', 'action' => 'delete', $detallePedidos->id], [
-                    'confirm' => __('Are you sure you want to delete # {0}?', $detallePedidos->id),
+                    <?= $this->Html->link(null, ['controller' => 'DetallePedidos', 'action' => 'Nuevo', $detallePedidos->id], ['class' => 'btn btn-primary fa fa-eye p-1 mx-1']) ?>
+                            <?= $this->Html->link(null, ['controller' => 'DetallePedidos', 'action' => 'Editar', $detallePedidos->id], ['class' => 'btn btn-primary fa fa-pencil p-1 mx-1']) ?>
+                            <?= $this->Form->postLink(null, ['controller' => 'DetallePedidos', 'action' => 'Eliminar', $detallePedidos->id], [
+                    'confirm' => __('Estas seguro que quieres borrarlo', $detallePedidos->id),
                     'class' => 'btn btn-primary fa fa-trash p-1 mx-1'
                     ]) ?>
                 </td>

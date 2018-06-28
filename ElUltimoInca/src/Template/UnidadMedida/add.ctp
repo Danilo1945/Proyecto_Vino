@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="unidad_medida_add">
     <?= $this->Form->create($unidadMedida) ?>
     <fieldset>
-        <legend><?= __('Add Unidad Medida') ?></legend>
+        <legend><?= __('Añadir Unidad Medida') ?></legend>
         <?php
             echo $this->Form->control('nombre_umed');
             echo $this->Form->control('detalle_umed');

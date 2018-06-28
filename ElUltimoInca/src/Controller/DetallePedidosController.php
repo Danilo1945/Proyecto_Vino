@@ -53,11 +53,11 @@ class DetallePedidosController extends AppController {
         if ($this->request->is('post')) {
             $detallePedido = $this->DetallePedidos->patchEntity($detallePedido, $this->request->getData());
             if ($this->DetallePedidos->save($detallePedido)) {
-                $this->Flash->success(__('The detalle pedido has been saved.'));
+                $this->Flash->success(__('El detalle pedido a sido guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The detalle pedido could not be saved. Please, try again.'));
+            $this->Flash->error(__('El detalle pedido no pudo ser guardado. porfavor intentelo de nuevo.'));
         }
         $pedidos = $this->DetallePedidos->Pedidos->find('list', ['limit' => 200]);
 
@@ -132,11 +132,11 @@ class DetallePedidosController extends AppController {
         if ($this->request->is(['patch', 'post', 'put'])) {
             $detallePedido = $this->DetallePedidos->patchEntity($detallePedido, $this->request->getData());
             if ($this->DetallePedidos->save($detallePedido)) {
-                $this->Flash->success(__('The detalle pedido has been saved.'));
+                $this->Flash->success(__('El detalle pedido se ha guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The detalle pedido could not be saved. Please, try again.'));
+            $this->Flash->error(__('El detalle pedido no a sido guardado. porfavor intentalo de nuevo.'));
         }
         $pedidos = $this->DetallePedidos->Pedidos->find('list', ['limit' => 200]);
         $unidadMedida = $this->DetallePedidos->UnidadMedida->find('list', ['limit' => 200]);
@@ -155,9 +155,9 @@ class DetallePedidosController extends AppController {
         $this->request->allowMethod(['post', 'delete']);
         $detallePedido = $this->DetallePedidos->get($id);
         if ($this->DetallePedidos->delete($detallePedido)) {
-            $this->Flash->success(__('The detalle pedido has been deleted.'));
+            $this->Flash->success(__('El detalle pedido a sido eliminado.'));
         } else {
-            $this->Flash->error(__('The detalle pedido could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El detalle pedido no a podido ser eliminado. Porfavor, intentalo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);

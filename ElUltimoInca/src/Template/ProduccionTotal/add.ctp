@@ -12,7 +12,7 @@ $this->set('bakeEntities', array (
 <div class="container" id="produccion_total_add">
     <?= $this->Form->create($produccionTotal) ?>
     <fieldset>
-        <legend><?= __('Add Produccion Total') ?></legend>
+        <legend><?= __('Añadir Produccion Total') ?></legend>
         <?php
             echo $this->Form->control('nombre_producto');
             echo $this->Form->control('valor_total_producto');
